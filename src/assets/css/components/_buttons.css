@@ -1,0 +1,20 @@
+.button {
+  @apply relative inline-flex items-center justify-center px-5 py-2;
+  @apply border-b-2 border-orange-700 rounded-full bg-orange hover:bg-orange-700;
+  @apply font-semibold text-base !no-underline;
+
+  transition: all .125s ease-out;
+}
+
+.button-lg {
+  @apply px-5 py-2 text-xl;
+}
+
+.button-group {
+  @apply flex flex-col flex-wrap items-center gap-4 sm:flex-row;
+}
+
+.button.bg-teal,
+.button.bg-teal-dark {
+  @apply text-white;
+}

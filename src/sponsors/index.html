@@ -1,0 +1,93 @@
+---
+title: Sponsorship
+layout: default
+---
+
+
+<div class="pt-0 block-container">
+  <div class="my-8 wrapper">
+    
+    <div class="mx-auto prose lg:prose-lg">
+      <h1 class="mb-8 pageheading">{{ title }}</h1>
+{% markdown %}
+
+DjangoCon US is only possible through the generosity of the organizations and businesses on this page. Their donations make it possible for us to provide opportunity grants to speakers and attendees, record all talks, host sprints, and feed everyone for five days. Thank you for your support!
+
+Download our sponsorship prospectus for more information on how you can support DjangoCon US 2026.
+
+{% endmarkdown %}
+
+
+<div class="flex flex-wrap gap-4 align-center">
+  <a href="{{ site.sponsorship_prospectus }}" class="button bg-orange">Download Sponsorship Prospectus</a>
+  <a href="mailto:sponsors@djangocon.us" class="button">Get in touch</a>
+</div>
+
+    </div>
+  </div>
+
+
+
+{% for level in collections.sponsorsByLevel %}
+<div class="py-6">
+  <div class="flex flex-col justify-center wrapper">
+    <h2 class="flex items-center bg-sep">
+      <span class="px-8 py-2 mx-auto text-xl font-bold text-teal-700 bg-gray-200 rounded font-heading">{{ level[0] }}</span>
+    </h2>
+
+    <ul class="divide-y divide-gray-100">
+      {% for sponsor in level[1] %}
+        <li class="py-12 space-y-4">
+          <div class="flex flex-col gap-6 lg:flex-row lg:gap-16">
+            <div class="items-start justify-center lg:flex lg:w-1/4">
+              {% if sponsor.data.logo %}
+                {% assign orientation_class = "h-auto w-auto max-w-56 max-h-16 lg:max-w-60 lg:max-h-28" %}
+                {% if sponsor.data.logo.orientation == "portrait" %}
+                  {% assign orientation_class = "h-auto w-auto max-h-32 lg:max-h-80 lg:max-w-40" %}
+                {% endif %}
+                {% if sponsor.data.url.target %}
+                <a href="{{ sponsor.data.url.target }}" target="_blank" class="block w-full h-full">
+                  <span class="sr-only">{{ sponsor.data.name }}</span>
+                  <img
+                    src="/sponsors/{{ sponsor.data.logo.filename }}"
+                    alt="{{ sponsor.data.name }}"
+                    class="{{ orientation_class }}"
+                    aria-hidden="true">
+                </a>
+                {% else %}
+                  <img
+                    src="/sponsors/{{ sponsor.data.logo.filename }}"
+                    alt="{{ sponsor.data.name }} logo"
+                    class="{{ orientation_class }}">
+                {% endif %}
+
+              {% endif %}
+            </div>
+
+            <div class="space-y-4 lg:flex-1">
+              <h3 class="text-2xl lg:text-4xl font-heading">
+                {% if sponsor.data.url %}
+                  <a href="{{ sponsor.data.url.target }}">{{ sponsor.data.name }}</a>
+                {% endif %}
+              </h3>
+              {% if sponsor.data.url %}
+                <a href="{{ sponsor.data.url.target }}" class="inline-block text-xl link" aria-hidden="true">{{ sponsor.data.url.label }}</a>
+              {% endif %}
+              {% if sponsor.content %}
+                <div class="space-y-6 prose lg:prose-lg">
+                  {{ sponsor.content | markdown }}
+                </div>
+              {% endif %}
+              {% if sponsor.data.hiring_url %}
+                <a href="{{ sponsor.data.hiring_url }}" class="badge badge-teal">
+                  <span class="text-xl">🌟</span> {{ sponsor.data.name }} is hiring!</a>
+              {% endif %}
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+{% endfor %}
+

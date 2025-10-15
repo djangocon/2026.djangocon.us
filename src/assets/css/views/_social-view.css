@@ -1,0 +1,70 @@
+.session-social-template {
+  @apply relative bg-cream;
+  width: 1200px;
+  height: 675px;
+
+  --avatar-size: 380px;
+}
+
+.session-social-template-photo {
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 40px;
+  top: 80px;
+  left: 72px;
+  width: var(--avatar-size);
+  @apply absolute z-0;
+}
+
+.session-social-template-content {
+  @apply relative z-10;
+  top: 0;
+  left: 500px;
+  width: 700px;
+  /* top: 35px; */
+  padding: 3rem;
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.session-social-template-name {
+  @apply font-bold leading-tight;
+  font-size: 58px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.session-social-template-talks {
+  @apply font-medium leading-tight;
+  font-size: 60px;
+
+  &.talk-long {
+    font-size: 48px;
+  }
+}
+
+/* Two presenters */
+.session-social-presenter-count-2 {
+  --avatar-size: 230px;
+
+  .session-social-template-content {
+    padding: 3rem 4rem;
+  }
+
+  .session-social-template-photo {
+    top: 263px;
+    left: 267px;
+  }
+
+  .session-social-template-photo:nth-of-type(2) {
+    top: 33px;
+    left: 37px;
+  }
+}

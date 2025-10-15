@@ -1,0 +1,17 @@
+# Organizers
+
+Organziers can be seen at `/organizers/`.
+
+See `src/_includes/organizers-grid.html` for some common rendering of organizers.
+
+Organizers can be hidden by setting `hidden: true` in the front matter.
+
+## Adding a new organizer
+
+1. Copy `_ORGANIZER.md.example` to a new file and name it `first-last.md` (e.g. `jane-doe.md`).
+2. Fill in the details. You can remove any social networks that are unusued, leave them blank, or `null`. Note that `role` is a string, not a list.
+3. Add the organizer's photo to the `src/_content/organizers` directory. The photo should be square (or at least portrait-shaped) and at least 600x600 pixels, in JPG or WebP format. The filename should be the same as the organizer's MD file, but with the extension `.jpg` or `.webp` (e.g. `jane-doe.jpg`).
+
+## Deleting an organizer
+
+Remove the organizer's MD file and their photo from the `src/_content/organizers` directory.

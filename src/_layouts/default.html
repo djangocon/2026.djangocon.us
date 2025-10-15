@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="{{ site.domain }}{{ page.url }}" />
+  <meta name="author" content="DjangoCon US" />
+  <meta name="description" content="{% if description %}{{ description }}{% else %}DjangoCon US 2026 is a Python and Django focused web development conference in Chicago, Illinois.{% endif %}" />
+
+  <meta property="og:title" content="{% if title %}{{ title }} | {% endif %}DjangoCon US 2026" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:description" content="{% if description %}{{ description }}{% else %}DjangoCon US 2026 is a Python and Django focused web development conference in Chicago, Illinois.{% endif %}" />
+  <meta property="og:url" content="{{ site.domain }}{{ page.url }}" />
+  <meta property="og:site_name" content="DjangoCon US" />
+
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  {% block social_images %}
+    <meta property="og:image" content="{{ site.domain }}/assets/img/social/og-share.jpg?20250827" />
+    <meta property="twitter:image" content="{{ site.domain }}/assets/img/social/og-share.jpg?20250827" />
+  {% endblock %}
+
+  <meta property="twitter:title" content="{% if title %}{{ title }} | {% endif %}DjangoCon US 2026" />
+  <meta name="twitter:site" content="@djangocon" />
+
+  <meta property="fb:app_id" content="280981518972848" />
+  <meta name="google-site-verification" content="fkIplA0HzMWPz64TqaW1xp4RH5JfDyRekV3QO_MqJ8Q" />
+
+  <link href="/assets/favicons/favicon.ico" rel=icon type="image/x-icon">
+  <link href="/assets/favicons/favicon.png" rel=icon type="image/png">
+  <link href="/assets/favicons/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+
+  <title>{% if title %}{{ title }} | {% endif %}DjangoCon US 2025</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body id="SiteBody" {% if templateClass %} class="{{ templateClass }}"{% endif %}>
+  {% block header %}
+    {% include "header.html" %}
+  {% endblock %}
+
+  <main id="SiteMain" class="flex-1 {% if site.banner %}pt-[120px]{% else %}pt-[96px]{% endif %} lg:pt-0 lg:block">
+    {%- block content -%}
+      {{- content -}}
+    {%- endblock -%}
+  </main>
+
+  <footer id="SiteFooter" class="py-20">
+    <div class="container mx-auto">
+      <div class="grid gap-8 px-4 place-items-center">
+        {% include "conf-social-share.html" %}
+
+        <p class="text-center lg:text-xl">
+          <strong>
+            Got questions? We can help:
+            <a
+              href="mailto:{{site.contact_us_email}}" class="link">{{site.contact_us_email}}</a>
+          </strong>
+        </p>
+        <small class="text-sm text-center">
+          &copy; {{ site.conf_year }} DjangoCon US
+          {%- comment -%}· Design by <a href="https://yupgup.com/" class="link" target="_blank">YupGup</a>{%- endcomment -%}
+          · Presented by <a href="https://www.defna.org/" class="link" target="_blank">DEFNA</a>
+          · <a href="/styleguide/">Styleguide</a>
+          {%- comment -%}· <a href="/colophon/" class="link">Colophon</a>{%- endcomment -%}
+        </small>
+      </div>
+    </div>
+  </footer>
+
+  {%- comment -%}
+    Social icons added as sprite
+  {%- endcomment -%}
+  {%- include 'svg-social-icons.html' -%}
+
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/iframe_compat.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% if site.banner %}
+<aside class="fixed lg:relative lg:py-6 text-center justify-around leading-tight h-[40px] xl:text-lg z-[200] top-0 block bg-pink text-white flex items-center justify-center px-4 w-full">
+  <a href="/schedule" class="hidden text-white no-underline md:inline-flex">
+   🎉 &nbsp; <strong class="underline">Welcome to Chicago!</strong> &nbsp; 🎉
+  </a>
+  <a href="{{ site.ticket_link }}" class="text-white no-underline">
+     🎫  &nbsp;<strong class="underline">Online Tickets Still Available!</strong>&nbsp; 🎫
+  </a>
+</aside>
+{% endif %}
+
+<header id="SiteHeader" class="lg:top-0 site-header is-closed lg:is-open">
+    <div class="wrapper">
+      <nav class="flex flex-wrap" role="navigation">
+        <div class="flex items-center justify-between w-full lg:max-w-max lg:flex-1">
+          <a
+            href="/"
+            aria-label="Go to homepage">
+            <img src="/assets/img/theme/logo.svg" alt="DjangoCon US" class="h-16 h-11 xl:h-24">
+          </a>
+          <button id="NavToggler" class="site-nav-toggler is-closed">
+            <span aria-hidden="true" class="hidden xs:block">Menu</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 icon-menu" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 icon-close" aria-hidden="true">
+              <path d="M6 6L17.6673 17.6673" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 18L17.6673 6.33274" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+        </div>
+
+        {% include "nav.html" %}
+      </nav>
+    </div>
+  </header>

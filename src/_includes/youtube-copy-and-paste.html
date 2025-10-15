@@ -1,0 +1,21 @@
+{% if session.templateContent %}{{ session.templateContent }}
+{% endif %}
+This talk was presented at: {{ site.domain }}{{ session.permalink }}
+
+LINKS:{% if session.presenter_slugs %}{% for presenter_slug in session.presenter_slugs %}{% assign presenter = collections.presenters | find:presenter_slug %}{% assign presenter = presenter.data %}
+Follow {{ presenter.name }} 👇
+{% if presenter.social.github %}On GitHub: https://github.com/{{ presenter.social.github }}
+{% endif %}{% if presenter.social.mastodon %}On Mastodon: {{ presenter.social.mastodon }}
+{% endif %}{% if presenter.social.twitter %}On X: https://x.com/{{ presenter.social.twitter }}
+{% endif %}{% if presenter.social.website %}Website: {{ presenter.social.website }}
+{% endif %}
+{% endfor %}{% endif %}
+
+Follow DjangoCon US 👇
+{{ site.social.mastodon }}
+{{ site.social.x }}
+
+Follow DEFNA 👇
+https://www.defna.org/
+
+Video production by the presenter and DjangoCon US 2024 volunteers.

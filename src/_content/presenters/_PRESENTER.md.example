@@ -1,0 +1,16 @@
+---
+name: Firstname Lastname
+hidden: false
+photo: photo.jpg
+
+# Mastodon and Website accept a URL. Other networks accept a handle.
+social:
+    bluesky:
+    github:
+    instagram:
+    mastodon:
+    twitter:
+    website:
+---
+
+Presenter's biography here.

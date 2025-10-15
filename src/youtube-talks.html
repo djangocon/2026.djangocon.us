@@ -1,0 +1,72 @@
+---
+title: Speaking Template for YouTube Videos
+layout: default
+description: |
+  Our Speaking Template for YouTube Videos (this should not be in our sitemaps
+  file)
+
+sitemap: false
+
+permalink: /speaking/youtube/
+---
+
+<div class="pb-2 hero">
+  <div class="wrapper">
+    <h1 class="text-center pageheading">{{ title }}</h1>
+  </div>
+</div>
+
+<div class="pt-6 block-container">
+  <div class="wrapper grid grid-cols-1 gap-4">
+
+    {% for day in collections.sessionsByDateAndTime %}
+      {% if forloop.index0 > 0 %}
+        {% for slot in day[1] %}
+          {% for session in slot.sessions %}
+            {% if session.presenter_slugs %}
+              <div class="event-byline grid grid-cols-1 gap-2">
+                <div class="flex items-center justify-between gap-2 mx-2">
+                  <h4 class="flex-grow mr-2">
+                    <span>{{ day[0] | formatDateTime: "LLL d " }}{{ slot.start | formatDateTime: "h:mm aaa" }} EDT -</span>
+                    <span id="copy-{{ session.title|slugify }}-title">
+                      {{ session.title }} with
+                      {% for presenter_slug in session.presenter_slugs %}
+                        {% assign presenter = collections.presenters | find:presenter_slug %}
+                        {% if not forloop.first %} and {% endif %}
+                        {{ presenter.data.name }}
+                      {% endfor %}
+                    </span>
+                  </h4>
+                  {% if post.video_url %}
+                    <div class="btn bg-teal-200 border-solid border-2 border-grey-800 rounded-lg px-2 py-1 whitespace-nowrap" >
+                      <a href="{{ post.video_url }}">View on YouTube</a>
+                    </div>
+                  {% endif %}
+                  <button class="btn bg-teal-200 border-solid border-2 border-grey-800 rounded-lg px-2 py-1 whitespace-nowrap" data-clipboard-action="copy" data-clipboard-target="#copy-{{ session.title|slugify }}-title">
+                    Copy to clipboard
+                  </button>
+                </div>
+
+                <div class="relative">
+<textarea rows="10" id="copy-{{ session.title|slugify }}" class="w-full pr-32">
+{% include "youtube-copy-and-paste.html", session:session %}
+</textarea>
+                  <button class="btn bg-teal-200 border-solid border-2 border-grey-800 rounded-lg px-2 py-1 absolute top-2 right-2" data-clipboard-action="copy" data-clipboard-target="#copy-{{ session.title|slugify }}">
+                    Copy to clipboard
+                  </button>
+                </div>
+              </div>
+              <hr>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>

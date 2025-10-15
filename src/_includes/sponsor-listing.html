@@ -1,0 +1,36 @@
+<div class="flex flex-col gap-24">
+  {% for level in collections.sponsorsByLevel %}
+    <section class="flex flex-col gap-8">
+      <h3 class="flex items-center bg-sep">
+        <span class="px-8 py-2 mx-auto font-bold bg-gray-100 text-teal-dark font-heading">{{ level[0] }}</span>
+      </h3>
+
+      <ul class="flex flex-wrap items-center justify-center max-w-3xl gap-16 mx-auto">
+        {% for sponsor in level[1] %}
+          <li>
+            {% if sponsor.data.logo %}
+              {% if sponsor.data.url.target %}
+                <a
+                  href="{{ sponsor.data.url.target }}"
+                  class="inline-block"
+                  target="_blank"
+                  rel="noopener noreferrer">
+              {% endif %}
+              {% assign orientation_class = "" %}
+              {% if sponsor.data.logo.orientation == "portrait" %}
+                {% assign orientation_class = "h-20 w-auto" %}
+              {% endif %}
+              <img
+                src="/sponsors/{{ sponsor.data.logo.filename }}"
+                alt="{{ sponsor.data.name }} logo"
+                class="{{ orientation_class }} h-20 max-w-[240px] max-h-[120px] object-contain w-auto">
+              {% if sponsor.data.url %}
+                </a>
+              {% endif %}
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
+</div>

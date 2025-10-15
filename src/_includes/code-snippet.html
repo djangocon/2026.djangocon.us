@@ -1,0 +1,13 @@
+{%- comment -%}
+Embed a code example and corresponding snippet, primarily used for the styleguide. Expects prism.js for syntax highlighting.
+
+@param string code The code example to display
+@param string lang The language of the code example
+{%- endcomment -%}
+<div class="p-4 border border-l-4 border-gray-100">
+{{ code }}
+
+<figure class="mt-4">
+<pre class="p-0 overflow-auto whitespace-pre text-wrap"><code class="language-{{ lang }}">{{ code | escape }}</code></pre>
+</figure>
+</div>

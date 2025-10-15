@@ -1,0 +1,46 @@
+{
+  "domain": "https://2025.djangocon.us",
+  "timezone": "America/Chicago",
+  "conf_year": 2025,
+  "phase": "active",
+  "conduct_email": "conduct@djangocon.us",
+  "contact_us_email": "hello@djangocon.us",
+  "opportunity_grants_email": "grants@djangocon.us",
+  "program_team_email": "program@djangocon.us",
+  "sponsors_email": "sponsors@djangocon.us",
+  "visa_email": "visas@djangocon.us",
+
+  "banner": false,
+
+  "mailing_list": "https://dcus.eo.page/dcus-25",
+  "cfp_application": "https://pretalx.com/djangocon-us-2025/cfp",
+  "hotel_reservation_link": "https://www.holidayinn.com/redirect?path=rates&brandCode=HI&localeCode=en&regionCode=1&hotelCode=CHIPL&checkInDate=07&checkInMonthYear=082025&checkOutDate=13&checkOutMonthYear=082025&_PMID=99801505&GPC=DJ5&cn=no&viewfullsite=true",
+  "merchandise_link": "https://django.threadless.com/designs/djangocon-us-2024/mens/t-shirt/regular?variation=front&color=lemon",
+  "opportunity_grant_application": "https://forms.gle/vJ3EjhK3sh17gocYA",
+  "slack_link": "",
+  "sponsorship_prospectus": "https://drive.google.com/file/d/1VCLBvvEu2erQ3_k0f_Ldpo-8alKw_4BR/view?usp=sharing",
+  "ticket_link": "https://ti.to/defna/djangocon-us-2025",
+  "photos_link": "",
+  "youtube_link": "",
+
+  "social": {
+    "flickr": "https://flickr.com/photos/djangocon/albums/",
+    "github": "https://github.com/djangocon/",
+    "mastodon": "https://fosstodon.org/@djangocon",
+    "twitter": "https://x.com/djangocon",
+    "x": "https://x.com/djangocon",
+    "linkedin": "https://www.linkedin.com/company/djangocon/",
+    "bluesky": "https://bsky.app/profile/djangocon.us/"
+  },
+
+  "sponsorsOrder": [
+    "Diamond",
+    "Platinum",
+    "Gold",
+    "Silver",
+    "Bronze",
+    "Coffee",
+    "Opportunity Grants",
+    "Community"
+  ]
+}

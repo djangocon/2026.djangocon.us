@@ -1,0 +1,18 @@
+# Places
+
+Organziers can be seen at `/venue/#places`.
+
+See `src/_includes/place.html` for rendering.
+
+Places can be hidden by setting `hidden: true` in the front matter.
+
+## Adding a new place
+
+1. Copy `_PLACE.md.example` to a new file and name it `place-name.md` (e.g. `cool-spot.md`).
+2. Fill in the details. Use quotes for strings (e.g. `"..."`) as some addresses may have breaking characters.
+3. When adding a map link, use the "Share" link from Google Maps. The URL should look like `https://goo.gl/maps/...`.
+4. Add the place's photo to the `src/_content/places` directory. The photo should be square (or at least portrait-shaped) and at least 400x400 pixels, in JPG or WebP format. The filename should be the same as the place's MD file, but with the extension `.jpg` or `.webp` (e.g. `cool-spot.jpg`).
+
+## Deleting an organizer
+
+Remove the place's MD file and respective photo from the `src/_content/places` directory.

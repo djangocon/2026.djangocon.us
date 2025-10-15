@@ -1,0 +1,66 @@
+---
+title: Logo files
+
+order: 0
+
+description: |
+  Logos are stored on GitHub in the [resources repository](https://github.com/djangocon/resources).
+
+fullLogoFolder: https://raw.githubusercontent.com/djangocon/resources/main/us-2025/logos/full/
+
+subMarkFolder: https://raw.githubusercontent.com/djangocon/resources/main/us-2025/logos/sub-logo/
+
+logos:
+  - dark.png
+  - dark.svg
+  - pink.png
+  - pink.svg
+
+submark:
+  - sub-logo-dark.png
+  - sub-logo-dark.svg
+  - sub-logo-pink.png
+  - sub-logo-pink.svg
+---
+
+<h3 class="mb-2 text-lg font-bold lg:text-2xl font-heading">Full Logo</h3>
+
+<ul class="flex flex-wrap gap-12">
+  {% for logo in logos %}
+    {% assign logoUrl = fullLogoFolder | append: logo | escape %}
+    <li>
+      <a
+        href="{{ logoUrl }}"
+        class="flex flex-col items-center gap-4"
+        target="_blank">
+        <img
+          src="{{ fullLogoFolder }}{{ logo }}"
+          alt="Full logo in {{ logo | split: '.' | last }}"
+          class="h-16">
+
+        <span class="block text-sm font-semibold">{{ logo }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<h3 class="mb-2 text-lg font-bold lg:text-2xl font-heading">Submark</h3>
+
+<ul class="flex flex-wrap gap-12">
+  {% for mark in submark %}
+    {% assign markUrl = subMarkFolder | append: mark | escape %}
+    <li>
+      <a
+        href="{{ markUrl }}"
+        class="flex flex-col items-center gap-4"
+        target="_blank">
+        <img
+          src="{{ subMarkFolder }}{{ mark }}"
+          alt="Submark in {{ mark | split: '.' | last }}"
+          class="h-16">
+
+        <span class="block text-sm font-semibold">{{ mark }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

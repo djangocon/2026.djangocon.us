@@ -1,0 +1,41 @@
+---
+title: Social links
+
+order: 90
+
+description: |
+  Social links are used to direct users to your social media profiles. They are typically displayed in the footer of the website or with contact information for individuals.
+
+  You can include `social-links.html` and pass in the variable `social` to render a full list of icons. Social icons are added to the page via `svg-social-icons.html`.
+
+  Conference specific social share links are stored `conf-social-share.html` and may have some styling differences.
+
+  Colors for social networks are defined in `tailwind.config.js`.
+---
+
+{% assign social = site.social %}
+
+{%- capture code -%}
+<ul class="flex flex-wrap gap-4 mt-auto">
+  <li>
+    <a class="hover:text-social-twitter" href="{{ social.twitter }}">
+      <svg class="w-8 h-8 icon">
+        <title>X (Formerly Twitter)</title>
+        <use xlink:href="#twitter-icon"></use>
+      </svg>
+    </a>
+  </li>
+  <li>
+    <a class="hover:text-social-github" href="{{ social.github }}">
+      <svg class="w-8 h-8 icon">
+        <title>Github</title>
+        <use xlink:href="#github-icon"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+{%- endcapture -%}
+
+<div>
+  {% include "code-snippet.html", code:code, lang:'html' %}
+</div>

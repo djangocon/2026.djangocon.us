@@ -1,0 +1,33 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ site.domain }}">
+  <title>DjangoCon US {{ site.conf_year }}</title>
+  <subtitle>Official conference news</subtitle>
+  <link href="{{ site.domain }}/feed" rel="self"/>
+  <link href="{{ site.domain }}" rel="alternate"/>
+
+  <updated
+    >{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339
+    }}</updated
+  >
+  <id>{{ site.domain }}</id>
+  <author>
+    <name>DjangoCon US Team</name>
+    <email>{{ site.contact_us_email }}</email>
+  </author>
+  {%- for post in collections.posts reversed %}
+    {% capture post_url %}{{ site.domain }}{{ post.url }}{%- endcapture -%}
+    <entry>
+      <title>{{ post.data.title }}</title>
+      <link href="{{ site.domain }}{{ post.url }}" />
+      <updated>{{ post.data.published_datetime | dateToRfc3339 }}</updated>
+      <id>{{ post_url }}</id>
+      <content xml:lang="en" type="html"
+        >{{ post.templateContent| escape }}</content
+      >
+    </entry>
+  {%- endfor %}
+</feed>

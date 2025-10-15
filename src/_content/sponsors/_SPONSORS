@@ -1,0 +1,21 @@
+# Sponsors
+
+Sponsors can be seen at `/sponsors/` and `/`. Sponsors usually appear in lists.
+
+Sponsors can be hidden by setting `hidden: true` in the front matter.
+
+Sponsors are usually returned in their order, as specified in their front matter. You can find the sponsorship level ordering in `src/_data/site.json`.
+
+## Adding a new post
+
+1. Copy `_SPONSOR.md.example` to a new file and name it `sponsor-name.md` (e.g. `lincoln-loop.md`).
+2. Fill in the sponsor metadata. There are a few things to keep in mind:
+    * `level` should be one of the levels defined in `src/_data/site.json`. Casing matters, watch for typos.
+    * `date` should be the date the sponsorship was added to the site, in the format `YYYY-MM-DD`.
+    * `hiring_url` is optional. If provided, it will be denoted on the `/sponsors/` page.
+    * `logo` should be the filename of the sponsor's logo, stored in `src/_content/sponsors/`. The filename should match the sponsor's MD file. Specify the orientation (`portrait` or `landscape`) to aid in rendering. SVG is preferred, but WebP and PNG are also acceptable. Be sure the logo does not have extra whitespace.
+3. Add Sponsor content/description in Markdown format after the front matter.
+
+## Deleting an sponsor
+
+Remove the sponsor's MD file and any related logo from the `src/_content/sponsors` directory.s

@@ -1,0 +1,20 @@
+# Presenters
+
+Presenters can be seen on the following pages:
+
+- `/schedule/`
+- `/{talk,tutorial}/<slug>`
+
+See `src/_includes/presenters-grid.html` for some a listing of presenters.
+
+Presenters can be hidden by setting `hidden: true` in the front matter, though this is not advised when the schedule is active.
+
+## Adding a new presenter
+
+1. Copy `_PRESENTER.md.example` to a new file and name it `first-last.md` (e.g. `jane-doe.md`).
+2. Fill in the details. You can remove any social networks that are unusued, leave them blank, or `null`.
+3. Add the presenter's photo to the `src/_content/presenters` directory. The photo should be square (or at least portrait-shaped) and at least 600x600 pixels, in JPG or WebP format. The filename should be the same as the organizer's MD file, but with the extension `.jpg` or `.webp` (e.g. `jane-doe.jpg`). Note that presenters and organizers do not share the same photo.
+
+## Deleting an presenter
+
+Remove the presenters's MD file and their photo from the `src/_content/presenters` directory.

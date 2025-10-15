@@ -1,0 +1,16 @@
+---
+author: Firstname Lastname
+hidden: false
+category: Category
+published_datetime: YYYY-MM-DD HH:MM:SS
+cover:
+    url: /assets/img/blog/photo.jpg
+    alt: "Description of the photo"
+title: "Blog post title"
+---
+
+Excerpt year, if used. Should be roughly 2-3 sentences.
+
+<!-- excerpt -->
+
+Long post here in Markdown format.

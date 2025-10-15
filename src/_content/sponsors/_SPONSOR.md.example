@@ -1,0 +1,14 @@
+---
+level: Level
+name: "Company Name"
+date: YYYY-MM-DD
+logo:
+    filename: company-name.svg
+    orientation: landscape
+hiring_url: false
+url:
+    target: 'https://url.com/'
+    label: companyname.com
+---
+
+Company description in Markdown here.

@@ -1,0 +1,246 @@
+---
+layout: default
+draft: false
+title: Welcome to Chicago!
+description: DjangoCon US is being held at the voco Chicago Downtown in Chicago, IL.
+
+other_lodging:
+  - name: Hyatt Centric Chicago Magnificent Mile
+    price_night: $629
+    website: https://www.hyatt.com/en-US/hotel/illinois/hyatt-centric-chicago-magnificent-mile/chimm
+    feature: Popular option near Michigan Ave
+  - name: The Langham, Chicago
+    price_night: $667
+    website: https://www.langhamhotels.com/en/the-langham/chicago/
+    feature: Luxury option with river views
+  - name: Kasa River North Chicago
+    price_night: $263
+    website: https://kasa.com/properties/kasa-river-north-chicago
+    feature: Apartment-style option, close walk
+  - name: Arlo Chicago
+    price_night: $487
+    website: https://arlohotels.com/chicago-downtown-hotel/
+    feature: Stylish hotel in the Loop
+  - name: Renaissance Chicago Downtown Hotel
+    price_night: $446
+    website: https://www.marriott.com/en-us/hotels/chisr-renaissance-chicago-downtown-hotel/overview/
+    feature: Riverfront views, close to voco
+---
+
+<div class="block-container">
+  <div class="wrapper">
+    <div class="grid-1-2">
+      <section id="welcome">
+        <h1 class="mb-4 pageheading">Welcome to Chicago!</h1>
+        <div class="space-y-6 text-xl lg:text-2xl">
+          <p>
+            This year's venue is the voco Chicago Downtown! Located steps from the Chicago River and the bustling River North neighborhood, voco Chicago Downtown provides a stylish and convenient base for your conference experience.
+          </p>
+        </div>
+
+        <!-- <img
+          class="w-full mt-8"
+          src="/assets/img/theme/welcome-chicago.svg"
+          alt="The word Chicago surrounded by colorful characters and stickers, with skyline elements"
+          aria-hidden="true"
+          loading="lazy"
+        /> -->
+          <img
+          class="w-full mt-8"
+          src="/assets/img/2025/venue-2.svg"
+          alt="A stylized drawing of a cityscape"
+          aria-hidden="true"
+        />
+      </section>
+
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.8398481232813!2d-87.6393043236087!3d41.88603687124976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cc5f3c9d781%3A0x6fb3327d42023d8c!2svoco%20Chicago%20Downtown%20-%20Riverwalk%2C%20an%20IHG%20Hotel!5e0!3m2!1sen!2suk!4v1719069502919!5m2!1sen!2suk"
+          width="100%"
+          height="380"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="w-full media"
+        ></iframe>
+
+        <div class="flex flex-wrap items-center justify-center gap-8 mt-6">
+          <a
+            class="button order-0"
+            href="https://maps.app.goo.gl/354G4HjgGf4h7Qe96"
+            target="_blank">View Larger Map</a>
+
+            <span class="order-1 block leading-tight">
+              <strong>voco Chicago Downtown</strong> <br>
+              <small>350 W Wolf Point Plaza, Chicago, IL 60654</small> <br>
+              <small><a href="tel:+13128365000">+1 (312) 836-5000</a></small>
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="block-container bg-gray-50" id="hotel">
+  <div class="wrapper">
+    <div class="grid-1-2">
+      <div>
+        <figure>
+          <img
+          class="w-full media"
+          src="/assets/img/venue/voco.png"
+          alt="Exterior photo of Voco Chicago Downtown"
+          loading="lazy"
+          />
+          <figcaption>Voco Chicago Downtown</figcaption>
+        </figure>
+        <ul class="flex flex-wrap justify-center gap-2 my-4">
+          <li class="badge badge-blue">🛜 Free Wi-Fi</li>
+          <li class="badge badge-blue">🧑‍💻 Room for hallway hacking</li>
+          <li class="badge badge-blue">🏙️ In the middle of downtown</li>
+          <li class="badge badge-blue">🚶 Steps from Chicago Riverwalk</li>
+        </ul>
+      </div>
+
+      <section class="space-y-6 text-xl lg:text-2xl">
+        <h2 class="mb-4 text-3xl font-bold font-heading lg:text-5xl">Staying at the voco Chicago Downtown</h2>
+        <p>
+          The voco Chicago Downtown offers a fantastic experience with its modern amenities and prime location. Enjoy comfortable rooms and easy access to Chicago's attractions.
+        </p>
+        <p>
+          Please check the official DjangoCon US website for any specific room block information or discount codes. If the special rate block is closed, you can still
+          <a href="{{ site.hotel_reservation_link }}" target="_blank">book a room</a> at their normal retail rates.
+        </p>
+      </section>
+    </div>
+  </div>
+
+  <div class="mt-16 wrapper">
+    <header class="mb-8">
+      <h2 class="text-3xl font-bold font-heading lg:text-5xl">Other hotel options nearby</h2>
+    </header>
+
+
+      <div>
+
+        <ul class="grid gap-8 lg:grid-cols-3 lg:gap-8">
+          {% for lodge in other_lodging %}
+            <li class="flex flex-col gap-2 bg-white border-2 border-gray-100 rounded-md">
+              <div class="flex flex-col flex-1 order-1 gap-8 p-4">
+                <a
+                  href="{{ lodge.website }}"
+                  class="text-xl font-semibold reverse-link"
+                  target="_blank"
+                  rel="noopener noreferrer">{{ lodge.name }}</a>
+
+                <span class="mt-auto">
+                  <span class="text-xl font-semibold">{{ lodge.price_night }}</span><span>/night</span>
+                </span>
+              </div>
+
+              <span class="w-full px-4 py-2 text-xs text-blue-900 block-container bg-blue-50 order-0">{{ lodge.feature }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+
+        <p class="mt-6 text-center">All rates are "the last time we checked" and may be outdated. Prices in downtown Chicago vary significantly based on demand and season.</p>
+      </div>
+      <!-- <figure class="hidden lg:block">
+        <img
+          src="/assets/img/2025/venue-3.png"
+          alt="Another exterior photo of voco Chicago Downtown"
+          loading="lazy"
+          class="w-full media"
+        />
+        <figcaption>Hyatt Centric Chicago Magnificent Mile</figcaption>
+      </figure> -->
+
+  </div>
+</div>
+
+<div class="block-container">
+  <div class="wrapper">
+    <header class="mb-12">
+      <h2 class="mb-6 text-3xl font-bold font-heading lg:text-5xl" id="places">Around Chicago</h2>
+      <p class="space-y-6 text-xl lg:text-2xl max-w-[60rem]">
+        The voco Chicago Downtown is perfectly situated to explore the best of Chicago! Public transportation, including the famous "L" train system (CTA), is easily accessible.
+      </p><br/>
+      <p class="space-y-6 text-xl lg:text-2xl max-w-[60rem]">
+        The Clark/Lake CTA station (serving the Blue, Green, Brown, Pink, and Orange Lines) is just a short walk away, connecting you to most major attractions and O'Hare International Airport.
+      </p><br/>
+      <p class="space-y-6 text-xl lg:text-2xl max-w-[60rem]">
+        Popular ride-sharing services (Uber, Lyft) and traditional taxis are also readily available. While you're cruising around town, be sure to check out some of our favorite spots and activities:
+      </p><br/>
+    </header>
+
+    <div>
+        <section>
+        <ul class="grid-1-2">
+          {% for place in collections.places %}
+            {% include "place.html" %}
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="block-container">
+  <div class="wrapper">
+    <header class="mb-12" id="accessibility">
+      <h2 class="mb-6 text-3xl font-bold font-heading lg:text-5xl">An Accessible Experience</h2>
+      <div class="space-y-6 text-xl lg:text-2xl max-w-[60rem]">
+        <p>
+          We're working with the staff at the voco Chicago Downtown to
+          accommodate the diverse needs of our attendees.
+        </p>
+        <p>
+          Are we missing something?
+          <strong><a href="mailto:{{site.contact_us_email}}" class="link">Let us know</a>.</strong>
+        </p>
+      </div>
+    </header>
+
+    <ul class="gap-8 px-4 space-y-8 list-disc lg:gap-16 md:columns-2 lg:columns-3 lg:text-xl *:break-inside-avoid">
+      <li>All public restrooms have accessible stalls.</li>
+      <li>
+        The voco Chicago Downtown provides gender-neutral restrooms.
+        Please use the restroom for the gender with which you identify.
+      </li>
+      <li>There is step-free access to all parts of the venue.</li>
+      <li>
+        Service animals are welcome, and there are nearby green spaces and the Riverwalk where they can be walked.
+      </li>
+      <li>
+        The Quiet Room will be available on all conference days. This room
+        is not for socializing.
+      </li>
+      <li>
+        A Lactation Room will be available as needed Sunday-Wednesday.
+
+          <!-- A refrigerator will be available in that room.
+          <a href="/news/lactation-room/"
+          >Read more about using the lactation room</a>.
+           -->
+      </li>
+        <!--
+          <li>
+            <a href="http://www.aasandiego.org/">Attend a recovery meeting</a>.
+            There are many recovery meetings near the conference hotel,
+            <a
+              href="https://www.google.com/maps/d/u/0/viewer?mid=1r2z9yZ5RPpGGhdOry7cHbwjZomA&ll=32.77259901952868%2C-117.14099820222603&z=14"
+              >which can be seen on a map here</a
+            >. These include traditional AA meetings, LBGTQ community meetings,
+            secular meetings, and more. If you need more information or want to
+            carpool to meetings, please contact
+            <a href="mailto:recovery@pyphilly.org">recovery@pyphilly.org</a>.
+            Anonymity will be maintained.
+          </li>
+          -->
+      <li>
+        <a href="/news/childcare-during-djangocon/">Sponsored childcare</a>
+        will be provided.
+      </li>
+    </ul>
+  </div>
+</div>

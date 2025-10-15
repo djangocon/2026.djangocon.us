@@ -1,0 +1,38 @@
+
+
+.wrapper {
+  @apply max-w-screen-xl;
+  @apply px-6 mx-auto sm:px-8;
+}
+
+.wrapper.narrow {
+  @apply max-w-screen-lg;
+}
+
+.hero {
+  @apply pt-8 pb-12;
+}
+
+.grid-1-2 {
+  @apply grid gap-8 lg:grid-cols-2 lg:gap-16;
+}
+
+.block-container {
+  @apply py-6;
+}
+
+@screen md {
+  .block-container {
+    @apply py-12;
+  }
+}
+
+@screen lg {
+  .block-container {
+    @apply py-14;
+  }
+
+  .hero {
+    @apply pt-10 pb-16;
+  }
+}

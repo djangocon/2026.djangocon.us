@@ -1,0 +1,190 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+@import "components/_badge.css";
+@import "components/_buttons.css";
+@import "components/_table.css";
+@import "components/_containers.css";
+@import "components/_site-nav.css";
+
+@import "views/_social-view.css";
+@import "views/_index.css";
+
+@import "tailwindcss/utilities";
+
+@theme {
+  --breakpoint-xs: 30rem;
+}
+
+@layer base {
+  /* THEME-X */
+  :root {
+    /* Typography */
+    --theme-text-color: #033A43;
+  }
+
+  /*
+    h-screen and flex-col on the body allow the footer
+    to be fixed to the bottom of the viewport.
+  */
+  html {
+    @apply scroll-smooth;
+  }
+
+  html,
+  body {
+    @apply h-screen;
+  }
+
+  body {
+    @apply relative flex flex-col;
+    @apply antialiased;
+
+    color: var(--theme-text-color);
+  }
+
+  figcaption {
+    @apply mt-3 text-sm text-center;
+  }
+
+  input:not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea {
+    @apply w-full;
+    @apply px-3 py-2;
+    @apply border border-gray-400 rounded;
+    @apply shadow-sm;
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-teal;
+  }
+
+  label {
+    @apply block mb-2 font-medium;
+  }
+
+  ::placeholder {
+    @apply text-gray-500;
+  }
+
+  a,
+  .link {
+    @apply underline;
+  }
+
+  a:hover,
+  .link:hover {
+    @apply no-underline;
+  }
+
+  :focus-visible {
+   outline: 6px solid theme('colors.red.DEFAULT');
+  }
+
+  a.reverse-link {
+    @apply no-underline;
+  }
+
+  a.reverse-link:hover {
+    @apply underline;
+  }
+
+  .font-heading {
+    @apply font-medium leading-tight;
+  }
+
+  .icon {
+    @apply inline-block;
+    @apply align-middle;
+    @apply w-6 h-6;
+  }
+
+  .media {
+    @apply rounded;
+  }
+
+  .avatar {
+    @apply block object-cover object-left-top w-full aspect-square;
+  }
+
+  .pageheading {
+    @apply text-4xl font-bold leading-tight lg:text-5xl;
+  }
+
+  .subheading {
+    @apply text-xl font-medium leading-tight lg:text-3xl;
+  }
+
+  .lead {
+    @apply text-lg leading-8 lg:text-xl lg:leading-8;
+  }
+
+  /* THEME-X */
+  /* Previous years have used an effect on photos, such as a gradient overlay */
+  .photo-effect {
+
+  }
+
+  /* THEME-X */
+  /* Previous years have used an effect on cards. There are 3 types used in templates. */
+  .card-effect-1,
+  .card-effect-2,
+  .card-effect-3 {
+
+  }
+
+  #loader {
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid #f3f3f3;
+    border-top: 6px solid theme('colors.teal.DEFAULT');
+    border-radius: 100%;
+    margin: auto;
+    animation: spin 1s infinite linear;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@layer components {
+  .prose {
+    /* THEME-X */
+    /* Prose (long form text) overrides */
+    --tw-prose-body: var(--theme-text-color);
+    --tw-prose-headings: var(--theme-text-color);
+    --tw-prose-lead: var(--theme-text-color);
+    --tw-prose-links: var(--theme-text-color);
+    --tw-prose-bold: var(--theme-text-color);
+    --tw-prose-counters: var(--theme-text-color);
+    --tw-prose-bullets: var(--theme-text-color);
+    --tw-prose-hr: var(--theme-text-color);
+    --tw-prose-quotes: var(--theme-text-color);
+    --tw-prose-quote-borders: var(--theme-text-color);
+    --tw-prose-captions: var(--theme-text-color);
+    --tw-prose-kbd: var(--theme-text-color);
+    --tw-prose-kbd-shadows: 17 24 39;
+    --tw-prose-code: var(--theme-text-color);
+  }
+
+  .prose a {
+    @apply link;
+  }
+}
+
+@layer utilities {
+  .cover::before {
+    @apply absolute top-0 left-0;
+    @apply w-full h-full;
+    content: '';
+  }
+
+  .bg-sep {
+    background-image: linear-gradient(180deg, transparent 47%, theme(colors.gray.100) 50%, transparent 53%);
+  }
+}

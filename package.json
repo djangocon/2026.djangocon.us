@@ -1,0 +1,61 @@
+{
+  "name": "2026.djangocon.us",
+  "version": "1.0.0",
+  "description": "DjangoCon.us conference website built on 11ty",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve",
+    "watch": "concurrently -c auto npm:css:watch npm:11ty:watch",
+    "tina": "tinacms dev -c \"concurrently -c auto npm:css:watch npm:11ty:serve\"",
+    "serve": "concurrently -c auto npm:css:watch npm:11ty:serve",
+    "build": "npm run css:build && npm run 11ty:build",
+    "debug": "cross-env DEBUG=Eleventy* npm run build",
+    "clean": "node ./scripts/cleanDist.js",
+    "11ty:watch": "cross-env NODE_ENV=development eleventy --watch --incremental",
+    "11ty:serve": "cross-env NODE_ENV=development eleventy --serve --incremental",
+    "11ty:build": "cross-env NODE_ENV=production eleventy",
+    "css:watch": "postcss src/assets/css/main.css -o dist/assets/css/main.css --watch",
+    "css:build": "NODE_ENV=production postcss src/assets/css/main.css -o dist/assets/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/djangocon/2026.djangocon.us.git"
+  },
+  "keywords": [
+    "django",
+    "djangocon",
+    "conference"
+  ],
+  "author": "DEFNA",
+  "bugs": {
+    "url": "https://github.com/djangocon/2026.djangocon.us/issues"
+  },
+  "homepage": "https://github.com/djangocon/2026.djangocon.us#README",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^4.0.2",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/typography": "^0.5.10",
+    "@tinacms/cli": "^1.11.0",
+    "autoprefixer": "^10.4.18",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "cssnano": "^6.1.0",
+    "date-fns-tz": "^3.2.0",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.0.0",
+    "markdown-it-anchor": "^9.0.1",
+    "marked": "^12.0.2",
+    "outdent": "^0.8.0",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.0.1",
+    "tailwindcss": "^3.4.17",
+    "yaml": "^2.4.2"
+  },
+  "dependencies": {
+    "@date-fns/tz": "^1.2.0",
+    "tinacms": "^2.9.0"
+  }
+}

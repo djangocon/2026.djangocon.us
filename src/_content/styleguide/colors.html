@@ -1,0 +1,40 @@
+---
+title: Colors
+
+order: 20
+
+description: |
+  The full color palette is configured in `tailwind.config.js`. The following is a full list of all defined colors and their shades. Note that Tailwind does not provide all of these classes unless used in _source_ files (not compiled output).
+---
+
+<div class="space-y-6">
+  {% for color in themeColors %}
+    <div>
+    {% assign name = color.id %}
+      <h3 class="mb-2 text-lg font-bold lg:text-2xl font-heading">{{ color.id }}</h3>
+
+      <table>
+        <thead>
+          <tr>
+            <th class="w-[16ch]">Shade</th>
+            <th class="w-[20ch]">Color</th>
+            <th>Class</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for shade in color.value %}
+          {% assign classname = ".bg-" | append: name | append: "-" | append: shade.id %}
+          {% if shade.id == 'DEFAULT' %}
+            {% assign classname = '.bg-' | append: name %}
+          {% endif %}
+            <tr>
+              <td>{{ shade.id }}</td>
+              <td style="background-color: {{ shade.color }}">{{ shade.color }}</td>
+              <td><code>{{ classname }}</code></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,16 @@
+---
+title: Alerts
+
+order: 60
+---
+{%- capture code -%}<section class="p-4 bg-orange-100 rounded">
+  <h3 class="mb-4 text-lg font-bold font-heading lg:text-2xl">Attention!</h3>
+  <div class="prose prose-lg">
+    <p>If you try to book and the website says the capacity is full, please call the hotel to try to book your room. You may need to mention that you're with the DjangoCon US group.</p>
+  </div>
+</section>
+{%- endcapture -%}
+
+<div>
+  {% include "code-snippet.html", code:code, lang:'html' %}
+</div>

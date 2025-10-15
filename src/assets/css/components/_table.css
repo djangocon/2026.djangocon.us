@@ -1,0 +1,26 @@
+table {
+  @apply border-collapse border-spacing-0;
+  @apply w-full;
+}
+
+th {
+  @apply font-semibold text-left text-lg;
+  @apply p-4;
+  @apply bg-black text-white;
+}
+
+th:first-child {
+  @apply rounded-tl;
+}
+
+th:last-child {
+  @apply rounded-tr;
+}
+
+td {
+  @apply px-4 py-2;
+}
+
+tr:nth-child(even) {
+  @apply bg-gray-100;
+}

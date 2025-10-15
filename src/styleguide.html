@@ -1,0 +1,42 @@
+---
+layout: default
+title: DCUS Style &amp; Pattern Guide
+---
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+
+<div class="py-4 wrapper">
+  <div class="grid gap-4 lg:grid-cols-11">
+    <nav class="relative px-4 border border-gray-100 rounded lg:col-span-2">
+      <div class="sticky top-0 left-0 py-6">
+        <h2 class="mb-2 text-sm font-bold uppercase">Jump to item</h2>
+        <ul class="space-y-3">
+          {% for guide in collections.guides %}
+            <li><a class="reverse-link" href="#{{ guide.fileSlug }}">{{ guide.data.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
+
+    <div class="p-4 space-y-10 border border-gray-100 rounded lg:col-span-9 lg:p-8">
+      <section class="space-y-6">
+        <h1 class="text-3xl font-heading lg:text-5xl">{{ title }}</h1>
+      </section>
+      {% for guide in collections.guides %}
+        <section class="space-y-6" id="{{ guide.fileSlug }}">
+          <h2 class="mb-6 text-3xl font-heading lg:text-4xl">{{ guide.data.title }}</h2>
+
+          <div class="prose">
+            {% markdown %}{{ guide.data.description }}{% endmarkdown %}
+          </div>
+
+          <div class="space-y-6">
+            {{ guide.content }}
+          </div>
+        </section>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+

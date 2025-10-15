@@ -1,0 +1,56 @@
+---
+layout: social/default-social.html
+---
+
+{% assign presenter_count = talk.data.presenter_slugs | size %}
+{% assign template_bg = "social-card-1.png" %}
+{% if presenter_count > 2 %}
+  {% assign template_bg = "social-card-3.png" %}
+{% elsif presenter_count > 1 %}
+  {% assign template_bg = "social-card-2.png" %}
+{% endif %}
+
+{% assign title_length = talk.data.title | size %}
+{% if title_length > 100 %}
+  {% assign size_class = "long" %}
+{% else %}
+  {% assign size_class = "short" %}
+{% endif %}
+
+<div class="session-social-template session-social-presenter-count-{{ presenter_count }}">
+  <img
+    src="/assets/img/theme/social-cards/{{ template_bg }}"
+    class="absolute z-10" />
+
+  {% for presenter_slug in talk.data.presenter_slugs %}
+    {% assign presenter = collections.presenters | find:presenter_slug %}
+    {% if presenter.data.photo != null and presenter.data.photo != "" %}
+      {% assign speaker_photo = 'src/_content/presenters/' | append: presenter.data.photo %}
+      {% image speaker_photo, './dist/presenters/', '/presenters/', name, '(max-width: 1200px) 800px, 800px', 'session-social-template-photo' %}
+    {% else %}
+      <img
+        src="/assets/img/theme/graphics/crab.svg"
+        alt="{{ presenter.data.name }}'s photo"
+        class="session-social-template-photo">
+    {% endif %}
+  {% endfor %}
+
+  <div class="session-social-template-content">
+    <h1 class="session-social-template-name">
+      <span>
+        {% for presenter_slug in talk.data.presenter_slugs %}
+          {% assign presenter = collections.presenters | find:presenter_slug %}
+          {{ presenter.data.name }} {% if not forloop.last %}<span class="text-teal">&amp;</span>{% endif %}
+        {% endfor %}
+      </span>
+    </h1>
+
+    <svg width="550" height="66" viewBox="0 0 550 66" fill="none" xmlns="http://www.w3.org/2000/svg" class="flex-none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23314 23.509C1.1627 25.2313 -0.226511 27.3744 0.487626 30.0088C1.33767 33.0986 12.496 35.4992 21.8563 34.6166C80.5872 29.0518 148.328 30.3335 212.736 38.3856C322.949 52.943 438.604 69.2948 539.655 44.2404C548.714 41.9821 551.681 38.1544 547.089 34.3557C542.751 30.8031 527.986 29.168 519.519 31.2905C489.912 38.7131 427.038 51.2643 358.851 45.2643C300.782 40.1696 245.656 30.721 187.769 25.2045C144.553 21.0862 27.2056 10.6421 4.23314 23.509Z" fill="#82D0C8"/>
+    </svg>
+
+    <p class="session-social-template-talks talk-{{ size_class}}">
+      {{ talk.data.title }}
+    </p>
+  </div>
+</div>

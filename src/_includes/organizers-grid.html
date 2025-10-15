@@ -1,0 +1,27 @@
+<ul class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 lg:gap-16">
+  {%- for organizer in collections.organizers -%}
+    <li class="flex flex-col">
+      {% if organizer.data.photo != null and organizer.data.photo != "" %}
+        {% assign photo = 'src/_content/organizers/' | append: organizer.data.photo %}
+        {% image photo, './dist/organizers', '/organizers/', organizer.data.name, '(min-width: 1024px) 300px, 600px', 'avatar media' %}
+      {% else %}
+        <img
+          src="/assets/img/theme/empty-avatar.svg"
+          alt="An outline of a person"
+          width="400"
+          height="400"
+          class="avatar media"
+          aria-hidden="true">
+      {% endif %}
+
+      <div class="flex flex-col flex-1 px-2 mt-3">
+        <h2 class="mb-2 text-lg font-heading lg:text-xl">{{ organizer.data.name }}</h2>
+        <p class="mb-4 text-sm text-gray-600">{{ organizer.data.role }}</p>
+
+        {% if organizer.data.social %}
+          {% include "social-links.html", social:organizer.data.social %}
+        {% endif %}
+      </div>
+    </li>
+  {%- endfor -%}
+</ul>

@@ -1,0 +1,43 @@
+---
+title: Icons
+
+order: 30
+
+description: |
+  Icons are used to visually communicate an action or idea. The `.icon` class can be applied to give them a consistent width and height. Additional height and width classes can be applied to change their sizing, e.g. `w-12 h-12`.
+
+icons:
+  - /assets/img/theme/icons/Bag.svg
+  - /assets/img/theme/icons/Bull.svg
+  - /assets/img/theme/icons/Checklist.svg
+  - /assets/img/theme/icons/Compass.svg
+  - /assets/img/theme/icons/Document.svg
+  - /assets/img/theme/icons/Globe.svg
+  - /assets/img/theme/icons/Hands.svg
+  - /assets/img/theme/icons/Hat.svg
+  - /assets/img/theme/icons/Heart.svg
+  - /assets/img/theme/icons/Megaphone.svg
+  - /assets/img/theme/icons/Money.svg
+  - /assets/img/theme/icons/People.svg
+  - /assets/img/theme/icons/Prompt.svg
+  - /assets/img/theme/icons/Star.svg
+  - /assets/img/theme/icons/Triangle.svg
+---
+
+<table>
+  <thead>
+    <tr>
+      <th>Icon</th>
+      <th>Path</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for icon in icons %}
+      <tr>
+        <td><img src="{{ icon }}" alt="" class="icon" /></td>
+        <td><code>{{ icon }}</code></td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</ul>

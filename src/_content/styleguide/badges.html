@@ -1,0 +1,19 @@
+---
+title: Badges
+
+order: 50
+
+description: |
+  Badges are used to indicate status, denote a count, or to draw attention to an element. Badges are created by applying `.badge` to an element. Colors may be changed by applying a background color utility class, e.g. `bg-teal` to create a teal badge.
+---
+
+{%- capture code -%}<div class="flex flex-wrap gap-2">
+  <span class="badge">🛜 Free Wi-Fi</span>
+  <span class="badge">🧑‍💻 Room for hallway hacking</span>
+  <span class="badge">🏙️ In the middle of downtown</span>
+</div>
+{%- endcapture -%}
+
+<div>
+  {% include "code-snippet.html", code:code, lang:'html' %}
+</div>

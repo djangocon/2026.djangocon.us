@@ -1,0 +1,193 @@
+---
+layout: default
+
+title: About DjangoCon US
+description: |
+  DjangoCon US is dedicated to providing a fun harassment-free conference experience for everyone, regardless of gender, gender identity, sexual orientation, disability, physical appearance, body size, race, or religion.
+---
+
+<div class="hero">
+  <div class="wrapper">
+    <header class="flex flex-wrap items-center gap-8 lg:gap-16">
+      <img
+        src="/assets/img/theme/graphics/about.svg"
+        alt="A cartoony drawing of a globe with a map marker placed on a green land mass"
+        class="hidden w-full max-w-80 md:block" />
+
+      <div class="flex-1 max-w-screen-lg">
+        <h1 class="mb-8 pageheading">{{ title }}</h1>
+        <p class="mb-8 subheading">DjangoCon US is a five-day international conference for the community by the community about the Django web framework, held each year in North America.</p>
+
+        <p class="lead">
+          DjangoCon US has something for everyone, from the person who develops Django applications for a living to the person who just tinkers in their spare time. You'll discover details about a range of diverse applications that people from all over the world are building with Django, get a deeper understanding of concepts you're already familiar with and discover new ways to use them, and have a lot of fun!
+        </p>
+      </div>
+    </header>
+  </div>
+</div>
+
+<div class="bg-cream-300 block-container">
+  <div class="wrapper">
+    <div class="grid-1-2">
+      <section>
+        <h2 class="mb-8 text-2xl font-bold font-heading lg:text-4xl">Pre-Conference</h2>
+
+        <ul class="space-y-4">
+          <li class="line-through">
+            {%
+              include 'date-card.html',
+                month:"Apr",
+                days:"27",
+                heading:"Call for Proposals Closes"
+            %}
+          </li>
+          <li class="line-through">
+            {%
+              include 'date-card.html',
+                month:"Apr",
+                days:"27",
+                heading:"Opportunity Grant Application Closes"
+            %}
+          </li>
+          <li>
+            {%
+              include 'date-card.html',
+                month:"July",
+                days:"8",
+                heading:"Opportunity Grant and Proposal Notifications"
+            %}
+          </li>
+        </ul>
+
+        {% comment %}
+        <div class="flex flex-wrap gap-4 mt-8">
+          <a class="button" href="{{ site.cfp_application }}">Submit a Talk</a>
+          <a class="button" href="{{ site.opportunity_grant_application }}">Apply for an Opportunity Grant</a>
+        </div>
+        {% endcomment %}
+      </section>
+
+      <section>
+        <h2 class="mb-8 text-2xl font-bold font-heading lg:text-4xl">Conference Schedule</h2>
+
+        <ul class="space-y-10">
+          <li>
+            {%
+              include 'date-card.html',
+                month:"Sep",
+                days:"8-10",
+                heading:"Talks: Dozens of talks chosen by the community"
+            %}
+          </li>
+          <li>
+            {%
+              include 'date-card.html',
+                month:"Sep",
+                days:"11-12",
+                heading:"Sprints: Team up to work on Django!"
+            %}
+          </li>
+        </ul>
+
+        <div class="mt-8">
+          <a class="button button-lg" href="{{ site.ticket_link }}">Buy Tickets!</a>
+          {% comment %}
+          <a class="button" href="/schedule/">Full Schedule</a>
+          {% endcomment %}
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<div class="bg-blue block-container">
+  <div class="wrapper">
+    <h2 class="mb-8 text-2xl font-bold text-center font-heading lg:text-5xl">Conference Features</h2>
+
+    <div class="grid gap-8 lg:grid-cols-3 lg:gap-16">
+      <section class="relative flex flex-col gap-4 p-6 bg-white lg:pt-10 card-effect-1">
+        <img src="/assets/img/theme/icons/People.svg" alt="Two people. One person is standing slightly in front of the other." class="w-16 h-16 icon" />
+        <h3 class="text-lg font-bold lg:text-2xl font-heading" id="code-of-conduct">Code of Conduct</h3>
+        <p class="lg:text-lg">We're committed to providing a safe and friendly environment for everyone to learn, meet, and enjoy the conference. All organizers, attendees, speakers and sponsors must follow the <strong><a href="/conduct/" class="link">Code of Conduct</a></strong>.</p>
+      </section>
+
+      <section class="relative flex flex-col gap-4 p-6 bg-white lg:pt-10 card-effect-2">
+        <img src="/assets/img/theme/icons/Heart.svg" alt="A heart." class="w-16 h-16 icon" />
+        <h3 class="text-lg font-bold lg:text-2xl font-heading" id="commitment-to-diversity">Commitment to Diversity</h3>
+        <p class="lg:text-lg">It is a core aim of DjangoCon US 2025 to encourage diversity, enforce our Code of Conduct, and make our event as inclusive and accessible as possible. <strong><a href="/opportunity-grants/" class="link">Opportunity Grants</a></strong> help us achieve this goal.</p>
+      </section>
+
+      <section class="relative flex flex-col gap-4 p-6 bg-white lg:pt-10 card-effect-3">
+        <img src="/assets/img/theme/icons/Document.svg" alt="An official document with words written on it." class="w-16 h-16 icon" />
+        <h3 class="text-lg font-bold lg:text-2xl font-heading" id="opportunity-grants">Public Health</h3>
+        <p class="lg:text-lg">As part of our commitment to the safety of our attendees, we have a <strong><a href="/public-health/" class="link">Public Health Policy</a></strong> and recommend all attendees to be vaccinated and masked, and have a negative COVID test prior to attending.</p>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="block-container">
+  <div class="wrapper">
+    <div class="grid-1-2">
+      <figure>
+        <span class="block h-full photo-effect">
+          <img
+            class="object-cover w-full h-full"
+            src="/assets/img/crowd-1.jpg"
+            loading="lazy"
+            alt="DjangoCon US attendees smiling for a picture.">
+        </span>
+      </figure>
+
+      <section>
+        <h2 class="mb-8 text-2xl font-bold font-heading lg:text-5xl">Day 1 Orientation</h2>
+
+        <div class="space-y-6 lg:text-xl">
+          <ul class="space-y-4">
+            <li>Are you new to DjangoCon US or tech conferences in general?</li>
+            <li>Are you worried you might feel out of place?</li>
+            <li>Are you attending DjangoCon US by yourself?</li>
+          </ul>
+
+          <p><strong>If so, the Day 1 orientation is for you!</strong> We'll help you get your bearings so you can have the BEST conference experience possible.</p>
+
+          <p>More details coming in the blog.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div> -->
+
+{% comment %}
+<section class="section-pad theme-light-gray v-pad-bottom-extra">
+  <div class="row card-row">
+    <div class="medium-6 column">
+      <div class="card card-theme-brand-color2 icon-right">
+        <img
+          src="/static/img/theme/icons/program.svg"
+          alt=""
+          class="card-icon"
+          />
+        <div class="card-section">
+          <h3 class="card-title" id="program">Program</h3>
+          <p>The DjangoCon US program features both novice talks for people just starting their journey into the world of development, as well as advanced talks for experienced developers.</p>
+        </div>
+      </div>
+    </div>
+    <div class="medium-6 column">
+      <div class="card card-theme-brand-color5 icon-right">
+        <img
+          src="/static/img/theme/icons/bag.svg"
+          alt=""
+          class="card-icon"
+          />
+        <div class="card-section">
+          <h3 class="card-title" id="job-search">Job Search</h3>
+          <p>We'll have boards available so you can let people know if you're recruiting new team members, or looking for a new position yourself!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endcomment %}

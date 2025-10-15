@@ -1,0 +1,180 @@
+---
+layout: default
+title: DjangoCon US Tickets
+draft: true
+
+description: |
+  Information about buying tickets to DjangoCon US
+
+permalink: /tickets/
+---
+
+<div class="block-container">
+  <div class="wrapper">
+    <header class="flex flex-wrap items-center gap-8 lg:gap-16">
+      <img
+        src="/assets/img/theme/graphics/tickets.svg"
+        alt="Two colorful tickets"
+        class="hidden w-full max-w-80 md:block" />
+
+      <div class="flex-1 max-w-screen-lg">
+        <h1 class="mb-8 pageheading">{{ title }}</h1>
+        <p class="subheading">DjangoCon US 2025 tickets are available at early bird prices through May 31!</p>
+        {% comment %}
+        <p class="subheading">
+          DjangoCon US 2025 tickets are no longer on sale, but if you want to see what they cost, or need to consult the refund policy, keep reading!
+        </p>
+        {% endcomment %}
+      </div>
+    </header>
+  </div>
+</div>
+
+<div class="bg-gray-100 block-container">
+  <div class="wrapper">
+    <h2 class="mb-8 text-xl font-medium font-heading lg:text-3xl">Which ticket should I buy?</h2>
+
+    <div class="grid-1-2">
+      <section class="prose lg:prose-lg">
+        <ul>
+          <li>Most people should buy an <strong>Individual</strong> ticket.</li>
+          <li>If your company is paying, they should use the <strong>Corporate</strong> rate (or the <strong>Concierge</strong> rate for more flexibility; see below).</li>
+          <li>For those who can't afford the Individual ticket, a <strong>discounted</strong> ticket is available; see below.</li>
+          <li>And for those who want to go above and beyond and support our mission, check out the <strong>Patron</strong> ticket.</li>
+        </ul>
+        <a
+          class="button"
+          href="{{ site.ticket_link }}"
+          target="_blank">Buy Tickets Now</a>
+      </section>
+
+      <section class="relative self-start p-6 prose bg-white lg:prose-lg lg:pt-10 card-effect-3">
+        <h3 class="mb-8 text-lg font-bold font-heading lg:text-2xl">Don't Forget!</h3>
+        <ul class="px-4 space-y-4 list-disc lg:text-xl">
+          <li>Early bird tickets are on sale through May 31st or until they're gone.</li>
+          <li>If your employer is paying, please use the corporate rate.</li>
+        </ul>
+        {% comment %}
+        <h3 class="mb-8 text-lg font-bold font-heading lg:text-2xl">Tickets are nearly sold out!</h3>
+        <ul class="px-4 space-y-4 list-disc lg:text-xl">
+          <li>Join the <a href="{{ site.ticket_link }}">waiting list</a> and we'll let you know if there's a cancellation. It happens!</li>
+          <li>There might still be tutorials available.</li>
+          <li>You can still register for sprints!</li>
+        </ul>
+        {% endcomment %}
+      </section>
+    </div>
+  </div>
+</div>
+
+<div class="pt-12 pb-16">
+  <div class="wrapper">
+
+    <h2 class="mb-8 text-2xl font-bold font-heading lg:text-4xl">Ticket Prices and Types</h2>
+
+    <div class="overflow-x-auto">
+      <table class="lg:text-lg">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th class="w-[12ch]">Early Bird</th>
+            <th class="w-[12ch]">Full Price</th>
+            <th>Who?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="font-medium">Individual</td>
+            <td>$339</td>
+            <td>$499</td>
+            <td><div>People paying their own way</div><div>Companies with 5 or fewer employees</div></td>
+          </tr>
+          <tr>
+            <td class="font-medium">Corporate</td>
+            <td>$699</td>
+            <td>$799</td>
+            <td><div>Companies with more than 5 employees</div><div>(including state agencies and nonprofits, if able)</div></td>
+          </tr>
+          <tr>
+            <td class="font-medium">Online Only - Individual</td>
+            <td>$99</td>
+            <td>$149</td>
+            <td><div>People paying their own way</div><div>Companies with 5 or fewer employees</div></td>
+          </tr>
+          <tr>
+            <td class="font-medium">Online Only - Corporate</td>
+            <td>$199</td>
+            <td>$299</td>
+            <td><div>Companies with more than 5 employees</div><div>(including government agencies and nonprofits, if able)</div></td>
+          </tr>
+          <tr>
+            <td class="font-medium">Patron</td>
+            <td>&mdash;</td>
+            <td>$999</td>
+            <td>Every year, particularly generous attendees ask how they can pay extra for their ticket to help us expand our mission. The extra cost of this ticket will be put toward conference expenses that increase access to the conference, such as the Opportunity Grant Fund and video captioning. Ticket holders of this type will also be invited to a special "thank you" event at the conference.</td>
+          </tr>
+          <tr>
+            <td class="font-medium">Corporate Concierge Service</td>
+            <td>&mdash;</td>
+            <td>$999</td>
+            <td>Companies who want to purchase several tickets in advance, but decide who will be attending the conference at a later date, or companies who cannot pay by credit card. We'll send you a registration code your employees can use to register when you're ready. We will also send you a paper invoice for record-keeping if you need.</td>
+          </tr>
+          <tr>
+            <td class="font-medium">Discounted</td>
+            <td>&mdash;</td>
+            <td>$299</td>
+            <td>If you're unemployed, on a lower income, or would benefit from a lower-priced ticket for another reason. <strong>If your company is paying for your ticket, you are not eligible for this ticket type.</strong></td>
+          </tr>
+          <tr>
+            <td class="font-medium">Tutorials</td>
+            <td>&mdash;</td>
+            <td>$199</td>
+            <td>They are a separate cost from your conference ticket. You can register for a tutorial without registering for the conference itself.</td>
+          </tr>
+          <tr>
+            <td class="font-medium">Sprints</td>
+            <td>&mdash;</td>
+            <td>Free</td>
+            <td>The ticket is free, but we ask you to register so we can buy you lunch. You do not have to register for the conference itself to register for sprints.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="bg-gray-100 block-container">
+  <div class="wrapper">
+    <h2 class="mb-8 text-2xl font-bold font-heading lg:text-4xl">What is the refund policy?</h2>
+
+    <div class="grid-1-2">
+      <section class="prose lg:prose-lg">
+{% markdown %}
+If you have an in person ticket and find that you can't attend, please ask about converting to an online ticket.
+
+Otherwise for cancelling in-person or online main tickets:
+
+-   Refunds requested before September 1, 2025, incur a 10% cancellation fee.
+-   Refunds requested between September 2 and September 9, 2025, incur a 25% cancellation fee.
+-   Refunds requested between September 10 and September 21, 2025, incur a 50% cancellation fee.
+-   Requests received after September 21, 2025 at 5:00 pm PDT are not eligible for a refund.
+-   Tickets may be transferred to someone else at no charge by September 20 for tutorials and September 21 for the conference.
+{% endmarkdown %}
+      </section>
+
+      <div>
+        <section class="relative self-start p-6 prose bg-white lg:prose-lg lg:pt-10 card-effect-1">
+{% markdown %}
+PLEASE do not come in person if you feel at all sick of any kind. Even if the conference has already begun, we can help get you connected virtually.
+
+In-person tickets can be converted to online tickets at ANY TIME. For that refund amount, we will take the cost of your ticket, subtract the value of the online equivalent, and then apply the same discount percentage above.
+
+For all dates the cutoff is on or before 5:00 PM PDT per the time stamp on DEFNA's servers.
+
+**We hope to see you in Chicago!**
+{% endmarkdown %}
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

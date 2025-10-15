@@ -1,0 +1,78 @@
+name: Notify Stale PR
+
+on:
+  # schedule:
+  #   - cron: "* * * * *"
+  workflow_dispatch:
+
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install tools
+        run: |
+          sudo apt update
+          sudo apt install -y curl jq
+
+      - name: Check for stale PRs
+        id: stale_pr
+        run: |
+
+          function is_stale() {
+
+              local created_at="$1";
+              local created_ts=$(date -d "$created_at" +%s);
+              local diff_sec=$(($(date +%s) - created_ts));
+              local diff_days=$((diff_sec / 86400));
+
+              if [[ "$diff_days" -le "${{ vars.DAYS_SINCE_CREATED }}" ]]; then
+                  return 1;
+              else
+                  return 0;
+              fi;
+
+          }
+
+          message="";
+          count=1;
+
+          while read -r pr; do
+              title=$(echo "$pr" | jq -r '.title');
+              user=$(echo "$pr" | jq -r '.user.login');
+              user_link=$(echo "$pr" | jq -r '.user.html_url');
+              created_at=$(echo "$pr" | jq -r '.created_at');
+              updated_at=$(echo "$pr" | jq -r '.updated_at');
+              pr_link=$(echo "$pr" | jq -r '.html_url');
+
+              if is_stale "$updated_at"; then
+                  message+="${count}. <${pr_link}|${title}>\n"; # title
+                  message+="\t• :slightly_smiling_face: Created By: <${user_link}|${user}>\n"; # user
+                  message+="\t• :date: *Opened At:* ${created_at}\n"; # opened date
+                  message+="\t• :link: Link: ${pr_link}\n"; # pr link
+                  ((count++))
+              fi;
+
+          done < <(curl -s "https://api.github.com/repos/${{ vars.REPO }}/pulls?state=open" | jq -c '.[]');
+
+          if [[ -n "$message" ]]; then
+              echo "message=$message" >> "$GITHUB_OUTPUT";
+          fi;
+      
+      - name: "Notify Via Slack"
+        if: steps.stale_pr.outputs.message != ''
+        uses: slackapi/slack-github-action@v2.1.0
+        with:
+          method: chat.postMessage
+          token: ${{ secrets.SLACK_BOT_TOKEN }}
+          payload: |
+            channel: ${{ secrets.SLACK_CHANNEL_ID }}
+            text: "Stale Pull Requests"
+            unfurl_links: false
+            unfurl_media: false
+            blocks:
+              - type: "section"
+                text:
+                  type: "mrkdwn"
+                  text: "*Stale Pull Requests* \n ${{ steps.stale_pr.outputs.message }}"
+

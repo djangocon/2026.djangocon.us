@@ -1,0 +1,26 @@
+---
+layout: default
+templateClass: view-post
+---
+
+<article>
+  <header class="mx-auto max-w-[60rem] pt-16 pb-6 text-center flex flex-col justify-center">
+    <time datetime="{{ date }}" class="mb-2 tracking-wide text-gray-600 uppercase">{{ published_datetime | formatDateTime: "MMMM d, yyyy" }}</time>
+    <h1 class="text-3xl font-bold font-heading lg:text-5xl text-balance">{{ title }}</h1>
+  </header>
+
+  <div class="px-4 pt-6 pb-16">
+    <div class="mx-auto prose lg:prose-lg">
+      {% if cover %}
+        <figure>
+          <img
+            src="{{ cover.url }}"
+            alt="{{ cover.alt }}"
+            class="w-full" />
+        </figure>
+      {% endif %}
+
+      {{ content | markdown }}
+    </div>
+  </div>
+</article>

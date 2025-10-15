@@ -1,0 +1,91 @@
+<ul class="flex flex-wrap gap-4 mt-auto">
+  {% if social.bluesky not null %}
+    <li>
+      <a
+        href="https://bsky.app/profile/{{ social.bluesky }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-social-bluesky"
+        aria-label="GitHub">
+        <svg class="icon">
+          <title>Bluesky</title>
+          <use xlink:href="#bluesky-icon"></use>
+        </svg>
+      </a>
+    </li>
+  {% endif %}
+  {% if social.github not null %}
+    <li>
+      <a
+        href="https://github.com/{{ social.github }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-social-github"
+        aria-label="GitHub">
+        <svg class="icon">
+          <title>GitHub</title>
+          <use xlink:href="#github-icon"></use>
+        </svg>
+      </a>
+    </li>
+  {% endif %}
+  {% if social.instagram not null %}
+    <li>
+      <a
+        href="https://instagram.com/{{ social.instagram }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-social-instagram"
+        aria-label="Instagram">
+        <svg class="icon">
+          <title>Instagram</title>
+          <use xlink:href="#instagram-icon"></use>
+        </svg>
+      </a>
+    </li>
+  {% endif %}
+  {% if social.mastodon not null %}
+    <li>
+      <a
+        href="{{ social.mastodon }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-social-mastodon"
+        aria-label="Mastodon">
+        <svg class="icon">
+          <title>Mastodon</title>
+          <use xlink:href="#mastodon-icon"></use>
+        </svg>
+      </a>
+    </li>
+  {% endif %}
+  {% if social.twitter not null %}
+    <li>
+      <a
+        href="https://twitter.com/{{ social.twitter }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-social-twitter"
+        aria-label="X.com">
+        <svg class="icon">
+          <title>X (Formerly Twitter)</title>
+          <use xlink:href="#twitter-icon"></use>
+        </svg>
+      </a>
+    </li>
+  {% endif %}
+  {% if social.website not null %}
+    <li>
+      <a
+        href="{{ social.website }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-green"
+        aria-label="Website">
+        <svg class="icon">
+          <use xlink:href="#web-icon"></use>
+        </svg>
+      </a>
+    </li>
+  {% endif %}
+</ul>

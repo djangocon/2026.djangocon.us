@@ -1,0 +1,35 @@
+# Posts
+
+Posts can be seen at `/news/` and `/news/<post-id>`. Post cards appear in various spots on the website.
+
+See `src/_layouts/post.html` for some common long form rendering.
+
+Posts can be hidden by setting `hidden: true` in the front matter.
+
+## Adding a new post
+
+1. Copy `_POST.md.example` to a new file and name it `seo-friendly-post-slug.md` (e.g. `announcing-djangocon.md`).
+2.
+3. Add post content in Markdown format.
+
+### About cover photos
+
+Cover photos are displayed at the top of the post, and depending on site design, could appear in other places. These are typically landscape in orientation, and for future planning are likely best sized as 1200x630 pixels in case they are ever used for social share graphics.
+
+Cover photos are stored in `/assets/img/blog/`, and are treated like website assets and not necessarily data, as they may be used in multiple places on the site.
+
+NOTE: Cover "photo" can also be a graphic or illustration. Any WebP, SVG, PNG, or JPG is valid.
+
+### Adding content
+
+* Use Markdown for formatting.
+* The title of your document is your H1. The top-level heading in your content should be H2, or `##`.
+* Use `<!-- excerpt -->` to define the excerpt that appears on the news page.
+* You may use includes, e.g. `{% include "include.html" %}`.
+* HTML is OK to use, but please use it sparingly.
+* Photos you reference are not optimized. Be sure to process photos in advance.
+* It's best to keep content simple!
+
+## Deleting an post
+
+Remove the post's MD file and any related photos from the `src/_content/posts` directory.

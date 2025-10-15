@@ -1,0 +1,6 @@
+{% layout "_layouts/session.html" %}
+
+{% block social_images %}
+  <meta property="og:image" content="https://v1.screenshot.11ty.dev/{{ site.domain | url_encode }}{{ page.url | url_encode }}social/opengraph/" />
+  <meta property="twitter:image" content="https://v1.screenshot.11ty.dev/{{ site.domain | url_encode }}{{ page.url | url_encode }}social/opengraph/" />
+{% endblock %}

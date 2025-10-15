@@ -1,0 +1,57 @@
+.home-gameboard {  
+  @apply absolute hidden overflow-hidden pointer-events-none lg:block;
+  @apply left-0 right-0 -top-[12rem] xl:-top-[12rem] 2xl:-top-[14rem] z-[40];
+
+  img {
+    @apply relative pointer-events-none;
+    @apply w-[65rem] xl:w-[70rem] 2xl:w-[75rem];
+    @apply right-[-45%] 2xl:right-[-50%];
+  }
+}
+
+.home-hero {
+  @apply relative z-50 bg-cream;
+}
+
+.home-hero-content  {
+  @apply text-center;
+  @apply py-10 lg:py-8 pt-[8rem] xl:mb-4;
+  
+  h2 {
+    @apply text-4xl font-extrabold leading-tight 2xl:text-[2.75rem];
+    @apply mb-4;
+  }
+}
+
+.home-hero-bg {
+  @apply absolute top-0 right-0;
+}
+
+.homepage #SiteMain {
+  @apply pt-4 lg:pt-20;
+}
+
+.value-card {
+  @apply overflow-hidden bg-teal-100;
+  @apply relative flex flex-col h-[20rem] gap-3 p-6 rounded-lg;
+
+  h3 {
+    @apply mt-auto text-2xl font-bold lg:text-2xl font-heading;
+  }
+
+  p {
+    @apply text-lg leading-snug;
+
+    a {
+      @apply font-bold link;
+    }
+  }
+
+  :not(.value-card-bg) {
+    @apply relative z-30;
+  }
+}
+
+.value-card-bg {
+  @apply absolute  bg-teal-100 inset-0 z-20 object-cover object-center w-full h-full pointer-events-none opacity-[15%];
+}

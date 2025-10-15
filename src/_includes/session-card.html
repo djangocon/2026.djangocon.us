@@ -1,0 +1,54 @@
+<li class="flex flex-col flex-1 min-w-[280px]">
+  <section class="relative flex-1 bg-white rounded p-4 group flex flex-col border-2 border-gray-300 border-t-4 {{ color_class }}">
+    <header class="space-y-4">
+      <div class="flex flex-wrap items-center justify-between order-1 gap-4">
+        {% if session.room %}
+          <p class="text-sm">{{ session.room }}</p>
+        {% endif %}
+
+        {% if session.difficulty %}
+          <span class="px-2 py-[.125rem] text-sm font-bold text-white bg-black rounded">
+            <span class="sr-only">Audience level: </span>
+            {{ session.difficulty }}
+          </span>
+        {% endif %}
+      </div>
+
+      <h4 class="order-2 font-semibold leading-tight lg:text-lg">
+        {% if session.permalink %}
+          <a href="{{ session.permalink }}" class="no-underline cover group-hover:underline">{{ session.title }}</a>
+        {% else %}
+          {{ session.title }}
+        {% endif %}
+      </h4>
+    </header>
+
+    {% if session.presenter_slugs %}
+      <div class="pt-6 mt-auto">
+        <h5 class="sr-only">Presented by</h5>
+        <ul class="space-y-4">
+          {% for presenter_slug in session.presenter_slugs %}
+            {% assign presenter = collections.presenters | find:presenter_slug %}
+            {% assign presenter = presenter.data %}
+
+            <li class="flex flex-wrap items-center gap-3">
+              {% if presenter.photo != null and presenter.photo != "" %}
+                {% assign photo = 'src/_content/presenters/' | append: presenter.photo %}
+                {% image photo, './dist/presenters/', '/presenters/', presenter.name, '(max-width: 1024px) 180px, 180px', 'inline-block object-cover object-left-top media aspect-square w-12 h-12' %}
+              {% endif %}
+
+              <span class="flex flex-col gap-[6px]">
+                <h6 class="leading-4">{{ presenter.name }}</h6>
+                {% if presenter.pronouns %}
+                  <span class="text-sm">
+                    ({{ presenter.pronouns }})
+                  </span>
+                {% endif %}
+              </span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </section>
+</li>

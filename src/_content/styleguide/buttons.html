@@ -1,0 +1,24 @@
+---
+title: Buttons
+
+order: 40
+
+description: |
+  Buttons are created by applying `.button` to an element. The button class is a utility class that applies padding, border, and background color.
+
+  The button class can be combined with other utility classes to create different button styles. Changing button colors requires changing the background color, e.g. `bg-teal` to create a teal button.
+---
+
+{%- capture code -%}<div class="flex flex-wrap gap-4">
+  <a href="#" class="button">Button Text</a>
+  <a href="#" class="button bg-teal">Button Text</a>
+  <a href="#" class="button bg-teal-dark color-white">Button Text</a>
+  <a href="#" class="button bg-cyan">Button Text</a>
+  <a href="#" class="button bg-green">Button Text</a>
+  <a href="#" class="button bg-pink">Button Text</a>
+</div>
+{%- endcapture -%}
+
+<div>
+  {% include "code-snippet.html", code:code, lang:'html' %}
+</div>

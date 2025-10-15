@@ -1,0 +1,87 @@
+---
+title: Typography
+
+order: 10
+
+
+description: |
+  The default font stack is defined in `tailwind.config.js`. Long form text uses `prose`, and all other sizing is done with utility classes, specific to its use case. There are a few key sizing helper classes.
+
+  Typography is based on [Figtree](https://fonts.google.com/specimen/Figtree).
+---
+
+
+{%- capture code -%}<div class="space-y-8">
+  <h1 class="pageheading">Page heading, used in heroes</h1>
+  <h2 class="subheading">Sub heading, used on page sections</h2>
+  <p class="lead">Lead, used in support of page headings or sub heading</p>
+  <h3 class="font-heading"><code>.font-heading</code> sets type properties for a generic heading</h3>
+</div>{%- endcapture -%}
+
+<div>
+  {% include "code-snippet.html", code:code, lang:'html' %}
+</div>
+
+<div class="space-y-6">
+  <h3 class="mb-2 text-lg font-bold lg:text-2xl font-heading">Links</h3>
+  <div class="prose">
+  {% markdown %}
+  Occasionally developers may need to specify a link or change a link's behavior.
+  {% endmarkdown %}
+  </div>
+
+  {%- capture code -%}
+<ul class="space-y-6">
+  <li><a href="#">Link</a>
+  <li><button class="link">Button link, using <code>.link</code></button></li>
+  <li><a href="#" class="reverse-link">Reverse-link, using <code>.reverse-link</code></a></li>
+</ul>
+  {%- endcapture -%}
+
+  <div>
+    {% include "code-snippet.html", code:code, lang:'html' %}
+  </div>
+</div>
+
+<div class="space-y-6">
+  <h3 class="mb-2 text-lg font-bold lg:text-2xl font-heading">Prose styles</h3>
+
+{%- capture code -%}<div class="prose prose-lg">
+  <p>Prose is a utility class that sets type properties for long form text.</p>
+  <p>It is used for body copy, blog posts, and other long form text.</p>
+  <p>It can also be used if you need a generic set of good type styles, or are planning the "unknown copy".</p>
+
+  <h1>Heading 1, shouldn't be used in prose</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+
+  <ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ul>
+
+  <ol>
+    <li>Numbered item 1</li>
+    <li>Numbered item 2</li>
+    <li>Numbered item 3</li>
+  </ol>
+
+  <p><a href="#">Link</a></p>
+
+  <p><button>Button</button></p>
+
+  <figure>
+    <img src="https://picsum.photos/800/600" alt="Image">
+    <figcaption>Figure caption</figcaption>
+  </figure>
+</div>
+{%- endcapture -%}
+
+  <div>
+    {% include "code-snippet.html", code:code, lang:'html' %}
+  </div>
+</div>

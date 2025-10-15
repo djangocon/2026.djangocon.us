@@ -1,0 +1,45 @@
+---
+title: "Blocks & Grids"
+
+order: 80
+
+description: |
+  Blocks and grids are the building blocks of the website. They help to organize content and create a visual hierarchy.
+
+  There are a few key classes to use when shaping blocks:
+
+  - `.block-container` - The outermost container for a block. This class sets the padding for the block.
+
+  - `.wrapper` - The inner container for a block. This class sets the maximum width and centers the content.
+
+  Background colors and effects may be applied to `.block-container` to differentiate them.
+
+  Use Tailwind's grid classes to create a grid layout inside `.wrapper`.
+---
+
+{%- capture code -%}
+<div class="block-container">
+  <div class="wrapper">
+    <p>Content goes here.</p>
+  </div>
+</div>
+
+<div class="py-8 bg-gray-100 block-container lg:py-10">
+  <div class="wrapper">
+    <p>Gray block with modified padding.</p>
+  </div>
+</div>
+
+<div class="block-container bg-cream">
+  <div class="wrapper">
+    <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+      <div class="p-4 bg-white">Column 1</div>
+      <div class="p-4 bg-white">Column 2</div>
+    </div>
+  </div>
+</div>
+{%- endcapture -%}
+
+<div>
+  {% include "code-snippet.html", code:code, lang:'html' %}
+</div>
