@@ -1,7 +1,7 @@
 {
-  "domain": "https://2025.djangocon.us",
+  "domain": "https://2026.djangocon.us",
   "timezone": "America/Chicago",
-  "conf_year": 2025,
+  "conf_year": 2026,
   "phase": "active",
   "conduct_email": "conduct@djangocon.us",
   "contact_us_email": "hello@djangocon.us",
@@ -12,14 +12,14 @@
 
   "banner": false,
 
-  "mailing_list": "https://dcus.eo.page/dcus-25",
-  "cfp_application": "https://pretalx.com/djangocon-us-2025/cfp",
+  "mailing_list": "https://dcus.eo.page/dcus-26",
+  "cfp_application": "https://pretalx.com/djangocon-us-2026/cfp",
   "hotel_reservation_link": "https://www.holidayinn.com/redirect?path=rates&brandCode=HI&localeCode=en&regionCode=1&hotelCode=CHIPL&checkInDate=07&checkInMonthYear=082025&checkOutDate=13&checkOutMonthYear=082025&_PMID=99801505&GPC=DJ5&cn=no&viewfullsite=true",
-  "merchandise_link": "https://django.threadless.com/designs/djangocon-us-2024/mens/t-shirt/regular?variation=front&color=lemon",
+  "merchandise_link": "https://django.threadless.com/designs/",
   "opportunity_grant_application": "https://forms.gle/vJ3EjhK3sh17gocYA",
   "slack_link": "",
   "sponsorship_prospectus": "https://drive.google.com/file/d/1VCLBvvEu2erQ3_k0f_Ldpo-8alKw_4BR/view?usp=sharing",
-  "ticket_link": "https://ti.to/defna/djangocon-us-2025",
+  "ticket_link": "https://ti.to/defna/djangocon-us-2026",
   "photos_link": "",
   "youtube_link": "",
 
