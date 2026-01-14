@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://2025.djangocon.us">
-  <title>DjangoCon US 2025</title>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://2026.djangocon.us">
+  <title>DjangoCon US 2026</title>
   <subtitle>Official conference news</subtitle>
-  <link href="https://2025.djangocon.us/feed" rel="self"/>
-  <link href="https://2025.djangocon.us" rel="alternate"/>
+  <link href="https://2026.djangocon.us/feed" rel="self"/>
+  <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-01-14T17:14:00Z</updated
+    >2026-01-14T17:15:25Z</updated
   >
-  <id>https://2025.djangocon.us</id>
+  <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
