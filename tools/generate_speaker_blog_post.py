@@ -10,12 +10,12 @@ from models import Presenter, Schedule
 HEADER = """---
 author: DjangoCon US Organizers
 category: General
-date: 2024-07-16 12:00:00-04:00
+date: 2026-07-16 12:00:00-04:00
 image: /static/img/blog/speaking-2024.jpg
 layout: post
 post_photo_alt: Speaker addressing a crowd at DjangoCon US 2023 in San Diego
 post_photo_url: /static/img/blog/speaking-2024.jpg
-title: Announcing Our DjangoCon US 2024 Talks!
+title: Announcing Our DjangoCon US 2026 Talks!
 ---
 
 We are delighted to present our tutorial and talk lineup!
@@ -35,10 +35,11 @@ for those up soon. We hope to see you in Chicago!
 
 LINE_TEMPLATE = """- {talk["title"]} by {talk["presenters"][0]["name"]} {urls}"""
 
-TUTORIAL_HEADER = """## Tutorials (Sunday, September 22)
+# not used in 2026
+TUTORIAL_HEADER = """## Tutorials (Sunday, August 23)
 """
 
-TALK_HEADER = """## Talks (Monday, September 23 through Wednesday, September 25)
+TALK_HEADER = """## Talks (Monday, August 24 through Wednesday, August 26)
 
 _All talks will be available live for those with online-only tickets. They will be posted to YouTube after the conference for free._
 """
