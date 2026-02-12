@@ -4,9 +4,9 @@ hidden: false
 category: Announcements
 published_datetime: 2026-02-12T18:00:00Z
 layout: post
-# cover:
-#     url: /assets/img/blog/photo.jpg
-#     alt: "Description of the photo"
+cover:
+    url: /assets/img/blog/dearborn-street-bridge.jpg
+    alt: "Nighttime photo of the Dearborn Street bridge over the Chicago River"
 title: "Date change announcement for DjangoCon US 2026"
 ---
 
@@ -24,3 +24,5 @@ This will help keep costs more affordable for our guests, and maybe Lake Michiga
 We apologize for the inconvenience for anyone who has already made travel plans.
 
 We look forward to seeing you in Chicago!
+
+<small>Image credit: Bartek Pawlik</small>
