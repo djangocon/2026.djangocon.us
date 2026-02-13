@@ -6,11 +6,31 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-02-12T14:53:58Z</updated
+    >2026-02-13T21:07:25Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>Date change announcement for DjangoCon US 2026</title>
+      <link href="https://2026.djangocon.us/_content/posts/announcing-date-change/" />
+      <updated>2026-02-12T18:00:00Z</updated>
+      <id>https://2026.djangocon.us/_content/posts/announcing-date-change/</id>
+      <content xml:lang="en" type="html"
+        >&lt;h1 id=&#34;djangocon-us-is-changing-dates!&#34; tabindex=&#34;-1&#34;&gt;DjangoCon US is changing dates!&lt;/h1&gt;
+&lt;p&gt;Due to a very large conference happening in Chicago the week of September 14 that is causing hotel prices to skyrocket (over $400 per night for nearby hotels), DjangoCon US is moving to the week of August 24.&lt;/p&gt;
+&lt;p&gt;This will help keep costs more affordable for our guests, and maybe Lake Michigan will be warm enough for people who would like to take a morning swim!&lt;/p&gt;
+&lt;h2 id=&#34;schedule&#34; tabindex=&#34;-1&#34;&gt;Schedule&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Monday, August 24 through Wednesday, August 26: Talks&lt;/li&gt;
+&lt;li&gt;Thursday, August 27 and Friday, August 28: Sprints&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We apologize for the inconvenience for anyone who has already made travel plans.&lt;/p&gt;
+&lt;p&gt;We look forward to seeing you in Chicago!&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Image credit: Bartek Pawlik&lt;/small&gt;&lt;/p&gt;
+</content
+      >
+    </entry>
 </feed>
