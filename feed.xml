@@ -6,13 +6,30 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-02-15T18:02:12Z</updated
+    >2026-02-20T19:00:19Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>The Call for Proposals for DjangoCon US 2026 Is Now Open!</title>
+      <link href="https://2026.djangocon.us/_content/posts/call-for-proposals/" />
+      <updated>2026-02-20T12:00:00Z</updated>
+      <id>https://2026.djangocon.us/_content/posts/call-for-proposals/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;We are excited that DjangoCon US 2026 is now open for talk submissions: &lt;a href=&#34;https://pretalx.com/djangocon-us-2026/cfp&#34;&gt;call for proposals&lt;/a&gt;! The deadline for submissions is &lt;strong&gt;March 16th, 2026 at &lt;a href=&#34;https://time.is/1100AM_16_March_2026_in_Chicago?DjangoCon_US_CFP_Closes&#34;&gt;11AM CDT&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We invite you to submit your proposal no matter your background or experience level with Django. Proposals can be from a wide range of topics; non-Django and community topics are welcome. You can look at our &lt;a href=&#34;https://2025.djangocon.us/news/announcing-lineup/&#34;&gt;talk lineup&lt;/a&gt; from last year for reference.&lt;/p&gt;
+&lt;p&gt;We fancy first-timers! If you haven&#39;t spoken at a conference or given a tutorial before, this is your invitation to do so. Don&#39;t let the idea that you&#39;re not famous or an expert stop you from submitting. It certainly won&#39;t stop us from selecting your talk or tutorial and it won&#39;t stop the audience from enjoying it! If you still need help decding on a topic take a look at our own Drew Winstel&#39;s &lt;a href=&#34;https://winstel.dev/2026/01/05/talk-ideas-for-dcus-26/&#34;&gt;blog post&lt;/a&gt; for some ideas.&lt;/p&gt;
+&lt;p&gt;Plus there are perks! Presenters get free admission to DjangoCon US! &lt;a href=&#34;https://2026.djangocon.us/opportunity-grants/&#34;&gt;Grants&lt;/a&gt; to assist with your travel and lodging expenses are available as well. The form for &lt;a href=&#34;https://forms.gle/xYSsdAGR5RbvtH9q7&#34;&gt;Opportunity Grants&lt;/a&gt; is now live, and &lt;strong&gt;the application deadline is also March 16th, 2026&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For more information on talk and tutorial formats, please check out our &lt;a href=&#34;/speaking/&#34;&gt;speaker information page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We want everyone attending DjangoCon US to feel safe, welcome, and included. To that end, we have a &lt;a href=&#34;/conduct/&#34;&gt;Code of Conduct&lt;/a&gt; for all speakers and attendees.&lt;/p&gt;
+&lt;p&gt;If you have questions, feel free to &lt;a href=&#34;mailto:hello@djangocon.us&#34;&gt;contact us&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We are excited to see your proposals and can&#39;t wait to see you in Chicago!&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>Date change announcement for DjangoCon US 2026</title>
       <link href="https://2026.djangocon.us/_content/posts/announcing-date-change/" />
