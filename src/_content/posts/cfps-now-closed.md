@@ -1,7 +1,7 @@
 ---
 author: Communications Team
 category: General
-published_datetime: 2025-03-16 11:00:00
+published_datetime: 2026-03-16 11:00:00
 title: "Talk Proposals and Opportunity Grant Applications Now Closed"
 ---
 
