@@ -2,6 +2,7 @@
 author: Programs Team
 category: General
 published_datetime: 2026-03-09 04:55:00
+layout: post
 title: "How DjangoCon US Selects Talk Proposals"
 featured: true
 ---
