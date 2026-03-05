@@ -5,14 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="canonical" href="https://2026.djangocon.us/news/" />
+  <link rel="canonical" href="https://2026.djangocon.us/invitation/" />
   <meta name="author" content="DjangoCon US" />
-  <meta name="description" content="DjangoCon US 2026 is a Python and Django focused web development conference in Chicago, Illinois." />
+  <meta name="description" content="Request your visa invitation letter for DjangoCon US 2026 here.
+" />
 
-  <meta property="og:title" content="Latest News | DjangoCon US 2026" />
+  <meta property="og:title" content="Visa Invitation Letter | DjangoCon US 2026" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:description" content="DjangoCon US 2026 is a Python and Django focused web development conference in Chicago, Illinois." />
-  <meta property="og:url" content="https://2026.djangocon.us/news/" />
+  <meta property="og:description" content="Request your visa invitation letter for DjangoCon US 2026 here.
+" />
+  <meta property="og:url" content="https://2026.djangocon.us/invitation/" />
   <meta property="og:site_name" content="DjangoCon US" />
 
   <meta property="og:type" content="website" />
@@ -23,7 +25,7 @@
     <meta property="twitter:image" content="https://2026.djangocon.us/assets/img/social/og-share.jpg?20260223" />
   
 
-  <meta property="twitter:title" content="Latest News | DjangoCon US 2026" />
+  <meta property="twitter:title" content="Visa Invitation Letter | DjangoCon US 2026" />
   <meta name="twitter:site" content="@djangocon" />
 
   <meta property="fb:app_id" content="280981518972848" />
@@ -33,7 +35,7 @@
   <link href="/assets/favicons/favicon.png" rel=icon type="image/png">
   <link href="/assets/favicons/apple-touch-icon.png" rel="apple-touch-icon-precomposed">
 
-  <title>Latest News | DjangoCon US 2026</title>
+  <title>Visa Invitation Letter | DjangoCon US 2026</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -122,52 +124,69 @@
   
 
   <main id="SiteMain" class="flex-1 pt-[96px] lg:pt-0 lg:block">
-<div class="hero">
-  <div class="max-w-[45rem] px-4 mx-auto flex flex-wrap gap-8 items-center">
-    <hgroup>
-      <h1 class="mb-4 pageheading">Latest News</h1>
-      <a href="/feed.xml" class="link">RSS Feed</a>
-    </hgroup>
+<div class="bg-gray-100 block-container">
+  <div class="wrapper">
+    <h1 class="mb-6 text-center pageheading">Visa Invitation Letter</h1>
+    <form
+      class="max-w-2xl p-4 mx-auto bg-white rounded lg:p-12"
+      id="inviteForm"
+      method="POST"
+      enctype="multipart/form-data">
+      <ul class="space-y-6">
+        <li>
+          <label for="fullname">Full name (as it appears on your passport)</label>
+          <input type="text" name="fullname" id="fullname" placeholder="Noah Doe" required>
+        </li>
+        <li>
+          <label for="address">Address</label>
+          <input type="text" name="address" id="address" placeholder="125 32nd Street, Chicago, Ohio, USA" required>
+        </li>
+        <li>
+          <label for="dob">Date of Birth</label>
+          <input type="text" name="dob" id="dob" placeholder="July 09 1990" required>
+        </li>
+        <li>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="visas@djangocon.us" required>
+        </li>
+        <li>
+          <label for="passport_no">Passport Number</label>
+          <input type="text" name="passport_no" id="passport_no" placeholder="A01923459B" required>
+        </li>
+        <li>
+          <label for="letterselection">Are you a Speaker, an Opportunity Grant recipient, or a general attendee?</label>
+          <select name="letterselection" id="letterselection" required>
+        <option value="none">Attendee</option>
+        <option value="og">Opportunity Grant recipient</option>
+        <option value="speaker">Speaker</option>
+          </select>
+        </li>
+        <li id="og" hidden>
+          <label for="og">Grant Amount (if applicable)</label>
+          <input type="number" name="og" id="og" placeholder="2000.00">
+        </li>
+        <li id="speaker" hidden>
+          <label for="talk">Talk/Tutorial Title</label>
+          <input type="text" name="talk" id="talk" placeholder="DjangoCon US is the best!">
+        </li>
+      </ul>
 
-    <!-- <img
-        src="/assets/img/theme/graphics/blog.svg"
-        alt="A red bird"
-        class="flex-1 hidden md:block" /> -->
+      <div class="mt-8">
+        <button id="submit" type="submit" class="button bg-teal">Submit</button>
+      </div>
+    </form>
+
+    <div>
+      <div id="loader" hidden></div>
+      <p id="inProgressMsg" hidden class="max-w-2xl p-4 mx-auto text-lg bg-white border-4 rounded lg:p-12 text-medium lg:text-xl border-green">
+        Thank you for your interest in DjangoCon US 2026! We're generating your invitation letter.
+      </p>
+      <p id="readyMsg" hidden class="max-w-2xl p-4 mx-auto text-lg bg-white border-4 rounded lg:p-12 text-medium lg:text-xl border-green">Your invitation letter has been sent to the DjangoCon US organizers for review. Once they approve it, they will email it to you. Thanks for your interest!</p>
+    </div>
   </div>
 </div>
 
-<div class="pt-6 pb-16">
-  <div class="max-w-[45rem] px-4 mx-auto">
-    <ol class="divide-y" reversed>
-          
-          
-            
-          
-
-          <li>
-            <article class="py-6">
-              <time
-                class="mb-2 tracking-wide text-gray-600 uppercase"
-                datetime="Thu Mar 05 2026 00:17:21 GMT+0000 (Coordinated Universal Time)">February 20, 2026</time>
-              <h2 class="text-xl font-heading font-semibold lg:text-3xl"><a href="/news/call-for-proposals/" class="reverse-link">The Call for Proposals for DjangoCon US 2026 Is Now Open!</a></h2><div class="mt-4 prose lg:prose-lg">
-                  <p>We are excited that DjangoCon US 2026 is now open for talk submissions: <a href="https://pretalx.com/djangocon-us-2026/cfp">call for proposals</a>! The deadline for submissions is <strong>March 16th, 2026 at <a href="https://time.is/1100AM_16_March_2026_in_Chicago?DjangoCon_US_CFP_Closes">11AM CDT</a></strong>.</p>
-
-                </div></article>
-          </li>
-        
-          
-          
-
-          <li>
-            <article class="py-6">
-              <time
-                class="mb-2 tracking-wide text-gray-600 uppercase"
-                datetime="Thu Mar 05 2026 00:17:21 GMT+0000 (Coordinated Universal Time)">February 12, 2026</time>
-              <h2 class="text-xl font-heading font-semibold lg:text-2xl"><a href="/news/announcing-date-change/" class="reverse-link">Date change announcement for DjangoCon US 2026</a></h2></article>
-          </li>
-        </ol>
-  </div>
-</div>
+<script src="/assets/js/invitation.js"></script>
 </main>
 
   <footer id="SiteFooter" class="py-20">
