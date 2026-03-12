@@ -14,7 +14,7 @@ We've received many great proposals already but want to give folks a little extr
 
 <!-- excerpt -->
 
-We welcome proposals no matter your background or experience level with Django. Your proposal can be from a wide range of topics; non-Django and community topics are welcome. You can look at our [talk lineup](https://2025.djangocon.us/news/announcing-lineup/) from last year for reference. You are also welcome to submit more than one proposal. (Though, we'll only select one per speaker.)
+We welcome proposals no matter your background or experience level with Django. Your proposal can be from a wide range of topics; non-Django and community topics are welcome. You can look at our [talk lineup](https://2025.djangocon.us/news/announcing-lineup/) from last year for reference. You are also welcome to submit more than one proposal. (Though we'll likely only select one per speaker.)
 
 Also, if you know someone you think would be a good speaker at this conference, this is the time to reach out and tell them you'd love to see them submit a talk!
 
