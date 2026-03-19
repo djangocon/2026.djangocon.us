@@ -6,13 +6,76 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-03-12T15:53:39Z</updated
+    >2026-03-19T14:23:45Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>How DjangoCon US Selects Talk Proposals</title>
+      <link href="https://2026.djangocon.us/news/proposal-selection/" />
+      <updated>2026-03-19T10:55:00Z</updated>
+      <id>https://2026.djangocon.us/news/proposal-selection/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;The DjangoCon US schedule is always highly anticipated. But how does it all come together?&lt;/p&gt;
+&lt;p&gt;The journey from an open Call for Proposals (CFP) to the final lineup of talks and keynote sessions is a thoughtful and collaborative process designed to foster fairness and showcase the best of the Django community.&lt;/p&gt;
+&lt;h2 id=&#34;2026-program-timeline&#34; tabindex=&#34;-1&#34;&gt;2026 Program Timeline&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;*Subject to change depending on the number of submissions and other factors.&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CFP Deadline Extension&lt;/strong&gt;: March 23&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reviewer Deadline&lt;/strong&gt;: April 10&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Panel Finalization&lt;/strong&gt;: April 28&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Speaker Notifications&lt;/strong&gt;: May 15&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Schedule Announcement&lt;/strong&gt;: June 15&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Start of Keynote Announcements&lt;/strong&gt;: July 7&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;call-for-proposals-opens&#34; tabindex=&#34;-1&#34;&gt;Call for Proposals Opens&lt;/h2&gt;
+&lt;p&gt;The community proposes talks and tutorials by filling in the &lt;a href=&#34;https://pretalx.com/djangocon-us-2026/cfp&#34;&gt;CFP&lt;/a&gt;. We use &lt;a href=&#34;https://pretalx.com/p/about/&#34;&gt;Pretalx&lt;/a&gt;, a platform designed for conferences that support &lt;strong&gt;anonymous review&lt;/strong&gt; and &lt;strong&gt;structured scoring&lt;/strong&gt;. Thus, each submission is evaluated based on content, not the speaker&#39;s name or background.&lt;/p&gt;
+&lt;h2 id=&#34;anonymization-%26-code-of-conduct-compliance&#34; tabindex=&#34;-1&#34;&gt;Anonymization &amp;amp; Code of Conduct Compliance&lt;/h2&gt;
+&lt;p&gt;Once the CFP closes, the program team carefully reviews every submission to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Anonymize&lt;/strong&gt; any unique identifying details.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ensure Code of Conduct compliance&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This step is crucial for fair and unbiased reviewing. The person responsible for anonymization does not participate in the anonymous review process.&lt;/p&gt;
+&lt;h2 id=&#34;community-reviews-talks&#34; tabindex=&#34;-1&#34;&gt;Community Reviews Talks&lt;/h2&gt;
+&lt;p&gt;Once proposals are anonymized, we open the review process to a team of volunteer reviewers from the community. They follow guidelines that promote consistency, fairness, and awareness of potential bias.&lt;/p&gt;
+&lt;h2 id=&#34;reviewer-guidelines-emphasize%3A&#34; tabindex=&#34;-1&#34;&gt;Reviewer Guidelines Emphasize:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Focusing on content&lt;/strong&gt;, not style, grammar, or speaker identity&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Leaving a comment for all &amp;quot;No&amp;quot; ratings&lt;/strong&gt; (and encouraged for &amp;quot;Maybe&amp;quot;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Flagging known proposals&lt;/strong&gt; using a BIAS: prefix and skipping scoring&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Identifying any remaining personal info&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Disclosing conflicts of interest&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Reviewers have until &lt;strong&gt;April 10&lt;/strong&gt; to provide feedback on as many proposals as possible.&lt;/p&gt;
+&lt;h2 id=&#34;committee-deliberation-%26-selection&#34; tabindex=&#34;-1&#34;&gt;Committee Deliberation &amp;amp; Selection&lt;/h2&gt;
+&lt;p&gt;Once the reviews are in, the committee will lift the anonymization and meet to create the final schedule. At this stage, we look at:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Review scores and written feedback&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Topic coverage&lt;/strong&gt; (e.g., avoiding repetition like six HTMX talks)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Speaker diversity&lt;/strong&gt; (especially elevating underrepresented voices and first-time speakers)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Company representation&lt;/strong&gt; (ensuring one organization doesn&#39;t dominate)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prior speaking history and organizer involvement&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some talks are accepted or declined based on strong consensus. The most difficult decisions often revolve around the final handful of slots, which we may reserve in case of scheduling conflicts or withdrawals.&lt;/p&gt;
+&lt;p&gt;The speakers will receive notifications about the decision on or before &lt;strong&gt;May 15&lt;/strong&gt;. Speakers need to reply to acceptance emails to confirm their talks.&lt;/p&gt;
+&lt;p&gt;At this point, we evaluate the suggested panelists and hosts who will participate in the last conference day and the discussion topic.&lt;/p&gt;
+&lt;h2 id=&#34;keynote-speaker-selection&#34; tabindex=&#34;-1&#34;&gt;Keynote Speaker Selection&lt;/h2&gt;
+&lt;p&gt;Keynote speakers follow a separate, invitation-based process that begins well before the CFP closes. As outlined by previous DjangoCon US Chair Drew Winstel in &lt;a href=&#34;https://winstel.dev/2024/10/20/what-makes-a-good-dcus-keynote/&#34;&gt;his blog post&lt;/a&gt;, we look for individuals who bring:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Emotional resonance&lt;/strong&gt; and the ability to connect and engage with the audience&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A compelling, unique perspective—reflective&lt;/strong&gt;, funny, challenging, or inspiring&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stage presence&lt;/strong&gt;, though extensive speaking experience isn&#39;t required&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Representation of the community&lt;/strong&gt;, especially those who&#39;ve contributed significantly or brought underrepresented viewpoints to the forefront&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Keynote announcements typically occur after the talk schedule is shared.&lt;/p&gt;
+&lt;p&gt;DjangoCon US is more than a conference. It&#39;s a reflection of the community that makes Django special. Every part of our program, from anonymous reviews to committee deliberations and keynote invitations, is rooted in care and intentionality. We aim to surface new voices, avoid bias, and curate a meaningful and engaging conference experience.&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>The Call for Proposals for DjangoCon US 2026 has been extended one week!</title>
       <link href="https://2026.djangocon.us/news/cfp-deadline-extended/" />
