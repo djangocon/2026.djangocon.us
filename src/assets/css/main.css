@@ -2,6 +2,7 @@
 
 @import "tailwindcss/components";
 @import "components/_badge.css";
+@import "components/_bubble.css";
 @import "components/_buttons.css";
 @import "components/_table.css";
 @import "components/_containers.css";
@@ -54,7 +55,7 @@
     @apply px-3 py-2;
     @apply border border-gray-400 rounded;
     @apply shadow-sm;
-    @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-teal;
+    @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100;
   }
 
   label {
@@ -135,7 +136,7 @@
     width: 2rem;
     height: 2rem;
     border: 5px solid #f3f3f3;
-    border-top: 6px solid theme('colors.teal.DEFAULT');
+    border-top: 6px solid theme('colors.ocean-blue.DEFAULT');
     border-radius: 100%;
     margin: auto;
     animation: spin 1s infinite linear;

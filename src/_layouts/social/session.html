@@ -40,7 +40,7 @@ layout: social/default-social.html
       <span>
         {% for presenter_slug in talk.data.presenter_slugs %}
           {% assign presenter = collections.presenters | find:presenter_slug %}
-          {{ presenter.data.name }} {% if not forloop.last %}<span class="text-teal">&amp;</span>{% endif %}
+          {{ presenter.data.name }} {% if not forloop.last %}<span class="text-ocean-blue">&amp;</span>{% endif %}
         {% endfor %}
       </span>
     </h1>

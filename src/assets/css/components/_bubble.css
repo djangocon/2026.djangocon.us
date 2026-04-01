@@ -1,0 +1,4 @@
+.bubble {
+  @apply inline-flex items-center px-4 py-3 text-base font-medium rounded-full;
+  @apply text-black bg-ocean-blue-100;
+}

@@ -7,7 +7,7 @@
 Keep an eye on the following:
 
 * Modify key variables in `:root` in `main.css`.
-* Look for `THEME-X` comments throughout the codebase and make appropriat changes.
+* Look for `THEME-X` comments throughout the codebase and make appropriate changes.
 * Be sure to check all graphics, including those within the `theme` folder under `src/assets/`.
 * Check favicons in `assets/favicons`.
 * Various OpenGraph and social sharing graphics are stored in `assets/img/social`. 

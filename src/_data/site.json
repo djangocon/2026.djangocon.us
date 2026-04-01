@@ -13,15 +13,18 @@
   "banner": false,
 
   "mailing_list": "https://dcus.eo.page/dcus-26",
-  "cfp_application": "https://pretalx.com/djangocon-us-2026/cfp",
   "hotel_reservation_link": "https://www.ihg.com/redirect?path=asearch&brandCode=vx&localeCode=en&regionCode=1&hotelCode=CHIWP&checkInDate=23&checkInMonthYear=072026&checkOutDate=29&checkOutMonthYear=072026&rateCode=6CBARC&_PMID=99801505&GPC=DJ6&cn=no&adjustMonth=false&showApp=true&monthIndex=00",
   "merchandise_link": "https://django.threadless.com/designs/",
-  "opportunity_grant_application": "https://forms.gle/xYSsdAGR5RbvtH9q7",
   "slack_link": "",
   "sponsorship_prospectus": "https://drive.google.com/file/d/1mq-CJL1nlaC4zs6SN4g9pzlD96Uy1_ch/view?usp=sharing",
   "ticket_link": "https://ti.to/defna/djangocon-us-2026",
   "photos_link": "",
   "youtube_link": "",
+  "cfp_application": "https://pretalx.com/djangocon-us-2026/cfp",
+  "cfp_deadline": "March 23, 2026",
+  "opportunity_grant_application": "https://forms.gle/xYSsdAGR5RbvtH9q7",
+  "opportunity_grant_deadline": "March 16, 2026",
+  "conference_dates": "September 8-12, 2026",
 
   "social": {
     "flickr": "https://flickr.com/photos/djangocon/albums/",
@@ -36,7 +39,7 @@
   "sponsorsOrder": [
     "Diamond",
     "Platinum",
-    "Gold",
+    "yellow",
     "Silver",
     "Bronze",
     "Coffee",

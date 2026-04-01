@@ -1,20 +1,34 @@
+@layer utilities {
 .button {
-  @apply relative inline-flex items-center justify-center px-5 py-2;
-  @apply border-b-2 border-orange-700 rounded-full bg-orange hover:bg-orange-700;
-  @apply font-semibold text-base !no-underline;
-
-  transition: all .125s ease-out;
+  @apply relative inline-flex items-center justify-center px-6 py-5;
+  @apply border-[3px] rounded-full border-dark-blue  text-nowrap font-bold;
+  @apply leading-none text-dark-blue text-center uppercase !no-underline;
+  /* font-family: 'Tanker', sans-serif; */
+  /* box-shadow: 8px -8px 0px 0px theme('colors.dark-blue.DEFAULT');
+  */
+  transition: all .125s ease-out; 
+  box-shadow: 8px -8px 0px 0px theme('colors.dark-blue.DEFAULT');
+}
 }
 
+.button:hover {
+  box-shadow: 4px -4px 0px 0px theme('colors.dark-blue.DEFAULT');
+  @apply bg-ocean-blue-400;
+}
+
+.button:active {
+  box-shadow: 6px -6px 0px 0px theme('colors.dark-blue.DEFAULT');
+}
+/* 
 .button-lg {
-  @apply px-5 py-2 text-xl;
-}
+  @apply px-8 py-6 text-2xl;
+} */
 
 .button-group {
   @apply flex flex-col flex-wrap items-center gap-4 sm:flex-row;
 }
-
-.button.bg-teal,
-.button.bg-teal-dark {
+/* 
+.button.bg-ocean-blue,
+.button.bg-ocean-blue-dark {
   @apply text-white;
-}
+} */

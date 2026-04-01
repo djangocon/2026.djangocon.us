@@ -1,4 +1,4 @@
-.home-gameboard {  
+/* .home-gameboard {  
   @apply absolute hidden overflow-hidden pointer-events-none lg:block;
   @apply left-0 right-0 -top-[12rem] xl:-top-[12rem] 2xl:-top-[14rem] z-[40];
 
@@ -10,7 +10,7 @@
 }
 
 .home-hero {
-  @apply relative z-50 bg-cream;
+  @apply relative z-50 bg-ocean-blue;
 }
 
 .home-hero-content  {
@@ -32,7 +32,7 @@
 }
 
 .value-card {
-  @apply overflow-hidden bg-teal-100;
+  @apply overflow-hidden bg-ocean-blue-100;
   @apply relative flex flex-col h-[20rem] gap-3 p-6 rounded-lg;
 
   h3 {
@@ -53,5 +53,5 @@
 }
 
 .value-card-bg {
-  @apply absolute  bg-teal-100 inset-0 z-20 object-cover object-center w-full h-full pointer-events-none opacity-[15%];
-}
+  @apply absolute  bg-ocean-blue-100 inset-0 z-20 object-cover object-center w-full h-full pointer-events-none opacity-[15%];
+} */

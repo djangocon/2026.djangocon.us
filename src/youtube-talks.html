@@ -38,11 +38,11 @@ permalink: /speaking/youtube/
                     </span>
                   </h4>
                   {% if post.video_url %}
-                    <div class="btn bg-teal-200 border-solid border-2 border-grey-800 rounded-lg px-2 py-1 whitespace-nowrap" >
+                    <div class="btn bg-ocean-blue-200 border-solid border-2 border-grey-800 rounded-lg px-2 py-1 whitespace-nowrap" >
                       <a href="{{ post.video_url }}">View on YouTube</a>
                     </div>
                   {% endif %}
-                  <button class="btn bg-teal-200 border-solid border-2 border-grey-800 rounded-lg px-2 py-1 whitespace-nowrap" data-clipboard-action="copy" data-clipboard-target="#copy-{{ session.title|slugify }}-title">
+                  <button class="btn bg-ocean-blue-200 border-solid border-2 border-grey-800 rounded-lg px-2 py-1 whitespace-nowrap" data-clipboard-action="copy" data-clipboard-target="#copy-{{ session.title|slugify }}-title">
                     Copy to clipboard
                   </button>
                 </div>
@@ -51,7 +51,7 @@ permalink: /speaking/youtube/
 <textarea rows="10" id="copy-{{ session.title|slugify }}" class="w-full pr-32">
 {% include "youtube-copy-and-paste.html", session:session %}
 </textarea>
-                  <button class="btn bg-teal-200 border-solid border-2 border-grey-800 rounded-lg px-2 py-1 absolute top-2 right-2" data-clipboard-action="copy" data-clipboard-target="#copy-{{ session.title|slugify }}">
+                  <button class="btn bg-ocean-blue-200 border-solid border-2 border-grey-800 rounded-lg px-2 py-1 absolute top-2 right-2" data-clipboard-action="copy" data-clipboard-target="#copy-{{ session.title|slugify }}">
                     Copy to clipboard
                   </button>
                 </div>
