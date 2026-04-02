@@ -86,9 +86,15 @@ module.exports = {
           DEFAULT: '#222228',
           '950': '#141418',
         },
+        'secondary': '#BBBDC1'
       },
       fontSize: {
         '5xl': ['3rem', 1.1]
+      },
+      boxShadow: {
+        'button': '8px -8px 0px 0px theme("colors.dark-blue.DEFAULT")',
+        'button-hover': '4px -4px 0px 0px theme("colors.dark-blue.DEFAULT")',
+        'button-active': '6px -6px 0px 0px theme("colors.dark-blue.DEFAULT")',
       },
     },
   },

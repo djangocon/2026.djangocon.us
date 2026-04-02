@@ -1,23 +1,21 @@
 @layer utilities {
-.button {
-  @apply relative inline-flex items-center justify-center px-6 py-5;
-  @apply border-[3px] rounded-full border-dark-blue  text-nowrap font-bold;
-  @apply leading-none text-dark-blue text-center uppercase !no-underline;
-  /* font-family: 'Tanker', sans-serif; */
-  /* box-shadow: 8px -8px 0px 0px theme('colors.dark-blue.DEFAULT');
-  */
-  transition: all .125s ease-out; 
-  box-shadow: 8px -8px 0px 0px theme('colors.dark-blue.DEFAULT');
-}
+  .button {
+    @apply relative;
+    @apply flex self-center items-center justify-self-end;
+    @apply py-3 px-4 gap-2.5;
+    @apply leading-none text-dark-blue text-center text-nowrap uppercase !no-underline;
+    @apply border-[3px] rounded-full border-dark-blue shadow-button;
+    @apply transition-all duration-[125ms] ease-out;
+  }
 }
 
+
 .button:hover {
-  box-shadow: 4px -4px 0px 0px theme('colors.dark-blue.DEFAULT');
-  @apply bg-ocean-blue-400;
+  @apply shadow-button-hover bg-ocean-blue-400;
 }
 
 .button:active {
-  box-shadow: 6px -6px 0px 0px theme('colors.dark-blue.DEFAULT');
+  @apply shadow-button-active;
 }
 /* 
 .button-lg {

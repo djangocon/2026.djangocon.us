@@ -9,29 +9,29 @@
 </aside>
 {% endif %}
 
-<header id="SiteHeader" class="lg:top-0 site-header is-closed lg:is-open">
-    <div class="wrapper">
-      <nav class="flex flex-wrap items-center border border-orange" role="navigation">
-        <div class="flex items-center justify-between w-full bg-orange-200 lg:max-w-max ">
-          <!-- <a
-            href="/"
-            aria-label="Go to homepage">
-            <img src="/assets/img/theme/logo.svg" alt="DjangoCon US" class="h-16 h-11 xl:h-24">
-          </a> -->
-          <button id="NavToggler" class="site-nav-toggler is-closed">
-            <span aria-hidden="true" class="hidden xs:block">Menu</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 icon-menu" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 icon-close" aria-hidden="true">
-              <path d="M6 6L17.6673 17.6673" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M6 18L17.6673 6.33274" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span class="sr-only">Toggle navigation</span>
-          </button>
-        </div>
-
-        {% include "nav.html" %}
-      </nav>
+<header id="SiteHeader" class="site-header is-closed lg:is-open lg:top-0 ">
+  <div class="wrapper"><!-- 6 column grid -->
+    <div class="flex items-center justify-between w-full lg:w-auto">
+      <a
+        href="/"
+        aria-label="Go to homepage">
+        <img src="/assets/img/2026/logo.svg" alt="DjangoCon US" class="w-32">
+      </a>
+      <button id="NavToggler" class="site-nav-toggler is-closed">
+        <span aria-hidden="true" class="hidden xs:block">Menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 icon-menu" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 icon-close" aria-hidden="true">
+          <path d="M6 6L17.6673 17.6673" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 18L17.6673 6.33274" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
     </div>
-  </header>
+
+    {% include "nav.html",  class:"is-closed site-nav lg:is-open col-span-4" %}
+
+    <a href="{{ site.ticket_link }}" target="_blank" class="button">Buy Tickets</a>
+  </div>
+</header>
