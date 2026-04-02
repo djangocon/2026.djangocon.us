@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        tanker: ['Tanker-Regular', 'Bebas Neue', 'sans-serif'],
       },
       colors: {
         'ocean-blue': {

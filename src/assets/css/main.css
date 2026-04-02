@@ -11,6 +11,8 @@
 @import "views/_social-view.css";
 @import "views/_index.css";
 
+@import "utilities/_fonts.css";
+
 @import "tailwindcss/utilities";
 
 @theme {

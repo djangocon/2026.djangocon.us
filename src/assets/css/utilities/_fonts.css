@@ -1,0 +1,25 @@
+/**
+* @license
+*
+* Font Family: Tanker
+* Designed by: Ruosi Huang
+* URL: https://www.fontshare.com/fonts/tanker
+* © 2026 Indian Type Foundry
+*
+* Tanker Regular
+
+*
+*/
+
+$fonts-path: ../fonts/tanker;
+
+@font-face {
+  font-family: 'Tanker-Regular';
+  src: url('$(fonts-path)/Tanker-Regular.woff2') format('woff2'),
+       url('$(fonts-path)/Tanker-Regular.woff') format('woff'),
+       url('$(fonts-path)/Tanker-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+

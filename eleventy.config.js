@@ -26,6 +26,7 @@ module.exports = (config) => {
   config.addPassthroughCopy("src/assets/js/");
   config.addPassthroughCopy("src/assets/gpx/*");
   config.addPassthroughCopy("src/assets/favicons/");
+  config.addPassthroughCopy("src/assets/fonts/");
   config.addPassthroughCopy({
     "src/_content/sponsors/*.{png,jpg,jpeg,webp,svg}": "sponsors/",
     "src/_content/places/*.{png,jpg,jpeg,webp,svg}": "venue/",
