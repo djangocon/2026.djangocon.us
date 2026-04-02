@@ -2,9 +2,7 @@
 module.exports = {
   content: ["./src/**/*.{html,md,liquid}"],
   safelist: [
-    'border-t-ocean-blue',
-    'border-t-ocean-blue',
-    'border-t-ocean-blue',
+    'border-t-primary',
     'border-t-orange'
   ],
   theme: {

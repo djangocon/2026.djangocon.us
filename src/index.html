@@ -5,10 +5,11 @@ templateClass: homepage
 {% layout "_layouts/default.html" %}
 
 {% block header %}
-<div class="home-hero">
+<div class="index-hero">
   {% include "header.html" %}
 
-  <div id="SiteHero" class="flex justify-center lg:justify-start flex:block wrapper">
+  <div id="SiteHero" class=" flex justify-center lg:justify-start flex:block index-wrapper ">
+  <!-- <div class="index-wrapper-texture" role="presentation"></div> -->
     <section class="flex flex-col items-center gap-8 mx-auto lg:w-1/2 lg:py-16 xl:w-[660px]">
       <span class="bubble">{{ site.conference_dates }}</span>
 
@@ -25,6 +26,12 @@ templateClass: homepage
         Talk Proposal deadline: <strong>{{ site.cfp_deadline }}</strong>
       </p> -->
     </section>
+  </div>
+
+  <div class="index-hero-stats grid grid-cols-3">
+    <p><span>400+</span> Attendees</p>
+    <p><span>50+</span> Talks</p>
+    <p><span>5</span> Days</p>
   </div>
 </div>
 {% endblock %}
