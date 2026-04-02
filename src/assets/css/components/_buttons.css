@@ -1,4 +1,4 @@
-@layer utilities {
+@layer components {
   .button {
     @apply relative;
     @apply flex self-center items-center justify-self-end;
@@ -7,26 +7,21 @@
     @apply border-[3px] rounded-full border-dark-blue shadow-button;
     @apply transition-all duration-[125ms] ease-out;
   }
-}
 
+  .button:hover {
+    @apply shadow-button-hover bg-ocean-blue-400;
+  }
 
-.button:hover {
-  @apply shadow-button-hover bg-ocean-blue-400;
-}
+  .button:active {
+    @apply shadow-button-active;
+  }
 
-.button:active {
-  @apply shadow-button-active;
-}
-/* 
-.button-lg {
-  @apply px-8 py-6 text-2xl;
-} */
+  .button-lg {
+    @apply px-6;
+    @apply text-xl;
+  }
 
-.button-group {
-  @apply flex flex-col flex-wrap items-center gap-4 sm:flex-row;
+  .button-group {
+    @apply flex flex-col flex-wrap items-center gap-4 sm:flex-row;
+  }
 }
-/* 
-.button.bg-ocean-blue,
-.button.bg-ocean-blue-dark {
-  @apply text-white;
-} */

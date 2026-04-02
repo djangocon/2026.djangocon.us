@@ -1,6 +1,6 @@
 @import "tailwindcss/base";
-
 @import "tailwindcss/components";
+
 @import "components/_badge.css";
 @import "components/_bubble.css";
 @import "components/_buttons.css";

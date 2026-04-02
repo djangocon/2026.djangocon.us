@@ -1,7 +1,8 @@
 .site-header {
   @apply fixed z-[100] lg:relative lg:top-0;
-  @apply w-full;
+  @apply w-full h-[90px];
   @apply py-4;
+  
 
   .wrapper {
     @apply grid grid-cols-6;
@@ -33,7 +34,7 @@
   /* @apply bg-ocean-blue-100; */
 
   & > ul {
-    @apply flex items-center lg:flex lg:flex-row lg:justify-end;
+    @apply flex items-center gap-4 lg:flex lg:flex-row lg:justify-end;
     @apply w-full lg:w-auto;
     @apply font-[500];
   }
