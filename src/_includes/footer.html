@@ -1,0 +1,24 @@
+<footer id="SiteFooter" class="site-footer">
+  <div class="container mx-auto text-center">
+    <div class="flex gap-2 px-4 flex-col justify-center">
+      <div class="my-8 flex flex-col items-center gap-8">
+        <img src="/assets/img/2026/Banner.svg" class="max-w-[600px]  block" alt="DjangoCon US" />
+        <a class="button button-lg bg-white px-12" href="{{ site.mailing_list }}">Buy Tickets</a>
+      </div>
+
+      {% include "conf-social-share.html" %}
+
+      <p class="font-tanker lg:text-xl">
+        Got questions? We can help:
+        <a href="mailto:{{site.contact_us_email}}" class="link">{{site.contact_us_email}}</a>
+      </p>
+      <small class="text-sm">
+        &copy; {{ site.conf_year }} DjangoCon US
+        {%- comment -%}· Design by <a href="https://yupgup.com/" class="link" target="_blank">YupGup</a>{%- endcomment -%}
+        · Presented by <a href="https://www.defna.org/" class="link" target="_blank">DEFNA</a>
+        · <a href="/styleguide/">Styleguide</a>
+        {%- comment -%}· <a href="/colophon/" class="link">Colophon</a>{%- endcomment -%}
+      </small>
+    </div>
+  </div>
+</footer>

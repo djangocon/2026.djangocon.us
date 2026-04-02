@@ -29,7 +29,7 @@
 
 @screen lg {
   .block-container {
-    @apply py-14;
+    @apply py-16;
   }
 
   .hero {

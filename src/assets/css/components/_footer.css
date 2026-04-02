@@ -1,0 +1,5 @@
+.site-footer {
+    @apply bg-background bg-[url('/assets/img/2026/tile-bg.jpg')];
+    @apply bg-center bg-no-repeat bg-cover;
+    @apply pt-20 py-8;
+}

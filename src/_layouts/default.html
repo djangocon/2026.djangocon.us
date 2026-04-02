@@ -53,28 +53,7 @@
     {%- endblock -%}
   </main>
 
-  <footer id="SiteFooter" class="py-20">
-    <div class="container mx-auto">
-      <div class="grid gap-8 px-4 place-items-center">
-        {% include "conf-social-share.html" %}
-
-        <p class="text-center lg:text-xl">
-          <strong>
-            Got questions? We can help:
-            <a
-              href="mailto:{{site.contact_us_email}}" class="link">{{site.contact_us_email}}</a>
-          </strong>
-        </p>
-        <small class="text-sm text-center">
-          &copy; {{ site.conf_year }} DjangoCon US
-          {%- comment -%}· Design by <a href="https://yupgup.com/" class="link" target="_blank">YupGup</a>{%- endcomment -%}
-          · Presented by <a href="https://www.defna.org/" class="link" target="_blank">DEFNA</a>
-          · <a href="/styleguide/">Styleguide</a>
-          {%- comment -%}· <a href="/colophon/" class="link">Colophon</a>{%- endcomment -%}
-        </small>
-      </div>
-    </div>
-  </footer>
+  {% include "footer.html" %}
 
   {%- comment -%}
     Social icons added as sprite

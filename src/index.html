@@ -9,22 +9,20 @@ templateClass: homepage
   {% include "header.html" %}
 
   <div id="SiteHero" class=" flex justify-center lg:justify-start flex:block index-wrapper ">
-  <!-- <div class="index-wrapper-texture" role="presentation"></div> -->
     <section class="flex flex-col items-center gap-8 mx-auto lg:w-1/2 lg:py-16 xl:w-[660px]">
       <span class="bubble">{{ site.conference_dates }}</span>
 
       <img src="/assets/img/2026/logo-styled.svg" class="" alt="DjangoCon US" />
 
-      <div class="justify-center p-5 button-group">
-        <a class="button button-lg bg-primary" href="{{ site.cfp_application }}">Submit a Talk</a>
-        <a class="button button-lg" href="{{ site.opportunity_grant_application }}">Apply for a Grant</a>
-        <!-- <a class="text-lg font-bold button" href="{{ site.mailing_list }}">Join Mailing List</a>
-        <a class="text-lg font-bold button" href="{{ site.hotel_reservation_link }}">Book a Hotel Room</a> -->
+      <div class="p-5">
+        <div class="justify-center p-2 button-group">
+          <a class="button button-lg" href="{{ site.mailing_list }}">Join Mailing List</a>
+          <a class="button button-lg" href="{{ site.hotel_reservation_link }}">Book a Hotel Room</a>
+        </div>
+        <div class="justify-center p-2 button-group">
+          <a class="button button-lg bg-primary" href="{{ site.mailing_list }}">Buy Tickets</a>
+        </div>
       </div>
-      <!-- <p class="text-lg text-center">
-        Opportunity Grant deadline: <strong>{{ site.opportunity_grant_deadline }}</strong><br>
-        Talk Proposal deadline: <strong>{{ site.cfp_deadline }}</strong>
-      </p> -->
     </section>
   </div>
 
@@ -37,9 +35,13 @@ templateClass: homepage
 {% endblock %}
 
 {% block content %}
+  <section class="p-4">
+    <img src="/assets/img/2025/venue-3.png" class="my-8 rounded-xl" alt="Group photo of attendees at DjangoCon US 2025" />
+  </section>
+  
   <div class="block-container">
     <div class="text-center wrapper">
-      <h2 class="mb-10 text-3xl font-bold font-heading lg:text-4xl">Our Sponsors</h2>
+      <h2 class="font-tanker text-6xl mb-8">Our Sponsors</h2>
 
       {% include "sponsor-listing.html" %}
 

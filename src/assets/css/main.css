@@ -7,6 +7,7 @@
 @import "components/_table.css";
 @import "components/_containers.css";
 @import "components/_site-nav.css";
+@import "components/_footer.css";
 
 @import "views/_social-view.css";
 @import "views/_index.css";
@@ -23,7 +24,7 @@
   /* THEME-X */
   :root {
     /* Typography */
-    --theme-text-color: #033A43;
+    --theme-text-color: theme("colors.black.DEFAULT");
   }
 
   /*
