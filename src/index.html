@@ -41,11 +41,23 @@ templateClass: homepage
   
   <div class="block-container">
     <div class="text-center wrapper">
-      <h2 class="font-tanker text-6xl mb-8">Our Sponsors</h2>
+      <h2 class="site-h2 mb-8 lg:mb-16">Our Sponsors</h2>
 
-      {% include "sponsor-listing.html" %}
+      <ul class="site-sponsors">
+        {% for sponsor in collections.sponsors %}
+        <li class="site-sponsor">
+          <a href="{{ sponsor.data.url.target }}" target="_blank" rel="noopener noreferrer">
+            <img
+              src="/sponsors/{{ sponsor.data.logo.filename }}"
+              alt="{{ sponsor.data.name }} logo"
+              class="my-2 h-12 max-w-48 object-contain w-auto">
+            <span class="px-3 py-1 bg-white rounded-xl text-xs font-semibold">{{ sponsor.data.level }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
 
-      <a href="/sponsors" class="mt-20 text-xl button">Become a Sponsor</a>
+      <a href="/sponsors" class="my-12 lg:mt-20 inline-block text-xl button">Become a Sponsor</a>
     </div>
   </div>
 {% endblock %}
