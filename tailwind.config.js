@@ -70,7 +70,8 @@ module.exports = {
         'orange': '#FF6752',
         'primary': '#9CB2FF',
         'secondary': '#BBBDC1',
-        'background': '#ECEFFC',
+        'background': '#F3F5FC',
+        'background-dark': '#ECEFFC',
         'stroke': '#E6EBF2'
       },
       fontSize: {

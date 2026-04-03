@@ -22,6 +22,6 @@
   }
 
   .button-group {
-    @apply flex flex-col flex-wrap items-center gap-4 sm:flex-row;
+    @apply flex flex-wrap items-center gap-4 flex-row;
   }
 }

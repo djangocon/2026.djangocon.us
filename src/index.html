@@ -8,16 +8,16 @@ templateClass: homepage
 <div class="index-hero">
   {% include "header.html" %}
 
-  <div id="SiteHero" class=" flex justify-center lg:justify-start flex:block index-wrapper ">
+  <div id="SiteHero" class=" index-wrapper ">
     <section class="flex flex-col items-center gap-8 mx-auto lg:w-1/2 lg:py-16 xl:w-[660px]">
       <span class="bubble">{{ site.conference_dates }}</span>
 
-      <img src="/assets/img/2026/logo-styled.svg" class="" alt="DjangoCon US" />
+      <img src="/assets/img/2026/logo-styled.svg" class="w-full" alt="DjangoCon US" />
 
       <div class="p-5">
         <div class="justify-center p-2 button-group">
-          <a class="button button-lg" href="{{ site.mailing_list }}">Join Mailing List</a>
-          <a class="button button-lg" href="{{ site.hotel_reservation_link }}">Book a Hotel Room</a>
+          <a class="button button-lg bg-white" href="{{ site.mailing_list }}">Join Mailing List</a>
+          <a class="button button-lg bg-white" href="{{ site.hotel_reservation_link }}">Book a Hotel Room</a>
         </div>
         <div class="justify-center p-2 button-group">
           <a class="button button-lg bg-primary" href="{{ site.mailing_list }}">Buy Tickets</a>

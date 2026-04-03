@@ -1,33 +1,36 @@
 .index-hero {
   @apply relative z-50;
-  background-image: url('/assets/img/2026/yellow-metro.svg'), url('/assets/img/2026/red-metro.svg');                  
-  background-repeat: no-repeat, no-repeat;                                                                            
-  background-position: left 100%, right 100%;
-  position: relative; 
+  @apply bg-[url('/assets/img/2026/yellow-metro.svg')] bg-no-repeat bg-[length:90%] bg-[position:-10%_100%];
+
+  @screen lg {
+    background-image: url('/assets/img/2026/yellow-metro.svg'), url('/assets/img/2026/red-metro.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 100%, right 100%;
+  }
 }
 
 .index-wrapper {
-  position: relative;
+  @apply relative;
+  @apply flex justify-center lg:justify-start;
+  @apply pt-[8rem] lg:pt-0 px-4;
 }
 
 .index-wrapper-texture {
-  background-image: url('/assets/img/2026/texture.jpg');
-  position: absolute;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @apply absolute inset-0;
+  @apply bg-[url('/assets/img/2026/texture.jpg')] bg-center bg-no-repeat bg-cover;
+  @apply opacity-40;
   background-blend-mode: lighten;
-  opacity: 40%;
-  inset: 0;
 }
 
 .index-hero-stats {
-  text-align: center;
+  @apply text-center;
+  @apply mt-[20rem] lg:mt-0;
 
   span {
-    @apply font-tanker block text-orange text-6xl;
+    @apply block;
+    @apply font-tanker text-orange text-6xl;
     -webkit-text-stroke: 3px theme("colors.dark-blue.DEFAULT");
     paint-order: stroke fill;
-    text-shadow: 4px -4px 0px  theme("colors.dark-blue.DEFAULT");
+    text-shadow: 4px -4px 0px theme("colors.dark-blue.DEFAULT");
   }
 }
