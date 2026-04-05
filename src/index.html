@@ -8,11 +8,14 @@ templateClass: homepage
 <div class="index-hero">
   {% include "header.html" %}
 
-  <div id="SiteHero" class=" index-wrapper ">
+  <div id="SiteHero" class="index-wrapper">
     <section class="flex flex-col items-center gap-8 mx-auto lg:w-1/2 lg:py-16 xl:w-[660px]">
       <span class="bubble">{{ site.conference_dates }}</span>
 
       <img src="/assets/img/2026/logo-styled.svg" class="w-full" alt="DjangoCon US" />
+
+      <p class="text-xl text-center w-3/4">Join us for five days of inspiration, education, and networking at the <a href="https://www.ihg.com/voco/hotels/us/en/chicago/chiwp/hoteldetail" target="_blank" class="underline-offset-4 decoration-[2px]">Voco Chicago Downtown</a>
+      </p>
 
       <div class="p-5">
         <div class="justify-center p-2 button-group">
@@ -38,7 +41,40 @@ templateClass: homepage
   <section class="p-4">
     <img src="/assets/img/2025/venue-3.png" class="my-8 rounded-xl" alt="Group photo of attendees at DjangoCon US 2025" />
   </section>
-  
+
+  <div class="pt-0 lg:pt-8 block-container">
+    <div class="wrapper">
+      <div class="grid-cols-2 gap-16 text-center lg:grid lg:text-left align-center">
+        <section class="my-6">
+          <h2 class="site-h3 mb-4">For Djangonauts of all levels</h2>
+          <p class="mb-6 text-lg">
+            DjangoCon US has something for everyone, from the person who develops Django applications for a living to the person who just tinkers in their spare time.
+          </p>
+          <a class="button button-lg" href="/about">About DjangoCon US</a>
+        </section>
+
+        <ul class="items-center self-end gap-6 py-4 text-left lg:gap-0 md:flex lg:flex-col lg:items-start">
+        <li>
+            {%
+              include 'date-card.html',
+              month:"Aug",
+              days:"24-26",
+              heading:"Talks: Dozens of talks chosen by the community"
+            %}
+          </li>
+          <li>
+            {%
+              include 'date-card.html',
+              month:"Aug",
+              days:"27-28",
+              heading:"Sprints: Team up to work on Django!"
+            %}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <div class="block-container">
     <div class="text-center wrapper">
       <h2 class="site-h2 mb-8 lg:mb-16">Our Sponsors</h2>

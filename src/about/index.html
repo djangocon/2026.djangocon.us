@@ -10,15 +10,15 @@ description: |
   <div class="wrapper">
     <header class="flex flex-wrap items-center gap-8 lg:gap-16">
       <img
-        src="/assets/img/theme/graphics/about.svg"
+        src="/assets/img/2026/about.svg"
         alt="A cartoony drawing of a globe with a map marker placed on a green land mass"
         class="hidden w-full max-w-80 md:block" />
 
       <div class="flex-1 max-w-screen-lg">
-        <h1 class="mb-8 pageheading">{{ title }}</h1>
-        <p class="mb-8 subheading">DjangoCon US is a five-day international conference for the community by the community about the Django web framework, held each year in North America.</p>
+        <h1 class="mb-4 pageheading">{{ title }}</h1>
+        <p class="mb-4 subheading">DjangoCon US is a five-day international conference for the community by the community about the Django web framework, held each year in North America.</p>
 
-        <p class="lead">
+        <p>
           DjangoCon US has something for everyone, from the person who develops Django applications for a living to the person who just tinkers in their spare time. You'll discover details about a range of diverse applications that people from all over the world are building with Django, get a deeper understanding of concepts you're already familiar with and discover new ways to use them, and have a lot of fun!
         </p>
       </div>
@@ -26,29 +26,29 @@ description: |
   </div>
 </div>
 
-<div class="bg-ocean-blue-300 block-container">
+<div class="bg-background block-container">
   <div class="wrapper">
     <div class="grid-1-2">
       <section>
-        <h2 class="mb-8 text-2xl font-bold font-heading lg:text-4xl">Pre-Conference</h2>
+        <h2 class="mb-8 site-h3">Pre-Conference</h2>
 
         <ul class="space-y-4">
-          <li>
+          <li><s>
             {%
               include 'date-card.html',
                 month:"Mar",
                 days:"16",
                 heading:"Call for Proposals Closes"
             %}
-          </li>
-          <li>
+          </s></li>
+          <li><s>
             {%
               include 'date-card.html',
                 month:"Mar",
                 days:"16",
                 heading:"Opportunity Grant Application Closes"
             %}
-          </li>
+         </s></li>
           <li>
             {%
               include 'date-card.html',
@@ -68,7 +68,7 @@ description: |
       </section>
 
       <section>
-        <h2 class="mb-8 text-2xl font-bold font-heading lg:text-4xl">Conference Schedule</h2>
+        <h2 class="mb-8 site-h3">Conference Schedule</h2>
 
         <ul class="space-y-10">
           <li>
@@ -90,8 +90,8 @@ description: |
         </ul>
 
         <div class="mt-8">
-          <a class="button button-lg" href="{{ site.ticket_link }}">Buy Tickets!</a>
           {% comment %}
+          <a class="button button-lg" href="{{ site.ticket_link }}">Buy Tickets!</a>
           <a class="button" href="/schedule/">Full Schedule</a>
           {% endcomment %}
         </div>
@@ -101,36 +101,39 @@ description: |
 </div>
 
 
-<div class="bg-blue block-container">
+<div class="block-container">
   <div class="wrapper">
-    <h2 class="mb-8 text-2xl font-bold text-center font-heading lg:text-5xl">Conference Features</h2>
+    <h2 class="mb-8 site-h2 text-center">Conference Features</h2>
+
+    <div class="grid gap-8 lg:grid-cols-3">
+      <section class="relative flex flex-col gap-4 p-4 bg-white lg:pt-10">
         <svg class="w-12 h-12 text-dark-blue icon">
           <title>Person Icon</title>
           <use xlink:href="#people-icon"></use>
         </svg>
 
-    <div class="grid gap-8 lg:grid-cols-3 lg:gap-16">
-      <section class="relative flex flex-col gap-4 p-6 bg-white lg:pt-10 card-effect-1">
-        <h3 class="text-lg font-bold lg:text-2xl font-heading" id="code-of-conduct">Code of Conduct</h3>
-        <p class="lg:text-lg">We're committed to providing a safe and friendly environment for everyone to learn, meet, and enjoy the conference. All organizers, attendees, speakers and sponsors must follow the <strong><a href="/conduct/" class="link">Code of Conduct</a></strong>.</p>
+        <h3 class="site-h3">Code of Conduct</h3>
+        <p>We're committed to providing a safe and friendly environment for everyone to learn, meet, and enjoy the conference. All organizers, attendees, speakers and sponsors must follow the <strong><a href="/conduct/" class="link">Code of Conduct</a></strong>.</p>
       </section>
 
       <section class="relative flex flex-col gap-4 p-6 bg-white lg:pt-10 card-effect-2">
-        <h3 class="text-lg font-bold lg:text-2xl font-heading" id="commitment-to-diversity">Commitment to Diversity</h3>
-        <p class="lg:text-lg">It is a core aim of DjangoCon US 2026 to encourage diversity, enforce our Code of Conduct, and make our event as inclusive and accessible as possible. <strong><a href="/opportunity-grants/" class="link">Opportunity Grants</a></strong> help us achieve this goal.</p>
         <svg class="w-12 h-12 text-dark-blue icon">
           <title>Heart Icon</title>
           <use xlink:href="#heart-icon"></use>
         </svg>
+
+        <h3 class="site-h3">Commitment to Diversity</h3>
+        <p>It is a core aim of DjangoCon US 2026 to encourage diversity, enforce our Code of Conduct, and make our event as inclusive and accessible as possible. <strong><a href="/opportunity-grants/" class="link">Opportunity Grants</a></strong> help us achieve this goal.</p>
       </section>
 
       <section class="relative flex flex-col gap-4 p-6 bg-white lg:pt-10 card-effect-3">
-        <h3 class="text-lg font-bold lg:text-2xl font-heading" id="opportunity-grants">Public Health</h3>
-        <p class="lg:text-lg">As part of our commitment to the safety of our attendees, we have a <strong><a href="/public-health/" class="link">Public Health Policy</a></strong> and recommend all attendees to be vaccinated and masked, and have a negative COVID test prior to attending.</p>
         <svg class="w-12 h-12 text-dark-blue icon">
           <title>Document Icon</title>
           <use xlink:href="#document-icon"></use>
         </svg>
+
+        <h3 class="site-h3">Public Health</h3>
+        <p>As part of our commitment to the safety of our attendees, we have a <strong><a href="/public-health/" class="link">Public Health Policy</a></strong> and recommend all attendees to be vaccinated and masked, and have a negative COVID test prior to attending.</p>
       </section>
     </div>
   </div>

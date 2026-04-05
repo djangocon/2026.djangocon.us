@@ -75,7 +75,12 @@ module.exports = {
         'stroke': '#E6EBF2'
       },
       fontSize: {
-        '5xl': ['3rem', 1.1]
+        '5xl': ['3rem', 1.15],
+        'h1': ['3rem', 1.25],
+        'h2': ['2.5rem', 1.15],
+        'h3': ['1.5rem', 1.15],
+        'h4': ['1.25rem', 1.25]
+
       },
       boxShadow: {
         'button': '8px -8px 0px 0px theme("colors.dark-blue.DEFAULT")',

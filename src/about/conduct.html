@@ -12,12 +12,14 @@ redirect_from: /coc/
   <div class="wrapper">
     <header class="flex flex-wrap items-center gap-8 lg:gap-16">
       <img
-        src="/assets/img/theme/graphics/coc.svg"
-        alt="A code of conduct document"
-        class="hidden w-full max-w-80 md:block" />
+        src="/assets/img/2026/conduct.svg"
+        alt="A cartoony drawing of a globe with a map marker placed on a green land mass"
+        class="hidden w-full max-w-24 md:block" />
+
       <div class="flex-1 max-w-screen-lg">
-        <h1 class="mb-8 pageheading">{{ title }}</h1>
-        <p class="subheading">
+        <h1 class="mb-4 pageheading">{{ title }}</h1>
+
+        <p class="prose">
           DjangoCon US is dedicated to providing a fun harassment-free conference experience for everyone, regardless of gender, gender identity, sexual orientation, disability, physical appearance, body size, race, or religion.
         </p>
       </div>
@@ -25,79 +27,67 @@ redirect_from: /coc/
   </div>
 </div>
 
-
-<div class="bg-ocean-blue-300 block-container">
+<section>
   <div class="wrapper">
-    <div class="grid-1-2">
-      <section class="space-y-6 lead">
-        <p>Be kind to others. Do not insult or put down other attendees. Behave professionally.</p>
-        <p>Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for DjangoCon US.</p>
+    <div class="banner">
+      <div>
+        <p>Be kind to others. Do not insult or put down other attendees. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for DjangoCon US.</p>
         <p>Attendees violating these rules may be asked to leave the conference without a refund at the sole discretion of the conference organizers.</p>
         <p>Thank you for helping make this a welcoming, friendly event for all.</p>
-      </section>
+      </div>
 
-      <section class="relative self-start p-6 prose bg-white lg:prose-lg lg:pt-10 card-effect-3">
-        <h2 class="mb-8 text-lg font-bold font-heading lg:text-2xl">Need help?</h2>
-        <div class="space-y-6 lead">
-          <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact the conference Code of Conduct committee at <a href="mailto:{{ site.conduct_email }}" class="link">{{ site.conduct_email }}</a>{% comment %} or <a href="tel:201-899-4189" class="link">201-899-4189</a>{% endcomment %}.</p>
-          <p>To ensure we receive all the necessary information, please refer to our <a href="#procedures-for-reporting-incidents" class="link">Procedures for Reporting Incidents</a>.</p>
-        </div>
-      </section>
+      <aside class="bg-white">
+        <p class="site-h3">Need help?</p>
+
+        <p>If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact the conference Code of Conduct committee at <a href="mailto:{{ site.conduct_email }}" class="link">{{ site.conduct_email }}</a>{% comment %} or <a href="tel:201-899-4189" class="link">201-899-4189</a>{% endcomment %}.</p>
+        <p>To ensure we receive all the necessary information, please refer to our <a href="#procedures-for-reporting-incidents" class="link">Procedures for Reporting Incidents</a>.</p>
+      </aside>
     </div>
   </div>
-</div>
-
+</section>
 
 <div class="block-container">
   <div class="wrapper">
     <div class="grid-1-2">
-      <section class="prose lg:prose-lg">
+      <section class="prose">
 {% markdown %}
-## Important Numbers
+### Important Numbers
 
 Conference staff will be happy to help participants contact venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
 
 If your physical safety or the physical safety of others is at risk, please dial 911. If you are outside of Chicago, or on a cell phone, and need to access Chicago's 911 services, dial [(312) 746-6000](tel:+1-312-746-6000). For other needs, contact the relevant authorities below.
 {% endmarkdown %}
       </section>
-      <section>
-        <section class="prose lg:prose-lg">
-          <h2>Code of Conduct team</h2>
-          <ul class="gap-8 list-disc lg:gap-12 md:columns-2 prose lg:prose-lg *:break-inside-avoid">
-            <li>Kudzayi Bamhare</li>
-            <li>Dawn Wages</li>
-            <li>Velda Kiara</li>
-            <li>Carol Ganz</li>
-            <li>Drew Winstel</li>
-            <li>Peter Grandstaff</li>
-            <li>Nathan Zeager</li>
-          </ul>
-        </section>
+
+      <section class="prose lg:prose-lg">
+        <h3>Code of Conduct team</h3>
+        <ul class="gap-2 list-disc lg:gap-12 prose *:break-inside-avoid">
+          <li>Kudzayi Bamhare</li>
+          <li>Dawn Wages</li>
+          <li>Velda Kiara</li>
+          <li>Carol Ganz</li>
+          <li>Drew Winstel</li>
+          <li>Peter Grandstaff</li>
+          <li>Nathan Zeager</li>
+        </ul>
       </section>
     </div>
-  </div>
-</div>
 
-<div class="bg-ocean-blue-300 block-container">
-  <div class="wrapper">
     <section class="prose lg:prose-lg max-w-none">
-      <h2>Local authorities</h2>
-      <ul class="gap-8 list-disc lg:gap-12 md:columns-2 lg:columns-3 *:break-inside-avoid max-w-none">
+      <h2 class="site-h3">Local authorities</h2>
+
+      <ul class="gap-2 list-disc lg:gap-12 md:columns-2 lg:columns-3 *:break-inside-avoid max-w-none">
         <li>Emergency: 911</li>
-
         <li>Chicago Police Helpline: <a href="tel:311">311</a></li>
-
         <li>Chicago Police (Non-Emergency): <a href="tel:+1-312-746-6000">(312) 746-6000</a></li>
-
         <li>Crime Check (to report Non-Emergency incidents): <a href="https://www.chicagopolice.org/online-crime-reporting/">chicagopolice.org/online-crime-reporting</a></li>
-
         <li>Sexual Assault Crisis Line/Victims Crisis Line (24 hours): <a href="tel:+1-888-293-2080">(888) 293-2080</a></li>
-
         <li>Nearest Hospital: <a href="https://maps.app.goo.gl/1YUMVFSdwZndiHMj9">John H. Stroger, Jr. Hospital of Cook County</a> 1969 W Ogden Ave, Chicago, IL 60612<br /><a href="tel:+1-312-864-6000">(312) 864-6000</a></li>
       </ul>
     </section>
   </div>
 </div>
+
 <div class="block-container">
   <div class="wrapper">
     <div class="prose lg:prose-lg mx-auto">
@@ -122,14 +112,13 @@ We are fine with receiving reports where we decide to take no action for the sak
 -   Insults, put downs, or jokes that are based upon stereotypes, that are exclusionary, or that hold others up for ridicule
 -   Excessive swearing
 -   Unwelcome sexual attention or advances
--   Unwelcome physical contact, including simulated physical contact (eg, textual descriptions like “hug” or “backrub”) without consent or after a request to stop
+-   Unwelcome physical contact, including simulated physical contact (eg, textual descriptions like "hug" or "backrub") without consent or after a request to stop
 -   Pattern of inappropriate social contact, such as requesting/assuming inappropriate levels of intimacy with others
 -   Sustained disruption of online community discussions, in-person presentations, or other in-person events
 -   Continued one-on-one communication after requests to cease
 -   Other conduct that is inappropriate for a professional audience including people of many different backgrounds
 
 This list is not an exhaustive list of all inappropriate behavior that is unacceptable at DjangoCon US.
-
 
 ### General Reporting Procedure
 
@@ -150,7 +139,6 @@ When you make a report via email or phone, please include:
 Please provide as much information as possible.
 
 You will receive feedback promptly or within 24 hours after submitting the report.
-
 
 ### Confidentiality
 
@@ -191,7 +179,6 @@ Exhibitors in the expo hall, sponsor or vendor booths, or similar activities are
 ## Weapons Policy
 
 No weapons are allowed at DjangoCon US. Weapons include but are not limited to explosives (including fireworks), guns, and large knives such as those used for hunting or display, as well as any other item used for the purpose of causing injury or harm to others. Anyone seen in possession of one of these items will be asked to leave immediately, and will only be allowed to return without the weapon.
-
 
 ## Photography
 

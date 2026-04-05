@@ -1,7 +1,7 @@
 @layer components {
   .button {
     @apply relative;
-    @apply flex self-center items-center justify-self-end;
+    @apply inline-flex self-center items-center ;
     @apply py-3 px-4 gap-2.5;
     @apply font-tanker leading-none text-dark-blue text-center text-nowrap uppercase !no-underline;
     @apply border-[3px] rounded-full border-dark-blue shadow-button;
