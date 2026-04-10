@@ -1,8 +1,12 @@
 
 
 .wrapper {
-  @apply max-w-screen-xl;
+  @apply max-w-screen-lg;
   @apply px-6 mx-auto sm:px-8;
+
+  & > .prose {
+    max-width: none;
+  }
 }
 
 .wrapper.narrow {

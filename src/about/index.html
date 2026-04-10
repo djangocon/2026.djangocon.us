@@ -1,31 +1,21 @@
 ---
-layout: default
-
 title: About DjangoCon US
 description: |
   DjangoCon US is dedicated to providing a fun harassment-free conference experience for everyone, regardless of gender, gender identity, sexual orientation, disability, physical appearance, body size, race, or religion.
+hero_graphic: /assets/img/2026/about.svg
 ---
 
-<div class="hero">
-  <div class="wrapper">
-    <header class="flex flex-wrap items-center gap-8 lg:gap-16">
-      <img
-        src="/assets/img/2026/about.svg"
-        alt="A cartoony drawing of a globe with a map marker placed on a green land mass"
-        class="hidden w-full max-w-80 md:block" />
+{% layout "_layouts/page.html" %}
 
-      <div class="flex-1 max-w-screen-lg">
-        <h1 class="mb-4 pageheading">{{ title }}</h1>
-        <p class="mb-4 subheading">DjangoCon US is a five-day international conference for the community by the community about the Django web framework, held each year in North America.</p>
+{% block hero_content %}
+    <p class="mb-4 subheading">DjangoCon US is a five-day international conference for the community by the community about the Django web framework, held each year in North America.</p>
 
-        <p>
-          DjangoCon US has something for everyone, from the person who develops Django applications for a living to the person who just tinkers in their spare time. You'll discover details about a range of diverse applications that people from all over the world are building with Django, get a deeper understanding of concepts you're already familiar with and discover new ways to use them, and have a lot of fun!
-        </p>
-      </div>
-    </header>
-  </div>
-</div>
+    <p>
+      DjangoCon US has something for everyone, from the person who develops Django applications for a living to the person who just tinkers in their spare time. You'll discover details about a range of diverse applications that people from all over the world are building with Django, get a deeper understanding of concepts you're already familiar with and discover new ways to use them, and have a lot of fun!
+    </p>
+{% endblock %}
 
+{% block wrapper %}
 <div class="bg-background block-container">
   <div class="wrapper">
     <div class="grid-1-2">
@@ -139,38 +129,6 @@ description: |
   </div>
 </div>
 
-<!-- <div class="block-container">
-  <div class="wrapper">
-    <div class="grid-1-2">
-      <figure>
-        <span class="block h-full photo-effect">
-          <img
-            class="object-cover w-full h-full"
-            src="/assets/img/crowd-1.jpg"
-            loading="lazy"
-            alt="DjangoCon US attendees smiling for a picture.">
-        </span>
-      </figure>
-
-      <section>
-        <h2 class="mb-8 text-2xl font-bold font-heading lg:text-5xl">Day 1 Orientation</h2>
-
-        <div class="space-y-6 lg:text-xl">
-          <ul class="space-y-4">
-            <li>Are you new to DjangoCon US or tech conferences in general?</li>
-            <li>Are you worried you might feel out of place?</li>
-            <li>Are you attending DjangoCon US by yourself?</li>
-          </ul>
-
-          <p><strong>If so, the Day 1 orientation is for you!</strong> We'll help you get your bearings so you can have the BEST conference experience possible.</p>
-
-          <p>More details coming in the blog.</p>
-        </div>
-      </section>
-    </div>
-  </div>
-</div> -->
-
 {% comment %}
 <section class="section-pad theme-light-gray v-pad-bottom-extra">
   <div class="row card-row">
@@ -203,3 +161,4 @@ description: |
   </div>
 </section>
 {% endcomment %}
+{% endblock %}

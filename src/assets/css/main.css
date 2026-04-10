@@ -155,16 +155,16 @@
   }
 
   .prose h2 {
-    @apply site-h2;
+    @apply site-h2 mt-8 mb-4;
   }
 
   .prose h3 {
     @apply site-h3;
   }
-
+/* 
   .prose :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
     @apply mb-6;
-  }
+  } */
 }
 
 @layer utilities {

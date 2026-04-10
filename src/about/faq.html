@@ -1,36 +1,26 @@
 ---
-layout: default
-
 title: Frequently Asked Questions
 description: |
   Common questions and answers about DjangoCon US.
 
 permalink: /faq/
+hero_graphic: /assets/img/2026/faq.svg
 ---
 
-<div class="block-container">
-  <div class="wrapper">
-    <header class="flex flex-wrap items-center gap-8 lg:gap-16">
-      <img
-        src="/assets/img/theme/graphics/faq.svg"
-        alt="Question mark and exclamation point in a speech bubble"
-        class="hidden w-full max-w-80 md:block" />
-      <div class="flex-1 max-w-screen-lg">
-        <h1 class="mb-6 pageheading">{{ title }}</h1>
-        <h2 class="mb-6 subheading">
-          The answer to every question below is <strong>YES!</strong>
-        </h2>
+{% layout "_layouts/page.html" %}
 
-        <p class="lead">
-          Inspired by a <a href="https://medium.com/signal-v-noise/how-a-rest-stop-on-the-side-of-the-road-inspired-a-web-page-design-c2a65bf2e88a" class="link" target="_blank">sign at a roadside rest stop</a>. If you have a question that is not answered below, please <a href="mailto:{{site.contact_us_email}}" class="link">let us know</a>!
-        </p>
-      </div>
-    </header>
-  </div>
-</div>
+{% block hero_content %}
+  <h2 class="mb-6 subheading">
+    The answer to every question below is <strong>YES!</strong>
+  </h2>
 
+  <p class="lead">
+    Inspired by a <a href="https://medium.com/signal-v-noise/how-a-rest-stop-on-the-side-of-the-road-inspired-a-web-page-design-c2a65bf2e88a" class="link" target="_blank">sign at a roadside rest stop</a>. If you have a question that is not answered below, please <a href="mailto:{{site.contact_us_email}}" class="link">let us know</a>!
+  </p>
+{% endblock %}
 
-<div class="bg-gray-100 block-container">
+{% block wrapper %}
+<div class="bg-background block-container">
   <div class="wrapper">
     <div class="grid-1-2">
       <section>
@@ -42,11 +32,10 @@ permalink: /faq/
 	  </p>-->
         </hgroup>
 
-        <div class="prose lg:prose-lg">
+        <div class="prose">
 {% markdown %}
 <!-- - Is the conference over? -->
 - I cannot attend DjangoCon US after all. Can I get a refund, or transfer my ticket to someone else?</li>
-<!-- - Do [tutorials]({{ site.ticket_link }}) cost extra?</li> -->
 - Do I have to register for sprints?</li>
 - Can I come to sprints even if I forgot to register?</li>
 - Can I register for sprints without registering for the whole conference?</li>
@@ -62,7 +51,7 @@ permalink: /faq/
           {% endcomment %}
         </hgroup>
 
-        <div class="prose lg:prose-lg">
+        <div class="prose">
 {% markdown %}
 - Will after-hours events, like the opening reception or a board game night, be listed on the schedule?
 - Will videos of talks be posted online?
@@ -85,7 +74,7 @@ permalink: /faq/
           <p class="lead">More information is on our <a href="/speaking/speaker-resources/" class="link">Speaker Resources</a> page.</p>
         </hgroup>
 
-        <div class="prose lg:prose-lg">
+        <div class="prose">
 {% markdown %}
 - Are speaker mentors available to help me with my talk?
 - Do I need to present from my own laptop?
@@ -102,14 +91,14 @@ permalink: /faq/
 	  <p class="lead">More information is on our <a href="/venue/#accessibility" class="link">Venue</a> page.</p>-->
         </hgroup>
 
-        <div class="prose lg:prose-lg">
+        <div class="prose">
 {% markdown %}
 - Can I use a bathroom that corresponds with my gender identity?
 - Is my service animal welcome, and is there a place nearby to walk my service animal?
 - Is step-free access available to all parts of the venue, including presentation areas?
 - Is there a nearby recovery meeting?
 - Will there be vegetarian, vegan, and/or gluten-free options at meals?
-<!-- - Will you reimburse me for some of my [childcare expenses](/news/childcare-during-djangocon/)? -->
+- Will you reimburse me for some of my [childcare expenses](/news/childcare-during-djangocon/)?
 <!-- - Is there a [lactation room](/news/lactation-room/)? -->
 {% endmarkdown %}
           </ul>
@@ -119,16 +108,16 @@ permalink: /faq/
   </div>
 </div>
 
-<div class="bg-gray-100 block-container">
+<div class="bg-background block-container">
   <div class="wrapper">
     <div class="grid-1-2">
       <section>
         <hgroup class="mb-6">
           <h2 class="mb-4 text-2xl font-bold font-heading lg:text-4xl">Opportunity Grants</h2>
-          <p class="lead">More information is on our <a href="/opportunity-grants/" class="link">Opportunity Grants</a> page.</p>
+          <p>More information is on our <a href="/opportunity-grants/" class="link">Opportunity Grants</a> page.</p>
         </hgroup>
 
-        <div class="prose lg:prose-lg">
+        <div class="prose">
 {% markdown %}
 - Do I need to provide receipts in order to be reimbursed for my opportunity grant?
 - Will I be reimbursed promptly at or shortly after the conference?
@@ -138,13 +127,13 @@ permalink: /faq/
 
       <section>
         <hgroup class="mb-6">
-          <h2 class="mb-8 text-2xl font-bold font-heading lg:text-4xl">Sponsors</h2>
-	  <p class="lead">More information on sponsorship will be coming soon!</p>
+          <h2 class="mb-4 text-2xl font-bold font-heading lg:text-4xl">Sponsors</h2>
+	        <p>More information on sponsorship will be coming soon!</p>
 	  <!--
 	  <p class="lead">More information is on our <a href="/sponsors/information/" class="link">Become a Sponsor</a> page. Sponsorship signups for 2025 are now available!</p>-->
         </hgroup>
 
-        <div class="prose lg:prose-lg">
+        <div class="prose">
 {% markdown %}
 - Can I sign up as a sponsor for DjangoCon US 2026?
 - Can I sign up as a sponsor for [Opportunity Grants](/opportunity-grants/)?
@@ -155,4 +144,4 @@ permalink: /faq/
     </div>
   </div>
 </div>
-
+{% endblock %}

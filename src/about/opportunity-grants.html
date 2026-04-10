@@ -1,47 +1,26 @@
 ---
-layout: default
-
 title: Opportunity Grants
 description: |
   As part of our commitment to diversity, we are thrilled to announce that we will be supporting individuals who need opportunity grants to attend DjangoCon US.
 
 permalink: /opportunity-grants/
+hero_graphic: /assets/img/2026/about.svg
 ---
 
-<div class="hero">
-  <div class="wrapper">
-    <header class="flex flex-wrap items-center gap-8 lg:gap-16">
-      <img
-        src="/assets/img/theme/graphics/grants.svg"
-        alt="A positive messages being happily received. A hand holds a heart to the right of a speech bubble containing a smiling face."
-        class="hidden w-full max-w-80 md:block" />
-      <div class="flex-1 max-w-screen-lg">
-        <h1 class="mb-8 pageheading">{{ title }}</h1>
+{% layout "_layouts/page.html" %}
 
-        <h2 class="mb-8 subheading">
-          The Opportunity Grant process for 2026 has closed.
-        </h2>
-        <!-- <p class="lead"><a href="{{ site.opportunity_grant_application }}" class="button button-lg">Apply here!</a></p> -->
+{% block hero_content %}
+  <p class="lead">
+    The Opportunity Grant process for 2026 is now closed.
+  </p>
+  <br />
+  <p>
+    If you have any questions, feel free to reach out to the opportunity grants team at <a href="mailto:grants@djangocon.us">grants@djangocon.us</a>.
+  </p>
+{% endblock %}
 
-        <div class="space-y-6">
-          <p class="lead">
-            Applications were open until
-            <a
-              href="https://time.is/compare/1100AM_30_March_2026_in_Chicago,_Cook,_Illinois,_United_States"
-              >March 16, 2026 at 11:00 AM CDT</a
-            >. If you have any questions, feel free to reach out to the
-            opportunity grants team at
-            <a href="mailto:grants@djangocon.us">grants@djangocon.us</a>.
-          </p>
-        </div>
-      </div>
-    </header>
-  </div>
-</div>
 
-<div class="bg-gray-100 block-container">
-  <div class="wrapper">
-    <div class="mx-auto prose lg:prose-lg">
+{% block page %}
 {% markdown %}
 ## Diversity Sponsorships
 
@@ -92,6 +71,4 @@ Become a Sponsor! You or your company can sponsor at a specific level or sponsor
 You may also donate directly to the Opportunity Grant Fund by buying an extra ticket for an attendee who couldn't otherwise afford it when you purchase your ticket. Alternatively, you can add a dollar amount of your choosing.
 
 {% endmarkdown %}
-    </div>
-  </div>
-</div>
+{% endblock %}

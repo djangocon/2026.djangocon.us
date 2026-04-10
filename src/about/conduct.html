@@ -1,32 +1,22 @@
 ---
-layout: default
 title: Code of Conduct
 description: |
   DjangoCon US is dedicated to providing a fun harassment-free conference experience for everyone, regardless of gender, gender identity, sexual orientation, disability, physical appearance, body size, race, or religion.
 
 permalink: /conduct/
 redirect_from: /coc/
+hero_graphic: /assets/img/2026/conduct.svg
 ---
 
-<div class="hero">
-  <div class="wrapper">
-    <header class="flex flex-wrap items-center gap-8 lg:gap-16">
-      <img
-        src="/assets/img/2026/conduct.svg"
-        alt="A cartoony drawing of a globe with a map marker placed on a green land mass"
-        class="hidden w-full max-w-24 md:block" />
+{% layout "_layouts/page.html" %}
 
-      <div class="flex-1 max-w-screen-lg">
-        <h1 class="mb-4 pageheading">{{ title }}</h1>
+{% block hero_content %}
+  <p class="prose">
+    DjangoCon US is dedicated to providing a fun harassment-free conference experience for everyone, regardless of gender, gender identity, sexual orientation, disability, physical appearance, body size, race, or religion.
+  </p>
+{% endblock %}
 
-        <p class="prose">
-          DjangoCon US is dedicated to providing a fun harassment-free conference experience for everyone, regardless of gender, gender identity, sexual orientation, disability, physical appearance, body size, race, or religion.
-        </p>
-      </div>
-    </header>
-  </div>
-</div>
-
+{% block wrapper %}
 <section>
   <div class="wrapper">
     <div class="banner">
@@ -59,7 +49,7 @@ If your physical safety or the physical safety of others is at risk, please dial
 {% endmarkdown %}
       </section>
 
-      <section class="prose lg:prose-lg">
+      <section class="prose">
         <h3>Code of Conduct team</h3>
         <ul class="gap-2 list-disc lg:gap-12 prose *:break-inside-avoid">
           <li>Kudzayi Bamhare</li>
@@ -73,8 +63,8 @@ If your physical safety or the physical safety of others is at risk, please dial
       </section>
     </div>
 
-    <section class="prose lg:prose-lg max-w-none">
-      <h2 class="site-h3">Local authorities</h2>
+    <section class="prose max-w-none mt-6">
+      <h3 class="site-h3">Local authorities</h3>
 
       <ul class="gap-2 list-disc lg:gap-12 md:columns-2 lg:columns-3 *:break-inside-avoid max-w-none">
         <li>Emergency: 911</li>
@@ -90,7 +80,7 @@ If your physical safety or the physical safety of others is at risk, please dial
 
 <div class="block-container">
   <div class="wrapper">
-    <div class="prose lg:prose-lg mx-auto">
+    <div class="prose mx-auto">
 {% markdown %}
 ## Procedures for Reporting Incidents
 
@@ -100,7 +90,7 @@ If you are unsure whether the incident is a violation, or whether the space wher
 
 We are fine with receiving reports where we decide to take no action for the sake of creating a safer space.
 
-## Examples of Inappropriate Behavior
+### Examples of Inappropriate Behavior
 -   Harassment of any participants in any form
 -   Deliberate intimidation, stalking, or following
 -   Logging or taking screenshots of online activity for harassment purposes
@@ -145,7 +135,15 @@ You will receive feedback promptly or within 24 hours after submitting the repor
 All reports will be kept confidential. When we discuss incidents with people who are reported, we will anonymize details as much as we can to protect reporter privacy.
 
 However, some incidents happen in one-on-one interactions, and even if the details are anonymized, the reported person may be able to guess who made the report. If you have concerns about retaliation or your personal safety, please note those in your report. We still encourage you to report, so that we can support you while keeping our conference attendees safe. In some cases, we can compile several anonymized reports into a pattern of behavior, and take action on that pattern.
+{% endmarkdown %}
+    </div>
+  </div>
+</div>
 
+<div class="bg-background block-container">
+  <div class="wrapper">
+    <div class="prose mx-auto">
+{% markdown %}
 ## Full Code of Conduct
 
 _To make clear what is expected, all delegates/attendees, speakers, exhibitors, organizers and volunteers at any DjangoCon US event are required to conform to the following Code of Conduct. Organizers will enforce this code throughout the event._
@@ -166,7 +164,7 @@ Not all of us will agree all the time, but disagreement is no excuse for poor be
 
 Harassment includes: offensive verbal comments related to gender, gender identity, sexual orientation, disability, physical appearance, body size, race, religion; sexual images in public spaces; deliberate intimidation, stalking, or following; harassing photography or recording; sustained disruption of talks or other events; repeated or inappropriate direct messaging on conference or social media platforms; inappropriate physical contact; and unwelcome sexual attention.
 
-## Choose Your Words
+### Choose Your Words
 
 Be careful in the words that you choose. Remember that sexist, racist, and other exclusionary jokes can be offensive to those around you. Excessive swearing and offensive jokes are not appropriate for DjangoCon US. We are all adults, capable of having adult conversations. Preface your presentation with appropriate Trigger/Content Warnings, if necessary.
 
@@ -176,11 +174,11 @@ Participants asked to stop any harassing behavior are expected to comply immedia
 
 Exhibitors in the expo hall, sponsor or vendor booths, or similar activities are also subject to the anti-harassment policy. In particular, exhibitors should not use sexualized images, activities, or other material. Booth staff (including volunteers) should not use sexualized clothing/uniforms/costumes, or otherwise create a sexualized environment.
 
-## Weapons Policy
+### Weapons Policy
 
 No weapons are allowed at DjangoCon US. Weapons include but are not limited to explosives (including fireworks), guns, and large knives such as those used for hunting or display, as well as any other item used for the purpose of causing injury or harm to others. Anyone seen in possession of one of these items will be asked to leave immediately, and will only be allowed to return without the weapon.
 
-## Photography
+### Photography
 
 In order to make DjangoCon US {{ site.conf_year }} a great experience for everyone, do not photograph, video, or audio record anyone at DjangoCon without their express permission, sought in advance. If someone does not want to be photographed, video or audio recorded, please respect their wishes.
 
@@ -190,7 +188,7 @@ _If a participant engages in behavior that violates this code of conduct, the co
 
 ## License
 
-This Code of Conduct was forked from the example policy from the [Geek Feminism wiki](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy), created by the Ada Initiative and other volunteers. which is under a Creative Commons Zero license.
+This Code of Conduct was forked from the example policy from the [Geek Feminism wiki](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy), created by the Ada Initiative and other volunteers, which is under a Creative Commons Zero license.
 
 This Code of Conduct also incorporates portions from PyCon's Code of Conduct, which is licensed under the [Creative Commons Attribution-ShareAlike 3.0 Unported License](https://creativecommons.org/licenses/by-sa/3.0/).
 
@@ -199,3 +197,4 @@ DjangoCon US [Conference Code of Conduct](/conduct/) is licensed under a [Creati
     </div>
   </div>
 </div>
+{% endblock %}

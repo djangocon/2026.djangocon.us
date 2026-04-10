@@ -1,0 +1,31 @@
+{% layout "_layouts/default.html" %}
+
+{% block content %}
+  <div class="hero">
+    <div class="wrapper">
+      <header class="flex flex-wrap items-start gap-8 lg:gap-16">
+        {% if hero_graphic %}
+          <img
+            src="{{ hero_graphic }}"
+            alt=""
+            class="hidden w-full max-w-36 md:block" />
+        {% endif %}
+
+        <div class="flex-1">
+          <h1 class="mb-4 pageheading">{{ title }}</h1>
+          {% block hero_content %}{% endblock %}
+        </div>
+      </header>
+    </div>
+  </div>
+
+  {% block wrapper %}
+  <div class="bg-background block-container">
+    <div class="wrapper">
+      <div class="mx-auto prose lg:prose-lg">
+        {% block page %}{% endblock %}
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+{% endblock %}

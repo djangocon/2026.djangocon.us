@@ -3,11 +3,9 @@ layout: default
 templateClass: view-post
 ---
 
-<div class="pt-0 block-container">
-<div class="wrapper my-8">
-  <div class="prose lg:prose-lg mx-auto">
-    <h1 class="mb-8 pageheading">{{ title }}</h1>
+<div class="wrapper">
+  <h1 class="my-10 pageheading">{{ title }}</h1>
+  <div class="prose mx-auto mb-12">
     {{ content | markdown }}
   </div>
-</div>
 </div>
