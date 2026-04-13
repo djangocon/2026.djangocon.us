@@ -101,8 +101,18 @@
     @apply rounded;
   }
 
+  .organizer-cell {
+    @apply text-center;
+
+    & .icon {
+      @apply w-5 h-5;
+    }
+  }
+
   .avatar {
-    @apply block object-cover object-left-top w-full aspect-square;
+    @apply block object-cover object-left-top w-full aspect-square my-4;
+    @apply border-2 border-dark-blue rounded-full;
+    box-shadow: 5px -2px 0 0 theme("colors.dark-blue.DEFAULT");
   }
 
   .pageheading {
@@ -161,10 +171,6 @@
   .prose h3 {
     @apply site-h3;
   }
-/* 
-  .prose :where(p):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-    @apply mb-6;
-  } */
 }
 
 @layer utilities {

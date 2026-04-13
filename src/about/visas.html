@@ -1,21 +1,32 @@
 ---
-layout: text
 title: Visa Support at DjangoCon US
 description: |
   Information about obtaining a Visa to visit DjangoCon US
 
 permalink: /visas/
-hero_graphic: /assets/img/2026/about.svg
+hero_graphic: /assets/img/2026/visa.svg
 ---
 
-<h2 id="do-i-need-a-visa-to-enter-the-usa">Do I need a visa to enter the USA?</h2>
+{% layout "_layouts/page.html" %}
 
-That depends on which country issued your passport; see the <a href="https://travel.state.gov/content/travel/en/us-visas/tourism-visit.html">US State Department</a> website for more information.
+{% block hero_content %}
+  <p class="mb-6">
 
-<h2 id="i-need-a-letter-to-obtain-a-visa-can-you-help-me-with-that">I need a letter to obtain a visa. Can you help me with that?</h2>
+    <a href="mailto:visas@djangocon.us">Get in touch</a> with our visa team if you have any questions about obtaining a visa to attend DjangoCon US! 
+  </p>
+  <a href="/invitation" class="button">Request a Letter of Invitation</a>
+{% endblock %}
 
-We sure can! Head over to <a href="/invitation">Get Invitation Letter</a> to request your letter of invitation for your visa application at the US Consulate. You will be required to provide:
+{% block page %}
 
+{% markdown %}
+## Do I need a visa to enter the USA?
+
+That depends on which country issued your passport; see the [US State Department](https://travel.state.gov/content/travel/en/us-visas/tourism-visit.html) website for more information.
+
+## I need a letter to obtain a visa. Can you help me with that?
+
+We sure can! Head over to [Get Invitation Letter](/invitation) to request your letter of invitation for your visa application at the US Consulate. You will be required to provide:
 
 - Full name (as it appears on your passport)
 - Passport number
@@ -26,6 +37,9 @@ We sure can! Head over to <a href="/invitation">Get Invitation Letter</a> to req
 
 Do this as soon as you can! Wait times to get a visitor visa interview are extremely long (and in some countries are over a year).
 
-<h2 id="i-cant-get-an-appointment-with-the-us-consulate-in-time-for-the-conference-can-i-get-a-refund">I can't get an appointment with the US Consulate in time for the conference. Can I get a refund?</h2>
+## I can't get an appointment with the US Consulate in time for the conference. Can I get a refund?
 
-Send an <a href="mailto:visas@djangocon.us">email</a> to our visa team and we'll make sure you get taken care of.
+Send an [email](mailto:visas@djangocon.us) to our visa team and we'll make sure you get taken care of.
+{% endmarkdown %}
+
+{% endblock %}

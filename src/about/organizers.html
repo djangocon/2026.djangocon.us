@@ -1,19 +1,22 @@
 ---
 title: Conference Organizers
-layout: default
+description: |
+  There is no "I" in DjangoCon US. Thank you to all our volunteers who make DjangoCon US happen!
 
 permalink: /organizers/
+hero_graphic: /assets/img/2026/organizers.svg
 ---
 
-<div class="pt-16 pb-6">
-  <div class="wrapper">
-    <h1 class="mb-4 text-4xl font-bold font-heading lg:text-6xl">{{ title }}</h1>
-    <p class="text-xl lg:text-2xl">There is no "I" in DjangoCon US. Thank you to all our volunteers who make DjangoCon US happen!</p>
-  </div>
-</div>
+{% layout "_layouts/page.html" %}
 
-<div class="pt-6 pb-16">
-  <div class="wrapper">
-    {% include "organizers-grid.html" %}
-  </div>
+{% block hero_content %}
+  <p class="lead">
+    There is no "I" in DjangoCon US. Thank you to all our volunteers who make DjangoCon US happen!
+  </p>
+{% endblock %}
+
+{% block wrapper %}
+<div class="wrapper max-w-screen-xl mb-20">
+  {% include "organizers-grid.html" %}
 </div>
+{% endblock %}

@@ -1,42 +1,47 @@
 ---
-layout: default
 title: Public Health Policy
 description: |
   DjangoCon US 2026's public health policy includes a mask recommendation.
 
 permalink: /public-health/
 redirect_from: /covid/
+hero_graphic: /assets/img/2026/health.svg
 ---
 
-<div class="hero">
-  <div class="wrapper">
-    <header class="flex flex-wrap items-center gap-8 lg:gap-16">
-      <img
-        src="/assets/img/theme/graphics/health.svg"
-        alt="Doctor's bag"
-        class="hidden w-full max-w-80 md:block" />
-      <div class="flex-1 max-w-screen-lg">
-        <h1 class="mb-8 pageheading">{{ title }}</h1>
-        <p class="subheading">
-          DjangoCon US 2026's public health policy includes a mask recommendation.
-        </p>
+{% layout "_layouts/page.html" %}
+
+{% block hero_content %}
+  <p class="lead">
+    DjangoCon US 2026's public health policy includes a mask recommendation.
+  </p>
+{% endblock %}
+
+{% block wrapper %}
+<div class="wrapper">
+  <div class="banner">
+    <aside class="bg-white col-span-2">
+      <p class="site-h3">TLDR: A short-version of the policy is as follows:</p>
+      <div class="prose">
+        <ul class="mt-4">
+          <li>Masks are recommended (KN95 / N95 preferred)</li>
+          <li>Tests are not required this year</li>
+          <li>Specific seating areas requiring masks will be designated</li>
+          <li><a href="https://www.stauffersafety.com/Product/3m-9205-bulk-3m-aura-n95-particulate-respirator-mask-701199">N95 Masks</a> will be provided upon request</li>
+          <li>DjangoCon US reserves the right to make the health policy more restrictive</li>
+        </ul>
       </div>
-    </header>
+    </aside>
   </div>
-</div>
 
-<div class="bg-ocean-blue-300 block-container">
-  <div class="wrapper">
-    <div class="grid-1-2">
-      <div class="prose lg:prose-lg">
+  <div class="prose my-12">
 {% markdown %}
-## Public Health Policy
+## Full Public Health Policy
 
-In light of ongoing health considerations, this year the DjangoCon US Public Health Policy strongly <i>encourages</i> all attendees to wear masks throughout the conference spaces.
+In light of ongoing health considerations, this year the DjangoCon US Public Health Policy strongly <em>encourages</em> all attendees to wear masks throughout the conference spaces.
 
 We expect that all attendees respect those who choose to wear a mask and their boundaries.
 
-DjangoCon US also encourages attendees to take a COVID test prior to arriving at the conference, and to have the latest vaccination boosters. If you are not familiar, we suggest you check out the [CDC's Travel guidelines to stay safe](https://www.cdc.gov/covid/index.html). Rapid COVID tests can be made available upon request, <i>however tests will not be required to attend this year</i>.
+DjangoCon US also encourages attendees to take a COVID test prior to arriving at the conference, and to have the latest vaccination boosters. If you are not familiar, we suggest you check out the [CDC's Travel guidelines to stay safe](https://www.cdc.gov/covid/index.html). Rapid COVID tests can be made available upon request, <em>however tests will not be required to attend this year</em>.
 
 The conference will feature select areas in the talk rooms where attendees will be required to wear masks. These areas will be some distance (but not separated by walls) from non-masked areas to allow diffusion.
 
@@ -46,27 +51,13 @@ DjangoCon US offers easy refunds if you need to cancel at any time, due to healt
 
 DjangoCon US reserves the right to increase the requirements of this policy based on COVID-19 infection, hospitalization or positive test rates as reported by the CDC or other authorities. We may also be required to alter our policy to conform with local, state, or federal mandates.
 {% endmarkdown %}
-      </div>
-
-      <section class="relative flex flex-col self-start p-6 prose bg-white lg:prose-lg lg:pt-10 card-effect-3">
-{% markdown %}
-## TLDR: A short-version of the policy is as follows:
-
--   Masks are recommended (KN95 / N95 preferred)
--   Tests are not required this year
--   Specific seating areas requiring masks will be designated
--   [N95 Masks](https://www.stauffersafety.com/Product/3m-9205-bulk-3m-aura-n95-particulate-respirator-mask-701199) will be provided upon request
--   DjangoCon US reserves the right to make the health policy more restrictive
-{% endmarkdown %}
-      </section>
-    </div>
   </div>
 </div>
 
-<div class="py-20 lg:py-24 bg-blue">
-
+<div class="py-20 lg:py-24 bg-background">
   <div class="flex flex-col items-center justify-center gap-4 wrapper">
-    <p class="text-2xl subheading">Questions about our Public Health Policy?</p>
-    <a href="mailto:{{site.contact_us_email}}" class="button">Email the organizers</a>
+    <p class="text-2xl site-h3">Questions about our Public Health Policy?</p>
+    <a href="mailto:{{site.contact_us_email}}" class="my-4 button bg-white">Email the organizers</a>
   </div>
 </div>
+{% endblock %}
