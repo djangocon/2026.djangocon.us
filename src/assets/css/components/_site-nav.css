@@ -1,17 +1,41 @@
+/* ==========================================================================
+   Site Header
+   ========================================================================== */
+
 .site-header {
   @apply fixed z-[100] lg:relative lg:top-0;
-  @apply w-full h-[90px];
+  @apply w-full lg:h-[90px];
   @apply py-4;
 
   .wrapper {
-    @apply grid grid-cols-6;
+    @apply grid justify-between w-full grid-cols-2 lg:grid-cols-6 lg:w-auto;
+  }
+
+  &.is-open {
+    @apply overflow-y-scroll;
+    @apply bg-white;
+
+    .wrapper {
+      @apply flex-col content-start h-screen;
+      @apply bg-white;
+    }
+
+    .button {
+      @apply block mt-4 row-start-3 col-span-full;
+      @apply lg:row-start-1 lg:col-span-1 lg:col-start-6 lg:mt-0;
+    }
   }
 }
 
+
+/* ==========================================================================
+   Mobile Nav Toggle
+   ========================================================================== */
+
 .site-nav-toggler {
   @apply flex items-center lg:hidden;
-  @apply gap-4;
-  @apply text-lg font-bold uppercase;
+  @apply gap-4 justify-self-end;
+  @apply font-tanker text-lg text-dark-blue uppercase;
 
   .icon-close {
     @apply hidden;
@@ -27,84 +51,82 @@
   }
 }
 
+
+/* ==========================================================================
+   Primary Nav
+   ========================================================================== */
+
 .site-nav {
   @apply flex flex-row flex-1 items-center justify-center;
-  @apply gap-4;
+  @apply row-start-2 col-span-full gap-4 mt-8;
+  @apply lg:row-start-1 lg:col-span-4 lg:col-start-2 lg:mt-0;
 
   & > ul {
-    @apply flex items-center lg:flex-row lg:justify-end;
-    @apply w-full lg:w-auto gap-4;
-    @apply font-medium;
+    @apply flex flex-col w-full lg:gap-4;
+    @apply divide-y divide-stroke lg:divide-y-0;
+    @apply lg:flex-row lg:items-center lg:justify-end lg:w-auto;
+  }
+
+  & > ul > li {
+    @apply relative;
+  }
+
+  & > ul > li > a {
+    @apply flex items-center;
+    @apply py-4 gap-2 lg:p-3;
+    @apply font-tanker text-2xl text-dark-blue no-underline;
+    @apply hover:text-ocean-blue lg:font-sans lg:font-medium lg:text-base lg:text-black;
+  }
+
+  &.is-closed {
+    @apply hidden lg:flex;
   }
 }
 
-.site-nav > ul > li {
-  @apply relative;
-}
 
-.site-nav > ul > li > a {
-  @apply flex items-center;
-  @apply py-4 lg:p-3 gap-2;
-  @apply text-black no-underline;
-}
-
-.site-nav a:not(.button):hover {
-  @apply text-ocean-blue underline;
-}
-
-.site-nav-menu {
-  @apply hidden flex-col lg:absolute lg:top-full lg:left-1/2 lg:-translate-x-1/2;
-  @apply px-4 py-2 mt-2 gap-6 lg:p-6 lg:w-[26ch];
-  @apply font-medium;
-  @apply border-l-4 border-ocean-blue lg:border-4 lg:bg-white rounded;
-}
-
-/* JS Specific and interactive styles */
-@media (max-width: theme('screens.lg')) {
-  #SiteBody.mobile-nav-open #SiteMain,
-  #SiteBody.mobile-nav-open #SiteHero,
-  #SiteBody.mobile-nav-open #SiteFooter {
-    @apply hidden;
-  }
-
-  #SiteHeader.is-open {
-    @apply h-screen;
-    @apply bg-ocean-blue;
-  }
-
-  .site-nav.is-open {
-    @apply flex flex-col items-start;
-    @apply bg-ocean-blue;
-
-    & > ul {
-      @apply flex-col items-start;
-      @apply py-6;
-      @apply rounded-none bg-ocean-blue;
-
-      & > li {
-        @apply w-full lg:w-auto;
-      }
-    }
-  }
-
-  #SiteNav.is-closed {
-    @apply hidden;
-  }
-}
+/* ==========================================================================
+   Submenu
+   ========================================================================== */
 
 [data-menu-trigger] {
   @apply relative;
 }
 
 [data-menu-trigger]::after {
-  @apply relative;
-  @apply block;
-  @apply w-4 h-4;
-  @apply bg-secondary;
+  @apply relative block;
+  @apply w-6 h-6 lg:w-4 lg:h-4;
+  @apply bg-dark-blue lg:bg-secondary;
   @apply [mask:url('/assets/img/theme/icons/Carat.svg')] [mask-size:cover] [mask-repeat:no-repeat];
   @apply content-[''];
 }
 
-.site-nav [aria-expanded="true"]::after {
+[data-menu-trigger][aria-expanded="true"]::after {
   @apply rotate-180;
+}
+
+.site-nav-menu {
+  @apply hidden flex-col;
+  @apply lg:absolute lg:top-full lg:left-1/2 lg:-translate-x-1/2;
+  @apply mb-4 gap-4 lg:gap-6 lg:p-6 lg:w-[26ch];
+  @apply font-medium;
+  @apply border-ocean-blue rounded lg:border-4 lg:bg-white;
+
+  & > li > a {
+    @apply no-underline text-dark-blue hover:text-ocean-blue;
+  }
+}
+
+
+/* ==========================================================================
+   Interactive States (JS-driven)
+   ========================================================================== */
+
+@media (max-width: theme('screens.lg')) {
+  #SiteBody.mobile-nav-open {
+    @apply overflow-hidden;
+  }
+
+  #SiteNav.is-closed {
+    @apply hidden;
+  }
 }

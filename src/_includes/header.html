@@ -1,37 +1,29 @@
 {% if site.banner %}
-<aside class="fixed lg:relative lg:py-6 text-center justify-around leading-tight h-[40px] xl:text-lg z-[200] top-0 block bg-orange text-white flex items-center justify-center px-4 w-full">
+<aside class="fixed top-0 z-[200] flex items-center justify-around w-full h-[40px] px-4 lg:relative lg:py-6 text-center text-white leading-tight xl:text-lg bg-orange">
   <a href="/schedule" class="hidden text-white no-underline md:inline-flex">
-   🎉 &nbsp; <strong class="underline">Welcome to Chicago!</strong> &nbsp; 🎉
+    🎉 &nbsp; <strong class="underline">Welcome to Chicago!</strong> &nbsp; 🎉
   </a>
   <a href="{{ site.ticket_link }}" class="text-white no-underline">
-     🎫  &nbsp;<strong class="underline">Online Tickets Still Available!</strong>&nbsp; 🎫
+    🎫 &nbsp;<strong class="underline">Online Tickets Still Available!</strong>&nbsp; 🎫
   </a>
 </aside>
 {% endif %}
 
-<header id="SiteHeader" class="site-header is-closed lg:is-open lg:top-0 ">
-  <div class="wrapper"><!-- 6 column grid -->
-    <div class="flex items-center justify-between w-full lg:w-auto">
-      <a
-        href="/"
-        aria-label="Go to homepage">
-        <img src="/assets/img/2026/logo.svg" alt="DjangoCon US" class="h-[3.5rem]">
-      </a>
-      <button id="NavToggler" class="site-nav-toggler is-closed">
-        <span aria-hidden="true" class="hidden xs:block">Menu</span>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 icon-menu" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 icon-close" aria-hidden="true">
-          <path d="M6 6L17.6673 17.6673" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M6 18L17.6673 6.33274" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="sr-only">Toggle navigation</span>
-      </button>
-    </div>
+<header id="SiteHeader" class="site-header is-closed lg:is-open lg:top-0">
+  <div class="wrapper relative">
+    <a href="/" aria-label="Go to homepage">
+      <img src="/assets/img/2026/logo.svg" alt="DjangoCon US" class="h-[3.5rem]">
+    </a>
 
-    {% include "nav.html",  class:"is-closed site-nav lg:is-open col-span-4" %}
+    {% include "nav.html", class:"is-closed site-nav lg:is-open" %}
 
-    <a href="{{ site.ticket_link }}" target="_blank" class="button bg-primary justify-self-end">Buy Tickets</a>
+    <a href="{{ site.ticket_link }}" target="_blank" class="button hidden lg:block w-full bg-primary justify-self-end">Buy Tickets</a>
+
+    <button id="NavToggler" class="site-nav-toggler is-closed">
+      <svg class="w-[18px]" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 2.66667V0H24V2.66667H0ZM0 18.6667V16H24V18.6667H0ZM0 10.6667V8H24V10.6667H0Z" fill="currentColor"/>
+      </svg>
+      <span aria-hidden="true" class="hidden xs:block">Menu</span>
+    </button>
   </div>
 </header>
