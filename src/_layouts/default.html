@@ -43,6 +43,8 @@
 </head>
 
 <body id="SiteBody" {% if templateClass %} class="{{ templateClass }}"{% endif %}>
+  <a href="#SiteMain" class="sr-only focus:bg-ocean-blue focus:z-[2000] focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:px-4 focus:py-2 focus:text-dark-blue focus:rounded focus:shadow">Skip to main content</a>
+
   {% block header %}
     {% include "header.html" %}
   {% endblock %}
