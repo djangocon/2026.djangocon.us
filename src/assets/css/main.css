@@ -115,9 +115,6 @@
     box-shadow: 5px -2px 0 0 theme("colors.dark-blue.DEFAULT");
   }
 
-  .pageheading {
-    @apply font-tanker text-h1;
-  }
 
   .subheading {
     @apply text-xl font-medium leading-tight lg:text-2xl;
@@ -188,12 +185,13 @@
     background-image: linear-gradient(180deg, transparent 47%, theme(colors.gray.100) 50%, transparent 53%);
   }
 
-  .site-h1 {
-    @apply font-heading text-h1;
+  .site-h1, 
+  .pageheading {
+    @apply font-heading text-4xl lg:text-h1;
   }
 
   .site-h2 {
-    @apply font-heading text-h2;
+    @apply font-heading text-3xl lg:text-h2;
   }
 
   .site-h3 {

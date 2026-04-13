@@ -22,7 +22,7 @@
 }
 
 .block-container {
-  @apply py-6;
+  @apply py-8;
 }
 
 @screen md {
