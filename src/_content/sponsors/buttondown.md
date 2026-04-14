@@ -4,7 +4,6 @@ name: Buttondown
 date: 2026-04-03
 logo:
     filename: buttondown.png
-    orientation: landscape
 url:
     target: 'https://buttondown.com/?utm_source=djangocon2026'
     label: buttondown.com

@@ -1,38 +1,37 @@
 ---
 title: Sponsorship
-layout: default
+hero_graphic: /assets/img/2026/sponsorship.svg
 ---
+
+{% layout "_layouts/page.html" %}
+
+{% block hero_content %}
+
+<p class="mb-8">
+
+  DjangoCon US is only possible through the generosity of the organizations and businesses on this page. Their donations make it possible for us to provide opportunity grants to speakers and attendees, record all talks, host sprints, and feed everyone for five days. Thank you for your support!
+</p>
+
+<div class="flex flex-wrap gap-4 align-center">
+  <a href="{{ site.sponsorship_prospectus }}" class="button">Download Sponsorship Prospectus</a>
+  <a href="mailto:sponsors@djangocon.us" class="button">Get in touch</a>
+</div>
+{% endblock %}
+
+{% block wrapper %}
+<div class="wrapper">
 
 
 <div class="pt-0 block-container">
-  <div class="my-8 wrapper">
-    
-    <div class="mx-auto prose lg:prose-lg">
-      <h1 class="mb-8 pageheading">{{ title }}</h1>
-{% markdown %}
 
-DjangoCon US is only possible through the generosity of the organizations and businesses on this page. Their donations make it possible for us to provide opportunity grants to speakers and attendees, record all talks, host sprints, and feed everyone for five days. Thank you for your support!
-
-Download our sponsorship prospectus for more information on how you can support DjangoCon US 2026.
-
-{% endmarkdown %}
-
-
-<div class="flex flex-wrap gap-4 align-center">
-  <a href="{{ site.sponsorship_prospectus }}" class="button bg-orange">Download Sponsorship Prospectus</a>
-  <a href="mailto:sponsors@djangocon.us" class="button">Get in touch</a>
-</div>
-
-    </div>
-  </div>
-
+  
 
 
 {% for level in collections.sponsorsByLevel %}
 <div class="py-6">
   <div class="flex flex-col justify-center wrapper">
     <h2 class="flex items-center bg-sep">
-      <span class="px-8 py-2 mx-auto text-xl font-bold text-ocean-blue-700 bg-gray-200 rounded font-heading">{{ level[0] }}</span>
+      <span class="px-8 py-2 mx-auto text-xl  text-dark-blue bg-background rounded-2xl font-heading">{{ level[0] }}</span>
     </h2>
 
     <ul class="divide-y divide-gray-100">
@@ -46,7 +45,7 @@ Download our sponsorship prospectus for more information on how you can support 
                   {% assign orientation_class = "h-auto w-auto max-h-32 lg:max-h-80 lg:max-w-40" %}
                 {% endif %}
                 {% if sponsor.data.url.target %}
-                <a href="{{ sponsor.data.url.target }}" target="_blank" class="block w-full h-full">
+                <a href="{{ sponsor.data.url.target }}" target="_blank" rel="noopener noreferrer sponsored" class="block w-full h-full">
                   <span class="sr-only">{{ sponsor.data.name }}</span>
                   <img
                     src="/sponsors/{{ sponsor.data.logo.filename }}"
@@ -67,19 +66,19 @@ Download our sponsorship prospectus for more information on how you can support 
             <div class="space-y-4 lg:flex-1">
               <h3 class="text-2xl lg:text-4xl font-heading">
                 {% if sponsor.data.url %}
-                  <a href="{{ sponsor.data.url.target }}">{{ sponsor.data.name }}</a>
+                  <a href="{{ sponsor.data.url.target }}" class="no-underline">{{ sponsor.data.name }}</a>
                 {% endif %}
               </h3>
               {% if sponsor.data.url %}
-                <a href="{{ sponsor.data.url.target }}" class="inline-block text-xl link" aria-hidden="true">{{ sponsor.data.url.label }}</a>
+                <a href="{{ sponsor.data.url.target }}" class="inline-block link" aria-hidden="true">{{ sponsor.data.url.label }}</a>
               {% endif %}
               {% if sponsor.content %}
-                <div class="space-y-6 prose lg:prose-lg">
+                <div class="space-y-6 prose">
                   {{ sponsor.content | markdown }}
                 </div>
               {% endif %}
               {% if sponsor.data.hiring_url %}
-                <a href="{{ sponsor.data.hiring_url }}" class="badge badge-ocean-blue">
+                <a href="{{ sponsor.data.hiring_url }}" class="button mt-4" target="_blank" rel="noopener noreferrer sponsored">
                   <span class="text-xl">🌟</span> {{ sponsor.data.name }} is hiring!</a>
               {% endif %}
             </div>
@@ -91,3 +90,4 @@ Download our sponsorship prospectus for more information on how you can support 
 </div>
 {% endfor %}
 
+{% endblock %}
