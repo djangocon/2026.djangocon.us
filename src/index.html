@@ -14,7 +14,7 @@ templateClass: homepage
 
       <img src="/assets/img/2026/logo-styled.svg" class="w-full" alt="DjangoCon US" />
 
-      <p class="text-xl text-center w-3/4">Join us for five days of inspiration, education, and networking at the <a href="https://www.ihg.com/voco/hotels/us/en/chicago/chiwp/hoteldetail" target="_blank" class="underline-offset-4 decoration-[2px]">Voco Chicago Downtown</a>
+      <p class="text-xl text-center w-3/4">Join us for five days of inspiration, education, and networking at the <a href="https://www.ihg.com/voco/hotels/us/en/chicago/chiwp/hoteldetail" target="_blank" rel="noopener noreferrer" class="underline-offset-4 decoration-[2px]">Voco Chicago Downtown</a>
       </p>
 
       <div class="p-5">
@@ -82,7 +82,7 @@ templateClass: homepage
       <ul class="site-sponsors">
         {% for sponsor in collections.sponsors %}
         <li class="site-sponsor">
-          <a href="{{ sponsor.data.url.target }}" target="_blank" rel="noopener noreferrer">
+          <a href="{{ sponsor.data.url.target }}" target="_blank" rel="noopener noreferrer sponsored">
             <img
               src="/sponsors/{{ sponsor.data.logo.filename }}"
               alt="{{ sponsor.data.name }} logo"
