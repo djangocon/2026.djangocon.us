@@ -3,7 +3,13 @@ module.exports = {
   content: ["./src/**/*.{html,md,liquid}"],
   safelist: [
     'border-t-primary',
-    'border-t-orange'
+    'border-t-orange',
+    'border-orange',
+    'border-dark-blue',
+    'border-yellow',
+    'shadow-avatar-orange',
+    'shadow-avatar-dark-blue',
+    'shadow-avatar-yellow',
   ],
   theme: {
     extend: {
@@ -86,6 +92,9 @@ module.exports = {
         'button': '8px -8px 0px 0px theme("colors.dark-blue.DEFAULT")',
         'button-hover': '4px -4px 0px 0px theme("colors.dark-blue.DEFAULT")',
         'button-active': '6px -6px 0px 0px theme("colors.dark-blue.DEFAULT")',
+        'avatar-orange': '5px -2px 0px 0px theme("colors.orange")',
+        'avatar-dark-blue': '5px -2px 0px 0px theme("colors.dark-blue.DEFAULT")',
+        'avatar-yellow': '5px -2px 0px 0px theme("colors.yellow")',
       },
     },
   },

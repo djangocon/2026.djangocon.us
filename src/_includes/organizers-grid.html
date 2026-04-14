@@ -1,16 +1,29 @@
 <ul class="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-[42px]">
   {%- for organizer in collections.organizers -%}
+    {% assign mod = forloop.index0 | modulo: 3 %}
+    {% if mod == 0 %}
+      {% assign border_class = "border-orange" %}
+      {% assign shadow_class = "shadow-avatar-orange" %}
+    {% elsif mod == 1 %}
+      {% assign border_class = "border-dark-blue" %}
+      {% assign shadow_class = "shadow-avatar-dark-blue" %}
+    {% else %}
+      {% assign border_class = "border-yellow" %}
+      {% assign shadow_class = "shadow-avatar-yellow" %}
+    {% endif %}
+
     <li class="flex flex-col organizer-cell">
       {% if organizer.data.photo != null and organizer.data.photo != "" %}
         {% assign photo = 'src/_content/organizers/' | append: organizer.data.photo %}
-        {% image photo, './dist/organizers', '/organizers/', organizer.data.name, '(min-width: 1024px) 300px, 600px', 'avatar media' %}
+        {% assign avatar_classes = 'avatar media ' | append: border_class | append: ' ' | append: shadow_class %}
+        {% image photo, './dist/organizers', '/organizers/', organizer.data.name, '(min-width: 1024px) 300px, 600px', avatar_classes %}
       {% else %}
         <img
           src="/assets/img/theme/empty-avatar.svg"
           alt="An outline of a person"
           width="400"
           height="400"
-          class="avatar media"
+          class="avatar media {{ border_class }} {{ shadow_class }}"
           aria-hidden="true">
       {% endif %}
 

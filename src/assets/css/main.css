@@ -111,8 +111,7 @@
 
   .avatar {
     @apply block object-cover object-left-top w-full aspect-square my-4;
-    @apply border-2 border-dark-blue rounded-full;
-    box-shadow: 5px -2px 0 0 theme("colors.dark-blue.DEFAULT");
+    @apply border-2 rounded-full;
   }
 
 
