@@ -80,16 +80,21 @@ templateClass: homepage
       <h2 class="site-h2 mb-8 lg:mb-16">Our Sponsors</h2>
 
       <ul class="site-sponsors">
-        {% for sponsor in collections.sponsors %}
-        <li class="site-sponsor">
-          <a href="{{ sponsor.data.url.target }}" target="_blank" rel="noopener noreferrer sponsored">
-            <img
-              src="/sponsors/{{ sponsor.data.logo.filename }}"
-              alt="{{ sponsor.data.name }} logo"
-              class="my-2 h-16 max-w-40 object-contain w-auto">
-            <span class="px-3 py-1 bg-white rounded-xl text-xs font-semibold">{{ sponsor.data.level }}</span>
-          </a>
-        </li>
+        {% assign sponsor_order = "Platinum,Gold,Silver,Community,Opportunity Grants" | split: "," %}
+        {% for level in sponsor_order %}
+          {% for sponsor in collections.sponsors %}
+            {% if sponsor.data.level == level %}
+            <li class="site-sponsor">
+              <a href="{{ sponsor.data.url.target }}" target="_blank" rel="noopener noreferrer sponsored">
+                <img
+                  src="/sponsors/{{ sponsor.data.logo.filename }}"
+                  alt="{{ sponsor.data.name }} logo"
+                  class="my-2 h-16 max-w-40 object-contain w-auto">
+                <span class="px-3 py-1 bg-white rounded-xl text-xs font-semibold">{{ sponsor.data.level }}</span>
+              </a>
+            </li>
+            {% endif %}
+          {% endfor %}
         {% endfor %}
       </ul>
 
