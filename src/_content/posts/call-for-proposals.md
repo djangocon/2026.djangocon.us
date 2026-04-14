@@ -10,7 +10,7 @@ cover:
 title: "The Call for Proposals for DjangoCon US 2026 Is Now Open!"
 ---
 
-We are excited that DjangoCon US 2026 is now open for talk submissions: [call for proposals](https://pretalx.com/djangocon-us-2026/cfp)! The deadline for submissions is ~~March 16th~~ March 23, 2026 at [11AM CDT](https://time.is/1100AM_23_March_2026_in_Chicago?DjangoCon_US_CFP_Closes)**.
+We are excited that DjangoCon US 2026 is now open for talk submissions: [call for proposals](https://pretalx.com/djangocon-us-2026/cfp)! The deadline for submissions is ~~March 16th~~ March 23, 2026 at [11AM CDT](https://time.is/1100AM_23_March_2026_in_Chicago?DjangoCon_US_CFP_Closes).
 
 <!-- excerpt -->
 

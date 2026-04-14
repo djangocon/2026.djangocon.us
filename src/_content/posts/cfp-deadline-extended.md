@@ -10,7 +10,7 @@ cover:
 title: "The Call for Proposals for DjangoCon US 2026 has been extended one week!"
 ---
 
-We've received many great proposals already but want to give folks a little extra time to submit their talks. The [call for proposals](https://pretalx.com/djangocon-us-2026/cfp) deadline has been extended to March 23, 2026 at [11AM CDT](https://time.is/1100AM_23_March_2026_in_Chicago?DjangoCon_US_CFP_Closes)**.
+We've received many great proposals already but want to give folks a little extra time to submit their talks. The [call for proposals](https://pretalx.com/djangocon-us-2026/cfp) deadline has been extended to March 23, 2026 at [11AM CDT](https://time.is/1100AM_23_March_2026_in_Chicago?DjangoCon_US_CFP_Closes).
 
 <!-- excerpt -->
 
