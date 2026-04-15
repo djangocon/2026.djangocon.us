@@ -1,6 +1,6 @@
 ---
 name: Velda Kiara
-photo: velda-kiara.png
+photo: velda-kiara.jpeg
 role: Website and Programs
 social:
     twitter: VeldaKiara
