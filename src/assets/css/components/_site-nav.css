@@ -5,7 +5,7 @@
 .site-header {
   @apply fixed z-[100] lg:relative lg:top-0;
   @apply w-full lg:h-[90px];
-  @apply py-4;
+  @apply py-4 bg-white;
 
   .wrapper {
     @apply grid justify-between w-full grid-cols-2 lg:grid-cols-6 lg:w-auto;

@@ -10,7 +10,7 @@
   "sponsors_email": "sponsors@djangocon.us",
   "visa_email": "visas@djangocon.us",
 
-  "banner": false,
+  "banner": true,
 
   "mailing_list": "https://dcus.eo.page/dcus-26",
   "hotel_reservation_link": "https://www.ihg.com/redirect?path=asearch&brandCode=vx&localeCode=en&regionCode=1&hotelCode=CHIWP&checkInDate=23&checkInMonthYear=072026&checkOutDate=29&checkOutMonthYear=072026&rateCode=6CBARC&_PMID=99801505&GPC=DJ6&cn=no&adjustMonth=false&showApp=true&monthIndex=00",
