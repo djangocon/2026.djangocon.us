@@ -32,22 +32,15 @@ other_lodging:
     <div class="grid-1-2">
       <section id="welcome">
         <h1 class="mb-4 pageheading">Welcome to Chicago!</h1>
-        <div class="space-y-6 text-xl lg:text-2xl">
+        <div class="space-y-6">
           <p>
             This year's venue is the voco Chicago Downtown! Located steps from the Chicago River and the bustling River North neighborhood, voco Chicago Downtown provides a stylish and convenient base for your conference experience.
           </p>
         </div>
 
-        <!-- <img
+        <img
           class="w-full mt-8"
-          src="/assets/img/theme/welcome-chicago.svg"
-          alt="The word Chicago surrounded by colorful characters and stickers, with skyline elements"
-          aria-hidden="true"
-          loading="lazy"
-        /> -->
-          <img
-          class="w-full mt-8"
-          src="/assets/img/2025/venue-2.svg"
+          src="/assets/img/2026/venue.svg"
           alt="A stylized drawing of a cityscape"
           aria-hidden="true"
         />
@@ -55,7 +48,7 @@ other_lodging:
 
       <div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.8398481232813!2d-87.6393043236087!3d41.88603687124976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cc5f3c9d781%3A0x6fb3327d42023d8c!2svoco%20Chicago%20Downtown%20-%20Riverwalk%2C%20an%20IHG%20Hotel!5e0!3m2!1sen!2suk!4v1719069502919!5m2!1sen!2suk"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5940.446076869028!2d-87.64083742483349!3d41.8880601712406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2d4515ad2f21%3A0x9fc12451f0a83944!2svoco%20Chicago%20Downtown%20-%20Riverwalk%20by%20IHG!5e0!3m2!1sen!2sus!4v1776289578258!5m2!1sen!2sus"
           width="100%"
           height="380"
           allowfullscreen=""
@@ -67,44 +60,38 @@ other_lodging:
         <div class="flex flex-wrap items-center justify-center gap-8 mt-6">
           <a
             class="button order-0"
-            href="https://maps.app.goo.gl/354G4HjgGf4h7Qe96"
+            href="https://maps.app.goo.gl/qBQKJtV5g6BjjggNA"
             target="_blank"
             rel="noopener noreferrer">View Larger Map</a>
 
-            <span class="order-1 block leading-tight">
-              <strong>voco Chicago Downtown</strong> <br>
-              <small>350 W Wolf Point Plaza, Chicago, IL 60654</small> <br>
-              <small><a href="tel:+13128365000">+1 (312) 836-5000</a></small>
-            </span>
+          <span class="order-1 block leading-tight">
+            <strong>voco Chicago Downtown</strong> <br>
+            <small>350 W Wolf Point Plaza, Chicago, IL 60654</small> <br>
+            <small><a href="tel:+13128365000">+1 (312) 836-5000</a></small>
+          </span>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="block-container bg-gray-50" id="hotel">
+<div class="block-container bg-background" id="hotel">
   <div class="wrapper">
     <div class="grid-1-2">
       <div>
         <figure>
           <img
-          class="w-full media"
-          src="/assets/img/venue/voco.png"
-          alt="Exterior photo of Voco Chicago Downtown"
-          loading="lazy"
+            class="w-full media"
+            src="/assets/img/venue/voco.png"
+            alt="Exterior photo of Voco Chicago Downtown"
+            loading="lazy"
           />
           <figcaption>Voco Chicago Downtown</figcaption>
         </figure>
-        <ul class="flex flex-wrap justify-center gap-2 my-4">
-          <li class="badge badge-blue">🛜 Free Wi-Fi</li>
-          <li class="badge badge-blue">🧑‍💻 Room for hallway hacking</li>
-          <li class="badge badge-blue">🏙️ In the middle of downtown</li>
-          <li class="badge badge-blue">🚶 Steps from Chicago Riverwalk</li>
-        </ul>
       </div>
 
-      <section class="space-y-6 text-xl lg:text-2xl">
-        <h2 class="mb-4 text-3xl font-bold font-heading lg:text-5xl">Staying at the voco Chicago Downtown</h2>
+      <section class="space-y-6">
+        <h2 class="site-h2">Staying at the voco Chicago Downtown</h2>
         <p>
           The voco Chicago Downtown offers a fantastic experience with its modern amenities and prime location. Enjoy comfortable rooms and easy access to Chicago's attractions.
         </p>
@@ -118,76 +105,56 @@ other_lodging:
       <h2 class="text-3xl font-bold font-heading lg:text-5xl">Other hotel options nearby</h2>
     </header>
 
+    <ul class="grid gap-8 lg:grid-cols-3 lg:gap-8">
+      {% for lodge in other_lodging %}
+        <li class="flex flex-col gap-2 bg-white border-2 border-gray-100 rounded-md">
+          <div class="flex flex-col flex-1 order-1 gap-8 p-4">
+            <a
+              href="{{ lodge.website }}"
+              class="text-xl font-semibold reverse-link"
+              target="_blank"
+              rel="noopener noreferrer">{{ lodge.name }}</a>
 
-      <div>
+            <span class="mt-auto">
+              <span class="text-xl font-semibold">{{ lodge.price_night }}</span><span>/night</span>
+            </span>
+          </div>
 
-        <ul class="grid gap-8 lg:grid-cols-3 lg:gap-8">
-          {% for lodge in other_lodging %}
-            <li class="flex flex-col gap-2 bg-white border-2 border-gray-100 rounded-md">
-              <div class="flex flex-col flex-1 order-1 gap-8 p-4">
-                <a
-                  href="{{ lodge.website }}"
-                  class="text-xl font-semibold reverse-link"
-                  target="_blank"
-                  rel="noopener noreferrer">{{ lodge.name }}</a>
+          <span class="w-full px-4 py-2 text-xs text-blue-900 block-container bg-blue-50 order-0">{{ lodge.feature }}</span>
+        </li>
+      {% endfor %}
+    </ul>
 
-                <span class="mt-auto">
-                  <span class="text-xl font-semibold">{{ lodge.price_night }}</span><span>/night</span>
-                </span>
-              </div>
-
-              <span class="w-full px-4 py-2 text-xs text-blue-900 block-container bg-blue-50 order-0">{{ lodge.feature }}</span>
-            </li>
-          {% endfor %}
-        </ul>
-
-        <p class="mt-6 text-center">All rates are "the last time we checked" and may be outdated. Prices in downtown Chicago vary significantly based on demand and season.</p>
-      </div>
-      <!-- <figure class="hidden lg:block">
-        <img
-          src="/assets/img/2025/venue-3.png"
-          alt="Another exterior photo of voco Chicago Downtown"
-          loading="lazy"
-          class="w-full media"
-        />
-        <figcaption>Hyatt Centric Chicago Magnificent Mile</figcaption>
-      </figure> -->
-
+    <p class="mt-6 text-center">All rates are "the last time we checked" and may be outdated. Prices in downtown Chicago vary significantly based on demand and season.</p>
   </div>
 </div>
 
 <div class="block-container">
   <div class="wrapper">
     <header class="mb-12">
-      <h2 class="mb-6 text-3xl font-bold font-heading lg:text-5xl" id="places">Around Chicago</h2>
-      <p class="space-y-6 text-xl lg:text-2xl max-w-[60rem]">
+      <h2 class="site-h2" id="places">Around Chicago</h2>
+      <p class="my-6 text-lg">
         The voco Chicago Downtown is perfectly situated to explore the best of Chicago! Public transportation, including the famous "L" train system (CTA), is easily accessible.
-      </p><br/>
-      <p class="space-y-6 text-xl lg:text-2xl max-w-[60rem]">
+      </p>
+      <p class="my-6 text-lg">
         The Clark/Lake CTA station (serving the Blue, Green, Brown, Pink, and Orange Lines) is just a short walk away, connecting you to most major attractions and O'Hare International Airport.
-      </p><br/>
-      <p class="space-y-6 text-xl lg:text-2xl max-w-[60rem]">
+      </p>
+      <p class="my-6 text-lg">
         Popular ride-sharing services (Uber, Lyft) and traditional taxis are also readily available. While you're cruising around town, be sure to check out some of our favorite spots and activities:
-      </p><br/>
+      </p>
     </header>
 
-    <div>
-        <section>
-        <ul class="grid-1-2">
-          {% for place in collections.places %}
-            {% include "place.html" %}
-          {% endfor %}
-        </ul>
-      </section>
-    </div>
-  </div>
-</div>
+    <section>
+      <ul class="grid-1-2">
+        {% for place in collections.places %}
+          {% include "place.html" %}
+        {% endfor %}
+      </ul>
+    </section>
 
-<div class="block-container">
-  <div class="wrapper">
     <header class="mb-12" id="accessibility">
-      <h2 class="mb-6 text-3xl font-bold font-heading lg:text-5xl">An Accessible Experience</h2>
-      <div class="space-y-6 text-xl lg:text-2xl max-w-[60rem]">
+      <h2 class="mb-6 site-h2">An Accessible Experience</h2>
+      <div class="space-y-6 text-lg max-w-[60rem]">
         <p>
           We're working with the staff at the voco Chicago Downtown to
           accommodate the diverse needs of our attendees.
@@ -199,7 +166,7 @@ other_lodging:
       </div>
     </header>
 
-    <ul class="gap-8 px-4 space-y-8 list-disc lg:gap-16 md:columns-2 lg:columns-3 lg:text-xl *:break-inside-avoid">
+    <ul class="gap-8 px-4 space-y-8 list-disc lg:gap-16 md:columns-2 lg:columns-3 text-lg *:break-inside-avoid">
       <li>All public restrooms have accessible stalls.</li>
       <li>
         The voco Chicago Downtown provides gender-neutral restrooms.

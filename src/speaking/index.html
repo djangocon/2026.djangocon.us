@@ -1,33 +1,42 @@
 ---
-layout: text
 title: Speaking at DjangoCon US
 description: |
   Information about submitting a proposal to speak at DjangoCon US
+hero_graphic: /assets/img/2026/speakers.svg
 ---
 
-{% comment %}
+{% layout "_layouts/page.html" %}
+
+{% block hero_content %}
+  <p class="mb-6">
+    The Call for Proposals is open until
+    <strong><a href="https://time.is/1100AM_23_March_2026_in_Chicago?DjangoCon_US_CFP_Closes">March 23, 2026 at 11:00 AM CDT</a></strong>
+    (America/Chicago).
+  </p>
+
+  <a href="{{ site.cfp_application }}" class="button">Submit your talk</a>
+{% endblock %}
+
+{% block page %}
+{% markdown %}
+
 ## Our Call for Proposals is Open!
 
-<a href="{{ site.cfp_application }}" class="button button-lg">Submit your talk</a>
+You can also submit an application for an [Opportunity Grant]({{ site.opportunity_grant_application }}) if you need financial assistance traveling to speak at DjangoCon US.
 
-You can also submit an application for an <a href="{{ site.opportunity_grant_application }}">Opportunity Grant</a> if you need financial assistance traveling to speak at DjangoCon US.
-
-The Call for Proposals is open until <strong><a href="https://time.is/1100AM_23_March_2026_in_Chicago?DjangoCon_US_CFP_Closes">March 23, 2026 at 11:00 AM CDT</a></strong> (America/Chicago).
-
-We encourage you to submit multiple talks, but we generally cannot accept more than one submission per presenter (incuding any co-presenters).
-{% endcomment %}
+We encourage you to submit multiple talks, but we generally cannot accept more than one submission per presenter (including any co-presenters).
 
 Our Call for Proposals is now closed. Decision notifications will be sent by June 8, 2026.
 
 ## Why Speak at DjangoCon US?
 
-*   Presenters receive a **free ticket** to DjangoCon US and up to **$500 in travel cost reimbursement!**
-*   A professionally produced video of your talk will be published on our YouTube channel. (You may opt-out of this.)
-*   Professional photographer on hand to photograph your talk. (Also optional.)
-*   Expose the Django community to new tools, practices, or ideas.
-*   Expand your technical, professional, and personal networks.
-*   Share your discoveries with a large audience.
-*   Give back to the Django community!
+- Presenters receive a **free ticket** to DjangoCon US and up to **$500 in travel cost reimbursement!**
+- A professionally produced video of your talk will be published on our YouTube channel. (You may opt-out of this.)
+- Professional photographer on hand to photograph your talk. (Also optional.)
+- Expose the Django community to new tools, practices, or ideas.
+- Expand your technical, professional, and personal networks.
+- Share your discoveries with a large audience.
+- Give back to the Django community!
 
 ### COVID-19 / Public Health
 
@@ -49,11 +58,11 @@ We are looking for original and exciting talks that can benefit the diverse inte
 
 Here are some examples of what has been accepted over the last couple of years:
 
-*   [DjangoCon US 2025 Talks](https://2025.djangocon.us/schedule/)
-*   [DjangoCon US 2024 Talks](https://2024.djangocon.us/schedule/)
-*   [DjangoCon US 2023 Talks](https://2023.djangocon.us/talks/)
-*   [DjangoCon US 2022 Talks](https://2022.djangocon.us/talks/)
-*   [DjangoCon US 2021 Talks](https://2021.djangocon.us/talks/)
+- [DjangoCon US 2025 Talks](https://2025.djangocon.us/schedule/)
+- [DjangoCon US 2024 Talks](https://2024.djangocon.us/schedule/)
+- [DjangoCon US 2023 Talks](https://2023.djangocon.us/talks/)
+- [DjangoCon US 2022 Talks](https://2022.djangocon.us/talks/)
+- [DjangoCon US 2021 Talks](https://2021.djangocon.us/talks/)
 
 ### Deep Dive Talks (August 26th)
 
@@ -76,3 +85,5 @@ As we have in the past, this year, we have set aside up to $500 per speaker to h
 You will have the option to upload a rough transcript of your talk approximately two weeks before the conference to give the captioning team a chance to train on any jargon you might use in your talk. This is by no means required but it will provide a more accessible experience to your audience.
 
 The organizing team reserves the right to request a review of draft slides at any point up to the start of the conference for any reason including but not limited to content, messaging quality, and more. Failure to provide these slides in a timely manner may result in your removal from the program. We understand that the slides are draft quality and will not be shared outside the program and code of conduct teams.
+{% endmarkdown %}
+{% endblock %}
