@@ -1,10 +1,10 @@
 ---
 name: Tim Schilling
 photo: tim-schilling.jpg
-role: DEFNA Secretary, Marketing co-chair, Community team, Code of Conduct team
+role: Sprints chair
 social:
     twitter: CodenameTim
     website: https://www.better-simple.com/
-    mastodon: https://fosstodon.org/@CodenameTim
+    mastodon: https://mastodon.social/@CodenameTim
     github: tim-schilling
 ---
