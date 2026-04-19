@@ -31,6 +31,7 @@ module.exports = (config) => {
     "src/_content/sponsors/*.{png,jpg,jpeg,webp,svg}": "sponsors/",
     "src/_content/places/*.{png,jpg,jpeg,webp,svg}": "venue/",
   });
+  config.addPassthroughCopy("src/manifest.webmanifest");
   config.addPassthroughCopy("CNAME");
   config.addPassthroughCopy("ROBOTS.txt");
   config.addPassthroughCopy(".nojekyll");
