@@ -1,6 +1,6 @@
 ---
 name: Andrew Mshar
-photo: andrew-mshar.png
+photo: andrew-mshar.jpeg
 role: Lightning Talks Chair
 social:
     twitter: programmylife
