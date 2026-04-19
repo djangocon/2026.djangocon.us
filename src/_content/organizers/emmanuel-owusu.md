@@ -1,6 +1,6 @@
 ---
 name: Emmanuel Owusu
-photo: emmanuel-owusu.png
+photo: emmanuel-owusu.jpeg
 role: Community Team, Opportunity Grants Team
 social:
     twitter: owusu_e1
