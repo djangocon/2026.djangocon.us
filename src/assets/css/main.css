@@ -81,7 +81,7 @@
   }
 
   :focus-visible {
-    outline: 6px solid theme('colors.red.DEFAULT');
+    outline: 6px solid theme('colors.orange.DEFAULT');
   }
 
   a.reverse-link {
