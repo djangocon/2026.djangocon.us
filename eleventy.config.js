@@ -7,7 +7,8 @@ const setupSessions = require('./lib/sessions');
 const setupFeed = require('./lib/feed');
 const markdown = require('./lib/markdown');
 
-const { formatInTimeZone } = require('date-fns-tz');
+const { format } = require('date-fns');
+const { TZDate } = require('@date-fns/tz');
 
 // Read timezone from site.json
 const siteConfig = require('./src/_data/site.json');
@@ -89,8 +90,8 @@ module.exports = (config) => {
     return markdown.render(content);
   });
 
-  config.addFilter("formatDateTime", function(date, format) {
-    return formatInTimeZone(date, timezone, format);
+  config.addFilter("formatDateTime", function(date, formatStr) {
+    return format(new TZDate(date, timezone), formatStr);
   });
 
   config.addFilter("find", function find(collection = [], slug = "") {
