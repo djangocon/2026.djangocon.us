@@ -15,8 +15,8 @@
 
 .index-wrapper {
   @apply relative;
-  @apply flex justify-center lg:justify-start;
-  @apply pt-[8rem] lg:pt-0 px-4;
+  @apply flex justify-center px-4 pt-[8rem];
+  @apply lg:justify-start lg:pt-0;
 }
 
 .index-wrapper-texture {
@@ -27,8 +27,8 @@
 }
 
 .index-hero-stats {
-  @apply text-center;
-  @apply mt-[20rem] lg:mt-0;
+  @apply text-center mt-[20rem];
+  @apply lg:mt-0;
 
   span {
     @apply block;

@@ -3,12 +3,14 @@
    ========================================================================== */
 
 .site-header {
-  @apply fixed z-[100] lg:relative lg:top-0;
-  @apply w-full lg:h-[90px];
+  @apply fixed z-[100];
+  @apply w-full;
   @apply py-4 bg-white;
+  @apply lg:relative lg:top-0 lg:h-[90px];
 
   .wrapper {
-    @apply grid justify-between w-full grid-cols-2 lg:grid-cols-6 lg:w-auto;
+    @apply grid justify-between w-full grid-cols-2;
+    @apply lg:grid-cols-6 lg:w-auto;
   }
 
   &.is-open {
@@ -16,13 +18,14 @@
     @apply bg-white;
 
     .wrapper {
-      @apply flex-col content-start h-screen;
+      @apply flex flex-col h-screen;
+      @apply content-start;
       @apply bg-white;
     }
 
     .button {
       @apply block mt-4 row-start-3 col-span-full;
-      @apply lg:row-start-1 lg:col-span-1 lg:col-start-6 lg:mt-0;
+      @apply lg:mt-0 lg:row-start-1 lg:col-span-1 lg:col-start-6;
     }
   }
 }
@@ -59,7 +62,7 @@
 .site-nav {
   @apply flex flex-row flex-1 items-center justify-center;
   @apply row-start-2 col-span-full gap-4 mt-8;
-  @apply lg:row-start-1 lg:col-span-4 lg:col-start-2 lg:mt-0;
+  @apply lg:row-start-1 lg:col-span-4 lg:col-start-2 lg:mt-0 lg:gap-4;
 
   & > ul {
     @apply flex flex-col w-full lg:gap-4;
@@ -73,9 +76,10 @@
 
   & > ul > li > a {
     @apply flex items-center;
-    @apply py-4 gap-2 lg:p-3;
+    @apply py-4 gap-2;
     @apply font-tanker text-2xl text-dark-blue no-underline;
-    @apply hover:text-ocean-blue lg:font-sans lg:font-medium lg:text-base lg:text-black;
+    @apply hover:text-ocean-blue;
+    @apply lg:p-3 lg:font-sans lg:font-medium lg:text-base lg:text-black;
   }
 
   &.is-closed {
@@ -94,10 +98,11 @@
 
 [data-menu-trigger]::after {
   @apply relative block;
-  @apply w-6 h-6 lg:w-4 lg:h-4;
-  @apply bg-dark-blue lg:bg-secondary;
+  @apply w-6 h-6;
+  @apply bg-dark-blue;
   @apply [mask:url('/assets/img/theme/icons/Carat.svg')] [mask-size:cover] [mask-repeat:no-repeat];
   @apply content-[''];
+  @apply lg:w-4 lg:h-4 lg:bg-secondary;
 }
 
 [data-menu-trigger][aria-expanded="true"]::after {
@@ -106,10 +111,10 @@
 
 .site-nav-menu {
   @apply hidden flex-col;
-  @apply lg:absolute lg:top-full lg:left-1/2 lg:-translate-x-1/2;
-  @apply mb-4 gap-4 lg:gap-6 lg:p-6 lg:w-[26ch];
+  @apply mb-4 gap-4;
   @apply font-medium;
-  @apply border-ocean-blue rounded lg:border-4 lg:bg-white;
+  @apply border-ocean-blue rounded;
+  @apply lg:absolute lg:top-full lg:left-1/2 lg:-translate-x-1/2 lg:gap-6 lg:p-6 lg:w-[26ch] lg:border-4 lg:bg-white;
 
   & > li > a {
     @apply no-underline text-dark-blue hover:text-ocean-blue;

@@ -4,9 +4,9 @@ table {
 }
 
 th {
-  @apply font-semibold text-left text-lg;
   @apply p-4;
-  @apply bg-black text-white;
+  @apply font-semibold text-lg text-left text-white;
+  @apply bg-black;
 }
 
 th:first-child {

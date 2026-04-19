@@ -55,10 +55,8 @@
   input:not([type="checkbox"]):not([type="radio"]),
   select,
   textarea {
-    @apply w-full;
-    @apply px-3 py-2;
-    @apply border border-gray-400 rounded;
-    @apply shadow-sm;
+    @apply w-full px-3 py-2;
+    @apply border border-gray-400 rounded shadow-sm;
     @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100;
   }
 
@@ -110,17 +108,19 @@
   }
 
   .avatar {
-    @apply block object-cover object-left-top w-full aspect-square my-4;
+    @apply block w-full aspect-square my-4 object-cover object-left-top;
     @apply border-2 rounded-full;
   }
 
 
   .subheading {
-    @apply text-xl font-medium leading-tight lg:text-2xl;
+    @apply text-xl font-medium leading-tight;
+    @apply lg:text-2xl;
   }
 
   .lead {
-    @apply text-lg leading-8 lg:text-xl lg:leading-8;
+    @apply text-lg leading-8;
+    @apply lg:text-xl lg:leading-8;
   }
 
   /* THEME-X */
@@ -199,7 +199,8 @@
 }
 
 .site-sponsors {
-  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4;
+  @apply grid grid-cols-1 gap-4;
+  @apply sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
 }
 
 .site-sponsor {

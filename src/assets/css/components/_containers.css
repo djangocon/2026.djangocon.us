@@ -1,8 +1,8 @@
 
 
 .wrapper {
-  @apply max-w-screen-lg;
-  @apply px-6 mx-auto sm:px-8;
+  @apply max-w-screen-lg mx-auto px-6;
+  @apply sm:px-8;
 
   & > .prose {
     max-width: none;

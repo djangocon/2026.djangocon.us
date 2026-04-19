@@ -1,4 +1,5 @@
 .bubble {
-  @apply inline-flex items-center px-4 py-2 text-sm md:text-base font-medium rounded-full;
-  @apply text-black bg-background;
+  @apply inline-flex items-center px-4 py-2 font-medium rounded-full;
+  @apply text-sm text-black bg-background;
+  @apply md:text-base;
 }
