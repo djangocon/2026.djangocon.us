@@ -1,4 +1,4 @@
 .badge {
   @apply inline-block px-4 py-2 font-medium text-sm rounded-lg;
-  @apply text-ocean-blue-900 bg-ocean-blue-50;
+  @apply text-dark-blue bg-background;
 }

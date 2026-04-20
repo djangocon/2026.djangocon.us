@@ -3,19 +3,19 @@ title: Typography
 
 order: 10
 
-
 description: |
   The default font stack is defined in `tailwind.config.js`. Long form text uses `prose`, and all other sizing is done with utility classes, specific to its use case. There are a few key sizing helper classes.
 
-  Typography is based on [Figtree](https://fonts.google.com/specimen/Figtree).
+  Typography is based on [Inter](https://fonts.google.com/specimen/Inter) and [Tanker](https://www.fontshare.com/fonts/tanker).
 ---
 
-
 {%- capture code -%}<div class="space-y-8">
-  <h1 class="pageheading">Page heading, used in heroes</h1>
-  <h2 class="subheading">Sub heading, used on page sections</h2>
+  <h1 class="site-h1">Page heading, h1</h1>
+  <h2 class="site-h2">Sub heading, h2</h2>
+  <h3 class="site-h3">Sub heading, h3</h3>
+
   <p class="lead">Lead, used in support of page headings or sub heading</p>
-  <h3 class="font-heading"><code>.font-heading</code> sets type properties for a generic heading</h3>
+  <h3 class="font-heading"><code>.font-heading</code> sets font family properties for a generic heading</h3>
 </div>{%- endcapture -%}
 
 <div>
@@ -46,7 +46,7 @@ description: |
 <div class="space-y-6">
   <h3 class="mb-2 text-lg font-bold lg:text-2xl font-heading">Prose styles</h3>
 
-{%- capture code -%}<div class="prose prose-lg">
+{%- capture code -%}<div class="prose">
   <p>Prose is a utility class that sets type properties for long form text.</p>
   <p>It is used for body copy, blog posts, and other long form text.</p>
   <p>It can also be used if you need a generic set of good type styles, or are planning the "unknown copy".</p>

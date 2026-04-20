@@ -9,32 +9,43 @@ description: |
 
 <div class="space-y-6">
   {% for color in themeColors %}
-    <div>
     {% assign name = color.id %}
-      <h3 class="mb-2 text-lg font-bold lg:text-2xl font-heading">{{ color.id }}</h3>
+    {% assign first_item = color.value | first %}
 
-      <table>
-        <thead>
-          <tr>
-            <th class="w-[16ch]">Shade</th>
-            <th class="w-[20ch]">Color</th>
-            <th>Class</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for shade in color.value %}
-          {% assign classname = ".bg-" | append: name | append: "-" | append: shade.id %}
-          {% if shade.id == 'DEFAULT' %}
-            {% assign classname = '.bg-' | append: name %}
-          {% endif %}
+      <div>
+        <h3 class="mb-2 text-lg font-bold lg:text-2xl font-heading">{{ name }}</h3>
+
+        <table>
+          <thead>
             <tr>
-              <td>{{ shade.id }}</td>
-              <td style="background-color: {{ shade.color }}">{{ shade.color }}</td>
-              <td><code>{{ classname }}</code></td>
+              <th class="w-[16ch]">Shade</th>
+              <th class="w-[20ch]">Color</th>
+              <th>Class</th>
             </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
+          </thead>
+          <tbody>
+          {% if first_item.id %}
+            {% for shade in color.value %}
+              {% if shade.id == 'DEFAULT' %}
+                {% assign classname = '.bg-' | append: name %}
+              {% else %}
+                {% assign classname = '.bg-' | append: name | append: '-' | append: shade.id %}
+              {% endif %}
+              <tr>
+                <td>{{ shade.id }}</td>
+                <td style="background-color: {{ shade.color }}">{{ shade.color }}</td>
+                <td><code>{{ classname }}</code></td>
+              </tr>
+            {% endfor %}
+            {% else %}
+              <tr>
+                <td>{{ name }}</td>
+                <td style="background-color: {{ color.value }}">{{ color.value }}</td>
+                <td><code>.bg-{{ name }}</code></td>
+              </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
   {% endfor %}
 </div>

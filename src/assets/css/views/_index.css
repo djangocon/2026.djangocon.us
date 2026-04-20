@@ -33,8 +33,8 @@
   span {
     @apply block;
     @apply font-tanker text-orange text-6xl;
-    -webkit-text-stroke: 3px theme("colors.dark-blue.DEFAULT");
+    -webkit-text-stroke: 3px theme("colors.dark-blue");
     paint-order: stroke fill;
-    text-shadow: 4px -4px 0px theme("colors.dark-blue.DEFAULT");
+    text-shadow: 4px -4px 0px theme("colors.dark-blue");
   }
 }

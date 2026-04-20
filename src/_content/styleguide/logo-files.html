@@ -6,26 +6,43 @@ order: 0
 description: |
   Logos are stored on GitHub in the [resources repository](https://github.com/djangocon/resources).
 
-fullLogoFolder: https://raw.githubusercontent.com/djangocon/resources/main/us-2025/logos/full/
-
-subMarkFolder: https://raw.githubusercontent.com/djangocon/resources/main/us-2025/logos/sub-logo/
+fullLogoFolder: https://raw.githubusercontent.com/djangocon/resources/main/us-2026/logos/
 
 logos:
-  - dark.png
-  - dark.svg
-  - orange.png
-  - orange.svg
+  - wordmark-flat-black.png
+  - wordmark-flat-black.svg
+  - wordmark-flat-blue.png
+  - wordmark-flat-blue.svg
+  - wordmark-flat-orange.png
+  - wordmark-flat-orange.svg
+  - wordmark-flat-multi.png
+  - wordmark-flat-multi.svg
+  - wordmark-flat-white.png
+  - wordmark-flat-white.svg
+  - wordmark-iso-white.png
+  - wordmark-iso-white.svg
+  - wordmark-iso-orange.png
+  - wordmark-iso-orange.svg
+  - wordmark-iso-bnw.png
+  - wordmark-iso-bnw.svg
+  - wordmark-iso-multi.png
+  - wordmark-iso-multi.svg
+  - wordmark-iso-pattern.png
 
 submark:
-  - sub-logo-dark.png
-  - sub-logo-dark.svg
-  - sub-logo-orange.png
-  - sub-logo-orange.svg
+  - submark-vertical.png
+  - submark-vertical.svg
+  - submark-white.png
+  - submark-white.svg
+  - submark-iso-orange.png
+  - submark-iso-orange.svg
+  - submark-iso-blue-bg.png
+  - submark-iso-blue-bg.svg
 ---
 
 <h3 class="mb-2 text-lg font-bold lg:text-2xl font-heading">Full Logo</h3>
 
-<ul class="flex flex-wrap gap-12">
+<ul class="flex flex-wrap gap-12 mb-8">
   {% for logo in logos %}
     {% assign logoUrl = fullLogoFolder | append: logo | escape %}
     <li>
@@ -48,14 +65,14 @@ submark:
 
 <ul class="flex flex-wrap gap-12">
   {% for mark in submark %}
-    {% assign markUrl = subMarkFolder | append: mark | escape %}
+    {% assign markUrl = fullLogoFolder | append: mark | escape %}
     <li>
       <a
         href="{{ markUrl }}"
         class="flex flex-col items-center gap-4"
         target="_blank">
         <img
-          src="{{ subMarkFolder }}{{ mark }}"
+          src="{{ fullLogoFolder }}{{ mark }}"
           alt="Submark in {{ mark | split: '.' | last }}"
           class="h-16">
 
