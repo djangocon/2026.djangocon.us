@@ -76,6 +76,38 @@ templateClass: homepage
   </div>
 
   <div class="block-container">
+    <div class="wrapper">
+      <h2 class="site-h2 mb-8 text-center lg:mb-12">Latest News</h2>
+
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {% assign featured_count = 0 %}
+        {% for post in collections.posts reversed %}
+          {% if post.data.featured and featured_count < 3 %}
+            {% assign featured_count = featured_count | plus: 1 %}
+            <article class="featured-news-card">
+              <time
+                class="text-sm tracking-wide text-black-400 uppercase"
+                datetime="{{ post.date }}">{{ post.data.published_datetime | formatDateTime: "MMMM d, yyyy" }}</time>
+              <h3 class="font-heading text-xl text-dark-blue mt-2 lg:text-2xl">
+                <a href="{{ post.url }}" class="reverse-link">{{ post.data.title | escape }}</a>
+              </h3>
+              {%- if post.data.page.excerpt -%}
+                <div class="mt-3 text-sm text-black-500 line-clamp-3">
+                  {{ post.data.page.excerpt | markdown }}
+                </div>
+              {%- endif -%}
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <div class="mt-8 text-center lg:mt-12">
+        <a href="/news" class="button">All News</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-container">
     <div class="text-center wrapper">
       <h2 class="site-h2 mb-8 lg:mb-16">Our Sponsors</h2>
 

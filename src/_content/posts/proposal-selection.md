@@ -12,6 +12,7 @@ featured: true
 
 The DjangoCon US schedule is always highly anticipated. But how does it all come together?
 
+<!-- excerpt -->
 
 The journey from an open Call for Proposals (CFP) to the final lineup of talks and keynote sessions is a thoughtful and collaborative process designed to foster fairness and showcase the best of the Django community.
 

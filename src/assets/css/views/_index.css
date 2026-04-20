@@ -26,6 +26,12 @@
   background-blend-mode: lighten;
 }
 
+.featured-news-card {
+  @apply flex flex-col;
+  @apply p-6;
+  @apply bg-white rounded-2xl border border-stroke;
+}
+
 .index-hero-stats {
   @apply text-center mt-[20rem];
   @apply lg:mt-0;
