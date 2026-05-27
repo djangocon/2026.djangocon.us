@@ -6,13 +6,38 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-05-15T14:07:15Z</updated
+    >2026-05-27T19:57:11Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>Announcing a Focused Experience: DjangoCon US 2026 is Going Single-Track!</title>
+      <link href="https://2026.djangocon.us/news/single-track/" />
+      <updated>2026-05-27T16:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/single-track/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;We are excited to share an update regarding the format of this year&#39;s conference. To ensure we are making the most responsible use of our community resources, we have decided to move to a single-track format for DjangoCon US 2026. This decision was primarily driven by the need to optimize conference resources and manage significant A/V costs.&lt;/p&gt;
+&lt;p&gt;Beyond the logistical benefits, a single-track conference creates a more cohesive and shared community experience. Attendees will no longer have to worry about missing a great talk or choosing between two simultaneous sessions; instead, we will all learn and grow together as one unified audience.&lt;/p&gt;
+&lt;p&gt;We can&#39;t wait to see you from Aug 24, 2026 to Aug 28, 2026 at the voco Chicago Downtown.&lt;/p&gt;
+</content
+      >
+    </entry>
+    <entry>
+      <title>DjangoCon US 2026: Early Bird Tickets End May 31st!</title>
+      <link href="https://2026.djangocon.us/news/early-bird-tickets-end/" />
+      <updated>2026-05-27T15:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/early-bird-tickets-end/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;Don&#39;t miss your chance to save. Early bird ticket sales for DjangoCon US 2026 are ending soon on May 31, 2026. Secure your spot now to join the community at a discounted rate.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ti.to/defna/djangocon-us-2026&#34;&gt;Grab your early bird ticket here.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;DjangoCon US is where the Django community comes together, from maintainers and contributors to teams running production apps and newcomers. Expect community-selected talks, Django contribution sprints, and a welcoming space for everyone.&lt;/p&gt;
+&lt;p&gt;Join us for five days of inspiration and learning at the Voco Chicago Downtown.&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>How DjangoCon US Selects Talk Proposals</title>
       <link href="https://2026.djangocon.us/news/proposal-selection/" />
