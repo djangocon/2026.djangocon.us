@@ -6,13 +6,82 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-05-29T14:52:31Z</updated
+    >2026-06-03T15:48:55Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>Contribute to Django at the Contribution Sprints!</title>
+      <link href="https://2026.djangocon.us/news/contribution-sprints/" />
+      <updated>2026-06-03T16:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/contribution-sprints/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;We are excited to talk to you about contribution sprints at DjangoCon US! They are being held &lt;strong&gt;Thursday, August 27th and Friday, August 28th, 2026&lt;/strong&gt;, from &lt;strong&gt;9am to 5pm&lt;/strong&gt; each day at the &lt;strong&gt;&lt;a href=&#34;https://www.ihg.com/voco/hotels/us/en/chicago/chiwp/hoteldetail&#34;&gt;voco Chicago Downtown&lt;/a&gt;&lt;/strong&gt;, the same venue as the main conference and virtually on our conference Slack. &lt;strong&gt;They are free to attend and open to everyone&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;📣 &lt;strong&gt;&lt;a href=&#34;https://ti.to/defna/djangocon-us-2026&#34;&gt;Get your ticket&lt;/a&gt;&lt;/strong&gt; and join us!&lt;/p&gt;
+&lt;h2 id=&#34;what-is-a-contribution-sprint%3F&#34; tabindex=&#34;-1&#34;&gt;What is a contribution sprint?&lt;/h2&gt;
+&lt;p&gt;Contribution Sprints are a superset of Development Sprints. They serve the same purpose while increasing the range of contribution types and opportunities.&lt;/p&gt;
+&lt;p&gt;Let’s start with what some people already know: &lt;a href=&#34;https://2022.djangocon.us/news/dev-sprint-attendees/&#34;&gt;Development Sprints&lt;/a&gt; are an opportunity for people who maintain open source projects (or want to get involved in doing so) to sit and work together on that goal. They have mostly focused on contributing code, tests, and documentation. However, open source projects often need more than those things. This is especially true as a project grows. Development Sprints are one type of Contribution Sprint.&lt;/p&gt;
+&lt;p&gt;Many of the new things a project needs as it grows fall under the idea of project governance. Here’s a short list of general governance issues a project may face as it grows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;General project governance (Who leads the project? How? How are decisions made? How are new leaders developed? How are conflicts resolved?)&lt;/li&gt;
+&lt;li&gt;Onboarding new contributors&lt;/li&gt;
+&lt;li&gt;Funding/Finance: does your project want it? Is it needed? Who will manage it? How will they manage it?&lt;/li&gt;
+&lt;li&gt;Project marketing&lt;/li&gt;
+&lt;li&gt;Graphic/logo design&lt;/li&gt;
+&lt;li&gt;Legal/licensing questions&lt;/li&gt;
+&lt;li&gt;Clarifying code, documentation, and testing conventions (metadata that guides the rest of your contribution process)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is an excellent video on this topic by &lt;a href=&#34;https://www.youtube.com/watch?v=b2WHTNE4AZk&#34;&gt;Shauna Gordon-McKeon&lt;/a&gt;, part of the PyCon US 2023 &lt;a href=&#34;https://www.youtube.com/@MaintainersSummit&#34;&gt;Maintainers Summit&lt;/a&gt;. If you maintain a project, or are interested in helping maintain one, we recommend checking it out.&lt;/p&gt;
+&lt;h2 id=&#34;how-%26-why-to-lead-a-contribution-sprint&#34; tabindex=&#34;-1&#34;&gt;How &amp;amp; Why To Lead a Contribution Sprint&lt;/h2&gt;
+&lt;p&gt;The &amp;quot;why&amp;quot; is clear: if you’ve realized your project needs help especially with things beyond code this is a great opportunity to find that help.&lt;/p&gt;
+&lt;p&gt;The &amp;quot;how&amp;quot; can be trickier, so here are some specific suggestions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Think about the non-code needs your project has.&lt;/li&gt;
+&lt;li&gt;Ask for help in those areas.&lt;/li&gt;
+&lt;li&gt;Document the need for that help in your project&#39;s &lt;strong&gt;CONTRIBUTING&lt;/strong&gt; documentation.&lt;/li&gt;
+&lt;li&gt;Make it clear in all of your communications that you’re looking for more than just code contributions. Many people still think contributing to an open source project &lt;em&gt;only&lt;/em&gt; means writing code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;how-%26-why-to-join-a-contribution-sprint&#34; tabindex=&#34;-1&#34;&gt;How &amp;amp; Why to Join a Contribution Sprint&lt;/h2&gt;
+&lt;p&gt;The &amp;quot;why&amp;quot; can vary. Maybe you don’t feel confident enough to contribute code (you probably are, but we understand the feeling). Or maybe you have skills in non-code areas that you would love to use to help a project thrive.&lt;/p&gt;
+&lt;p&gt;The &amp;quot;how&amp;quot; starts with identifying your strengths, then connecting with projects that might need them. Shauna’s video is a great starting point. Once you identify a project that interests you, reach out! Sometimes a project doesn’t realize what kind of help it needs until someone offers it.&lt;/p&gt;
+&lt;h2 id=&#34;preparing-to-lead-or-organize-a-sprint&#34; tabindex=&#34;-1&#34;&gt;Preparing to Lead or Organize a Sprint&lt;/h2&gt;
+&lt;p&gt;If you’re a project maintainer or contributor, a bit of preparation can help make the most of the sprint and avoid burnout. Most open source maintainers are unpaid volunteers, we appreciate you.&lt;/p&gt;
+&lt;p&gt;Here are some steps you can take ahead of time:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make sure your &lt;strong&gt;CONTRIBUTING&lt;/strong&gt; guide is up to date. If your project doesn’t have one, check out &lt;a href=&#34;https://www.django-rest-framework.org/community/contributing/&#34;&gt;Django REST Framework&lt;/a&gt;, &lt;a href=&#34;https://github.com/pytest-dev/pytest/blob/main/CONTRIBUTING.rst&#34;&gt;pytest&lt;/a&gt;, &lt;a href=&#34;https://docs.djangoproject.com/en/dev/internals/contributing/&#34;&gt;Django&lt;/a&gt;, or &lt;a href=&#34;https://devguide.python.org/&#34;&gt;CPython&lt;/a&gt; for inspiration.&lt;/li&gt;
+&lt;li&gt;Include setup instructions, test commands, code style, CI guidelines, and PR templates.&lt;/li&gt;
+&lt;li&gt;Rather than just flagging &amp;quot;beginner-friendly&amp;quot; issues, try breaking down large issues into smaller, approachable tasks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;supporting-contributors-as-a-non-maintainer&#34; tabindex=&#34;-1&#34;&gt;Supporting Contributors as a Non-Maintainer&lt;/h2&gt;
+&lt;p&gt;If you&#39;re an active contributor (even without commit access), you can:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Help mentor newcomers with patience and empathy.&lt;/li&gt;
+&lt;li&gt;Gauge each contributor’s experience level and tailor your help.&lt;/li&gt;
+&lt;li&gt;Update documentation as needed to reflect your mentoring experience.&lt;/li&gt;
+&lt;li&gt;Break down complex issues into bite-sized contributions.&lt;/li&gt;
+&lt;li&gt;Let someone co-pilot an issue with you.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tips-for-hybrid-participation&#34; tabindex=&#34;-1&#34;&gt;Tips for Hybrid Participation&lt;/h2&gt;
+&lt;p&gt;We are continuing the hybrid format: virtual and in-person. This brings both challenges and opportunities. While you might miss the spontaneity of in-person collaboration, working synchronously online is a powerful experience. Make sure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your project uses real-time chat (Slack, Zulip, Discord, etc.)&lt;/li&gt;
+&lt;li&gt;Your docs are easily accessible to virtual attendees.&lt;/li&gt;
+&lt;li&gt;You’re ready to share screens, links, and tasks in real time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;final-notes&#34; tabindex=&#34;-1&#34;&gt;Final Notes&lt;/h2&gt;
+&lt;p&gt;The Contribution Sprints are free and open to everyone. They will run &lt;strong&gt;August 27–28, 2026 from 9am to 5pm CDT&lt;/strong&gt; at &lt;strong&gt;voco Chicago Downtown&lt;/strong&gt; and online via Slack.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Want to lead or organize a sprint? Great!&lt;/li&gt;
+&lt;li&gt;Want to help? We’d love to have you.&lt;/li&gt;
+&lt;li&gt;Have questions? Email us at &lt;strong&gt;&lt;a href=&#34;mailto:sprints@djangocon.us&#34;&gt;sprints@djangocon.us&lt;/a&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🎟️ &lt;strong&gt;&lt;a href=&#34;https://ti.to/defna/djangocon-us-2026&#34;&gt;Get your ticket now&lt;/a&gt;&lt;/strong&gt; and be part of something awesome!&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>DjangoCon US 2026: Early Bird Tickets End May 31st!</title>
       <link href="https://2026.djangocon.us/news/early-bird-tickets-end/" />
