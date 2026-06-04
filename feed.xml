@@ -6,13 +6,57 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-06-03T15:48:55Z</updated
+    >2026-06-04T16:42:27Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>Announcing a Focused Experience: DjangoCon US 2026 is Going Single-Track!</title>
+      <link href="https://2026.djangocon.us/news/single-track/" />
+      <updated>2026-06-04T16:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/single-track/</id>
+      <content xml:lang="en" type="html"
+        >&lt;h1 id=&#34;djangocon-us-2026-goes-single-track&#34; tabindex=&#34;-1&#34;&gt;DjangoCon US 2026 Goes Single-Track&lt;/h1&gt;
+&lt;p&gt;After years of running multiple simultaneous talk tracks, DjangoCon US 2026 will move to a single-track conference format.&lt;/p&gt;
+&lt;p&gt;It&#39;s a significant change for the conference and one we didn&#39;t make lightly.&lt;/p&gt;
+&lt;h2 id=&#34;why-we&#39;re-making-this-change&#34; tabindex=&#34;-1&#34;&gt;Why we&#39;re making this change&lt;/h2&gt;
+&lt;p&gt;The simple answer is financial sustainability.&lt;/p&gt;
+&lt;p&gt;Running conferences has become substantially more expensive over the last several years, and sponsorship has not kept pace. Audio/visual production alone scales rapidly with each additional room: recording crews, switching equipment, livestream infrastructure, microphones, staging, and dedicated technical staff all multiply with every added track.&lt;/p&gt;
+&lt;p&gt;At the same time, sponsorship budgets across the tech industry have tightened considerably, and ticket sales have not returned to their pre-covid levels.&lt;/p&gt;
+&lt;p&gt;Like many community-led events, we reached a crossroads: either continue stretching resources across multiple simultaneous tracks and risk diminishing the overall conference experience, or make a focused investment to deliver a stronger, more sustainable DjangoCon US.&lt;/p&gt;
+&lt;p&gt;We chose to focus on an opportunity to try something different.&lt;/p&gt;
+&lt;h2 id=&#34;what-a-single-track-djangocon-us-means&#34; tabindex=&#34;-1&#34;&gt;What a single-track DjangoCon US means&lt;/h2&gt;
+&lt;p&gt;For attendees, the shift comes with an immediate benefit:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;No more choosing between two great talks happening at the same time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Every attendee, from first-time Django developers to longtime community members, will experience the same talks, keynotes, and announcements together. The hallway conversations after sessions become richer because everyone shares the same context. Discussions continue naturally between talks, over lunch, and throughout the week.&lt;/p&gt;
+&lt;p&gt;That kind of shared experience is increasingly rare at technical conferences.&lt;/p&gt;
+&lt;p&gt;A single-track format also allows us to invest more deeply in each selected session. With fewer presentation slots available, the program becomes more intentional, with additional attention on talk quality, pacing, and the overall flow of the event.&lt;/p&gt;
+&lt;p&gt;Rather than trying to run multiple competing talk rooms at once, we want to make every hour of DjangoCon US feel meaningful.&lt;/p&gt;
+&lt;h2 id=&#34;expanding-the-conversations-beyond-the-stage&#34; tabindex=&#34;-1&#34;&gt;Expanding the conversations beyond the stage&lt;/h2&gt;
+&lt;p&gt;Moving to a single talk track does not mean a smaller conference experience.&lt;/p&gt;
+&lt;p&gt;Alongside the main-stage talks, DjangoCon US 2026 will include open spaces, round tables, hallway discussions, and collaborative problem-solving throughout the conference.&lt;/p&gt;
+&lt;p&gt;Beyond those staples, we&#39;re exploring some new ideas for the space and time a second track used to fill: unique experiences and activities you simply can&#39;t get online or anywhere outside this conference. We&#39;re still shaping what those will look like, so stay tuned for announcements as plans come together.&lt;/p&gt;
+&lt;p&gt;Some of the most valuable moments at DjangoCon US happen away from the podium entirely when a small group gathers around a table to discuss scaling challenges, accessibility, hiring, testing strategies, community organizing, or the future of Django itself.&lt;/p&gt;
+&lt;p&gt;This year, we want to create even more intentional space for those conversations while keeping the main conference program unified.&lt;/p&gt;
+&lt;h3 id=&#34;sponsor-a-workshop&#34; tabindex=&#34;-1&#34;&gt;Sponsor a workshop&lt;/h3&gt;
+&lt;p&gt;Hands-on workshops remain one of the most impactful parts of attending conferences.&lt;/p&gt;
+&lt;p&gt;If your company wants to support practical, in-depth learning or help bring expert educators to the community, workshop sponsorship is one of the most direct ways to contribute.&lt;/p&gt;
+&lt;p&gt;Workshops help keep tickets accessible while supporting high-quality educational content for attendees at every experience level.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://2026.djangocon.us/sponsors/information/&#34;&gt;View sponsorship information →&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;join-us-in-chicago&#34; tabindex=&#34;-1&#34;&gt;Join us in Chicago&lt;/h2&gt;
+&lt;p&gt;DjangoCon US 2026 will bring the community together for five days of talks, open spaces, workshops, sprints, hallway conversations, and collaboration.&lt;/p&gt;
+&lt;p&gt;We can&#39;t wait to see you in Chicago.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;August 24–28, 2026&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;voco Chicago Downtown&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://2026.djangocon.us/&#34;&gt;Get your ticket →&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>Contribute to Django at the Contribution Sprints!</title>
       <link href="https://2026.djangocon.us/news/contribution-sprints/" />
