@@ -6,13 +6,60 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-06-05T07:06:43Z</updated
+    >2026-06-08T15:27:14Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>Announcing Our DjangoCon US 2026 Talks!</title>
+      <link href="https://2026.djangocon.us/news/announcing-lineup/" />
+      <updated>2026-06-08T12:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/announcing-lineup/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;We are delighted to present our tutorial and talk lineup!&lt;/p&gt;
+&lt;p&gt;The final talk and tutorial schedule will be announced soon. If you haven&#39;t purchased your ticket yet, &lt;a href=&#34;https://ti.to/defna/djangocon-us-2026&#34;&gt;they&#39;re still on sale&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Congratulations to the presenters of the tutorials and talks below!&lt;/p&gt;
+&lt;h2 id=&#34;talks-(monday%2C-august-24-through-wednesday%2C-august-26)&#34; tabindex=&#34;-1&#34;&gt;Talks (Monday, August 24 through Wednesday, August 26)&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;All talks will be available live for those with online-only tickets. They will be posted to YouTube after the conference for free.&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Abigail Afi Gbadago (&lt;a href=&#34;https://www.linkedin.com/in/abigail-afi-gbadago/&#34;&gt;website&lt;/a&gt;) - Polyglot Persistence with Django: When One Database Isn&#39;t Enough&lt;/li&gt;
+&lt;li&gt;Andrew Selzer (&lt;a href=&#34;https://www.linkedin.com/in/andrew-selzer/&#34;&gt;website&lt;/a&gt;) - Enter the Ecosystem: Contributing to Django Open Source Projects&lt;/li&gt;
+&lt;li&gt;Angufibo  Lincoln (&lt;a href=&#34;https://www.linkedin.com/in/linc-/&#34;&gt;website&lt;/a&gt;) - Fail Your CI in Performance Regressions: Bringing Performance Testing to Django&lt;/li&gt;
+&lt;li&gt;Barkha Jain  - Scientists Meet Django: Building Bridges Between Research and Software&lt;/li&gt;
+&lt;li&gt;Calvin Hendryx-Parker (&lt;a href=&#34;https://Fosstodon.org/@CalvinHP&#34;&gt;mastodon&lt;/a&gt;, &lt;a href=&#34;https://sixfeetup.com/&#34;&gt;website&lt;/a&gt;) and Frank Wiles  - Batteries vs. Speed: The Django/FastAPI Debate&lt;/li&gt;
+&lt;li&gt;Chrissy Wainwright (&lt;a href=&#34;https://sixfeetup.com/&#34;&gt;website&lt;/a&gt;) - One URL to Rule Them All: Dynamic Landing Pages in Wagtail&lt;/li&gt;
+&lt;li&gt;Dan Ryan (&lt;a href=&#34;https://dryan.com/@d&#34;&gt;mastodon&lt;/a&gt;, &lt;a href=&#34;https://dryan.com&#34;&gt;website&lt;/a&gt;) - Good Conduct: How Django Modernized Its Code of Conduct&lt;/li&gt;
+&lt;li&gt;Drishti Jain  - GeoDjango at City Scale: Spatial Data for Urban Systems&lt;/li&gt;
+&lt;li&gt;Eduardo Felipe Castegnaro  - Keeping Pace with Django: Evolving Through 15 years of Updates&lt;/li&gt;
+&lt;li&gt;Elizabeth Christensen (&lt;a href=&#34;https://fosstodon.org/@sqlliz&#34;&gt;mastodon&lt;/a&gt;, &lt;a href=&#34;https://www.crunchydata.com/blog/author/elizabeth-christensen&#34;&gt;website&lt;/a&gt;) - What&#39;s New in Postgres 18 &amp;amp; 19&lt;/li&gt;
+&lt;li&gt;Jack Linke (&lt;a href=&#34;https://social.jacklinke.com/@jack&#34;&gt;mastodon&lt;/a&gt;, &lt;a href=&#34;https://jacklinke.com&#34;&gt;website&lt;/a&gt;) - Yes, we allow substitutions. No, we don&#39;t serve spaghetti.&lt;/li&gt;
+&lt;li&gt;Jacob Walls  - Auto-prefetching with model field fetch modes in Django 6.1&lt;/li&gt;
+&lt;li&gt;James Stuckey Weber (&lt;a href=&#34;https://front-end.social/@jamessw&#34;&gt;mastodon&lt;/a&gt;, &lt;a href=&#34;https://www.oddbird.net/authors/james/&#34;&gt;website&lt;/a&gt;) - But did you know the browser already does that?&lt;/li&gt;
+&lt;li&gt;Josh Thomas (&lt;a href=&#34;https://joshthomas.dev/@josh&#34;&gt;mastodon&lt;/a&gt;, &lt;a href=&#34;https://joshthomas.dev&#34;&gt;website&lt;/a&gt;) - Agents All the Way Down: How AI Coding Agents Changed How I Write Django&lt;/li&gt;
+&lt;li&gt;Karen Tracey (&lt;a href=&#34;https://fosstodon.org/@kmtracey&#34;&gt;mastodon&lt;/a&gt;) - Django 6: The Most Exciting Release Ever&lt;/li&gt;
+&lt;li&gt;Kasey Kelly  - Taming Your Templates: Component-Based Frontends in Django&lt;/li&gt;
+&lt;li&gt;Kumar Shivendu (&lt;a href=&#34;https://kshivendu.dev&#34;&gt;website&lt;/a&gt;) - Beyond REST: Implementing the Model Context Protocol (MCP) in Django&lt;/li&gt;
+&lt;li&gt;Leonardo Batista (&lt;a href=&#34;https://www.linkedin.com/in/leonardohenriquebatista/&#34;&gt;website&lt;/a&gt;) - Scaling Django: Mastering Database Routers with AWS Aurora&lt;/li&gt;
+&lt;li&gt;Matías Bordese  - Teach Django Tasks to speak Celery: Building a Celery backend for Django Tasks&lt;/li&gt;
+&lt;li&gt;Meagen Voss (&lt;a href=&#34;https://fosstodon.org/@vossisboss&#34;&gt;mastodon&lt;/a&gt;, &lt;a href=&#34;https://wagtail.org&#34;&gt;website&lt;/a&gt;) - Pragmatic AI: How to gain trust with user-centered AI adoption&lt;/li&gt;
+&lt;li&gt;Mohammad Ahtasham ul Hassan  - Breaking the Request Chain: Rethinking Service Communication in Django Systems&lt;/li&gt;
+&lt;li&gt;Monica Oyugi (&lt;a href=&#34;https://mastodon.social/@monics&#34;&gt;mastodon&lt;/a&gt;, &lt;a href=&#34;https://medium.com/@monicaoyugi&#34;&gt;website&lt;/a&gt;) - The Testing Pyramid in Practice for Django&lt;/li&gt;
+&lt;li&gt;Natalia (&lt;a href=&#34;https://fosstodon.org/@nessita&#34;&gt;mastodon&lt;/a&gt;) - Wishlist granted: HTMX without betraying your Django views&lt;/li&gt;
+&lt;li&gt;Paolo Melchiorre (&lt;a href=&#34;https://fosstodon.org/@paulox&#34;&gt;mastodon&lt;/a&gt;, &lt;a href=&#34;https://www.paulox.net&#34;&gt;website&lt;/a&gt;) - The Django UUID Story&lt;/li&gt;
+&lt;li&gt;Sarah Abderemane (&lt;a href=&#34;https://mastodon.social/@sabderemane&#34;&gt;mastodon&lt;/a&gt;, &lt;a href=&#34;https://sarahabd.com/&#34;&gt;website&lt;/a&gt;) - 50 shades of green - One contribution to the Django world&lt;/li&gt;
+&lt;li&gt;Scott Cranfill (&lt;a href=&#34;https://compiler.la&#34;&gt;website&lt;/a&gt;) - Using Django to deliver public transit benefits securely and privately&lt;/li&gt;
+&lt;li&gt;Tobias McNulty  - Search-as-you-type for 54 Million Names: PostgreSQL + Django for Fuzzy Name Matching at Scale&lt;/li&gt;
+&lt;li&gt;Will Vincent (&lt;a href=&#34;fosstodon.org/@wsvincent&#34;&gt;mastodon&lt;/a&gt;, &lt;a href=&#34;https://wsvincent.com/&#34;&gt;website&lt;/a&gt;) - Modern Django Deployments in 2026&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Congratulations to all our speakers!&lt;/p&gt;
+&lt;p&gt;If you&#39;d like to check out these talks and more, &lt;a href=&#34;https://ti.to/defna/djangocon-us-2026&#34;&gt;tickets are still on sale&lt;/a&gt;.&lt;br&gt;
+We hope to see you in Chicago!&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>Announcing a Focused Experience: DjangoCon US 2026 is Going Single-Track!</title>
       <link href="https://2026.djangocon.us/news/single-track/" />
