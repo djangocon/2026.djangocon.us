@@ -24,10 +24,11 @@ If you're looking for general information on sprints, see ["Contribute to Django
 - [Prepare the contributing documentation](#prepare-the-contributing-documentation)
 - [Identify the available work](#identify-the-available-work)
 - [Identify what you will need the day of](#identify-what-you-will-need-the-day-of)
+- [Communicate with the organizers](#communicate-with-the-organizers)
 - [Do something extra](#do-something-extra)
 - [Sprint leader checklist](#sprint-leader-checklist)
 
-## Promote your participation! {#promote-your-participation!}
+## Promote your participation!
 
 This was originally at the end, but I moved it up. This is the main thing you should do. People contribute at sprints because they want to collaborate and connect. You don’t have to wait until the conference to start that process, so get started now!
 
@@ -42,7 +43,7 @@ This step is immensely helpful to you, your project and the conference. People a
 
 **Talking about your project and how you’ll be at the conference is a win for everyone.** Please do it!
 
-## Prework reflection {#prework-reflection}
+## Prework reflection
 
 Similar to preparing for a conference, you need to ask yourself a few questions:
 
@@ -60,7 +61,7 @@ An example answer set would be:
 
 In the above case, there’s nothing about being an expert on the project or being the sole maintainer. Those things certainly help, and are critical when you want to collaborate on big projects at sprints, but for the purposes of growing the community and contributor base, they are unnecessary.
 
-## Prepare the contributing documentation {#prepare-the-contributing-documentation}
+## Prepare the contributing documentation
 
 With your understanding of the goals for the sprint, it’s time to take a look at the project itself to determine if it’s prepared for new contributors. It’s worth doing the basics:
 
@@ -72,7 +73,7 @@ With your understanding of the goals for the sprint, it’s time to take a look 
    5. Include where to look for issues to work on  
 2. **Create a fresh environment and confirm any code works**
 
-## Identify the available work {#identify-the-available-work}
+## Identify the available work
 
 One of the challenges to open source software is finding something to work on. Depending on the types of contribution you’re looking for and that you’re capable of supporting, consider:
 
@@ -82,7 +83,7 @@ One of the challenges to open source software is finding something to work on. D
 
 It can be helpful to **create a single issue for the sprint that links to the various issues, features and ideas** that you’re looking to work on. This has the benefit of communicating to your other contributors that these will be iterated on in the sprint, allowing them to add their own or ask questions. It also provides you with a single link to use when promoting your participation in sprints or when you’re speaking with sprinters.
 
-## Identify what you will need the day of {#identify-what-you-will-need-the-day-of}
+## Identify what you will need the day of
 
 Imagine what it will be like during the sprints. You have the ideal number of participants who want to participate exactly as you’re hoping. What will you be doing? What will you be using? Do you need to bring anything with you? You can ask the conference organizers for help with materials as well.
 
@@ -102,7 +103,7 @@ Let us know on your sprints ticket(s) or email us directly at [sprints@djangocon
 
 The organizers at DjangoCon US will be hosting a few virtual office hour sessions before the conference for attendees to get their laptops ready to contribute to a project. Knowing that you’ll be there allows us to steer people towards your project so they can clone the repo, set up a virtual environment and run the tests, all before the conference, allowing you more time to collaborate. **So please, let us know if you’re coming!**
 
-## Do something extra {#do-something-extra}
+## Do something extra
 
 This is entirely optional, hence the “extra”. The people who attend sprints to contribute want to feel connected to the community and help build something meaningful. The challenge is that it’s intimidating to do in public. People let judgement creep in and worry about perception. **Consider what you can do to eliminate that fear and make them feel welcomed.**
 
@@ -112,7 +113,7 @@ The BeeWare project takes the above even further. [They award challenge coins to
 
 **What can you do to make your sprint event memorable for others?**
 
-## Sprint leader checklist {#sprint-leader-checklist}
+## Sprint leader checklist
 
 In case it’s helpful here is a checklist with the above ideas.
 
