@@ -116,21 +116,21 @@ The BeeWare project takes the above even further. [They award challenge coins to
 
 In case it’s helpful here is a checklist with the above ideas.
 
-- [ ] Announce that you’ll be at sprints and want to people to collaborate with on your project  
-      - [ ] Post on your social media  
-      - [ ] Write a blog post  
-- [ ] Reflect on what you are looking to get out of sprints  
-- [ ] Reflect on what your project need  
-- [ ] Reflect on what you are capable of doing  
-- [ ] Review the contribution docs  
-      - [ ] Does it show how to install dependencies  
-      - [ ] Does it show how to run tests locally  
-      - [ ] Does it show how to build the documentation locally  
-      - [ ] Does it show how to run linters, formatters and/or type-checking locally  
-      - [ ] Does it show where to look for issues to work on  
-      - [ ] Create a fresh environment and confirm any code works  
-- [ ] Review issues and add newcomer friendly / beginner labels  
-- [ ] Identify issues that are well-contained and could be completed in a day’s worth of effort  
-- [ ] Identify ideas/features that could be implemented or explored  
-- [ ] Create a single issue for the sprint that links to the various issues, features and ideas  
-- [ ] Pack the materials you’ll need (paper, pen, whiteboard, etc)
+- Announce that you’ll be at sprints and want to people to collaborate with on your project  
+    - Post on your social media  
+    - Write a blog post  
+- Reflect on what you are looking to get out of sprints  
+- Reflect on what your project need  
+- Reflect on what you are capable of doing  
+- Review the contribution docs  
+    - Does it show how to install dependencies  
+    - Does it show how to run tests locally  
+    - Does it show how to build the documentation locally  
+    - Does it show how to run linters, formatters and/or type-checking locally  
+    - Does it show where to look for issues to work on  
+    - Create a fresh environment and confirm any code works  
+- Review issues and add newcomer friendly / beginner labels  
+- Identify issues that are well-contained and could be completed in a day’s worth of effort  
+- Identify ideas/features that could be implemented or explored  
+- Create a single issue for the sprint that links to the various issues, features and ideas  
+- Pack the materials you’ll need (paper, pen, whiteboard, etc)
