@@ -6,7 +6,7 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-06-10T15:59:49Z</updated
+    >2026-06-10T17:28:55Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
@@ -100,24 +100,30 @@
 &lt;h2 id=&#34;sprint-leader-checklist-%7B%23sprint-leader-checklist%7D&#34; tabindex=&#34;-1&#34;&gt;Sprint leader checklist {#sprint-leader-checklist}&lt;/h2&gt;
 &lt;p&gt;In case it’s helpful here is a checklist with the above ideas.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;[ ] Announce that you’ll be at sprints and want to people to collaborate with on your project&lt;br&gt;
-- [ ] Post on your social media&lt;br&gt;
-- [ ] Write a blog post&lt;/li&gt;
-&lt;li&gt;[ ] Reflect on what you are looking to get out of sprints&lt;/li&gt;
-&lt;li&gt;[ ] Reflect on what your project need&lt;/li&gt;
-&lt;li&gt;[ ] Reflect on what you are capable of doing&lt;/li&gt;
-&lt;li&gt;[ ] Review the contribution docs&lt;br&gt;
-- [ ] Does it show how to install dependencies&lt;br&gt;
-- [ ] Does it show how to run tests locally&lt;br&gt;
-- [ ] Does it show how to build the documentation locally&lt;br&gt;
-- [ ] Does it show how to run linters, formatters and/or type-checking locally&lt;br&gt;
-- [ ] Does it show where to look for issues to work on&lt;br&gt;
-- [ ] Create a fresh environment and confirm any code works&lt;/li&gt;
-&lt;li&gt;[ ] Review issues and add newcomer friendly / beginner labels&lt;/li&gt;
-&lt;li&gt;[ ] Identify issues that are well-contained and could be completed in a day’s worth of effort&lt;/li&gt;
-&lt;li&gt;[ ] Identify ideas/features that could be implemented or explored&lt;/li&gt;
-&lt;li&gt;[ ] Create a single issue for the sprint that links to the various issues, features and ideas&lt;/li&gt;
-&lt;li&gt;[ ] Pack the materials you’ll need (paper, pen, whiteboard, etc)&lt;/li&gt;
+&lt;li&gt;Announce that you’ll be at sprints and want to people to collaborate with on your project
+&lt;ul&gt;
+&lt;li&gt;Post on your social media&lt;/li&gt;
+&lt;li&gt;Write a blog post&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Reflect on what you are looking to get out of sprints&lt;/li&gt;
+&lt;li&gt;Reflect on what your project need&lt;/li&gt;
+&lt;li&gt;Reflect on what you are capable of doing&lt;/li&gt;
+&lt;li&gt;Review the contribution docs
+&lt;ul&gt;
+&lt;li&gt;Does it show how to install dependencies&lt;/li&gt;
+&lt;li&gt;Does it show how to run tests locally&lt;/li&gt;
+&lt;li&gt;Does it show how to build the documentation locally&lt;/li&gt;
+&lt;li&gt;Does it show how to run linters, formatters and/or type-checking locally&lt;/li&gt;
+&lt;li&gt;Does it show where to look for issues to work on&lt;/li&gt;
+&lt;li&gt;Create a fresh environment and confirm any code works&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Review issues and add newcomer friendly / beginner labels&lt;/li&gt;
+&lt;li&gt;Identify issues that are well-contained and could be completed in a day’s worth of effort&lt;/li&gt;
+&lt;li&gt;Identify ideas/features that could be implemented or explored&lt;/li&gt;
+&lt;li&gt;Create a single issue for the sprint that links to the various issues, features and ideas&lt;/li&gt;
+&lt;li&gt;Pack the materials you’ll need (paper, pen, whiteboard, etc)&lt;/li&gt;
 &lt;/ul&gt;
 </content
       >
