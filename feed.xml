@@ -6,13 +6,122 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-06-09T15:58:48Z</updated
+    >2026-06-10T15:01:42Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>Preparing for sprints as a project leader</title>
+      <link href="https://2026.djangocon.us/news/preparing-for-sprints-as-project-leader/" />
+      <updated>2026-06-09T16:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/preparing-for-sprints-as-project-leader/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;This article outlines the things you should consider doing when preparing to lead a project at sprints to maximize connection and collaboration. This is for people who are attending sprints at a conference who intend to collaborate and lead others to contribute to a given project.&lt;/p&gt;
+&lt;p&gt;If you&#39;re looking for general information on sprints, see &lt;a href=&#34;/news/contribution-sprints/&#34;&gt;&amp;quot;Contribute to Django at the Contribution Sprints!&amp;quot;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34; tabindex=&#34;-1&#34;&gt;Table of contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#promote-your-participation!&#34;&gt;Promote your participation!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#prework-reflection&#34;&gt;Prework reflection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#prepare-the-contributing-documentation&#34;&gt;Prepare the contributing documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#identify-the-available-work&#34;&gt;Identify the available work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#identify-what-you-will-need-the-day-of&#34;&gt;Identify what you will need the day of&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#do-something-extra&#34;&gt;Do something extra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#sprint-leader-checklist&#34;&gt;Sprint leader checklist&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;promote-your-participation!-%7B%23promote-your-participation!%7D&#34; tabindex=&#34;-1&#34;&gt;Promote your participation! {#promote-your-participation!}&lt;/h2&gt;
+&lt;p&gt;This was originally at the end, but I moved it up. This is the main thing you should do. People contribute at sprints because they want to collaborate and connect. You don’t have to wait until the conference to start that process, so get started now!&lt;/p&gt;
+&lt;p&gt;Here are some ideas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Post on your social media regularly with the conference hash tag that you’ll be there&lt;/li&gt;
+&lt;li&gt;Write a blog post that you’ll be there&lt;/li&gt;
+&lt;li&gt;Talk about what issues you’re excited about&lt;/li&gt;
+&lt;li&gt;Make it clear you want help from the community and where your needs are&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This step is immensely helpful to you, your project and the conference. People are more likely to attend sprints and the conference if they know what is going on. You’re more likely to find contributors if more people attend. The conference needs new and returning attendees to be sustainable.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Talking about your project and how you’ll be at the conference is a win for everyone.&lt;/strong&gt; Please do it!&lt;/p&gt;
+&lt;h2 id=&#34;prework-reflection-%7B%23prework-reflection%7D&#34; tabindex=&#34;-1&#34;&gt;Prework reflection {#prework-reflection}&lt;/h2&gt;
+&lt;p&gt;Similar to preparing for a conference, you need to ask yourself a few questions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What are you looking to get out of sprints?&lt;/li&gt;
+&lt;li&gt;What does your project need?&lt;/li&gt;
+&lt;li&gt;What are you capable of doing?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;There are no right or wrong answers.&lt;/strong&gt; Having an understanding of where you and the project stand will help you communicate what you’re looking for and build off-ramps for incompatible individuals so everyone can have their expectations met.&lt;/p&gt;
+&lt;p&gt;An example answer set would be:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;To meet new people, grow my network and learn something new.&lt;/li&gt;
+&lt;li&gt;More regular contributors&lt;/li&gt;
+&lt;li&gt;Answer basic questions about running the project, know who to ping when things get hard, can teach others how to run the tests and build the docs locally.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In the above case, there’s nothing about being an expert on the project or being the sole maintainer. Those things certainly help, and are critical when you want to collaborate on big projects at sprints, but for the purposes of growing the community and contributor base, they are unnecessary.&lt;/p&gt;
+&lt;h2 id=&#34;prepare-the-contributing-documentation-%7B%23prepare-the-contributing-documentation%7D&#34; tabindex=&#34;-1&#34;&gt;Prepare the contributing documentation {#prepare-the-contributing-documentation}&lt;/h2&gt;
+&lt;p&gt;With your understanding of the goals for the sprint, it’s time to take a look at the project itself to determine if it’s prepared for new contributors. It’s worth doing the basics:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Read the contribution docs and freshen them up
+&lt;ol&gt;
+&lt;li&gt;Include how to install dependencies&lt;/li&gt;
+&lt;li&gt;Include how to run tests locally&lt;/li&gt;
+&lt;li&gt;Include how to build the documentation locally&lt;/li&gt;
+&lt;li&gt;Include how to run linters, formatters and/or type-checking locally&lt;/li&gt;
+&lt;li&gt;Include where to look for issues to work on&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create a fresh environment and confirm any code works&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;identify-the-available-work-%7B%23identify-the-available-work%7D&#34; tabindex=&#34;-1&#34;&gt;Identify the available work {#identify-the-available-work}&lt;/h2&gt;
+&lt;p&gt;One of the challenges to open source software is finding something to work on. Depending on the types of contribution you’re looking for and that you’re capable of supporting, consider:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Reviewing issues and adding newcomer friendly / beginner labels&lt;/li&gt;
+&lt;li&gt;Identifying issues that are well-contained and could be completed in a day’s worth of effort&lt;/li&gt;
+&lt;li&gt;Identifying ideas/features that could be implemented or explored&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It can be helpful to &lt;strong&gt;create a single issue for the sprint that links to the various issues, features and ideas&lt;/strong&gt; that you’re looking to work on. This has the benefit of communicating to your other contributors that these will be iterated on in the sprint, allowing them to add their own or ask questions. It also provides you with a single link to use when promoting your participation in sprints or when you’re speaking with sprinters.&lt;/p&gt;
+&lt;h2 id=&#34;identify-what-you-will-need-the-day-of-%7B%23identify-what-you-will-need-the-day-of%7D&#34; tabindex=&#34;-1&#34;&gt;Identify what you will need the day of {#identify-what-you-will-need-the-day-of}&lt;/h2&gt;
+&lt;p&gt;Imagine what it will be like during the sprints. You have the ideal number of participants who want to participate exactly as you’re hoping. What will you be doing? What will you be using? Do you need to bring anything with you? You can ask the conference organizers for help with materials as well.&lt;/p&gt;
+&lt;p&gt;Some examples of materials may be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Paper and pens&lt;/li&gt;
+&lt;li&gt;Whiteboard&lt;/li&gt;
+&lt;li&gt;TV&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;While extra materials can be helpful, it’s also beneficial to prepare as if you only have your computer. Don’t be entirely reliant on the organizers because they are likely volunteers and people can make mistakes.&lt;/p&gt;
+&lt;h2 id=&#34;communicate-with-the-organizers&#34; tabindex=&#34;-1&#34;&gt;Communicate with the organizers&lt;/h2&gt;
+&lt;p&gt;Depending on the conference, you may be able to get your project listed on the sprints page. At DjangoCon US, we would love to know if you plan to be at sprints and which project you’re leading.&lt;/p&gt;
+&lt;p&gt;Let us know on your sprints ticket(s) or email us directly at &lt;a href=&#34;mailto:sprints@djangocon.us&#34;&gt;sprints@djangocon.us&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The organizers at DjangoCon US will be hosting a few virtual office hour sessions before the conference for attendees to get their laptops ready to contribute to a project. Knowing that you’ll be there allows us to steer people towards your project so they can clone the repo, set up a virtual environment and run the tests, all before the conference, allowing you more time to collaborate. &lt;strong&gt;So please, let us know if you’re coming!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;do-something-extra-%7B%23do-something-extra%7D&#34; tabindex=&#34;-1&#34;&gt;Do something extra {#do-something-extra}&lt;/h2&gt;
+&lt;p&gt;This is entirely optional, hence the “extra”. The people who attend sprints to contribute want to feel connected to the community and help build something meaningful. The challenge is that it’s intimidating to do in public. People let judgement creep in and worry about perception. &lt;strong&gt;Consider what you can do to eliminate that fear and make them feel welcomed.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;At DjangoCon US, when someone gets their PR merged, the entire room breaks out into applause. Apparently in the past there was a gong for a person to ring. That’d be even cooler. The point is to have a ritual that signals, “hey this person did something challenging and we should celebrate their accomplishment!” It also forms a memory for that person. They will remember that the community applauded their efforts no matter how small.&lt;/p&gt;
+&lt;p&gt;The BeeWare project takes the above even further. &lt;a href=&#34;https://beeware.org/contributing/challenge-coins/&#34;&gt;They award challenge coins to anyone who participates&lt;/a&gt;. While I haven’t done this on any of my projects, the idea is still inspirational.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What can you do to make your sprint event memorable for others?&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;sprint-leader-checklist-%7B%23sprint-leader-checklist%7D&#34; tabindex=&#34;-1&#34;&gt;Sprint leader checklist {#sprint-leader-checklist}&lt;/h2&gt;
+&lt;p&gt;In case it’s helpful here is a checklist with the above ideas.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[ ] Announce that you’ll be at sprints and want to people to collaborate with on your project&lt;br&gt;
+- [ ] Post on your social media&lt;br&gt;
+- [ ] Write a blog post&lt;/li&gt;
+&lt;li&gt;[ ] Reflect on what you are looking to get out of sprints&lt;/li&gt;
+&lt;li&gt;[ ] Reflect on what your project need&lt;/li&gt;
+&lt;li&gt;[ ] Reflect on what you are capable of doing&lt;/li&gt;
+&lt;li&gt;[ ] Review the contribution docs&lt;br&gt;
+- [ ] Does it show how to install dependencies&lt;br&gt;
+- [ ] Does it show how to run tests locally&lt;br&gt;
+- [ ] Does it show how to build the documentation locally&lt;br&gt;
+- [ ] Does it show how to run linters, formatters and/or type-checking locally&lt;br&gt;
+- [ ] Does it show where to look for issues to work on&lt;br&gt;
+- [ ] Create a fresh environment and confirm any code works&lt;/li&gt;
+&lt;li&gt;[ ] Review issues and add newcomer friendly / beginner labels&lt;/li&gt;
+&lt;li&gt;[ ] Identify issues that are well-contained and could be completed in a day’s worth of effort&lt;/li&gt;
+&lt;li&gt;[ ] Identify ideas/features that could be implemented or explored&lt;/li&gt;
+&lt;li&gt;[ ] Create a single issue for the sprint that links to the various issues, features and ideas&lt;/li&gt;
+&lt;li&gt;[ ] Pack the materials you’ll need (paper, pen, whiteboard, etc)&lt;/li&gt;
+&lt;/ul&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>Announcing Our DjangoCon US 2026 Talks!</title>
       <link href="https://2026.djangocon.us/news/announcing-lineup/" />
@@ -110,7 +219,7 @@ We hope to see you in Chicago!&lt;/p&gt;
       <updated>2026-06-03T16:00:00Z</updated>
       <id>https://2026.djangocon.us/news/contribution-sprints/</id>
       <content xml:lang="en" type="html"
-        >&lt;p&gt;We are excited to talk to you about contribution sprints at DjangoCon US! They are being held &lt;strong&gt;Thursday, August 27th and Friday, August 28th, 2026&lt;/strong&gt;, from &lt;strong&gt;9am to 5pm&lt;/strong&gt; each day at the &lt;strong&gt;&lt;a href=&#34;https://www.ihg.com/voco/hotels/us/en/chicago/chiwp/hoteldetail&#34;&gt;voco Chicago Downtown&lt;/a&gt;&lt;/strong&gt;, the same venue as the main conference and virtually on our conference Slack. &lt;strong&gt;They are free to attend and open to everyone&lt;/strong&gt;.&lt;/p&gt;
+        >&lt;p&gt;We are excited to talk to you about contribution sprints at DjangoCon US! They are being held &lt;strong&gt;Thursday, August 27th and Friday, August 28th, 2026&lt;/strong&gt;, from &lt;strong&gt;&lt;a href=&#34;https://time.is/0900AM_27_August_2026_in_Chicago&#34;&gt;9am&lt;/a&gt; to &lt;a href=&#34;https://time.is/0500PM_27_August_2026_in_Chicago&#34;&gt;5pm&lt;/a&gt; CDT&lt;/strong&gt; each day at the &lt;strong&gt;&lt;a href=&#34;https://www.ihg.com/voco/hotels/us/en/chicago/chiwp/hoteldetail&#34;&gt;voco Chicago Downtown&lt;/a&gt;&lt;/strong&gt;, the same venue as the main conference and virtually on our conference Slack. &lt;strong&gt;They are free to attend and open to everyone&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;📣 &lt;strong&gt;&lt;a href=&#34;https://ti.to/defna/djangocon-us-2026&#34;&gt;Get your ticket&lt;/a&gt;&lt;/strong&gt; and join us!&lt;/p&gt;
 &lt;h2 id=&#34;what-is-a-contribution-sprint%3F&#34; tabindex=&#34;-1&#34;&gt;What is a contribution sprint?&lt;/h2&gt;
 &lt;p&gt;Contribution Sprints are a superset of Development Sprints. They serve the same purpose while increasing the range of contribution types and opportunities.&lt;/p&gt;
@@ -127,7 +236,7 @@ We hope to see you in Chicago!&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;There is an excellent video on this topic by &lt;a href=&#34;https://www.youtube.com/watch?v=b2WHTNE4AZk&#34;&gt;Shauna Gordon-McKeon&lt;/a&gt;, part of the PyCon US 2023 &lt;a href=&#34;https://www.youtube.com/@MaintainersSummit&#34;&gt;Maintainers Summit&lt;/a&gt;. If you maintain a project, or are interested in helping maintain one, we recommend checking it out.&lt;/p&gt;
 &lt;h2 id=&#34;how-%26-why-to-lead-a-contribution-sprint&#34; tabindex=&#34;-1&#34;&gt;How &amp;amp; Why To Lead a Contribution Sprint&lt;/h2&gt;
-&lt;p&gt;The &amp;quot;why&amp;quot; is clear: if you’ve realized your project needs help especially with things beyond code this is a great opportunity to find that help.&lt;/p&gt;
+&lt;p&gt;The &amp;quot;why&amp;quot; is clear: if you’ve realized your project needs help, especially with things beyond code, this is a great opportunity to find that help.&lt;/p&gt;
 &lt;p&gt;The &amp;quot;how&amp;quot; can be trickier, so here are some specific suggestions:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Think about the non-code needs your project has.&lt;/li&gt;
@@ -163,7 +272,7 @@ We hope to see you in Chicago!&lt;/p&gt;
 &lt;li&gt;You’re ready to share screens, links, and tasks in real time.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;final-notes&#34; tabindex=&#34;-1&#34;&gt;Final Notes&lt;/h2&gt;
-&lt;p&gt;The Contribution Sprints are free and open to everyone. They will run &lt;strong&gt;August 27–28, 2026 from 9am to 5pm CDT&lt;/strong&gt; at &lt;strong&gt;voco Chicago Downtown&lt;/strong&gt; and online via Slack.&lt;/p&gt;
+&lt;p&gt;The Contribution Sprints are free and open to everyone. They will run &lt;strong&gt;August 27–28, 2026 from &lt;a href=&#34;https://time.is/0900AM_27_August_2026_in_Chicago&#34;&gt;9am&lt;/a&gt; to &lt;a href=&#34;https://time.is/0500PM_27_August_2026_in_Chicago&#34;&gt;5pm&lt;/a&gt; CDT&lt;/strong&gt; at &lt;strong&gt;voco Chicago Downtown&lt;/strong&gt; and online via Slack.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Want to lead or organize a sprint? Great!&lt;/li&gt;
 &lt;li&gt;Want to help? We’d love to have you.&lt;/li&gt;
