@@ -6,13 +6,57 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-06-11T11:12:27Z</updated
+    >2026-06-12T15:05:46Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>International Travel to DjangoCon US 2026</title>
+      <link href="https://2026.djangocon.us/news/international-travel/" />
+      <updated>2026-06-12T16:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/international-travel/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;Are you attending DjangoCon US 2026 in Chicago, Illinois, but you are not from US and need some travel information? Here are some things to consider when planning your trip.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Visa Invitation Letter&lt;/strong&gt;: If you need a visa invitation letter, please use our &lt;a href=&#34;https://2026.djangocon.us/invitation/&#34;&gt;visa letter form&lt;/a&gt; to request one.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Visa&lt;/strong&gt;: Check the &lt;a href=&#34;https://travel.state.gov/content/visas/en.html&#34;&gt;State Department&#39;s website&lt;/a&gt; for information about US visas, and review the &lt;a href=&#34;https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/global-visa-wait-times.html&#34;&gt;estimated visa appointment wait times&lt;/a&gt; when planning your travel. You may be eligible for a visa waiver program (which is an online form—no embassy visit required) or you may need to apply for a visa at the &lt;a href=&#34;https://www.usembassy.gov/&#34;&gt;US embassy or consulate&lt;/a&gt; in your country or a neighboring country.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Valid Passport&lt;/strong&gt;: Many travelers are recommended to have a passport that remains valid for at least six months after their intended departure from the United States. Requirements vary by nationality and country specific agreements, so check with your local embassy or consulate for the most up to date information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Accommodation&lt;/strong&gt;: If you are staying in the conference hotel, &lt;a href=&#34;https://www.ihg.com/redirect?path=asearch&amp;amp;brandCode=vx&amp;amp;localeCode=en&amp;amp;regionCode=1&amp;amp;hotelCode=CHIWP&amp;amp;checkInDate=23&amp;amp;checkInMonthYear=072026&amp;amp;checkOutDate=29&amp;amp;checkOutMonthYear=072026&amp;amp;rateCode=6CBARC&amp;amp;_PMID=99801505&amp;amp;GPC=DJ6&amp;amp;cn=no&amp;amp;adjustMonth=false&amp;amp;showApp=true&amp;amp;monthIndex=00&#34;&gt;book your room here&lt;/a&gt;. Our conference rate expires on Aug. 3, 2026.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Money Conversion&lt;/strong&gt;: Most places in the US will take major credit cards, such as Visa and Mastercard. You can withdraw local currency from your bank account using an ATM if you need cash while you are in the United States.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Travel Paperwork&lt;/strong&gt;: It is a good idea to bring as much evidence as possible to show &lt;strong&gt;the reason&lt;/strong&gt; of your visit to the US, &lt;strong&gt;where&lt;/strong&gt; is the conference going to take place, &lt;strong&gt;when&lt;/strong&gt; are you going to go back to your home country and &lt;strong&gt;what&lt;/strong&gt; you do in your home country. Please bring this paperwork with you. These documents can be helpful when going through US Customs and Border Protection:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Printout of your invitation letter.&lt;/li&gt;
+&lt;li&gt;Printout of conference ticket.&lt;/li&gt;
+&lt;li&gt;Lodging reservation confirmation.&lt;/li&gt;
+&lt;li&gt;Flight reservation, especially the return date.&lt;/li&gt;
+&lt;li&gt;Printout of conference schedule.&lt;/li&gt;
+&lt;li&gt;If you are a speaker, bring a printout of the invitation email and the schedule section where your talk or tutorial is shown.&lt;/li&gt;
+&lt;li&gt;Proof of address: Utility bill to show where you live, copy of lease or mortgage bill, or state and/or federal tax payment bills.&lt;/li&gt;
+&lt;li&gt;Proof of employment or school enrollment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are denied entry at the US border with a valid visa, we will refund 100% of your conference ticket. If you are also an Opportunity Grant recipient, we will also still reimburse travel expenses incurred in getting that far.&lt;br&gt;
+Please be sure to review the criteria for &lt;a href=&#34;https://www.uscis.gov/working-united-states/temporary-visitors-business/b-1-temporary-business-visitor&#34;&gt;B-1 Temporary Visa&lt;/a&gt; if you are eligible.&lt;br&gt;
+Make sure to review the criteria for any other type of visa necessary for your home country nationals. There is more information in the &lt;a href=&#34;https://travel.state.gov/content/visas/en.html&#34;&gt;USCIS site&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We are looking forward to seeing you in Chicago in August!&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>Preparing for sprints as a project leader</title>
       <link href="https://2026.djangocon.us/news/preparing-for-sprints-as-project-leader/" />
