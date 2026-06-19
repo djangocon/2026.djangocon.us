@@ -6,13 +6,46 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-06-12T16:39:37Z</updated
+    >2026-06-19T16:02:10Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>DjangoCon US 2026: Creating a Safe and Inclusive Community</title>
+      <link href="https://2026.djangocon.us/news/code-of-conduct/" />
+      <updated>2026-06-19T06:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/code-of-conduct/</id>
+      <content xml:lang="en" type="html"
+        >&lt;h1 id=&#34;djangocon-us-2026%3A-creating-a-safe-and-inclusive-community&#34; tabindex=&#34;-1&#34;&gt;DjangoCon US 2026: Creating a Safe and Inclusive Community&lt;/h1&gt;
+&lt;p&gt;As we gear up for another exciting DjangoCon US in Chicago this year, we want to take a moment to highlight one of the most important aspects of our conference: our &lt;strong&gt;Code of Conduct&lt;/strong&gt;. At DjangoCon US, we believe that fostering a respectful, inclusive environment is essential to creating a valuable experience for everyone.&lt;/p&gt;
+&lt;h2 id=&#34;our-commitment-to-you&#34; tabindex=&#34;-1&#34;&gt;Our Commitment to You&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;DjangoCon US 2026 Code of Conduct&lt;/strong&gt; serves as the foundation for how we interact with one another, both during the conference and in related online spaces. It&#39;s designed with one goal in mind: ensuring that every participant feels welcome, respected, and safe.&lt;/p&gt;
+&lt;h2 id=&#34;what-we-expect&#34; tabindex=&#34;-1&#34;&gt;What We Expect&lt;/h2&gt;
+&lt;p&gt;Our community values &lt;strong&gt;professional behavior, courtesy, and respect&lt;/strong&gt; among all attendees. This applies whether you&#39;re attending talks, participating in sprints, networking at social events, or engaging in conference-related online discussions.&lt;/p&gt;
+&lt;p&gt;Specifically, our code prohibits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Harassment&lt;/strong&gt; in any form&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Offensive language or jokes&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Unwelcome attention or advances&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We also ask that attendees be mindful about photography and recording - &lt;strong&gt;always obtain permission&lt;/strong&gt; before capturing someone&#39;s image or voice.&lt;/p&gt;
+&lt;h2 id=&#34;reporting-concerns&#34; tabindex=&#34;-1&#34;&gt;Reporting Concerns&lt;/h2&gt;
+&lt;p&gt;If you experience or witness behavior that violates our Code of Conduct, we want to know about it. You can report incidents by emailing &lt;strong&gt;&lt;a href=&#34;mailto:conduct@djangocon.us&#34;&gt;conduct@djangocon.us&lt;/a&gt;&lt;/strong&gt; with detailed information about what occurred. Our team takes these reports seriously and will respond appropriately.&lt;/p&gt;
+&lt;p&gt;The conference organizers reserve the right to take action against anyone who violates these standards, which may include expulsion from the conference without a refund.&lt;/p&gt;
+&lt;h2 id=&#34;a-note-on-safety&#34; tabindex=&#34;-1&#34;&gt;A Note on Safety&lt;/h2&gt;
+&lt;p&gt;For everyone&#39;s safety and peace of mind, &lt;strong&gt;weapons are not permitted&lt;/strong&gt; at DjangoCon US events.&lt;/p&gt;
+&lt;h2 id=&#34;building-on-strong-foundations&#34; tabindex=&#34;-1&#34;&gt;Building on Strong Foundations&lt;/h2&gt;
+&lt;p&gt;Our Code of Conduct was adapted from the Geek Feminism wiki and PyCon&#39;s Code of Conduct, reflecting best practices developed across the tech community.&lt;/p&gt;
+&lt;h2 id=&#34;join-us-in-creating-something-special&#34; tabindex=&#34;-1&#34;&gt;Join Us in Creating Something Special&lt;/h2&gt;
+&lt;p&gt;DjangoCon US isn&#39;t just about technology—it&#39;s about people coming together to learn, share, and grow. By adhering to our Code of Conduct, you&#39;re helping us create an environment where everyone can participate fully and comfortably.&lt;/p&gt;
+&lt;p&gt;We&#39;re looking forward to welcoming you to Chicago for DjangoCon US 2026, where we&#39;ll celebrate not just Django, but the diverse, respectful community that makes it special.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;For complete details, please review our full &lt;a href=&#34;https://2026.djangocon.us/conduct/&#34;&gt;Code of Conduct&lt;/a&gt; before attending the conference.&lt;/em&gt;&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>International Travel to DjangoCon US 2026</title>
       <link href="https://2026.djangocon.us/news/international-travel/" />
