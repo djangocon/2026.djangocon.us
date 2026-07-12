@@ -6,13 +6,95 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-07-10T17:12:02Z</updated
+    >2026-07-12T00:26:50Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>A First-Timer's Guide to Navigating America</title>
+      <link href="https://2026.djangocon.us/news/guide-to-america/" />
+      <updated>2026-07-11T16:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/guide-to-america/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;For many international attendees, DjangoCon US marks their very first visit to the United States. Whether you&#39;re here for the code or the community, this quick guide will help you navigate the essentials of everyday life during your stay.&lt;/p&gt;
+&lt;h2 id=&#34;visa-requirements&#34; tabindex=&#34;-1&#34;&gt;Visa Requirements&lt;/h2&gt;
+&lt;p&gt;Before you can get into the USA though, you may need a visa. Check the &lt;a href=&#34;https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/wizard.html&#34;&gt;US State Department&#39;s Visa Wizard&lt;/a&gt; to determine the type of visa you will need, if any. Our &lt;a href=&#34;/visas/&#34;&gt;Visa Support&lt;/a&gt; page offers more resources, and check out organizer Benedict Kofi Amofah&#39;s excellent &lt;a href=&#34;https://iamdreamo.medium.com/a-first-timers-guide-to-attending-tech-conferences-in-the-usa-visa-prep-and-beyond-e2e121db15df&#34;&gt;blog post&lt;/a&gt; on the visa preparation process.&lt;/p&gt;
+&lt;p&gt;Here&#39;s a quick guide to navigating life in the United States as a newcomer:&lt;/p&gt;
+&lt;h2 id=&#34;payments-%26-currency&#34; tabindex=&#34;-1&#34;&gt;Payments &amp;amp; Currency&lt;/h2&gt;
+&lt;h3 id=&#34;credit-and-debit-cards&#34; tabindex=&#34;-1&#34;&gt;Credit and Debit Cards&lt;/h3&gt;
+&lt;p&gt;Credit and debit cards are widely accepted throughout the U.S.—including Visa, MasterCard, American Express, and usually Discover. Before you travel, notify your bank to avoid any unexpected fraud alerts that might freeze your account. &lt;em&gt;Tap to Pay&lt;/em&gt;/mobile pay is generally available in the US, but it is not recommended to rely on it soley.&lt;/p&gt;
+&lt;h3 id=&#34;currency-choice&#34; tabindex=&#34;-1&#34;&gt;Currency Choice&lt;/h3&gt;
+&lt;p&gt;When making payments, some card machines will give you the option to pay in USD or your home currency; generally your bank will give you a more favorable exchange rate (even after conversion fees) than the merchant, so you should probably pick USD.&lt;/p&gt;
+&lt;h3 id=&#34;carrying-cash&#34; tabindex=&#34;-1&#34;&gt;Carrying Cash&lt;/h3&gt;
+&lt;p&gt;There are some cases where cards are not accepted, so it&#39;s a good idea to carry a small bit of cash just in case. You will typically get better exchange rates at ATMs over airport currency exchange shops.&lt;/p&gt;
+&lt;p&gt;Most but not all vending machines will take cards and NFC payments (e.g. Apple Pay and Google Pay), so it&#39;s useful to have a few small bills ($1 is a paper note in the US, unlike most countries) just in case.&lt;/p&gt;
+&lt;h2 id=&#34;mobile-phones-%26-data&#34; tabindex=&#34;-1&#34;&gt;Mobile Phones &amp;amp; Data&lt;/h2&gt;
+&lt;p&gt;Most modern phones that support Voice over LTE (VoLTE) or 5G should work in the U.S. via international roaming. That said, roaming can be expensive—especially for data.&lt;/p&gt;
+&lt;p&gt;If you&#39;re planning a short stay and want to avoid high roaming charges, consider getting a temporary U.S. mobile plan. While the major carriers primarily offer postpaid plans (which typically involve long-term contracts and credit checks), many providers offer flexible prepaid options without contracts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.boostmobile.com/&#34;&gt;Boost Mobile&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cricketwireless.com/&#34;&gt;Cricket Wireless&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.visible.com/&#34;&gt;Visible&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fi.google.com/&#34;&gt;Google Fi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tracfone.com/&#34;&gt;Tracfone&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mintmobile.com/&#34;&gt;Mint Mobile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These providers often support &amp;quot;bring your own device&amp;quot; (BYOD) plans, where you simply insert a new SIM card into your current phone. You can usually order a SIM card online and have it shipped to your U.S. hotel or pickup location. Alternatively, some airport shops in major hubs may sell SIM cards — check the airport directory for availability, especially if you&#39;re connecting through a large hub before arriving in Chicago.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.airalo.com/&#34;&gt;Airalo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.holafly.com/&#34;&gt;Holafly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.getnomad.app/&#34;&gt;Nomad&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.alosim.com/&#34;&gt;aloSIM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetpacglobal.com/&#34;&gt;Jetpac&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Doing some internet searches (or asking your friends) might yield some handy discount codes, too.&lt;/p&gt;
+&lt;h2 id=&#34;sales-tax&#34; tabindex=&#34;-1&#34;&gt;Sales Tax&lt;/h2&gt;
+&lt;p&gt;Many countries have some form of value added tax or goods and services tax rolled into the retail price that you pay, so a bottle of water that&#39;s listed as costing $2 is exactly what you  pay. In the US, this is very much &lt;em&gt;not&lt;/em&gt; the case. Instead, each state charges its own sales tax, and in many states, counties and municipalities add their own tax on top of that. Some places charge different tax rates for different classes of goods, such as a discount for food.&lt;/p&gt;
+&lt;p&gt;In Chicago, Illinois, the combined sales tax rate is 10.25%. This is made up of the 6.25% Illinois state tax, 1.75% Cook County tax, 1.25% Chicago city tax, and a 1.0% Regional Transportation Authority (RTA) tax. So, for example, a $2 bottle of water will cost you $2.21 after tax.&lt;/p&gt;
+&lt;h2 id=&#34;tipping&#34; tabindex=&#34;-1&#34;&gt;Tipping&lt;/h2&gt;
+&lt;p&gt;Tipping (gratuities) culture in the United States is rampant. Here&#39;s a rough idea of how much you&#39;ll be expected to add on top of your goods and services in Chicago:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Restaurants: 18-20% for everything except for the big-name fast food restaurants (e.g., McDonald&#39;s, Wendy&#39;s, Burger King).&lt;/li&gt;
+&lt;li&gt;Even some self-serve kiosk ordering places will try to ask for a tip! This money will theoretically go to the staff preparing and/or delivering your food, but it definitely feels odd. If service is exceptional, you might consider tipping more than 20%. Some restaurants may automatically add a gratuity for large parties, so always check your bill.&lt;/li&gt;
+&lt;li&gt;Coffee shops: $1-2 per complicated drink order. For a simple cup of coffee or tea, tipping is not strictly expected but appreciated, especially if there&#39;s a tip jar.&lt;/li&gt;
+&lt;li&gt;Bars: $1-2 per beer/glass of wine, $2-4 per cocktail, or 15-20% of the total tab.&lt;/li&gt;
+&lt;li&gt;Rideshare and taxis: 15-20% of the fare. While optional on apps, it&#39;s highly encouraged. Drivers often prefer cash tips.&lt;/li&gt;
+&lt;li&gt;Hotel room cleaning: $2-5 per night for mid-range hotels, $5-10 per night for luxury hotels. It&#39;s generally recommended to leave it daily, perhaps on your pillow or a designated envelope, to ensure the person who cleaned your room that day receives it.&lt;/li&gt;
+&lt;li&gt;Hotel valet parking: $3-5 each time they retrieve your car. If service is exceptional (e.g., very fast retrieval, difficult weather), consider tipping a bit more.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;transportation%2C-or-getting-from-the-airport-to-the-hotel&#34; tabindex=&#34;-1&#34;&gt;Transportation, or Getting from the Airport to the Hotel&lt;/h2&gt;
+&lt;p&gt;There are 3 ways to get from the ORD airport to Voco Chicago Downtown:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rideshare apps (Lyft and Uber generally have nationwide coverage; which you use is largely up to you) will generally get you where you need to go. It&#39;s about a $40-60 ride (plus tip) from the hotel to the airport in the absence of surge pricing. You&#39;ll pay using your phone. Use the app to find out where to get picked up. The ride should take about 30-50 minutes, depending on traffic, once you&#39;re in the car.&lt;/li&gt;
+&lt;li&gt;Traditional taxis may be hailed on the curb outside the airport. Follow signs for Ground Transportation and then look for the taxi stand. Fares will typically be a little more expensive ($50-70 perhaps plus tip), but licensing is stricter. Much like an Uber/Lyft, the trip should take about 30-50 minutes, depending on traffic.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;https://www.transitchicago.com/blueline/&#34;&gt;CTA Blue Line train&lt;/a&gt; is a cost-effective and direct option. Fares are typically $5.00 from O&#39;Hare to downtown. The trip itself takes approximately 45-60 minutes from the airport to the Clark/Lake station, which is a short walk from Voco Chicago Downtown. You can pay with a Ventra Card (which can be purchased at the airport CTA station) or a contactless credit/debit card. &lt;strong&gt;NOTE:&lt;/strong&gt; The CTA Blue Line runs 24 hours a day, 7 days a week.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;identification%2Fpurchasing-alcohol&#34; tabindex=&#34;-1&#34;&gt;Identification/Purchasing Alcohol&lt;/h2&gt;
+&lt;p&gt;In the United States, you must be 21 or older to legally purchase alcohol or enter establishments that primarily serve it (such as bars or pubs). Be prepared to show valid identification, even if you clearly appear to be of legal age. While some places may accept a national ID card, your passport is the most reliable form of ID. Importantly, photocopies or digital scans are not accepted — only the original document will work.&lt;/p&gt;
+&lt;h2 id=&#34;recycling&#34; tabindex=&#34;-1&#34;&gt;Recycling&lt;/h2&gt;
+&lt;p&gt;Recycling is extremely hit or miss in public facilities. Airports typically have some sort of recycling setup, and urban cores typically have recycling for plastic types #1 or #2 and aluminum cans and not much else.&lt;/p&gt;
+&lt;p&gt;All other waste goes into a single trash stream.&lt;/p&gt;
+&lt;h2 id=&#34;public-restrooms&#34; tabindex=&#34;-1&#34;&gt;Public Restrooms&lt;/h2&gt;
+&lt;p&gt;Unlike many European cities, you&#39;re not likely to find public paid toilets. If you find yourself in need of a trip to the restroom while out in public, you have a few options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Public parks often have free restroom facilities (though cleanliness and availability can vary).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Retail businesses such as coffee shops, grocery stores, and convenience stores typically have restrooms — but you&#39;re generally expected to make a small purchase first.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Public libraries are an excellent option; they almost always have clean, free restrooms accessible during business hours.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;flying-home&#34; tabindex=&#34;-1&#34;&gt;Flying Home&lt;/h2&gt;
+&lt;p&gt;For your return flight from Chicago O&#39;Hare International Airport (ORD), plan to arrive at the airport at least two hours before your scheduled departure for international flights. Security lines often move quickly, but occasional disruptions can cause unexpected delays. Giving yourself extra time ensures a stress-free departure, especially during peak travel periods.&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>Workshop Sponsorships Now Open for DjangoCon US 2026</title>
       <link href="https://2026.djangocon.us/news/sponsor-worksops/" />
