@@ -1,0 +1,59 @@
+---
+permalink: /schedule.ics
+eleventyExcludeFromCollections: true
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//DjangoCon US {{ site.conf_year }}//Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:DjangoCon US {{ site.conf_year }}
+X-WR-TIMEZONE:{{ site.timezone }}
+X-WR-CALDESC:DjangoCon US {{ site.conf_year }} Conference Schedule
+BEGIN:VTIMEZONE
+TZID:{{ site.timezone }}
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+{%- for talk in collections.talks %}
+BEGIN:VEVENT
+DTSTART;TZID={{ site.timezone }}:{{ talk.data.start_datetime | formatDateTime: "yyyyMMdd'T'HHmmss" }}
+DTEND;TZID={{ site.timezone }}:{{ talk.data.end_datetime | formatDateTime: "yyyyMMdd'T'HHmmss" }}
+DTSTAMP:{{ talk.data.start_datetime | formatDateTime: "yyyyMMdd'T'HHmmss'Z'" }}
+UID:{{ talk.fileSlug }}@{{ site.domain }}
+SUMMARY:{{ talk.data.title | replace: ",", "\," | replace: ";", "\;" | replace: "\n", " " | replace: "\r", " " }}
+{%- if talk.data.room %}
+LOCATION:{{ talk.data.room | replace: ",", "\," | replace: ";", "\;" }}
+{%- endif %}
+{%- if talk.data.presenter_slugs or talk.templateContent %}
+DESCRIPTION:
+{%- if talk.data.presenter_slugs -%}
+{%- for slug in talk.data.presenter_slugs -%}
+{%- assign presenter = collections.presenters | find: slug -%}
+{%- if presenter %}Presenter: {{ presenter.data.name }}\n{% endif -%}
+{%- endfor -%}
+{%- if talk.templateContent %}\n{% endif -%}
+{%- endif -%}
+{%- if talk.templateContent -%}
+{{ talk.templateContent | strip_html | replace: "\n", "\n " | replace: ",", "\," | replace: ";", "\;" | truncate: 1000 }}
+{%- endif %}
+{%- endif %}
+{%- if talk.data.permalink %}
+URL:{{ site.domain }}{{ talk.data.permalink }}
+{%- endif %}
+STATUS:CONFIRMED
+END:VEVENT
+{%- endfor %}
+END:VCALENDAR
