@@ -6,13 +6,32 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-07-13T15:24:34Z</updated
+    >2026-07-14T13:50:15Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>Childcare During DjangoCon US</title>
+      <link href="https://2026.djangocon.us/news/childcare-during-djangocon/" />
+      <updated>2026-07-14T10:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/childcare-during-djangocon/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;Childcare at DjangoCon US and tech conferences more generally is an important factor that helps folks attend who otherwise may not be able to. We want to make sure that parents feel welcome bringing their children to DjangoCon US and that the availability of childcare is not a barrier to attending.&lt;/p&gt;
+&lt;p&gt;To assist with that, DjangoCon US will reimburse you for childcare during the conference (up to $150 per day) with a receipt.&lt;/p&gt;
+&lt;p&gt;For nursing parents, we will provide a clean, comfortable, and private lactation space at the conference venue. The room will have a small refrigerator to store pumped milk, labeling supplies, and antibacterial wipes.&lt;/p&gt;
+&lt;p&gt;Please contact us at &lt;a href=&#34;mailto:hello@defna.org&#34;&gt;hello@defna.org&lt;/a&gt; if you are interested in utilizing DjangoCon US’s child care reimbursement or lactation space services.&lt;/p&gt;
+&lt;p&gt;We have also collected information on a few local childcare providers:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.jovie.com/&#34;&gt;Jovie of Chicago&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Offers full and part-time nannies and on-demand babysitters. They also provide childcare services for conferences and events.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://chicagosupersitters.com/&#34;&gt;Chicago Super Sitters&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Provides experienced, trustworthy, and dependable babysitters for different needs and schedules, including one-time requests and events. They thoroughly vet all their sitters.&lt;/p&gt;
+&lt;p&gt;We look forward to seeing you -- and your kids -- soon in Chicago!&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>A First-Timer's Guide to Navigating America</title>
       <link href="https://2026.djangocon.us/news/guide-to-america/" />
