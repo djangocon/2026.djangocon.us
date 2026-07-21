@@ -23,4 +23,546 @@ DTSTART:19701101T020000
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260824T081500
+DTEND;TZID=America/Chicago:20260824T084500
+DTSTAMP:20260824T081500Z
+UID:08-15-t0-orientation@https://2026.djangocon.us
+SUMMARY:Orientation
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Kojo Idrissa\n\n
+URL:https://2026.djangocon.us/talks/orientation/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260824T084500
+DTEND;TZID=America/Chicago:20260824T090000
+DTSTAMP:20260824T084500Z
+UID:08-45-t0-opening-remarks-monday@https://2026.djangocon.us
+SUMMARY:Opening Remarks (Monday)
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Keanya Phelps\n\n
+URL:https://2026.djangocon.us/talks/opening-remarks-monday/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260824T090000
+DTEND;TZID=America/Chicago:20260824T094500
+DTSTAMP:20260824T090000Z
+UID:09-00-t0-keynote-to-be-announced-monday@https://2026.djangocon.us
+SUMMARY:Keynote (to be announced) (Monday)
+LOCATION:Sauganash Ballroom
+DESCRIPTION:
+URL:https://2026.djangocon.us/talks/keynote-monday/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260824T102000
+DTEND;TZID=America/Chicago:20260824T110500
+DTSTAMP:20260824T102000Z
+UID:10-20-t0-good-conduct-how-django-modernized-its-code-of-conduct@https://2026.djangocon.us
+SUMMARY:Good Conduct: How Django Modernized Its Code of Conduct
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Dan Ryan\n\nA Code of Conduct is only as strong as the community's trust in it. When it's time to revise one, the how matters as much as the what. Django's Working Group undertook a significant revision in 2026 — adopting CC3's expanded encouraged and restricted behaviors, adding explicit guidance on consent and impact versus intent, formalizing a graduated enforcement ladder, and even addressing the responsible use of AI-generated content. This was not just a find-and-replace; it required community input, DSF Board approval, careful sourcing from the PSF, OpenJS Foundation, Mozilla, and others, and an updated, transparency-first documentation process.
+ The talk opens with a look at what makes Contributor Covenant 3 meaningfully different from earlier versions — the shift toward encouraging positive behaviors, stronger language around impact versus intent, and explicit attention to consent and boundaries. From there, it digs into what Django's update actually changed in practice: new sections o...
+URL:https://2026.djangocon.us/talks/good-conduct-how-django-modernized-its-code-of-conduct/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260824T111000
+DTEND;TZID=America/Chicago:20260824T113500
+DTSTAMP:20260824T111000Z
+UID:11-10-t0-geodjango-at-city-scale-spatial-data-for-urban-systems@https://2026.djangocon.us
+SUMMARY:GeoDjango at City Scale: Spatial Data for Urban Systems
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Drishti Jain\n\nIn this talk, I’ll delve into how GeoDjango can be used to build scalable spatial data platforms for smart cities and urban systems. Cities are fundamentally spatial systems—roads, buildings, utilities, mobility flows, and environmental sensors all exist in geographic space—and modeling these systems requires tools that can handle geospatial data at scale. GeoDjango, combined with PostGIS, provides a powerful framework for representing, querying, and visualizing this spatial information in web applications.
+ I’ll begin by exploring how urban entities such as buildings, transit routes, sensor locations, and zoning boundaries can be modeled using GeoDjango’s spatial fields and ORM abstractions. Attendees will see how spatial indexes and geospatial queries enable proximity search, containment checks, routing queries, and large-scale spatial analytics directly from Django applications.
+ Next, I’ll examine architectural and performance considerations for city-scale spatial systems, inclu...
+URL:https://2026.djangocon.us/talks/geodjango-at-city-scale-spatial-data-for-urban-systems/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260824T114000
+DTEND;TZID=America/Chicago:20260824T120500
+DTSTAMP:20260824T114000Z
+UID:11-40-t0-pragmatic-ai-how-to-gain-trust-with-user-centered-ai-adoption@https://2026.djangocon.us
+SUMMARY:Pragmatic AI: How to gain trust with user-centered AI adoption
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Meagen Voss\n\nWith some CEOs of large AI companies claiming AI cures for cancer are just around the corner, you might feel like you’re a fool for not integrating AI right away in your software. This talk will show you why resisting that pressure can be a good thing and how taking a steady and thoughtful approach to AI adoption in your open source project can help you stand out.
+ At the Wagtail CMS project, we recognized the transformative potential of AI tools but we also observed that rushed AI adoption has led to poor implementations, costly mistakes, and user backlash. Not to mention, many people understandably have environmental and ethical concerns about these technologies.
+ I’ll show you:
+ 
+ The importance of creating guiding principles for AI adoption
+ Why we decided against incorporating AI in our core product
+ How we designed our Wagtail AI package to give our users agency and choice
+ 
+ I’ll demonstrate how our approach has built loyalty and goodwill among existing users as well as how i...
+URL:https://2026.djangocon.us/talks/pragmatic-ai-how-to-gain-trust-with-user-centered-ai-adoption/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260824T121000
+DTEND;TZID=America/Chicago:20260824T130000
+DTSTAMP:20260824T121000Z
+UID:12-10-t0-lightning-talks-monday@https://2026.djangocon.us
+SUMMARY:Lightning Talks (Monday)
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Andrew Mshar\n\n
+URL:https://2026.djangocon.us/talks/lightning-talks-monday/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260824T135000
+DTEND;TZID=America/Chicago:20260824T143500
+DTSTAMP:20260824T135000Z
+UID:13-50-t0-search-as-you-type-for-54-million-names-postgresql-django-for-fuzzy-name-matching-at-scale@https://2026.djangocon.us
+SUMMARY:Search-as-you-type for 54 Million Names: PostgreSQL + Django for Fuzzy Name Matching at Scale
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Tobias McNulty\n\nSearching for human names in large datasets is harder than it looks. A user searches for &quot;Smith, John,&quot; but the database contains &quot;Smyth, Jon&quot; or &quot;Smithe, Johnny.&quot; Standard LIKE queries are too strict, full-text search doesn't handle name nuances well, and unindexed fuzzy matching won't scale.
+ This talk covers how we solved these problems for RecordsDB, a Django app that searches over 50 million North Carolina court records for legal aid organizations and public defenders.
+ Talk Structure
+ The session is structured as a technical walkthrough using a Jupyter notebook and a sample Django app. I’ll demonstrate the pitfalls of name searching and how to implement performant solutions. The notebook and source code will be available at the start of the talk so you can follow along.
+ We’ll cover how to use PostgreSQL phonetic algorithms (Soundex, Daitch-Mokotoff), fuzzy string matching (Levenshtein), and specific indexing strategies to keep searches fast acros...
+URL:https://2026.djangocon.us/talks/search-as-you-type-for-54-million-names-postgresql-django-for-fuzzy-name-matching-at-scale/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260824T144000
+DTEND;TZID=America/Chicago:20260824T150500
+DTSTAMP:20260824T144000Z
+UID:14-40-t0-using-django-to-deliver-public-transit-benefits-securely-and-privately@https://2026.djangocon.us
+SUMMARY:Using Django to deliver public transit benefits securely and privately
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Scott Cranfill\n\nCal-ITP Benefits is an open-source Django application funded by the state of California as part of the California Integrated Travel Project. It provides a way for riders to confirm their eligibility for public transit benefits and then register their credit or debit card so they automatically receive reduced fares when they tap to pay. This product aims to make open-loop payments accessible to all transit riders, while providing a convenient digital enrollment path for reduced fares that limits the need for in-person trips to a transit center.
+ In this talk we will discuss how Cal-ITP Benefits is architected with a focus on user privacy. The app utilizes the California Identity Gateway to digitally verify a rider’s identity and confirm their eligibility for transit benefits using a variety of state and federal government partners, including Login.gov, Medicare.gov, the Veterans Administration, and the California Department of Social Services. All personally identifiable information ...
+URL:https://2026.djangocon.us/talks/using-django-to-deliver-public-transit-benefits-securely-and-privately/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260824T151000
+DTEND;TZID=America/Chicago:20260824T153500
+DTSTAMP:20260824T151000Z
+UID:15-10-t0-taming-your-templates-component-based-frontends-in-django@https://2026.djangocon.us
+SUMMARY:Taming Your Templates: Component-Based Frontends in Django
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Kasey Kelly\n\nMost Django teams treat their templates as second-class citizens.
+ Logic gets carefully organized into models, views, and services, then dumped into a {&amp;#37; include %} chain that nobody fully understands six months later. Context variables appear from nowhere, component boundaries exist only in the original author's memory, and the onboarding docs are &quot;just ask someone.&quot;
+ This talk argues that your templates deserve the same respect as the rest of your stack and shows you how to get there without abandoning Django's template system or adding a heavy JavaScript build pipeline.
+ We'll cover the component mental model in plain Django, an honest assessment of your tooling options (built-in includes, django-includecontents, django-cotton, and more), and how to know when a plain {&amp;#37; include %} is still the right answer. We'll close with pattern libraries and how explicit component contracts make AI-assisted development dramatically more reliable.
+ Attendees leave wit...
+URL:https://2026.djangocon.us/talks/taming-your-templates-component-based-frontends-in-django/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260824T161000
+DTEND;TZID=America/Chicago:20260824T165500
+DTSTAMP:20260824T161000Z
+UID:16-10-t0-django-6-the-most-exciting-release-ever@https://2026.djangocon.us
+SUMMARY:Django 6: The Most Exciting Release Ever
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Karen Tracey\n\nDjango 6.0 has multiple very exciting new features, including:
+ 
+ Template Partials
+ Background Tasks Framework
+ Content Security Policy
+ Modern Email API
+ 
+ In this talk we'll discuss each of these features, illustrating why you may want to start using them as soon as possible. Additionally we'll cover some tips and tools for a smooth upgrade experience. By the end of the talk we believe you'll agree that Django 6.0 has earned the accolade of most exciting Django release ever.
+ 
+URL:https://2026.djangocon.us/talks/django-6-the-most-exciting-release-ever/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260824T170000
+DTEND;TZID=America/Chicago:20260824T172500
+DTSTAMP:20260824T170000Z
+UID:17-00-t0-agents-all-the-way-down-how-ai-coding-agents-changed-how-i-write-django@https://2026.djangocon.us
+SUMMARY:Agents All the Way Down: How AI Coding Agents Changed How I Write Django
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Josh Thomas\n\nI'm the lead developer at a company with about 10 Django applications. The biggest is a 19-year-old legacy application that's been ported from ColdFusion to WordPress to a custom PHP system to Django. It's full of boolean fields that should be foreign keys, invariants that live in developers' heads instead of model constraints, and business logic that predates Django's existence. I've been using coding agents on this codebase and others for the past year, mostly Claude Code.
+ The most interesting result isn't speed. What actually changed is how I write Django. I lean harder into the ORM, encoding invariants in model relationships instead of application logic, because agents are good at following the framework's conventions and bad at following mine. I build less custom scaffolding, and when I do, I build it out of wood instead of concrete, designed to be torn down as the tools improve. I got my test suite runtime as low as possible, because a fast feedback loop is the difference bet...
+URL:https://2026.djangocon.us/talks/agents-all-the-way-down-how-ai-coding-agents-changed-how-i-write-django/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260824T173000
+DTEND;TZID=America/Chicago:20260824T175500
+DTSTAMP:20260824T173000Z
+UID:17-30-t0-scientists-meet-django-building-bridges-between-research-and-software@https://2026.djangocon.us
+SUMMARY:Scientists Meet Django: Building Bridges Between Research and Software
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Barkha Jain\n\nScientists and developers are solving the same problems—but rarely together.
+ Researchers generate valuable datasets, insights, and discoveries, but these often stay locked in papers, spreadsheets, or lab notebooks. Developers, on the other hand, build scalable platforms, APIs, and user experiences, but may lack access to scientific workflows and domain expertise. Django sits at a powerful intersection: it can transform research into accessible, interactive, and impactful software.
+ In this talk, I’ll share lessons from working across chemistry research, AI, and software development to show how Django can bridge the gap between scientific discovery and real-world applications. We’ll explore how research workflows map naturally onto Django models, data pipelines, and dashboards, and how web platforms can democratize scientific knowledge through citizen science portals, research collaboration tools, and public data platforms.
+ Beyond technology, this session focuses on people and comm...
+URL:https://2026.djangocon.us/talks/scientists-meet-django-building-bridges-between-research-and-software/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260825T090000
+DTEND;TZID=America/Chicago:20260825T091500
+DTSTAMP:20260825T090000Z
+UID:09-00-t0-opening-remarks-tuesday@https://2026.djangocon.us
+SUMMARY:Opening Remarks (Tuesday)
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Peter Grandstaff\n\n
+URL:https://2026.djangocon.us/talks/opening-remarks-tuesday/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260825T091500
+DTEND;TZID=America/Chicago:20260825T100000
+DTSTAMP:20260825T091500Z
+UID:09-15-t0-keynote-to-be-announced-tuesday@https://2026.djangocon.us
+SUMMARY:Keynote (to be announced) (Tuesday)
+LOCATION:Sauganash Ballroom
+DESCRIPTION:
+URL:https://2026.djangocon.us/talks/keynote-tuesday/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260825T102000
+DTEND;TZID=America/Chicago:20260825T110500
+DTSTAMP:20260825T102000Z
+UID:10-20-t0-batteries-vs-speed-the-django-fastapi-debate@https://2026.djangocon.us
+SUMMARY:Batteries vs. Speed: The Django/FastAPI Debate
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Calvin Hendryx-Parker\nPresenter: Frank Wiles\n\nFew debates in the Python world generate more discussion than Django vs. FastAPI. After decades of building production systems with both, we've arrived at a simple conclusion: they don't actually do the same thing, and that changes everything about how you should evaluate them.
+ This talk walks through a structured, no-hype comparison across three areas:
+ What they share:
+ 
+ Python-native development experience
+ Async support
+ Ecosystem depth and active communities
+ 
+ Where Django excels:
+ 
+ Batteries-included philosophy
+ The ORM, admin, auth, and forms out of the box
+ A rich plugin ecosystem that makes full-stack web development fast and predictable
+ 
+ Where FastAPI pulls ahead:
+ 
+ Blazing performance
+ First-class type hints
+ A lightweight footprint ideal for shipping a focused API layer fast
+ 
+ Co-presented by two custom software development agency leaders who have made this exact call on behalf of real clients, this talk won't crown a winner. Instead, it will leave you with a pra...
+URL:https://2026.djangocon.us/talks/batteries-vs-speed-the-django-fastapi-debate/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260825T111000
+DTEND;TZID=America/Chicago:20260825T113500
+DTSTAMP:20260825T111000Z
+UID:11-10-t0-the-testing-pyramid-in-practice-for-django@https://2026.djangocon.us
+SUMMARY:The Testing Pyramid in Practice for Django
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Monica Oyugi\n\nMany Django developers write tests reactively — covering whatever feels important in the moment and end up with suites that are slow, hard to maintain, and unevenly distributed. This talk addresses that by introducing the testing pyramid as a deliberate, structured approach, anchored in Django's latest testing capabilities.
+ 
+URL:https://2026.djangocon.us/talks/the-testing-pyramid-in-practice-for-django/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260825T114000
+DTEND;TZID=America/Chicago:20260825T120500
+DTSTAMP:20260825T114000Z
+UID:11-40-t0-one-url-to-rule-them-all-dynamic-landing-pages-in-wagtail@https://2026.djangocon.us
+SUMMARY:One URL to Rule Them All: Dynamic Landing Pages in Wagtail
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Chrissy Wainwright\n\nEvery marketing campaign has the same problem: one message, a dozen audiences, and suddenly your CMS is drowning in nearly identical pages. For Truth Initiative, the nation’s largest nonprofit dedicated to ending nicotine addiction, editors were maintaining a growing library of duplicate landing pages with no clean way to test what was actually working.
+ We solved it with a dynamic Wagtail landing page, built on a Django backend, that tracks users based on the last URL segment (e.g., /youtube, /facebook). A/B testing was baked in at the CMS level to help test different features against a percentage of the audience. Editors now manage a single page design for tailoring text, CTAs, and creative assets.
+ This session covers:
+ 
+ The business problem of campaign duplication.
+ How we used Django and Wagtail to manage user tracking using a single landing page
+ How A/B testing was implemented for testing different text within the page
+ The impact: reduced editor workload, faster rollouts, a...
+URL:https://2026.djangocon.us/talks/one-url-to-rule-them-all-dynamic-landing-pages-in-wagtail/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260825T121000
+DTEND;TZID=America/Chicago:20260825T130000
+DTSTAMP:20260825T121000Z
+UID:12-10-t0-lightning-talks-tuesday@https://2026.djangocon.us
+SUMMARY:Lightning Talks (Tuesday)
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Andrew Mshar\n\n
+URL:https://2026.djangocon.us/talks/lightning-talks-tuesday/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260825T135000
+DTEND;TZID=America/Chicago:20260825T143500
+DTSTAMP:20260825T135000Z
+UID:13-50-t0-yes-we-allow-substitutions-no-we-don-t-serve-spaghetti@https://2026.djangocon.us
+SUMMARY:Yes, we allow substitutions. No, we don't serve spaghetti.
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Jack Linke\n\nWhen users want a custom status field, a slightly different workflow, or a new export format, it might seem like a quick and easy win to whip these custom solutions together. But over time, they add up.
+ I know because I've been there.
+ While building a multi-tenant Django SaaS for irrigation water utilities, I read dozens of blog articles and StackOverflow posts on how to make software configurable, and at one point or another I tried most of the common approaches: choices with CharField and conditional statements, JSONField-based configs, runtime settings, feature flags, hand-rolled relational models, and lots more. Each one helped (up to a point), and most eventually showed their limits.
+ This talk organizes those approaches and others into a few clear layers of configurability and walks you through where each works well and where they tend to fail. We'll look at tools like django-constance, django-waffle, and packages for configurability with multi-tenant patterns. We'll also ta...
+URL:https://2026.djangocon.us/talks/yes-we-allow-substitutions-no-we-don-t-serve-spaghetti/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260825T144000
+DTEND;TZID=America/Chicago:20260825T150500
+DTSTAMP:20260825T144000Z
+UID:14-40-t0-what-s-new-in-postgres-18-19@https://2026.djangocon.us
+SUMMARY:What's New in Postgres 18 & 19
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Elizabeth Christensen\n\nThis session will cover in detail new features of the software and how they affect your database/Django work. I’ll give some advice on what to take advantage of right away and what to maybe let the other guys try first.
+ 
+URL:https://2026.djangocon.us/talks/what-s-new-in-postgres-18-19/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260825T151000
+DTEND;TZID=America/Chicago:20260825T153500
+DTSTAMP:20260825T151000Z
+UID:15-10-t0-polyglot-persistence-with-django-when-one-database-isn-t-enough@https://2026.djangocon.us
+SUMMARY:Polyglot Persistence with Django: When One Database Isn't Enough
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Abigail Afi Gbadago\n\nPolyglot persistence is the use of multiple databases in a single application, with each chosen for what it does best. Django ships with multi-database support: define your connections, write a router, and in theory, you're done. In practice, the gap between &quot;Django supports this&quot; and &quot;I have this working&quot; is where most developers get stuck. This talk closes that gap by using a Django MongoDB backend alongside PostgreSQL, with honest coverage of where the ORM abstraction leaks, what migrations look like against a document store, and lessons learned from building with MongoDB's Queryable Encryption in a real Django context. Attendees leave with working patterns, a clear decision framework, and an answer to whether polyglot persistence is the best choice for their project.
+ 
+URL:https://2026.djangocon.us/talks/polyglot-persistence-with-django-when-one-database-isn-t-enough/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260825T161000
+DTEND;TZID=America/Chicago:20260825T165500
+DTSTAMP:20260825T161000Z
+UID:16-10-t0-50-shades-of-green-one-contribution-to-the-django-world@https://2026.djangocon.us
+SUMMARY:50 shades of green - One contribution to the Django world
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Sarah Abderemane\n\nDjango's website has a dark theme. Many developers around the world use it every day. Some never even noticed it appear. Others switched immediately and never looked back.
+ Either way, there's a story behind it.
+ This talk walks through the complete arc of that contribution: the motivation, the implementation details, the review process, and what it meant to get it across the finish line on one of the most widely used frameworks in the Python ecosystem.
+ A practical and personal look at open source contribution: what it takes, what you learn, and why it matters more than you might think.
+ 
+URL:https://2026.djangocon.us/talks/50-shades-of-green-one-contribution-to-the-django-world/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260825T170000
+DTEND;TZID=America/Chicago:20260825T172500
+DTSTAMP:20260825T170000Z
+UID:17-00-t0-but-did-you-know-the-browser-already-does-that@https://2026.djangocon.us
+SUMMARY:But did you know the browser already does that?
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: James Stuckey Weber\n\nNew features in HTML and CSS mean a better dev experience for providing better user experiences. But are they too new to use? In this talk, you'll get a glimpse at some of the newer features of the web platform. Once you're excited to use them in your project, we'll take a look at browser support, and how to use Baseline to evaluate whether it's ready to use in your project.
+ We will cover:
+ 
+ Popovers: native tooltips
+ Anchor positioning: placing tooltips and dropdowns
+ Invokers: interactivity without needing JavaScript
+ Container queries: styles based on context, not the screen
+ View transitions: Animating between pages
+ Custom selects: Native select options that match your UI
+ 
+ And more!
+ But how do you know if a feature has enough support? You will also learn how easy it is to evaluate support with Baseline, which is integrated into IDEs, linters, and throughout the web.
+ 
+URL:https://2026.djangocon.us/talks/but-did-you-know-the-browser-already-does-that/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260825T173000
+DTEND;TZID=America/Chicago:20260825T175500
+DTSTAMP:20260825T173000Z
+UID:17-30-t0-keeping-pace-with-django-evolving-through-15-years-of-updates@https://2026.djangocon.us
+SUMMARY:Keeping Pace with Django: Evolving Through 15 years of Updates
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Eduardo Felipe Castegnaro\n\nWorking on the same codebase for 15 years is not something that you plan on doing. It's something that happens organically. As the years go on and the business requirements become ever more complex, you'll need to keep up with the stack to be able to deliver the product your users expect.
+ This talk will cover what worked (and what didn't) while building and running a codebase in production for over 15 years. You'll find out what it takes to bring a project from Python 2.6 and Django 1.2 all the way to Python 3.14 and Django 5.2.
+ We’ll explore how following release cycles, understanding release notes and deprecation policies helps you write code that is low maintenance while flexible enough to change when the time comes.
+ There will be samples of how individual views in the project were updated to take advantage of new features in the framework, including dropping dependencies when third-party libraries eventually made their way into Django.
+ Sometimes there might be a need to crea...
+URL:https://2026.djangocon.us/talks/keeping-pace-with-django-evolving-through-15-years-of-updates/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260825T180000
+DTEND;TZID=America/Chicago:20260825T182500
+DTSTAMP:20260825T180000Z
+UID:18-00-t0-teach-django-tasks-to-speak-celery-building-a-celery-backend-for-django-tasks@https://2026.djangocon.us
+SUMMARY:Teach Django Tasks to speak Celery: Building a Celery backend for Django Tasks
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Matías Bordese\n\nDjango 6.0 introduced Django Tasks, a built-in framework for defining and queuing background jobs to run code outside the HTTP request–response cycle. Django ships by default with backends for development and testing, but production systems often rely on distributed task queues like Celery. How do we bridge that gap?
+ In this talk, I'll show how Django Tasks works under the hood, and walk through a Celery backend implementation that lets you run Django tasks on Celery workers without changing your application code.
+ What this talk will be about:
+ 
+ What Django Tasks is and how it works: the new standard API for background jobs in Django 6.0.
+ How task backends act as adapters between task APIs and execution engines.
+ How a Celery backend translates Django tasks into Celery jobs.
+ A practical demo highlighting the pluggable architecture (switch your backend to use Celery without changing code!).
+ 
+ No prior experience with Celery is needed.
+ 
+URL:https://2026.djangocon.us/talks/teach-django-tasks-to-speak-celery-building-a-celery-backend-for-django-tasks/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260826T090000
+DTEND;TZID=America/Chicago:20260826T091500
+DTSTAMP:20260826T090000Z
+UID:09-00-t0-opening-remarks-wednesday@https://2026.djangocon.us
+SUMMARY:Opening Remarks (Wednesday)
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Drew Winstel\n\n
+URL:https://2026.djangocon.us/talks/opening-remarks-wednesday/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260826T091500
+DTEND;TZID=America/Chicago:20260826T100000
+DTSTAMP:20260826T091500Z
+UID:09-15-t0-keynote-to-be-announced-wednesday@https://2026.djangocon.us
+SUMMARY:Keynote (to be announced) (Wednesday)
+LOCATION:Sauganash Ballroom
+DESCRIPTION:
+URL:https://2026.djangocon.us/talks/keynote-wednesday/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260826T102000
+DTEND;TZID=America/Chicago:20260826T110500
+DTSTAMP:20260826T102000Z
+UID:10-20-t0-scaling-django-mastering-database-routers-with-aws-aurora@https://2026.djangocon.us
+SUMMARY:Scaling Django: Mastering Database Routers with AWS Aurora
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Leonardo Batista\n\nAs your Django application grows, the database is often the first major bottleneck. But how do you scale horizontally without introducing massive complexity into your application logic? In this talk, we’ll explore how OneBlinc leveraged Django's native Database Routers to distribute load across an AWS Aurora cluster. We will go beyond the documentation to discuss real-world implementation: managing read/write splitting, handling replication lag, ensuring data consistency in financial transactions. If you want to squeeze every bit of performance out of your cloud database while keeping your Django code clean, this session is for you.
+ 
+URL:https://2026.djangocon.us/talks/scaling-django-mastering-database-routers-with-aws-aurora/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260826T111000
+DTEND;TZID=America/Chicago:20260826T113500
+DTSTAMP:20260826T111000Z
+UID:11-10-t0-auto-prefetching-with-model-field-fetch-modes-in-django-6-1@https://2026.djangocon.us
+SUMMARY:Auto-prefetching with model field fetch modes in Django 6.1
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Jacob Walls\n\nNew in Django 6.1, model field fetch modes provide a way to avoid the deluge of queries from accessing un-fetched objects during a loop (also known as the &quot;N+1 queries&quot; problem). You may be familiar with how Django's prefetch_related() and select_related() methods can prevent these queries, but unlike those tools, the &quot;fetch peers&quot; mode does not require maintaining a list of fields to fetch. This can significantly improve project maintenance, especially when QuerySets are constructed at some distance from where they are used.
+ In this talk, we'll cover what's new about fetch modes, what tradeoffs are entailed, how to configure fetch modes per-model via managers, and how to use the &quot;raise&quot; mode to surface issues in development or put guardrails around performance-intensive sections of code.
+ 
+URL:https://2026.djangocon.us/talks/auto-prefetching-with-model-field-fetch-modes-in-django-6-1/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260826T114000
+DTEND;TZID=America/Chicago:20260826T120500
+DTSTAMP:20260826T114000Z
+UID:11-40-t0-enter-the-ecosystem-contributing-to-django-open-source-projects@https://2026.djangocon.us
+SUMMARY:Enter the Ecosystem: Contributing to Django Open Source Projects
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Andrew Selzer\n\nTaking that first step into open source can feel overwhelming, but it doesn't have to be. This talk is a friendly, practical guide for developers who are curious about contributing to projects in the Django ecosystem but haven't made that first contribution yet.
+ We'll start by asking yourself why you want to contribute in the first place. Having a clear goal will keep you motivated when you hit those inevitable roadblocks. From there, we'll walk through how to find a project that aligns with your interests, skills, and availability, how to take the time to understand a project's contribution process, and how to find the right first issue, whether that's a code change, a documentation update, a bug report, or a code review.
+ We'll also cover what happens after you submit your work, how to receive feedback with an open mind, iterate, and celebrate getting that first pull request or change merged. We'll also touch on how to use AI tools responsibly as part of your workflow.
+ You'll le...
+URL:https://2026.djangocon.us/talks/enter-the-ecosystem-contributing-to-django-open-source-projects/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260826T121000
+DTEND;TZID=America/Chicago:20260826T130000
+DTSTAMP:20260826T121000Z
+UID:12-10-t0-lightning-talks-wednesday@https://2026.djangocon.us
+SUMMARY:Lightning Talks (Wednesday)
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Andrew Mshar\n\n
+URL:https://2026.djangocon.us/talks/lightning-talks-wednesday/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260826T135000
+DTEND;TZID=America/Chicago:20260826T143500
+DTSTAMP:20260826T135000Z
+UID:13-50-t0-breaking-the-request-chain-rethinking-service-communication-in-django-systems@https://2026.djangocon.us
+SUMMARY:Breaking the Request Chain: Rethinking Service Communication in Django Systems
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Mohammad Ahtasham ul Hassan\nPresenter: Muhammad Arif\n\nMany distributed systems begin with a simple pattern: Service A calls Service B, which calls Service C
+ (A -&gt; B -&gt; C and so on), all through synchronous HTTP requests. In Django applications, where request/response workflows are the default, this approach often feels natural and easy to implement and is the go to for almost everyone.
+ But as systems grow, however, these synchronous chains can quietly become a bottleneck. Each request that waits on another service keeps an application worker occupied.
+ In typical Django deployments running behind Gunicorn, concurrency is limited by the number of available workers, so requests that spend time waiting on downstream services can quickly tie up capacity.
+ Thinking about autoscaling?? It doesn’t help either if every instance is still waiting on the same external dependencies. What started as simple service interactions can evolve into tightly coupled request chains where latency compounds across services and failures propagate in un...
+URL:https://2026.djangocon.us/talks/breaking-the-request-chain-rethinking-service-communication-in-django-systems/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260826T144000
+DTEND;TZID=America/Chicago:20260826T150500
+DTSTAMP:20260826T144000Z
+UID:14-40-t0-modern-django-deployments-in-2026@https://2026.djangocon.us
+SUMMARY:Modern Django Deployments in 2026
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Will Vincent\n\nDeploying a Django website is deeply confusing for newcomers, but it doesn't have to be! In this talk, I'll provide a conceptual and practical overview of the process to demystify it all and provide some hard-won lessons along the way.
+ We'll start with a high-level look at the architecture underpinning it all: web servers vs app servers, queues, security considerations, databases, caching, environment variables, and more. How to think about choices such as Platform-as-a-Service versus VPS? Managed databases? Docker? And more.
+ Then we'll dive into a step-by-step deployment checklist, looking at how to switch from their default local settings to something production ready. What are the minimum steps to deploy a web app? And what are the recommended additional steps to maximize security and performance?
+ 
+URL:https://2026.djangocon.us/talks/modern-django-deployments-in-2026/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260826T151000
+DTEND;TZID=America/Chicago:20260826T153500
+DTSTAMP:20260826T151000Z
+UID:15-10-t0-the-django-uuid-story@https://2026.djangocon.us
+SUMMARY:The Django UUID Story
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Paolo Melchiorre\n\nMy first larger contribution to Django started during the sprints at DjangoCon Europe 2017 in Florence, where I worked on exposing database-side RandomUUID generation for UUIDv4 in contrib.postgres, so for me this topic has a very personal history inside the project.
+ Since then the way Django handles UUID generation has evolved, and recent changes extended these functions beyond PostgreSQL while also adding support for UUIDv7, which brings time ordering and new possibilities for modern database schemas.
+ In this talk I show how these UUID functions work in Django today, how UUIDv4 and UUIDv7 differ in practice, and how Django can generate UUID values at the Python side or at the database side depending on the backend and the use case.
+ This talk is especially useful for developers who already know Django models and want to better understand how UUID generation fits into real applications, migrations and schema design, especially now that support is broader and more flexible than be...
+URL:https://2026.djangocon.us/talks/the-django-uuid-story/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260826T161000
+DTEND;TZID=America/Chicago:20260826T165500
+DTSTAMP:20260826T161000Z
+UID:16-10-t0-wishlist-granted-htmx-without-betraying-your-django-views@https://2026.djangocon.us
+SUMMARY:Wishlist granted: HTMX without betraying your Django views
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Natalia\n\nA feature built the traditional Django way. Making it dynamic is next. What do you do? The answer is simpler than you think!
+ Starting from a plain server-rendered implementation, my goal was to avoid full-page reloads without throwing away what I had already built, and without reaching for a new tool or a new architecture. Template partials and HTMX turned out to be exactly the right fit. The changes were small and targeted, the code stayed readable, and I never had to leave my Django safe place.
+ This talk is about a real project, real decisions, and what progressive enhancement in Django can look like in practice using modern tools, one small change at a time.
+ 
+URL:https://2026.djangocon.us/talks/wishlist-granted-htmx-without-betraying-your-django-views/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260826T170000
+DTEND;TZID=America/Chicago:20260826T174500
+DTSTAMP:20260826T170000Z
+UID:17-00-t0-beyond-rest-implementing-the-model-context-protocol-mcp-in-django@https://2026.djangocon.us
+SUMMARY:Beyond REST: Implementing the Model Context Protocol (MCP) in Django
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Kumar Shivendu\n\nDjango has long been the &quot;batteries-included&quot; framework for building user-facing web apps. But in upcoming times, the primary &quot;user&quot; of your backend might be an AI agent taking actions on behalf of your users.
+ This session provides a technical blueprint for implementing an MCP server within a Django project.
+ Key areas we will cover:
+ 
+ MCP Protocol Primitives: Mapping the Host-Client-Server interaction model to the Django application lifecycle.
+ SSE Transport via ASGI: Implementing stateful Server-Sent Events for persistent, bidirectional transport over HTTP.
+ Schema Mapping: Transforming service-layer functions into executable JSON-RPC tools and ORM models into discoverable resources.
+ The &quot;Context Tax&quot;: Quantifying the bottlenecks of latency, state serialization, and token window orchestration in agentic workflows.
+ Auth &amp; Input Validation: Extending Django’s RBAC and validation layers to sanitize and authorize non-deterministic LLM inputs.
+ 
+ W...
+URL:https://2026.djangocon.us/talks/beyond-rest-implementing-the-model-context-protocol-mcp-in-django/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260826T174500
+DTEND;TZID=America/Chicago:20260826T180500
+DTSTAMP:20260826T174500Z
+UID:17-45-t0-closing-remarks@https://2026.djangocon.us
+SUMMARY:Closing Remarks
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Keanya Phelps\n\n
+URL:https://2026.djangocon.us/talks/closing-remarks/
+STATUS:CONFIRMED
+END:VEVENT
 END:VCALENDAR

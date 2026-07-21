@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="https://2026.djangocon.us/talks/the-testing-pyramid-in-practice-for-django/" />
+  <meta name="author" content="DjangoCon US" />
+  <meta name="description" content="DjangoCon US 2026 is a Python and Django focused web development conference in Chicago, Illinois." />
+
+  <meta property="og:title" content="The Testing Pyramid in Practice for Django | DjangoCon US 2026" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:description" content="DjangoCon US 2026 is a Python and Django focused web development conference in Chicago, Illinois." />
+  <meta property="og:url" content="https://2026.djangocon.us/talks/the-testing-pyramid-in-practice-for-django/" />
+  <meta property="og:site_name" content="DjangoCon US" />
+
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  
+  <meta property="og:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2F2026.djangocon.us%2Ftalks%2Fthe-testing-pyramid-in-practice-for-django%2Fsocial/opengraph/" />
+  <meta property="twitter:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2F2026.djangocon.us%2Ftalks%2Fthe-testing-pyramid-in-practice-for-django%2Fsocial/opengraph/" />
+
+
+  <meta property="twitter:title" content="The Testing Pyramid in Practice for Django | DjangoCon US 2026" />
+  <meta name="twitter:site" content="@djangocon" />
+
+  <meta property="fb:app_id" content="280981518972848" />
+  <meta name="google-site-verification" content="fkIplA0HzMWPz64TqaW1xp4RH5JfDyRekV3QO_MqJ8Q" />
+
+  <link rel="icon" href="/assets/favicons/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/assets/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/favicons/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <title>The Testing Pyramid in Practice for Django | DjangoCon US 2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body id="SiteBody" >
+  <a href="#SiteMain" class="sr-only focus:bg-ocean-blue focus:z-[2000] focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:px-4 focus:py-2 focus:text-dark-blue focus:rounded focus:shadow">Skip to main content</a>
+
+  
+    
+
+<header id="SiteHeader" class=" site-header is-closed lg:is-open lg:top-0">
+  <div class="wrapper relative">
+    <a href="/" aria-label="Go to homepage">
+      <img src="/assets/img/2026/logo.svg" alt="DjangoCon US" class="h-[3.5rem]">
+    </a>
+
+    <nav id="SiteNav" class="is-closed site-nav lg:is-open">
+  <ul>
+    <li class="lg:hidden"><a href="/">Home</a></li>
+    <li>
+      <a href="/about" data-menu-trigger aria-haspopup="true" aria-expanded="false">About</a>
+      <ul data-menu-list role="menu" class="hidden site-nav-menu">
+        <li><a href="/about/" role="menuitem">About DjangoCon US</a></li>
+        <!-- <li><a href="https://ti.to/defna/djangocon-us-2025" target="_blank" role="menuitem">Registration</a></li> -->
+        <li><a href="/conduct/" role="menuitem">Code of Conduct</a></li>
+        <li><a href="/public-health/" role="menuitem">Public Health</a></li>
+        <li><a href="/opportunity-grants/" role="menuitem">Opportunity Grants</a></li>
+        <li><a href="/visas/" role="menuitem">Visa Support</a></li>
+        <li><a href="/faq/" role="menuitem">FAQ</a></li>
+        <!-- <li><a href="/hackathon/" role="menuitem">Hackathon</a></li> -->
+        <li><a href="/organizers/" role="menuitem">Organizers</a></li>
+        <li><a href="/sprints/" role="menuitem">Sprints</a></li>
+      </ul>
+    </li>
+    <li><a href="/schedule/">Schedule</a></li>
+    <li>
+      <a href="/venue/" data-menu-trigger aria-haspopup="true" aria-expanded="false">Venue</a>
+      <ul data-menu-list class="hidden site-nav-menu">
+        <li><a href="/venue/#welcome">Welcome to Chicago!</a></li>
+        <li><a href="/venue/#hotel">Staying in Chicago</a></li>
+        <li><a href="/venue/#places">Around Chicago</a></li>
+        <li><a href="/venue/#accessibility">Accessibility</a></li>
+        <!-- <li><a href="/room-sharing/" role="menuitem">Room Sharing</a></li> -->
+      </ul>
+    </li>
+    <li>
+      <a href="/venue/" data-menu-trigger aria-haspopup="true" aria-expanded="false">Speaking</a>
+      <ul data-menu-list class="hidden site-nav-menu">
+        <li><a href="/speaking/" role="menuitem">Speaking at DjangoCon US</a></li>
+        
+        <li><a href="/speaking/speaker-resources/"  role="menuitem">Speaker Resources</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="/sponsors/" data-menu-trigger aria-haspopup="true" aria-expanded="false">Sponsors</a>
+    <ul data-menu-list class="hidden site-nav-menu">
+      <li><a href="/sponsors/" role="menuitem">Our Sponsors</a></li>
+      <li><a href="/sponsors/information/" role="menuitem">Sponsorship Prospectus</a></li>
+    </ul>
+  </li>
+  <li><a href="/news/">News</a></li>
+</ul>
+</nav>
+
+
+    <a href="https://ti.to/defna/djangocon-us-2026" target="_blank" rel="noopener noreferrer" class="button hidden lg:block w-full bg-primary justify-self-end">Buy Tickets</a>
+
+    <button id="NavToggler" class="site-nav-toggler is-closed">
+      <svg class="w-[18px]" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 2.66667V0H24V2.66667H0ZM0 18.6667V16H24V18.6667H0ZM0 10.6667V8H24V10.6667H0Z" fill="currentColor"/>
+      </svg>
+      <span aria-hidden="true" class="hidden xs:block">Menu</span>
+    </button>
+  </div>
+</header>
+
+  
+
+  <main id="SiteMain" class="flex-1 pt-[90px] lg:pt-0 lg:block">
+  <div class="pb-8 lg:pb-10 hero">
+    <div class="wrapper narrow">
+      <a href="/schedule" class="reverse-link">&larr; Back to Schedule</a>
+      <h1 class="my-2 text-3xl font-bold leading-tight lg:text-5xl">The Testing Pyramid in Practice for Django</h1>
+
+      <p class="flex flex-wrap items-center gap-4">
+        <span class="inline-flex flex-wrap items-center gap-[1ch] text-xl lg:text-2xl">
+          <time>Tuesday, August 25 @ 11:10 AM</time>
+          <span class="text-base">to</span>
+          <time>11:35 AM</time>
+        </span>
+
+        <a
+          href="https://time.is/compare/1110AM_25_August_2026_in_Chicago"
+          class="button"
+          aria-label="View on time.is">View on time.is</a>
+      </p>
+
+      
+        <p class="mt-2">
+          <b>Sauganash Ballroom</b>
+
+          
+        </p>
+      
+    </div>
+  </div>
+
+  <div class="py-8 bg-gray-50 lg:py-10 block-container">
+    <div class="wrapper narrow">
+      
+
+      
+
+
+      <h2 class="mb-6 text-xl font-bold leading-tight lg:text-3xl">About this session</h2>
+      <div class="prose lg:prose-lg">
+        <p>Many Django developers write tests reactively — covering whatever feels important in the moment and end up with suites that are slow, hard to maintain, and unevenly distributed. This talk addresses that by introducing the testing pyramid as a deliberate, structured approach, anchored in Django's latest testing capabilities.</p>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+  <div class="pt-8 pb-16 block-container bg-ocean-blue">
+    <div class="wrapper narrow">
+      <div class="max-w-screen-md pt-6 mt-auto">
+        <h2 class="mb-8 text-xl font-bold leading-tight lg:text-3xl">Presented by</h2>
+        <ul class="space-y-16">
+          
+            
+            <li class="relative p-6 bg-white lg:pt-10 card-effect-1">
+              <section class="flex flex-wrap gap-6">
+                
+                  
+                  <img class="inline-block object-cover media object-left-top rounded aspect-square w-36 h-36 lg:w-48 lg:h-48" alt="Monica Oyugi" loading="lazy" decoding="async" src="/presenters/monica-oyugi-180.webp" width="600" height="600" srcset="/presenters/monica-oyugi-180.webp 180w, /presenters/monica-oyugi-300.webp 300w, /presenters/monica-oyugi-600.webp 600w" sizes="(max-width: 1024px) 180px, 180px">
+                
+
+                <div class="md:flex-1">
+                  <span class="flex flex-col gap-2 mb-4">
+                    <h3 class="text-xl font-semibold leading-4 lg:text-3xl">Monica Oyugi</h3>
+                    
+                  </span>
+
+                  
+                    <ul class="flex flex-wrap gap-4 mt-auto">
+                      
+                      
+                      
+                      
+                        <li>
+                          <a
+                            href="https://mastodon.social/@monics"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="hover:text-social-mastodon"
+                            aria-label="Mastodon">
+                            <svg class="icon">
+                              <title>Mastodon</title>
+                              <use xlink:href="#mastodon-icon"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      
+                      
+                      
+                        <li>
+                          <a
+                            href="https://medium.com/@monicaoyugi"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="hover:text-ocean-blue"
+                            aria-label="Website">
+                            <svg class="icon">
+                              <use xlink:href="#web-icon"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      
+                    </ul>
+                  
+
+                  
+                    <div class="mt-4 prose">
+                      <p>I'm a Quality Assurance Engineer driven by the intersection of technology and social impact. My work extends beyond code quality to building inclusive communities that elevate underrepresented voices in tech.<br>
+Through speaking engagements, mentoring, and event support, I actively champion diversity and innovation across platforms like Women Techmakers, PyCon, and DjangoCon. As a volunteer co-chair for DjangoCon US and Lead for PyCon Kenya, Part of API Festival Kenya, and DroidCon Kenya, I cultivate spaces where collaboration thrives and knowledge flows freely throughout both the global and East African tech ecosystems.<br>
+My commitment to fostering safe, inclusive environments led me to join the Python Software Foundation's Code of Conduct team, where I help ensure our community remains welcoming and accessible to all.<br>
+I leverage my technical expertise and community leadership experience to inspire the next generation of technologists, particularly those from underrepresented backgrounds, empowering them to unlock their potential and shape the future of our industry.</p>
+
+                    </div>
+                  
+                </div>
+              </section>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</main>
+
+  <footer id="SiteFooter" class="site-footer">
+  <div class="container mx-auto text-center">
+    <div class="flex gap-2 px-4 flex-col justify-center">
+      <div class="my-8 flex flex-col items-center gap-8">
+        <img src="/assets/img/2026/Banner.svg" class="w-full max-w-[600px]  block" alt="DjangoCon US" />
+        <a class="button button-lg bg-white px-12" href="https://ti.to/defna/djangocon-us-2026">Buy Tickets</a>
+      </div>
+
+      <ul class="flex flex-wrap justify-center my-6 gap-8">
+  <li>
+    <a class="hover:text-social-mastodon" href="https://fosstodon.org/@djangocon">
+      <svg class="w-6 h-6 icon">
+        <title>Mastodon</title>
+        <use xlink:href="#mastodon-icon"></use>
+      </svg>
+    </a>
+  </li>
+  <li>
+    <a class="hover:text-social-bluesky" href="https://bsky.app/profile/djangocon.us/">
+      <svg class="w-6 h-6 icon">
+        <title>Bluesky</title>
+        <use xlink:href="#bluesky-icon"></use>
+      </svg>
+    </a>
+  </li>
+  <li>
+    <a class="hover:text-social-twitter" href="https://x.com/djangocon">
+      <svg class="w-6 h-6 icon">
+        <title>X (Formerly Twitter)</title>
+        <use xlink:href="#twitter-icon"></use>
+      </svg>
+    </a>
+  </li>
+  <li>
+    <a class="hover:text-social-github" href="https://github.com/djangocon/">
+      <svg class="w-6 h-6 icon">
+        <title>Github</title>
+        <use xlink:href="#github-icon"></use>
+      </svg>
+    </a>
+  </li>
+
+  <li>
+    <a class="hover:text-social-linkedin" href="https://www.linkedin.com/company/djangocon/">
+      <svg class="w-6 h-6 icon">
+        <title>LinkedIn</title>
+        <use xlink:href="#linkedin-icon"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+
+
+      <p class="font-tanker lg:text-xl">
+        Got questions? We can help:
+        <a href="mailto:hello@djangocon.us" class="link">hello@djangocon.us</a>
+      </p>
+      <small class="text-sm">
+        &copy; 2026 DjangoCon US· Presented by <a href="https://www.defna.org/" class="link" target="_blank">DEFNA</a>
+        · <a href="/styleguide/">Styleguide</a></small>
+    </div>
+  </div>
+</footer><svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="people-icon" viewBox="0 0 100 100">
+    <path d="M14.6596 33.1795C14.6596 19.5128 26.0133 8.49538 39.8315 9C51.7328 9.46256 62.602 20.2908 63.0865 32.1703C63.4024 40.2441 59.7583 47.4769 53.9446 52.1026C53.1231 52.7544 53.2495 54.0579 54.1973 54.4785C63.255 58.5364 70.2694 65.8744 73.2395 74.9364C75.5987 82.1692 70.2483 88.4349 63.5499 89.4231C58.031 90.2431 49.7107 91 37.8936 91C26.0765 91 17.7772 90.2431 12.2373 89.4231C5.5388 88.4349 0.188468 82.1692 2.54767 74.9364C5.64412 65.4749 13.1641 57.8846 22.8115 53.9528C23.7805 53.5533 23.9701 52.2708 23.1696 51.5769C17.9457 47.1405 14.6386 40.5385 14.6386 33.1585L14.6596 33.1795ZM79.2639 72.981C81.3492 79.3518 79.6852 85.0497 76.1885 89.1708C75.7251 89.7174 76.1674 90.5374 76.8625 90.4744C80.8437 90.18 84.1087 89.8226 86.7417 89.4231C93.4401 88.4349 98.7905 82.1692 96.4313 74.9364C93.4612 65.8744 86.4468 58.5364 77.3892 54.4785C76.4413 54.0579 76.3149 52.7544 77.1364 52.1026C83.3925 47.1405 87.1209 39.1508 86.1308 30.362C84.8038 18.7559 74.9246 9.56769 63.2129 9.02102C62.0543 8.95795 60.8958 9 59.7794 9.10513C59.0632 9.1682 58.7683 10.0303 59.316 10.5138C65.5299 16.0856 69.4268 24.1805 69.4268 33.1795C69.4268 39.7815 67.3204 45.879 63.7605 50.8831C63.2971 51.5349 63.4446 52.4179 64.0976 52.8805C71.133 57.8215 76.5676 64.76 79.2639 73.0021V72.981Z" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="heart-icon" viewBox="0 0 100 100">
+    <path d="M50.8317 90.3664C49.8818 90.9242 48.8183 90.9097 47.8972 90.3379C-17.9026 55.3677 12.3738 -17.4524 49.8514 22.3824C91.2265 -23.4441 118.813 57.2529 50.8317 90.3664Z" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="document-icon" viewBox="0 0 100 100">
+    <path d="M63.2134 26.5844C63.5792 30.3929 66.5061 33.3084 70.1463 33.6547C73.3841 33.9644 78.4878 34.092 82.8597 34.1284C83.5 34.1284 84.1402 34.1284 84.7256 34.1284C85.9695 34.1284 86.7744 32.8164 86.189 31.7231C84.6524 28.9169 81.8536 24.8716 76.7317 19.9151C72.0488 15.3596 68.1707 12.6991 65.3353 11.1502C64.1463 10.4942 62.7195 11.3324 62.7195 12.6809C62.7195 13.1182 62.7195 13.5556 62.7195 14.0111C62.7561 18.3298 62.8658 23.3773 63.1768 26.5844H63.2134Z" fill="currentColor"/>
+    <path d="M87.9268 42.4196C87.8902 40.8524 86.6463 39.6133 85.0732 39.6133C84.3598 39.6133 83.5915 39.6133 82.8049 39.6133C78.4329 39.5769 73.1281 39.4493 69.6159 39.1031C63.2866 38.5018 58.3476 33.4542 57.7439 27.1129C57.4146 23.6324 57.2866 18.3662 57.25 14.0658C57.25 13.3004 57.25 12.5351 57.25 11.7698C57.25 10.2938 56.061 9.07289 54.561 9.05467C53.2073 9 51.8537 9 50.5 9C38.0244 9 29.5 9.63778 24.25 10.2573C18.9634 10.8769 14.939 14.8676 14.3354 20.152C13.6951 25.7644 13 35.2218 13 50C13 64.7782 13.6951 74.2538 14.3354 79.848C14.939 85.1324 18.9634 89.1231 24.25 89.7427C29.5183 90.3622 38.0244 91 50.5 91C62.9756 91 71.4817 90.3622 76.75 89.7427C82.0366 89.1231 86.061 85.1324 86.6646 79.848C87.3049 74.2356 88 64.7782 88 50C88 47.3031 87.9817 44.7702 87.9268 42.4196ZM73.8232 72.9782H24.5793C22.5671 72.9782 20.9207 71.3382 20.9207 69.3338C20.9207 67.3293 22.5671 65.6893 24.5793 65.6893H73.8232C75.8354 65.6893 77.4817 67.3293 77.4817 69.3338C77.4817 71.3382 75.8354 72.9782 73.8232 72.9782ZM73.8232 54.756H24.5793C22.5671 54.756 20.9207 53.116 20.9207 51.1116C20.9207 49.1071 22.5671 47.4671 24.5793 47.4671H73.8232C75.8354 47.4671 77.4817 49.1071 77.4817 51.1116C77.4817 53.116 75.8354 54.756 73.8232 54.756Z" fill="currentColor"/>
+  </symbol>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="bluesky-icon" viewBox="0 0 600 530">
+    <path d="m135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.262-54.316 97.782-155.54 164.28-205.46 47.98-36.021 125.72-63.892 125.72 24.795 0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.092 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.3797-3.6904-10.832-3.7077-7.8964-0.0174-2.9357-1.1937 0.51669-3.7077 7.8964-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.4491-163.25-81.433-5.9562-21.282-16.111-152.36-16.111-170.07 0-88.687 77.742-60.816 125.72-24.795z" fill="currentColor"/>
+  </symbol>
+  <symbol id="facebook-icon" viewBox="0 0 42 42">
+    <path fill="currentColor" d="M39.68,0H2.32A2.32,2.32,0,0,0,0,2.32V39.68A2.32,2.32,0,0,0,2.32,42H22.43V25.74H17V19.4h5.47V14.72c0-5.42,3.31-8.38,8.15-8.38a44.91,44.91,0,0,1,4.89.25v5.67H32.12c-2.63,0-3.14,1.25-3.14,3.09v4h6.28l-.82,6.34H29V42h10.7A2.32,2.32,0,0,0,42,39.68V2.32A2.32,2.32,0,0,0,39.68,0Z"/>
+  </symbol>
+  <symbol id="github-icon" viewBox="0 0 32.58 31.77">
+    <path fill="currentColor" d="M16.29,0a16.29,16.29,0,0,0-5.15,31.75c.81.15,1.11-.35,1.11-.79s0-1.41,0-2.77C7.7,29.18,6.74,26,6.74,26a4.31,4.31,0,0,0-1.81-2.38c-1.48-1,.11-1,.11-1a3.42,3.42,0,0,1,2.5,1.68,3.47,3.47,0,0,0,4.74,1.35,3.48,3.48,0,0,1,1-2.18C9.7,23.08,5.9,21.68,5.9,15.44a6.3,6.3,0,0,1,1.68-4.37,5.86,5.86,0,0,1,.16-4.31s1.37-.44,4.48,1.67a15.44,15.44,0,0,1,8.16,0c3.11-2.11,4.48-1.67,4.48-1.67A5.85,5.85,0,0,1,25,11.07a6.29,6.29,0,0,1,1.67,4.37c0,6.26-3.81,7.63-7.44,8a3.89,3.89,0,0,1,1.11,3c0,2.18,0,3.93,0,4.47s.29.94,1.12.78A16.29,16.29,0,0,0,16.29,0Z"/>
+  </symbol>
+  <symbol id="instagram-icon" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+    <path d="M128 23.0635C162.177 23.0635 166.225 23.1936 179.722 23.8094C192.202 24.379 198.98 26.4642 203.491 28.2166C209.465 30.5387 213.729 33.3129 218.208 37.7917C222.687 42.2706 225.461 46.5351 227.783 52.5093C229.536 57.0201 231.621 63.7977 232.191 76.277C232.806 89.7746 232.936 93.8226 232.936 128C232.936 162.178 232.806 166.226 232.191 179.723C231.621 192.203 229.536 198.98 227.783 203.491C225.461 209.465 222.687 213.73 218.208 218.209C213.729 222.688 209.465 225.462 203.491 227.783C198.98 229.536 192.202 231.622 179.722 232.191C166.227 232.807 162.179 232.937 128 232.937C93.8201 232.937 89.7721 232.807 76.277 232.191C63.7971 231.622 57.0196 229.536 52.5093 227.783C46.5346 225.462 42.2701 222.688 37.7912 218.209C33.3124 213.73 30.5381 209.465 28.2166 203.491C26.4637 198.98 24.3785 192.203 23.8089 179.723C23.1931 166.226 23.063 162.178 23.063 128C23.063 93.8226 23.1931 89.7746 23.8089 76.2775C24.3785 63.7977 26.4637 57.0201 28.2166 52.5093C30.5381 46.5351 33.3124 42.2706 37.7912 37.7917C42.2701 33.3129 46.5346 30.5387 52.5093 28.2166C57.0196 26.4642 63.7971 24.379 76.2765 23.8094C89.7741 23.1936 93.8221 23.0635 128 23.0635ZM128 0C93.2368 0 88.8783 0.147348 75.2258 0.770275C61.6011 1.39219 52.2969 3.55566 44.1546 6.72009C35.7375 9.99122 28.5992 14.368 21.4833 21.4839C14.3675 28.5998 9.99071 35.738 6.71958 44.1551C3.55515 52.2974 1.39168 61.6017 0.769767 75.2263C0.14684 88.8783 0 93.2373 0 128C0 162.763 0.14684 167.122 0.769767 180.774C1.39168 194.399 3.55515 203.703 6.71958 211.845C9.99071 220.262 14.3675 227.401 21.4833 234.517C28.5992 241.633 35.7375 246.009 44.1546 249.28C52.2969 252.445 61.6011 254.608 75.2258 255.23C88.8783 255.853 93.2368 256 128 256C162.763 256 167.122 255.853 180.774 255.23C194.398 254.608 203.703 252.445 211.845 249.28C220.262 246.009 227.4 241.633 234.516 234.517C241.632 227.401 246.009 220.262 249.28 211.845C252.444 203.703 254.608 194.399 255.23 180.774C255.853 167.122 256 162.763 256 128C256 93.2373 255.853 88.8783 255.23 75.2263C254.608 61.6017 252.444 52.2974 249.28 44.1551C246.009 35.738 241.632 28.5998 234.516 21.4839C227.4 14.368 220.262 9.99122 211.845 6.72009C203.703 3.55566 194.398 1.39219 180.774 0.770275C167.122 0.147348 162.763 0 128 0ZM128 62.2703C91.6983 62.2703 62.2698 91.6988 62.2698 128C62.2698 164.302 91.6983 193.73 128 193.73C164.301 193.73 193.73 164.302 193.73 128C193.73 91.6988 164.301 62.2703 128 62.2703ZM128 170.667C104.436 170.667 85.3328 151.564 85.3328 128C85.3328 104.436 104.436 85.3333 128 85.3333C151.564 85.3333 170.667 104.436 170.667 128C170.667 151.564 151.564 170.667 128 170.667ZM211.686 59.6734C211.686 68.1566 204.81 75.0337 196.327 75.0337C187.843 75.0337 180.966 68.1566 180.966 59.6734C180.966 51.1902 187.843 44.3137 196.327 44.3137C204.81 44.3137 211.686 51.1902 211.686 59.6734Z" fill="currentColor"/>
+  </symbol>
+  <symbol id="mastodon-icon" viewBox="0 0 16 16">
+    <path fill="currentColor" d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"/>
+  </symbol>
+  <symbol id="twitter-icon" viewBox="0 0 300 300.251">
+    <path fill="currentColor" d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34M36.01 19.54H76.66l187.13 262.13h-40.66"/>
+  </symbol>
+  <symbol id="web-icon" viewBox="0 0 64.5 64.5">
+    <path fill="currentColor" d="M32.2 0C14.5 0 0 14.5 0 32.2 0 50 14.5 64.5 32.2 64.5 50 64.5 64.5 50 64.5 32.2 64.5 14.5 50 0 32.2 0zM57.2 45.3C57.2 45.3 57.2 45.3 57.2 45.3l-6.7 0c1.1-3.6 1.7-7.4 1.9-11.1h8C60.1 38.1 59 41.9 57.2 45.3zM34.4 60.4V49.3H45c-2.1 4.9-4.5 8.5-5.9 10.4C37.6 60 36 60.2 34.4 60.4zM25.5 59.7c-1.4-1.8-3.8-5.4-5.9-10.4h10.8v11.1C28.8 60.3 27.1 60.1 25.5 59.7zM7.3 45.3c-1.8-3.4-2.9-7.2-3.2-11.1h8.1c0.2 3.8 0.8 7.5 1.9 11.1L7.3 45.3C7.3 45.3 7.3 45.3 7.3 45.3zM7.5 18.8C7.5 18.8 7.5 18.8 7.5 18.8l6.7 0c-1.2 3.7-1.8 7.6-2 11.5H4.1C4.4 26.3 5.5 22.4 7.5 18.8zM30.5 4.1v10.8H19.9c1.5-3.3 3.5-6.7 6.1-10.2C27.4 4.4 28.9 4.2 30.5 4.1zM38.7 4.7c2.6 3.5 4.5 6.9 6 10.2H34.4V4.1C35.8 4.3 37.3 4.4 38.7 4.7zM46.2 18.8c1.3 3.7 2 7.6 2.2 11.5h-14V18.8C34.4 18.8 46.2 18.8 46.2 18.8zM30.5 18.8v11.5H16.2c0.2-3.6 0.8-7.5 2.2-11.5H30.5zM16.2 34.2h14.3v11.1H18.2C17 41.7 16.4 38 16.2 34.2zM34.4 45.3V34.2h14c-0.2 3.8-0.9 7.5-2 11.1C46.4 45.3 34.4 45.3 34.4 45.3zM52.4 30.3c-0.1-3.9-0.8-7.7-2-11.5H57c0 0 0 0 0 0 1.9 3.5 3.1 7.5 3.3 11.5C60.4 30.3 52.4 30.3 52.4 30.3zM54.5 14.9h-5.5c-1.1-2.7-2.4-5.3-3.9-7.8C48.7 9 51.9 11.6 54.5 14.9zM19.7 7c-1.6 2.5-2.9 5.2-4 7.9H10C12.6 11.6 15.9 8.9 19.7 7zM9.7 49.3h5.6c1.1 2.8 2.4 5.4 3.9 8C15.5 55.3 12.3 52.6 9.7 49.3zM45.4 57.2c1.5-2.5 2.8-5.2 3.8-7.9h5.5C52.3 52.6 49.1 55.2 45.4 57.2z"/>
+  </symbol>
+  <symbol id="linkedin-icon" viewBox="0 0 24 24">
+    <path d="M22.2283 0H1.77167C1.30179 0 0.851161 0.186657 0.518909 0.518909C0.186657 0.851161 0 1.30179 0 1.77167V22.2283C0 22.6982 0.186657 23.1488 0.518909 23.4811C0.851161 23.8133 1.30179 24 1.77167 24H22.2283C22.6982 24 23.1488 23.8133 23.4811 23.4811C23.8133 23.1488 24 22.6982 24 22.2283V1.77167C24 1.30179 23.8133 0.851161 23.4811 0.518909C23.1488 0.186657 22.6982 0 22.2283 0ZM7.15333 20.445H3.545V8.98333H7.15333V20.445ZM5.34667 7.395C4.93736 7.3927 4.53792 7.2692 4.19873 7.04009C3.85955 6.81098 3.59584 6.48653 3.44088 6.10769C3.28591 5.72885 3.24665 5.31259 3.32803 4.91145C3.40941 4.51032 3.6078 4.14228 3.89816 3.85378C4.18851 3.56529 4.55782 3.36927 4.95947 3.29046C5.36112 3.21165 5.77711 3.25359 6.15495 3.41099C6.53279 3.56838 6.85554 3.83417 7.08247 4.17481C7.30939 4.51546 7.43032 4.91569 7.43 5.325C7.43386 5.59903 7.38251 5.87104 7.27901 6.1248C7.17551 6.37857 7.02198 6.6089 6.82757 6.80207C6.63316 6.99523 6.40185 7.14728 6.14742 7.24915C5.893 7.35102 5.62067 7.40062 5.34667 7.395ZM20.4533 20.455H16.8467V14.1933C16.8467 12.3467 16.0617 11.7767 15.0483 11.7767C13.9783 11.7767 12.9283 12.5833 12.9283 14.24V20.455H9.32V8.99167H12.79V10.58H12.8367C13.185 9.875 14.405 8.67 16.2667 8.67C18.28 8.67 20.455 9.865 20.455 13.365L20.4533 20.455Z" />
+  </symbol>
+</svg>
+<script src="/assets/js/main.js"></script>
+  <script src="/assets/js/iframe_compat.js"></script>
+</body>
+</html>
