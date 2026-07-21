@@ -6,13 +6,46 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-07-21T17:38:14Z</updated
+    >2026-07-21T18:37:40Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>How to Prepare for Sprints as a Contributor</title>
+      <link href="https://2026.djangocon.us/news/sprints-prep/" />
+      <updated>2026-07-21T16:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/sprints-prep/</id>
+      <content xml:lang="en" type="html"
+        >&lt;h2 id=&#34;%F0%9F%93%A3-get-your-ticket-and-join-us!&#34; tabindex=&#34;-1&#34;&gt;📣 &lt;strong&gt;&lt;a href=&#34;https://ti.to/defna/djangocon-us-2026&#34;&gt;Get your ticket&lt;/a&gt;&lt;/strong&gt; and join us!&lt;/h2&gt;
+&lt;p&gt;Every year at DjangoCon US, we dedicate the final two days of the conference to gathering together as a community and taking part in contribution sprints. Django, along with so many other open source projects that we use every day, forms the backbone of modern software development. Without them, we would not be able to build so many of the amazing tools and applications that have come out of this community.&lt;/p&gt;
+&lt;p&gt;Sprints are a time to be curious, to see the inner workings of these projects, learn how they work, and, most importantly, have the opportunity to spot an issue and contribute code or documentation. Sprints are a lot of fun, especially when combined with the awesome and ever-welcoming Django community!&lt;/p&gt;
+&lt;p&gt;If you&#39;ve never attended sprints before, or feel apprehensive about putting on your contributor hat alongside the other developers at the conference because you think you don&#39;t have enough experience, fear not, this blog post is for you! Here are three things to help you prepare for sprints as a contributor at this year&#39;s DjangoCon US.&lt;/p&gt;
+&lt;h2 id=&#34;understand-what-sprints-are&#34; tabindex=&#34;-1&#34;&gt;Understand What Sprints Are&lt;/h2&gt;
+&lt;p&gt;A common misconception about sprints is that it&#39;s every person for themselves, a showdown that only the strongest and most seasoned developers can endure! Fortunately, this couldn&#39;t be further from the truth. Sprints are not a competition; &lt;strong&gt;they&#39;re collaborative coding sessions where people of all skill levels are welcome&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Sprints are also not limited to developers looking to contribute code, so there&#39;s no need to focus solely on understanding the codebase. Contributions can include improving documentation, spotting and correcting typos, or updating sections that have become outdated over time. This is especially true for projects that have been around for many years. Accessibility improvements are another area where contributors can make a meaningful impact, and these are the kinds of contributions the community is always happy to welcome.&lt;/p&gt;
+&lt;p&gt;You can also apply a similar outside-the-box approach if you&#39;re specifically looking to work on code. Project maintainers can sometimes be overwhelmed, so reviewing pull requests, testing new features, or creating tutorials are all valuable ways to contribute to a project.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Come with a collaborative spirit, introduce yourself to other sprinters and project leads, and don&#39;t be afraid to ask questions&lt;/strong&gt;. If you&#39;re attending on your own, it&#39;s perfectly acceptable to ask someone if they&#39;d like to pair program with you. Django friends are the best friends!&lt;/p&gt;
+&lt;h2 id=&#34;look-up-the-projects-before-the-conference&#34; tabindex=&#34;-1&#34;&gt;Look Up the Projects Before the Conference&lt;/h2&gt;
+&lt;p&gt;Some projects that will be present at sprints will be listed on the DjangoCon US website and social media channels before the conference. Checking out the various projects and learning more about them is great (although not mandatory) pre-sprint preparation.&lt;/p&gt;
+&lt;p&gt;Future you will probably thank you for identifying a project that aligns with your interests and skills before the conference and avoiding the mental load of decision paralysis on the morning of sprints. Once you&#39;ve found a project that catches your interest, take some time to read through its contribution guidelines and setup instructions. You can even join its communication channels to get a feel for the conversations happening within the community and see which areas the maintainers are currently focusing on.&lt;/p&gt;
+&lt;p&gt;Getting involved with community discussions ahead of time will also give you plenty of talking points and questions to ask when sprint day arrives. As an added bonus, you might even become familiar with some of the active community members who end up attending DjangoCon US!&lt;/p&gt;
+&lt;h2 id=&#34;set-up-your-development-environment-early&#34; tabindex=&#34;-1&#34;&gt;Set Up Your Development Environment Early&lt;/h2&gt;
+&lt;p&gt;One of the biggest time sinks during sprints is getting a project running for the first time. Rather than spending your first hour troubleshooting missing dependencies or waiting for packages to install, &lt;strong&gt;try setting up your development environment before you arrive at the conference&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Most projects have setup instructions in their documentation, so clone the repository, follow the installation steps, and make sure you can run the project locally. If you run into issues, don&#39;t panic; that&#39;s completely normal! You can ask questions in the project&#39;s communication channels before the conference or save them for the sprint itself. Having a head start means you&#39;ll be able to spend more time learning from maintainers, collaborating with other contributors, and making meaningful contributions instead of waiting for your environment to cooperate.&lt;/p&gt;
+&lt;h2 id=&#34;final-notes&#34; tabindex=&#34;-1&#34;&gt;Final Notes&lt;/h2&gt;
+&lt;p&gt;The Contribution Sprints are free and open to everyone. They will run &lt;strong&gt;August 27–28, 2026 from &lt;a href=&#34;https://time.is/0900AM_27_August_2026_in_Chicago&#34;&gt;9am&lt;/a&gt; to &lt;a href=&#34;https://time.is/0500PM_27_August_2026_in_Chicago&#34;&gt;5pm&lt;/a&gt; CDT&lt;/strong&gt; at &lt;strong&gt;voco Chicago Downtown&lt;/strong&gt; and online via Slack.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Want to lead or organize a sprint? Great!&lt;/li&gt;
+&lt;li&gt;Want to help? We’d love to have you.&lt;/li&gt;
+&lt;li&gt;Have questions? Email us at &lt;strong&gt;&lt;a href=&#34;mailto:sprints@djangocon.us&#34;&gt;sprints@djangocon.us&lt;/a&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;🎟️ &lt;strong&gt;&lt;a href=&#34;https://ti.to/defna/djangocon-us-2026&#34;&gt;Get your ticket now&lt;/a&gt;&lt;/strong&gt; and be part of something awesome!&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>Childcare During DjangoCon US</title>
       <link href="https://2026.djangocon.us/news/childcare-during-djangocon/" />
