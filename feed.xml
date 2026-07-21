@@ -6,13 +6,30 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-07-21T18:37:40Z</updated
+    >2026-07-21T20:10:01Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>The DjangoCon US 2026 schedule has been released!</title>
+      <link href="https://2026.djangocon.us/news/announcing-schedule-dcus/" />
+      <updated>2026-07-21T17:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/announcing-schedule-dcus/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;We are beyond thrilled to unveil the DjangoCon US 2026 &lt;a href=&#34;/schedule/&#34;&gt;conference schedule&lt;/a&gt;! Join us in Chicago for three days of talks from Monday, August 24 through Wednesday, August 26, followed by two days of contribution sprints on Thursday, August 27 and Friday, August 28.&lt;/p&gt;
+&lt;p&gt;We will have three keynote speakers, who will be announced over the next several weeks. Stay tuned to our &lt;a href=&#34;https://fosstodon.org/@djangocon&#34;&gt;Mastodon&lt;/a&gt; and &lt;a href=&#34;/news/&#34;&gt;news feed&lt;/a&gt; for the announcements.&lt;/p&gt;
+&lt;p&gt;We have lots of great talks lined up, covering topics such as &lt;a href=&#34;/talks/django-6-the-most-exciting-release-ever/&#34;&gt;Django 6.0&lt;/a&gt;, &lt;a href=&#34;/talks/geodjango-at-city-scale-spatial-data-for-urban-systems/&#34;&gt;GeoDjango at city scale&lt;/a&gt;, &lt;a href=&#34;/talks/modern-django-deployments-in-2026/&#34;&gt;modern Django deployments&lt;/a&gt;, &lt;a href=&#34;/talks/search-as-you-type-for-54-million-names-postgresql-django-for-fuzzy-name-matching-at-scale/&#34;&gt;PostgreSQL and fuzzy name matching&lt;/a&gt;, &lt;a href=&#34;/talks/batteries-vs-speed-the-django-fastapi-debate/&#34;&gt;Django and FastAPI&lt;/a&gt;, and &lt;a href=&#34;/talks/pragmatic-ai-how-to-gain-trust-with-user-centered-ai-adoption/&#34;&gt;user-centered AI adoption&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Wednesday is our Deep Dive day, featuring sessions on &lt;a href=&#34;/talks/scaling-django-mastering-database-routers-with-aws-aurora/&#34;&gt;database routers with AWS Aurora&lt;/a&gt;, &lt;a href=&#34;/talks/auto-prefetching-with-model-field-fetch-modes-in-django-6-1/&#34;&gt;auto-prefetching in Django 6.1&lt;/a&gt;, &lt;a href=&#34;/talks/the-django-uuid-story/&#34;&gt;Django&#39;s UUID story&lt;/a&gt;, &lt;a href=&#34;/talks/wishlist-granted-htmx-without-betraying-your-django-views/&#34;&gt;HTMX with Django views&lt;/a&gt;, and more.&lt;/p&gt;
+&lt;p&gt;We&#39;ll also have lightning talks on all three conference days. Sign-up details will be shared in Chicago.&lt;/p&gt;
+&lt;p&gt;If you haven&#39;t purchased your ticket yet, &lt;a href=&#34;https://ti.to/defna/djangocon-us-2026&#34;&gt;tickets are still available&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The in-person conference runs August 24–28, 2026, at the &lt;a href=&#34;/venue/&#34;&gt;voco Chicago Downtown&lt;/a&gt;. Talks take place August 24–26, and the free, open-to-everyone &lt;a href=&#34;/sprints/&#34;&gt;contribution sprints&lt;/a&gt; take place August 27–28.&lt;/p&gt;
+&lt;p&gt;We hope to see you in Chicago!&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>How to Prepare for Sprints as a Contributor</title>
       <link href="https://2026.djangocon.us/news/sprints-prep/" />
