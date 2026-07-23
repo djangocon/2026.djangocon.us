@@ -6,7 +6,7 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-07-23T12:37:39Z</updated
+    >2026-07-23T14:00:48Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
@@ -51,6 +51,12 @@
 &lt;p&gt;Getting involved with community discussions ahead of time will also give you plenty of talking points and questions to ask when sprint day arrives. As an added bonus, you might even become familiar with some of the active community members who end up attending DjangoCon US!&lt;/p&gt;
 &lt;h2 id=&#34;set-up-your-development-environment-early&#34; tabindex=&#34;-1&#34;&gt;Set Up Your Development Environment Early&lt;/h2&gt;
 &lt;p&gt;One of the biggest time sinks during sprints is getting a project running for the first time. Rather than spending your first hour troubleshooting missing dependencies or waiting for packages to install, &lt;strong&gt;try setting up your development environment before you arrive at the conference&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We are hosting three office hour style events where people can drop in and get help configuring their machine. If you&#39;re a first-time contributor, consider attending one of these. To participate, you will need to &lt;strong&gt;&lt;a href=&#34;https://chat.djangoproject.com&#34;&gt;join Django&#39;s Discord server&lt;/a&gt;&lt;/strong&gt; and attend the event on the &lt;code&gt;#welcome&lt;/code&gt; voice channel.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://time.is/compare/0700_9_August_2026_Chicago&#34;&gt;August 9th, 7am US/Chicago, 12pm UTC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://time.is/compare/1800_9_August_2026_Chicago&#34;&gt;August 9th, 6pm US/Chicago, 11pm UTC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://time.is/compare/1030_11_August_2026_Chicago&#34;&gt;August 11th, 10:30am US/Chicago, 3:30pm UTC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Most projects have setup instructions in their documentation, so clone the repository, follow the installation steps, and make sure you can run the project locally. If you run into issues, don&#39;t panic; that&#39;s completely normal! You can ask questions in the project&#39;s communication channels before the conference or save them for the sprint itself. Having a head start means you&#39;ll be able to spend more time learning from maintainers, collaborating with other contributors, and making meaningful contributions instead of waiting for your environment to cooperate.&lt;/p&gt;
 &lt;h2 id=&#34;final-notes&#34; tabindex=&#34;-1&#34;&gt;Final Notes&lt;/h2&gt;
 &lt;p&gt;The Contribution Sprints are free and open to everyone. They will run &lt;strong&gt;August 27–28, 2026 from &lt;a href=&#34;https://time.is/0900AM_27_August_2026_in_Chicago&#34;&gt;9am&lt;/a&gt; to &lt;a href=&#34;https://time.is/0500PM_27_August_2026_in_Chicago&#34;&gt;5pm&lt;/a&gt; CDT&lt;/strong&gt; at &lt;strong&gt;voco Chicago Downtown&lt;/strong&gt; and online via Slack.&lt;/p&gt;
@@ -520,6 +526,13 @@ We hope to see you in Chicago!&lt;/p&gt;
 &lt;h2 id=&#34;how-%26-why-to-join-a-contribution-sprint&#34; tabindex=&#34;-1&#34;&gt;How &amp;amp; Why to Join a Contribution Sprint&lt;/h2&gt;
 &lt;p&gt;The &amp;quot;why&amp;quot; can vary. Maybe you don’t feel confident enough to contribute code (you probably are, but we understand the feeling). Or maybe you have skills in non-code areas that you would love to use to help a project thrive.&lt;/p&gt;
 &lt;p&gt;The &amp;quot;how&amp;quot; starts with identifying your strengths, then connecting with projects that might need them. Shauna’s video is a great starting point. Once you identify a project that interests you, reach out! Sometimes a project doesn’t realize what kind of help it needs until someone offers it.&lt;/p&gt;
+&lt;h2 id=&#34;preparing-for-a-contribution-sprint&#34; tabindex=&#34;-1&#34;&gt;Preparing for a Contribution Sprint&lt;/h2&gt;
+&lt;p&gt;We are hosting three office hour style events where people can drop in and get help configuring their machine. If you&#39;re a first-time contributor, consider attending one of these. To participate, you will need to &lt;strong&gt;&lt;a href=&#34;https://chat.djangoproject.com&#34;&gt;join Django&#39;s Discord server&lt;/a&gt;&lt;/strong&gt; and attend the event on the &lt;code&gt;#welcome&lt;/code&gt; voice channel.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://time.is/compare/0700_9_August_2026_Chicago&#34;&gt;August 9th, 7am US/Chicago, 12pm UTC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://time.is/compare/1800_9_August_2026_Chicago&#34;&gt;August 9th, 6pm US/Chicago, 11pm UTC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://time.is/compare/1030_11_August_2026_Chicago&#34;&gt;August 11th, 10:30am US/Chicago, 3:30pm UTC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;preparing-to-lead-or-organize-a-sprint&#34; tabindex=&#34;-1&#34;&gt;Preparing to Lead or Organize a Sprint&lt;/h2&gt;
 &lt;p&gt;If you’re a project maintainer or contributor, a bit of preparation can help make the most of the sprint and avoid burnout. Most open source maintainers are unpaid volunteers, we appreciate you.&lt;/p&gt;
 &lt;p&gt;Here are some steps you can take ahead of time:&lt;/p&gt;
