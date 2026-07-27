@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -5,25 +6,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="canonical" href="https://2026.djangocon.us/talks/yes-we-allow-substitutions-no-we-don-t-serve-spaghetti/" />
+  <link rel="canonical" href="https://2026.djangocon.us/privacy/" />
   <meta name="author" content="DjangoCon US" />
-  <meta name="description" content="DjangoCon US 2026 is a Python and Django focused web development conference in Chicago, Illinois." />
+  <meta name="description" content="DjangoCon US 2026's privacy policy explains what information we collect and how we use it.
+" />
 
-  <meta property="og:title" content="Yes, we allow substitutions. No, we don't serve spaghetti. | DjangoCon US 2026" />
+  <meta property="og:title" content="Privacy Policy | DjangoCon US 2026" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:description" content="DjangoCon US 2026 is a Python and Django focused web development conference in Chicago, Illinois." />
-  <meta property="og:url" content="https://2026.djangocon.us/talks/yes-we-allow-substitutions-no-we-don-t-serve-spaghetti/" />
+  <meta property="og:description" content="DjangoCon US 2026's privacy policy explains what information we collect and how we use it.
+" />
+  <meta property="og:url" content="https://2026.djangocon.us/privacy/" />
   <meta property="og:site_name" content="DjangoCon US" />
 
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
 
   
-  <meta property="og:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2F2026.djangocon.us%2Ftalks%2Fyes-we-allow-substitutions-no-we-don-t-serve-spaghetti%2Fsocial/opengraph/" />
-  <meta property="twitter:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2F2026.djangocon.us%2Ftalks%2Fyes-we-allow-substitutions-no-we-don-t-serve-spaghetti%2Fsocial/opengraph/" />
+    <meta property="og:image" content="https://2026.djangocon.us/assets/img/social/og-share.jpg?20260612" />
+    <meta property="twitter:image" content="https://2026.djangocon.us/assets/img/social/og-share.jpg?20260612" />
+  
 
-
-  <meta property="twitter:title" content="Yes, we allow substitutions. No, we don't serve spaghetti. | DjangoCon US 2026" />
+  <meta property="twitter:title" content="Privacy Policy | DjangoCon US 2026" />
   <meta name="twitter:site" content="@djangocon" />
 
   <meta property="fb:app_id" content="280981518972848" />
@@ -35,7 +38,7 @@
   <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.webmanifest">
 
-  <title>Yes, we allow substitutions. No, we don't serve spaghetti. | DjangoCon US 2026</title>
+  <title>Privacy Policy | DjangoCon US 2026</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -119,133 +122,79 @@
   
 
   <main id="SiteMain" class="flex-1 pt-[90px] lg:pt-0 lg:block">
-  <div class="pb-8 lg:pb-10 hero">
-    <div class="wrapper narrow">
-      <a href="/schedule" class="reverse-link">&larr; Back to Schedule</a>
-      <h1 class="my-2 text-3xl font-bold leading-tight lg:text-5xl">Yes, we allow substitutions. No, we don't serve spaghetti.</h1>
+  <div class="hero">
+    <div class="wrapper">
+      <header class="flex flex-wrap items-start gap-8 lg:gap-16">
+        
 
-      <p class="flex flex-wrap items-center gap-4">
-        <span class="inline-flex flex-wrap items-center gap-[1ch] text-xl lg:text-2xl">
-          <time>Tuesday, August 25 @ 1:50 PM</time>
-          <span class="text-base">to</span>
-          <time>2:35 PM</time>
-        </span>
-
-        <a
-          href="https://time.is/compare/0150PM_25_August_2026_in_Chicago"
-          class="button"
-          aria-label="View on time.is">View on time.is</a>
-      </p>
-
-      
-        <p class="mt-2">
-          <b>Sauganash Ballroom</b>
-
+        <div class="flex-1">
+          <h1 class="mb-4 pageheading">Privacy Policy</h1>
           
-        </p>
-      
+  <p class="lead">
+    How DjangoCon US collects your information, what we use it for, and the choices you have.
+  </p>
+
+        </div>
+      </header>
     </div>
   </div>
-
-  <div class="py-8 bg-gray-50 lg:py-10 block-container">
-    <div class="wrapper narrow">
-      
-
-      
-
-
-      <h2 class="mb-6 text-xl font-bold leading-tight lg:text-3xl">About this session</h2>
-      <div class="prose lg:prose-lg">
-        <p>When users want a custom status field, a slightly different workflow, or a new export format, it might seem like a quick and easy win to whip these custom solutions together. But over time, they add up.</p>
-<p>I know because I've been there.</p>
-<p>While building a multi-tenant Django SaaS for irrigation water utilities, I read dozens of blog articles and StackOverflow posts on how to make software configurable, and at one point or another I tried most of the common approaches: choices with CharField and conditional statements, JSONField-based configs, runtime settings, feature flags, hand-rolled relational models, and lots more. Each one helped (up to a point), and most eventually showed their limits.</p>
-<p>This talk organizes those approaches and others into a few clear layers of configurability and walks you through where each works well and where they tend to fail. We'll look at tools like django-constance, django-waffle, and packages for configurability with multi-tenant patterns. We'll also talk about the trade-offs of each in a real system. I will also show two approaches that helped bring things back under control for my own project: one focused on structuring configuration as data (for things like tenant-specific choices), and another focused on swapping behavior with selectable backends. These aren't &quot;the answer&quot;, but they provide examples of approaches that can simplify and standardize your code, and they have worked out well for me.</p>
-<p>You'll leave with an understanding of the pros &amp; cons of various approaches to giving your users configurability, and you'll have a better sense of which tools and approaches to reach for before things get way out of hand and spaghetti is the only thing left on your menu.</p>
-<p>This talk is practical and experience-driven. I messed up many times before finding the tools and patterns that give my users what they need without making my codebase a mess, and I offer an opportunity to learn from my mistakes and get it right more quickly. My goal isn't to sell you on a single perfect solution, but to help you recognize the warning signs of spaghetti configurability early and choose approaches that will still make sense six months (or years) into the project.</p>
-
-      </div>
-    </div>
-  </div>
-
-
-
 
   
-  <div class="pt-8 pb-16 block-container bg-ocean-blue">
-    <div class="wrapper narrow">
-      <div class="max-w-screen-md pt-6 mt-auto">
-        <h2 class="mb-8 text-xl font-bold leading-tight lg:text-3xl">Presented by</h2>
-        <ul class="space-y-16">
-          
-            
-            <li class="relative p-6 bg-white lg:pt-10 card-effect-1">
-              <section class="flex flex-wrap gap-6">
-                
+<div class="wrapper">
+  <div class="prose my-12">
+<h2 id="the-short-version" tabindex="-1">The short version</h2>
+<ul>
+<li>We collect your information when you take part in the conference — for example when you <strong>join our email list</strong>, <strong>buy a ticket</strong>, <strong>request a visa invitation letter</strong>, <strong>apply to speak or for an Opportunity Grant</strong>, <strong>join our Slack workspace</strong>, or <strong>email us</strong>.</li>
+<li>We use it only to <strong>run the conference and do the thing you asked for</strong>, and to send you email you signed up for or that's about your order or the event.</li>
+<li>We <strong>don't sell your personal information or share it for advertising</strong>, and we run <strong>no advertising pixels or trackers</strong> on this site.</li>
+<li>A few things involve <strong>sensitive details</strong> — like passport information for visa letters, or Code of Conduct reports — and we handle those with extra care.</li>
+<li>The rest of this page explains each of these in plain language.</li>
+</ul>
+<h2 id="who-we-are" tabindex="-1">Who we are</h2>
+<p>DjangoCon US is run by the <a href="https://www.defna.org/">Django Events Foundation North America (DEFNA)</a>, a non-profit that organizes the conference. DEFNA is responsible for the information described here — the &quot;data controller,&quot; in GDPR terms. If you have any questions about your privacy or want to exercise the rights described below, email us at <a href="mailto:hello@defna.org">hello@defna.org</a>.</p>
+<h2 id="what-we-collect-and-why" tabindex="-1">What we collect and why</h2>
+<p>We collect information you give us when you take part in the conference. We ask only for what a particular activity needs, and we use it only for that activity. Here's the full picture.</p>
+<p><strong>When you sign up for our email list,</strong> we collect your email address (and your name, if you give it), and use it to send you conference news and updates you asked for. The legal basis is your <strong>consent</strong>, which you can withdraw at any time — every email we send includes an unsubscribe link. Our email provider stores and sends these messages on our behalf.</p>
+<p><strong>When you buy a ticket,</strong> we collect the information needed to complete and register your order — typically your name, email address, and billing details, plus anything you choose to add, such as dietary or accessibility needs. Payment is handled by our ticketing provider; we don't store your card details. We use this to fulfill your order, register you, and contact you about your ticket and the event. The legal basis is our <strong>contract</strong> with you to provide the ticket. We also keep limited records to meet our <strong>legal and accounting obligations</strong>, and we use your information to run the event smoothly (our <strong>legitimate interest</strong> in operating the conference).</p>
+<p><strong>When you request a visa invitation letter</strong> on our <a href="/invitation/">invitation page</a>, we collect the details a consulate needs to see on the letter: your full name, home address, date of birth, and passport number. We use these only to prepare and issue your letter — the information goes to a volunteer-run service that generates the letter, and our organizers review it before emailing it to you. This is sensitive information, so we limit who can see it and keep it only as long as we need to issue your letter. The legal basis is your <strong>consent</strong>, given when you submit the request.</p>
+<p><strong>When you email us</strong> — at <a href="mailto:hello@djangocon.us">hello@djangocon.us</a> or one of our other published addresses (for the program, sponsorship, grants, visas, or sprints) — we receive whatever you include in your message and use it to respond and handle your request. The legal basis is our <strong>legitimate interest</strong> in answering you.</p>
+<p><strong>When you report a Code of Conduct concern,</strong> in person or by email, the Code of Conduct team receives what you share and uses it only to respond to and address the report. We treat these reports as confidential and limit access to the people handling them. This can be sensitive information, and we handle it with care, on the basis of our <strong>legitimate interest</strong> in running a safe event and, where they apply, our legal obligations.</p>
+<p>We also use a few <strong>third-party platforms</strong> to run parts of the conference, each with its own privacy policy: <a href="https://pretalx.com/">pretalx</a> for talk proposals, <a href="https://www.google.com/forms/about/">Google Forms</a> for Opportunity Grant applications, <a href="https://slack.com/">Slack</a> for our community chat, <a href="https://ti.to">Tito</a> for ticketing, and <a href="https://www.threadless.com/">Threadless</a> for merchandise. When you use one of these, you provide your information to that platform, and we receive and use only what we need to run that part of the event. (Threadless handles merchandise sales and payment directly; we never receive your card details.)</p>
+<p>From time to time we run other conference sign-ups — things like volunteer shifts, lightning talk sign-ups, travel or safety check-ins, and sponsor inquiries. Whenever we do, we ask only for the information that activity needs and use it only for that purpose.</p>
+<h2 id="who-we-share-it-with" tabindex="-1">Who we share it with</h2>
+<p>We share your information only with the service providers and platforms that help us run the conference, and only what they need to do their job:</p>
+<ul>
+<li><strong>our ticketing provider</strong> (to process your order and registration) and <strong>our email provider</strong> (to send the emails you signed up for);</li>
+<li>the third-party platforms named above — <strong>pretalx</strong>, <strong>Google Forms</strong>, <strong>Slack</strong>, and <strong>Threadless</strong> — when you choose to use them, each under its own privacy policy;</li>
+<li>a <strong>volunteer-run service that generates visa invitation letters</strong> from the details you submit on our invitation page.</li>
+</ul>
+<p>We may also disclose information if we're <strong>required to by law</strong>.</p>
+<p>We do <strong>not</strong> sell your information, and we do <strong>not</strong> share it with advertisers — see <a href="#advertising-and-tracking">Advertising and tracking</a> below.</p>
+<h2 id="advertising-and-tracking" tabindex="-1">Advertising and tracking</h2>
+<p>We advertise DjangoCon US on platforms such as Reddit, LinkedIn, and Google. Unlike most websites, we install <strong>no advertising pixels, conversion tags, or interest-based tracking tools</strong> on this site. Clicking one of our ads simply brings you here — those platforms don't get a tracker running on our pages, and they don't learn what you do once you arrive.</p>
+<h2 id="cookies" tabindex="-1">Cookies</h2>
+<p>We use a single, first-party cookie, and only to see which ad brought you here. When you arrive from one of our ads, a small script reads the campaign tag from the link's address and stores it in a cookie set by this site — not by a third party. If you go on to buy a ticket, we pass that campaign tag to our ticketing provider so we can tell which ad led to the purchase. That's the whole purpose: it holds only the campaign identifier, nothing about who you are, and it's never shared with the advertising platforms.</p>
+<p>You're in control of it. You can block or delete it in your browser's cookie settings, and it's only ever set if you arrive by clicking one of our ads — come to the site directly and it's never set at all.</p>
+<p>We'll be straight with you about consent banners: we don't use one. We don't think the pop-ups that greet you on nearly every site do much for anyone's privacy, and this single cookie stores only which campaign referred you — no profile, no personal details. We'd rather explain plainly what we do here than ask you to dismiss a banner.</p>
+<h2 id="international-data-transfers" tabindex="-1">International data transfers</h2>
+<p>Our service providers are based in the United States, so if you're in the EU or UK, your information is processed in the US. We work with providers that handle personal data under appropriate safeguards.</p>
+<h2 id="how-long-we-keep-it" tabindex="-1">How long we keep it</h2>
+<p>We keep your information only as long as we need it for the purposes described above. If you're on our email list, we keep your details until you unsubscribe. We keep ticket and order records for as long as we need them to run the event and to meet our legal and accounting obligations, after which we delete or anonymize them. We keep the sensitive details you give us — passport information for a visa letter, or a Code of Conduct report — only as long as we need them for that specific purpose, and then we delete them.</p>
+<h2 id="your-rights" tabindex="-1">Your rights</h2>
+<p>You can ask us to access the information we hold about you, correct it, or delete it; ask for a copy; restrict or object to certain uses; and unsubscribe from our emails at any time. If you're in the EU or UK, these are your rights under the GDPR — including the right to withdraw consent and to lodge a complaint with your local data protection authority. If you're in California, you have comparable rights under the CCPA. We honor these requests regardless of where you live.</p>
+<p>We do <strong>not</strong> sell your personal information, and we do <strong>not</strong> share it for advertising.</p>
+<p>To exercise any of these rights, email us at <a href="mailto:hello@defna.org">hello@defna.org</a>.</p>
+<h2 id="children's-privacy" tabindex="-1">Children's privacy</h2>
+<p>DjangoCon US is a professional event for adults. This site and our services aren't directed to children (under 13, or under 16 in the EU), and we don't knowingly collect their personal information.</p>
+<h2 id="changes-to-this-policy" tabindex="-1">Changes to this policy</h2>
+<p>If our practices change, we'll update this page and revise the &quot;Last updated&quot; date below.</p>
+<h2 id="contact" tabindex="-1">Contact</h2>
+<p>If you have any questions about this policy or the information we hold about you, email us at <a href="mailto:hello@djangocon.us">hello@djangocon.us</a>.</p>
+<p><em>Last updated: July 27, 2026.</em></p>
 
-                <div class="md:flex-1">
-                  <span class="flex flex-col gap-2 mb-4">
-                    <h3 class="text-xl font-semibold leading-4 lg:text-3xl">Jack Linke</h3>
-                    
-                  </span>
-
-                  
-                    <ul class="flex flex-wrap gap-4 mt-auto">
-                      
-                      
-                      
-                      
-                        <li>
-                          <a
-                            href="https://social.jacklinke.com/@jack"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="hover:text-social-mastodon"
-                            aria-label="Mastodon">
-                            <svg class="icon">
-                              <title>Mastodon</title>
-                              <use xlink:href="#mastodon-icon"></use>
-                            </svg>
-                          </a>
-                        </li>
-                      
-                      
-                      
-                        <li>
-                          <a
-                            href="https://jacklinke.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="hover:text-ocean-blue"
-                            aria-label="Website">
-                            <svg class="icon">
-                              <use xlink:href="#web-icon"></use>
-                            </svg>
-                          </a>
-                        </li>
-                      
-                    </ul>
-                  
-
-                  
-                    <div class="mt-4 prose">
-                      <p>Jack Linke builds (and breaks) things in Django and shares what he learns along the way through writing and speaking engagements.</p>
-<p>For the past eight years he has been Managing Director and core programmer for Watervize, a Django-based platform used by irrigation districts and the farms and organizations they serve to streamline operations, improve analysis, and communicate more effectively.</p>
-<p>His technical interests tend toward &quot;real-world data&quot; - GIS, graph/network modeling, simulation, and storytelling with visualizations.</p>
-<p>Jack contributes to open source, maintains several somewhat-niche Python packages, and is a DSF Individual Member and PSF Contributing Member.</p>
-<p>He has presented at both DjangoCon US and PyCon US, and his day job background includes years of technical briefing and instruction as a Marine Corps officer.</p>
-<p>Outside work, he's usually adventuring with his husky, Lady Duchess, or photographing everything from fungi to cityscapes.</p>
-
-                    </div>
-                  
-                </div>
-              </section>
-            </li>
-          
-        </ul>
-      </div>
-    </div>
   </div>
-  
+</div>
+
 </main>
 
   <footer id="SiteFooter" class="site-footer">
