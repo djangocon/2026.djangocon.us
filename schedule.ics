@@ -200,7 +200,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=America/Chicago:20260825T090000
-DTEND;TZID=America/Chicago:20260825T091500
+DTEND;TZID=America/Chicago:20260825T090500
 DTSTAMP:20260825T090000Z
 UID:09-00-t0-opening-remarks-tuesday@https://2026.djangocon.us
 SUMMARY:Opening Remarks (Tuesday)
@@ -210,10 +210,10 @@ URL:https://2026.djangocon.us/talks/opening-remarks-tuesday/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260825T091500
-DTEND;TZID=America/Chicago:20260825T100000
-DTSTAMP:20260825T091500Z
-UID:09-15-t0-keynote-to-be-announced-tuesday@https://2026.djangocon.us
+DTSTART;TZID=America/Chicago:20260825T090500
+DTEND;TZID=America/Chicago:20260825T095000
+DTSTAMP:20260825T090500Z
+UID:09-05-to-keynote-emails-from-my-grandad@https://2026.djangocon.us
 SUMMARY:Keynote: Emails from my Grandad
 LOCATION:Sauganash Ballroom
 DESCRIPTION:Presenter: Sarah Boyce\n\nCode review can be a painful and anxiety-inducing experience. As developers, our work is regularly scrutinized by our colleagues. Comments about bugs, edge cases, or “code smells” are a normal part of the process, but when you’re the author, it can sometimes feel like you’re under attack.
@@ -410,7 +410,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=America/Chicago:20260826T090000
-DTEND;TZID=America/Chicago:20260826T091500
+DTEND;TZID=America/Chicago:20260826T090500
 DTSTAMP:20260826T090000Z
 UID:09-00-t0-opening-remarks-wednesday@https://2026.djangocon.us
 SUMMARY:Opening Remarks (Wednesday)
@@ -420,10 +420,10 @@ URL:https://2026.djangocon.us/talks/opening-remarks-wednesday/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260826T091500
-DTEND;TZID=America/Chicago:20260826T100000
-DTSTAMP:20260826T091500Z
-UID:09-15-t0-keynote-to-be-announced-wednesday@https://2026.djangocon.us
+DTSTART;TZID=America/Chicago:20260826T090500
+DTEND;TZID=America/Chicago:20260826T095000
+DTSTAMP:20260826T090500Z
+UID:09-05-t0-keynote-to-be-announced-wednesday@https://2026.djangocon.us
 SUMMARY:Keynote (to be announced) (Wednesday)
 LOCATION:Sauganash Ballroom
 DESCRIPTION:
