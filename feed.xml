@@ -6,13 +6,70 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-07-27T20:45:59Z</updated
+    >2026-07-28T04:01:20Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>Announcing Our Keynotes: Sarah Boyce</title>
+      <link href="https://2026.djangocon.us/news/keynote-sarah-boyce/" />
+      <updated>2026-07-27T16:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/keynote-sarah-boyce/</id>
+      <content xml:lang="en" type="html"
+        >&lt;h3 id=&#34;we&#39;re-honored-to-announce-sarah-boyce-as-a-keynote-speaker-for-djangocon-us-2026&#34; tabindex=&#34;-1&#34;&gt;We&#39;re honored to announce Sarah Boyce as a keynote speaker for DjangoCon US 2026&lt;/h3&gt;
+&lt;p&gt;We had the opportunity to sit down with Sarah and ask her a few questions about her work, her journey through the Django community, and what attendees can expect from her keynote at DjangoCon US 2026.&lt;/p&gt;
+&lt;h2 id=&#34;can-you-give-attendees-a-short-teaser-about-what-they-can-expect-from-the-talk%3F&#34; tabindex=&#34;-1&#34;&gt;Can you give attendees a short teaser about what they can expect from the talk?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It&#39;s a talk about code review. More generally it&#39;s about why feedback can feel so personal, how our past experiences shape the way we receive it, and why my Grandad is awesome. There will be stories, a few practical ideas, and hopefully a different way of thinking about criticism.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;how-has-your-relationship-with-feedback-changed-throughout-your-career%3F&#34; tabindex=&#34;-1&#34;&gt;How has your relationship with feedback changed throughout your career?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Early in my career, I actively sought feedback, but I quickly learned that not all feedback is equally useful. Some comments were specific and helped me improve, while others, like being told that I &amp;quot;smile and laugh too much&amp;quot;, said more about the person giving the feedback than about my work.&lt;/p&gt;
+&lt;p&gt;Over time, I&#39;ve become much more intentional about the feedback I ask for. I try to seek out people who understand what I&#39;m trying to achieve and who can give specific, constructive suggestions that help me improve.&lt;/p&gt;
+&lt;p&gt;Working as a Django Fellow has also changed my perspective. I spend a lot of time reviewing other people&#39;s code, and it&#39;s reminded me that thoughtful feedback is a gift. Someone is choosing to spend their limited time reading your work because they want to help make it better. When they spot a bug or edge case before it reaches users, they&#39;re doing you a favour, not trying to catch you out.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;what-do-you-hope-attendees-will-take-away-from-the-keynote%3F&#34; tabindex=&#34;-1&#34;&gt;What do you hope attendees will take away from the keynote?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I don&#39;t expect people to suddenly love receiving criticism! But I do hope they&#39;ll pause before assuming feedback is an attack. Sometimes a review isn&#39;t saying &amp;quot;you&#39;re not good enough&amp;quot;; it&#39;s saying &amp;quot;I care enough to help make this even better.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;how-do-you-use-django-in-your-current-work%3F&#34; tabindex=&#34;-1&#34;&gt;How do you use Django in your current work?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I am a Django Fellow, one of the paid contractors responsible for maintaining the Django framework. My work includes reviewing and merging contributions, triaging issues, fixing bugs and security issues, and issuing new releases.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;can-you-tell-us-a-little-about-your-journey-within-the-django-community%3F&#34; tabindex=&#34;-1&#34;&gt;Can you tell us a little about your journey within the Django community?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I had been a Django developer for several years before I decided to start contributing to Django in my spare time. At first, it was mostly a way to challenge myself and deepen my understanding of the framework.&lt;/p&gt;
+&lt;p&gt;As I became more involved, I was invited to join the Django Triage &amp;amp; Review Team, which was a great recognition of my contributions.&lt;/p&gt;
+&lt;p&gt;Later, together with several other community members, I co-founded Djangonaut Space to help mentor and support new contributors to Django and the wider ecosystem.&lt;/p&gt;
+&lt;p&gt;I&#39;ve also spoken at local meetups (including Django Cologne, where I&#39;m a regular) and at several DjangoCons.&lt;/p&gt;
+&lt;p&gt;In 2024, I became a Django Fellow, and I now spend my days helping maintain the framework full-time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;what-are-you-most-looking-forward-to-at-djangocon-us-2026%3F&#34; tabindex=&#34;-1&#34;&gt;What are you most looking forward to at DjangoCon US 2026?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It&#39;s a rare treat to attend a conference where almost every talk is relevant to what I do. I love meeting new people, catching up with friends from the community (including the other Fellows!) and hearing about what everyone has been working on. I always leave feeling energised and full of new ideas for improving Django.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;what-advice-would-you-give-someone-who-feels-anxious-about-code-review-or-receiving-criticism%3F&#34; tabindex=&#34;-1&#34;&gt;What advice would you give someone who feels anxious about code review or receiving criticism?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I know people who have been nervous about opening their first pull request to an open source project. One thing I recommend is reading through both open and closed pull requests before contributing. You&#39;ll quickly get a feel for how the maintainers communicate, what they value in reviews, and what collaborating with the project is really like beyond what&#39;s written in the contributor documentation.&lt;/p&gt;
+&lt;p&gt;If you don&#39;t like the way contributors are treated, it&#39;s worth thinking carefully about whether that&#39;s a community you want to invest your time in. Fortunately, my experience of the Django ecosystem has been overwhelmingly positive. People are friendly, collaborative, and genuinely want contributors to succeed.&lt;/p&gt;
+&lt;p&gt;The same advice applies in a new workplace. Looking through older pull request reviews, especially those for other new team members, can help you understand the team&#39;s review culture before submitting your own work.&lt;/p&gt;
+&lt;p&gt;If your anxiety comes from a previous negative experience, remember that one person&#39;s review style doesn&#39;t define your abilities. Take a moment to look back at code you wrote a year or two ago - you&#39;ll probably be surprised by how much you&#39;ve grown! If possible, ask someone you trust to review your work first. Constructive feedback from someone you have a good working relationship with is much easier to learn from than feedback you&#39;re already expecting to be negative.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;what-do-you-enjoy-doing-outside-of-your-typical-workday%3F&#34; tabindex=&#34;-1&#34;&gt;What do you enjoy doing outside of your typical workday?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Playing badminton and catching up with friends.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;where-can-attendees-follow-you-or-learn-more-about-your-work%3F&#34; tabindex=&#34;-1&#34;&gt;Where can attendees follow you or learn more about your work?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;They can follow me on &lt;a href=&#34;https://mastodon.social/@sarahboyce&#34;&gt;Mastodon&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We can&#39;t wait to hear Sarah&#39;s keynote at DjangoCon US 2026! Stay tuned for more keynote announcements. If you haven&#39;t purchased your ticket yet, &lt;a href=&#34;https://ti.to/defna/djangocon-us-2026&#34;&gt;tickets are still on sale&lt;/a&gt;. We hope to see you in Chicago!&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>The DjangoCon US 2026 schedule has been released!</title>
       <link href="https://2026.djangocon.us/news/announcing-schedule-dcus/" />
