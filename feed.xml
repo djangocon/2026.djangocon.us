@@ -6,13 +6,65 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-07-28T16:56:54Z</updated
+    >2026-08-04T14:20:27Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>Announcing Our Keynotes: Karen Tracey</title>
+      <link href="https://2026.djangocon.us/news/keynote-karen-tracey/" />
+      <updated>2026-08-04T16:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/keynote-karen-tracey/</id>
+      <content xml:lang="en" type="html"
+        >&lt;h3 id=&#34;we&#39;re-honored-to-announce-karen-tracey-as-a-keynote-speaker-for-djangocon-us-2026&#34; tabindex=&#34;-1&#34;&gt;We&#39;re honored to announce Karen Tracey as a keynote speaker for DjangoCon US 2026&lt;/h3&gt;
+&lt;p&gt;We had the opportunity to sit down with Karen and ask her a few questions about her work, her journey through the Django community, and what attendees can expect from her keynote at DjangoCon US 2026.&lt;/p&gt;
+&lt;h2 id=&#34;can-you-give-attendees-a-short-teaser-about-what-they-can-expect-from-the-keynote%3F&#34; tabindex=&#34;-1&#34;&gt;Can you give attendees a short teaser about what they can expect from the keynote?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Excitement about the big features in Django 6.x&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;django-6.0-introduces-several-exciting-features%2C-including-template-partials%2C-the-background-tasks-framework%2C-content-security-policy%2C-and-the-modern-email-api.-which-of-these-are-you-personally-most-excited-about%2C-and-why%3F&#34; tabindex=&#34;-1&#34;&gt;Django 6.0 introduces several exciting features, including Template Partials, the Background Tasks Framework, Content Security Policy, and the Modern Email API. Which of these are you personally most excited about, and why?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I&#39;m most excited by Template Partials, because they solve an issue I noticed and disliked when I started using htmx -- they make using htmx (or other tech like that) much more pleasant in Django.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;your-keynote-is-titled-django-6%3A-the-most-exciting-release-ever%3F-without-giving-too-much-away%2C-what-makes-django-6-stand-out-from-previous-releases%3F&#34; tabindex=&#34;-1&#34;&gt;Your keynote is titled Django 6: The Most Exciting Release Ever? Without giving too much away, what makes Django 6 stand out from previous releases?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The large number of significant new features.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;what-do-you-hope-attendees-will-take-away-from-your-keynote%3F&#34; tabindex=&#34;-1&#34;&gt;What do you hope attendees will take away from your keynote?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Django continues to grow and change with the overall web ecosystem. It may be getting up there in years but it is definitely not standing still.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;for-developers-planning-to-upgrade%2C-what&#39;s-one-tip-or-piece-of-advice-you&#39;d-give-them-before-making-the-move-to-django-6%3F&#34; tabindex=&#34;-1&#34;&gt;For developers planning to upgrade, what&#39;s one tip or piece of advice you&#39;d give them before making the move to Django 6?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;As with any upgrade, read the docs about it including new things and removed things. And if you have not already, check out the django-upgrade project from Adam Johnson.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;how-has-your-experience-contributing-to-django-shaped-the-way-you-think-about-major-releases-like-django-6%3F&#34; tabindex=&#34;-1&#34;&gt;How has your experience contributing to Django shaped the way you think about major releases like Django 6?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I&#39;m very aware of and appreciative of all the work that goes into producing new releases.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;can-you-tell-us-a-little-about-your-journey-within-the-django-community%3F&#34; tabindex=&#34;-1&#34;&gt;Can you tell us a little about your journey within the Django community?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I found Django in 2006, when I wanted to put a web front end on my crossword database. I immediately hit some oddities due to my existing database being a little &amp;quot;different&amp;quot;. When I posted on the django-users mailing list asking questions, Malcolm Tredinnick provided quick answers and encouragement to get involved in improving Django. I did start getting involved, and my first contribution was quickly accepted by Adrian Holovaty (though he did have to adjust my code&#39;s Java accent to be more Pythonic :-) -- I was just learning Python as well as Django). In the following years I was active on both the mailing lists and in trac, I found digging in on problems posted by others a great way to learn. I became a core developer sometime after Django 1.0 was released. At some point a local web dev shop (Caktus) hosted a Django sprint weekend. I was excited to find others using Django local to me, while they were happy to find a Django core dev in their backyard. Eventually Caktus was needing more developers and I started working there in 2010. Going back to full-time &amp;quot;real work&amp;quot; limited the time I could spend contributing to Django, though I did serve on the board of the DSF for a while. More recently I&#39;ve been trying to share what I&#39;ve learned working for Caktus with Django via conference talks and keeping in touch with the community by attending conferences like DjangoCon.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;what-are-you-most-looking-forward-to-at-djangocon-us-2026%3F&#34; tabindex=&#34;-1&#34;&gt;What are you most looking forward to at DjangoCon US 2026?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Reconnecting with the Django community in person.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;if-someone-is-attending-djangocon-us-for-the-first-time%2C-what-advice-would-you-give-them%3F&#34; tabindex=&#34;-1&#34;&gt;If someone is attending DjangoCon US for the first time, what advice would you give them?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dive in, join lunch tables where you don&#39;t know others and get to know people.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;where-can-attendees-follow-you-or-learn-more-about-your-work%3F&#34; tabindex=&#34;-1&#34;&gt;Where can attendees follow you or learn more about your work?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Maybe the &lt;a href=&#34;https://www.caktusgroup.com/blog/&#34;&gt;Caktus blog&lt;/a&gt; if I get better at getting around to writing posts. I don&#39;t post much to social media (I do Facebook but that&#39;s more the cat rescue side of my life than my Django/work life).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We can&#39;t wait to hear Karen&#39;s keynote at DjangoCon US 2026! Stay tuned for more keynote announcements. If you haven&#39;t purchased your ticket yet, &lt;a href=&#34;https://ti.to/defna/djangocon-us-2026&#34;&gt;tickets are still on sale&lt;/a&gt;. We hope to see you in Chicago!&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>Announcing Our Keynotes: Sarah Boyce</title>
       <link href="https://2026.djangocon.us/news/keynote-sarah-boyce/" />

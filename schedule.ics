@@ -155,28 +155,30 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=America/Chicago:20260824T161000
-DTEND;TZID=America/Chicago:20260824T165500
+DTEND;TZID=America/Chicago:20260824T163500
 DTSTAMP:20260824T161000Z
-UID:16-10-t0-django-6-the-most-exciting-release-ever@https://2026.djangocon.us
-SUMMARY:Django 6: The Most Exciting Release Ever
+UID:16-10-t0-teach-django-tasks-to-speak-celery-building-a-celery-backend-for-django-tasks@https://2026.djangocon.us
+SUMMARY:Teach Django Tasks to speak Celery: Building a Celery backend for Django Tasks
 LOCATION:Sauganash Ballroom
-DESCRIPTION:Presenter: Karen Tracey\n\nDjango 6.0 has multiple very exciting new features, including:
+DESCRIPTION:Presenter: Matías Bordese\n\nDjango 6.0 introduced Django Tasks, a built-in framework for defining and queuing background jobs to run code outside the HTTP request–response cycle. Django ships by default with backends for development and testing, but production systems often rely on distributed task queues like Celery. How do we bridge that gap?
+ In this talk, I'll show how Django Tasks works under the hood, and walk through a Celery backend implementation that lets you run Django tasks on Celery workers without changing your application code.
+ What this talk will be about:
  
- Template Partials
- Background Tasks Framework
- Content Security Policy
- Modern Email API
+ What Django Tasks is and how it works: the new standard API for background jobs in Django 6.0.
+ How task backends act as adapters between task APIs and execution engines.
+ How a Celery backend translates Django tasks into Celery jobs.
+ A practical demo highlighting the pluggable architecture (switch your backend to use Celery without changing code!).
  
- In this talk we'll discuss each of these features, illustrating why you may want to start using them as soon as possible. Additionally we'll cover some tips and tools for a smooth upgrade experience. By the end of the talk we believe you'll agree that Django 6.0 has earned the accolade of most exciting Django release ever.
+ No prior experience with Celery is needed.
  
-URL:https://2026.djangocon.us/talks/django-6-the-most-exciting-release-ever/
+URL:https://2026.djangocon.us/talks/teach-django-tasks-to-speak-celery-building-a-celery-backend-for-django-tasks/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260824T170000
-DTEND;TZID=America/Chicago:20260824T172500
-DTSTAMP:20260824T170000Z
-UID:17-00-t0-agents-all-the-way-down-how-ai-coding-agents-changed-how-i-write-django@https://2026.djangocon.us
+DTSTART;TZID=America/Chicago:20260824T164000
+DTEND;TZID=America/Chicago:20260824T170500
+DTSTAMP:20260824T164000Z
+UID:16-40-t0-agents-all-the-way-down-how-ai-coding-agents-changed-how-i-write-django@https://2026.djangocon.us
 SUMMARY:Agents All the Way Down: How AI Coding Agents Changed How I Write Django
 LOCATION:Sauganash Ballroom
 DESCRIPTION:Presenter: Josh Thomas\n\nI'm the lead developer at a company with about 10 Django applications. The biggest is a 19-year-old legacy application that's been ported from ColdFusion to WordPress to a custom PHP system to Django. It's full of boolean fields that should be foreign keys, invariants that live in developers' heads instead of model constraints, and business logic that predates Django's existence. I've been using coding agents on this codebase and others for the past year, mostly Claude Code.
@@ -185,10 +187,10 @@ URL:https://2026.djangocon.us/talks/agents-all-the-way-down-how-ai-coding-agents
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260824T173000
-DTEND;TZID=America/Chicago:20260824T175500
-DTSTAMP:20260824T173000Z
-UID:17-30-t0-scientists-meet-django-building-bridges-between-research-and-software@https://2026.djangocon.us
+DTSTART;TZID=America/Chicago:20260824T171000
+DTEND;TZID=America/Chicago:20260824T173500
+DTSTAMP:20260824T171000Z
+UID:17-10-t0-scientists-meet-django-building-bridges-between-research-and-software@https://2026.djangocon.us
 SUMMARY:Scientists Meet Django: Building Bridges Between Research and Software
 LOCATION:Sauganash Ballroom
 DESCRIPTION:Presenter: Barkha Jain\n\nScientists and developers are solving the same problems—but rarely together.
@@ -388,27 +390,6 @@ URL:https://2026.djangocon.us/talks/keeping-pace-with-django-evolving-through-15
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260825T180000
-DTEND;TZID=America/Chicago:20260825T182500
-DTSTAMP:20260825T180000Z
-UID:18-00-t0-teach-django-tasks-to-speak-celery-building-a-celery-backend-for-django-tasks@https://2026.djangocon.us
-SUMMARY:Teach Django Tasks to speak Celery: Building a Celery backend for Django Tasks
-LOCATION:Sauganash Ballroom
-DESCRIPTION:Presenter: Matías Bordese\n\nDjango 6.0 introduced Django Tasks, a built-in framework for defining and queuing background jobs to run code outside the HTTP request–response cycle. Django ships by default with backends for development and testing, but production systems often rely on distributed task queues like Celery. How do we bridge that gap?
- In this talk, I'll show how Django Tasks works under the hood, and walk through a Celery backend implementation that lets you run Django tasks on Celery workers without changing your application code.
- What this talk will be about:
- 
- What Django Tasks is and how it works: the new standard API for background jobs in Django 6.0.
- How task backends act as adapters between task APIs and execution engines.
- How a Celery backend translates Django tasks into Celery jobs.
- A practical demo highlighting the pluggable architecture (switch your backend to use Celery without changing code!).
- 
- No prior experience with Celery is needed.
- 
-URL:https://2026.djangocon.us/talks/teach-django-tasks-to-speak-celery-building-a-celery-backend-for-django-tasks/
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;TZID=America/Chicago:20260826T090000
 DTEND;TZID=America/Chicago:20260826T090500
 DTSTAMP:20260826T090000Z
@@ -424,10 +405,18 @@ DTSTART;TZID=America/Chicago:20260826T090500
 DTEND;TZID=America/Chicago:20260826T095000
 DTSTAMP:20260826T090500Z
 UID:09-05-t0-keynote-to-be-announced-wednesday@https://2026.djangocon.us
-SUMMARY:Keynote (to be announced) (Wednesday)
+SUMMARY:Keynote: Django 6: The Most Exciting Release Ever
 LOCATION:Sauganash Ballroom
-DESCRIPTION:
-URL:https://2026.djangocon.us/talks/keynote-wednesday/
+DESCRIPTION:Presenter: Karen Tracey\n\nDjango 6.0 has multiple very exciting new features, including:
+ 
+ Template Partials
+ Background Tasks Framework
+ Content Security Policy
+ Modern Email API
+ 
+ In this talk we'll discuss each of these features, illustrating why you may want to start using them as soon as possible. Additionally we'll cover some tips and tools for a smooth upgrade experience. By the end of the talk we believe you'll agree that Django 6.0 has earned the accolade of most exciting Django release ever.
+ 
+URL:https://2026.djangocon.us/talks/keynote-wednesday-django-6-the-most-exciting-release-ever/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
