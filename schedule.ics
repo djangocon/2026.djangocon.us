@@ -24,6 +24,24 @@ RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260823T190000
+DTEND;TZID=America/Chicago:20260823T210000
+DTSTAMP:20260823T190000Z
+UID:19-00-t0-welcome-reception@https://2026.djangocon.us
+SUMMARY:Welcome Reception
+LOCATION:15th Floor Lobby
+DESCRIPTION:Join us in the 15th floor lobby for some conversation and light refreshments! Meet some new friends and say hi to some old ones.
+ Sponsored by:
+ 
+ Revsys
+ Two Rock Software
+ Caktus Group
+ 
+ 
+URL:https://2026.djangocon.us/talks/welcome-reception/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;TZID=America/Chicago:20260824T081500
 DTEND;TZID=America/Chicago:20260824T084500
 DTSTAMP:20260824T081500Z
