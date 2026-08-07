@@ -18,7 +18,7 @@ SPRINTS_DAY_2 = SPRINTS_DAY_1 + datetime.timedelta(days=1)
 
 LARGE_TALK_ROOM = "Sauganash Ballroom"
 SMALL_TALK_ROOM = "Wolf Point Ballroom"
-SPRINTS_ROOM = "LaSalle Ballroom"
+SPRINTS_ROOM = "Sauganash Ballroom (West)"
 
 LUNCH_ROOM = "Sauganash & Wolf Point Ballrooms"
 EARLY_LUNCH_ROOM = SMALL_TALK_ROOM

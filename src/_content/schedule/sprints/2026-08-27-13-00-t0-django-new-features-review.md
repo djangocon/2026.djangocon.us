@@ -4,7 +4,7 @@ end_datetime: 2026-08-27 15:00:00-05:00
 permalink: /sprints/django-new-features-review/
 presenter_slugs:
 - frank-wiles
-room: LaSalle Ballroom
+room: Sauganash Ballroom (West)
 start_datetime: 2026-08-27 13:00:00-05:00
 title: Django New Features Review
 track: t0

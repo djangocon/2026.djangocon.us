@@ -5,7 +5,7 @@ permalink: /sprints/learn-to-contribute-to-django/
 presenter_slugs:
 - sarah-boyce
 - jacob-walls
-room: LaSalle Ballroom
+room: Sauganash Ballroom (West)
 start_datetime: 2026-08-27 09:25:00-05:00
 title: Learn to Contribute to Django
 track: t0

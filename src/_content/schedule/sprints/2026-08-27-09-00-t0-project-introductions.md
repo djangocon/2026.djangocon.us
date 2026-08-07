@@ -2,7 +2,7 @@
 category: sprints
 end_datetime: 2026-08-27 09:20:00-05:00
 permalink: /sprints/project-introductions/
-room: LaSalle Ballroom
+room: Sauganash Ballroom (West)
 start_datetime: 2026-08-27 09:00:00-05:00
 title: Project Introductions
 track: t0
