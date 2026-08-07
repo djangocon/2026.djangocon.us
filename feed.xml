@@ -6,13 +6,61 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-08-07T12:51:21Z</updated
+    >2026-08-07T22:15:08Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title></title>
+      <link href="https://2026.djangocon.us/news/lightning-talks/" />
+      <updated>2026-08-07T14:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/lightning-talks/</id>
+      <content xml:lang="en" type="html"
+        >&lt;h1 id=&#34;thinking-about-giving-a-lightning-talk%3F&#34; tabindex=&#34;-1&#34;&gt;Thinking About Giving a Lightning Talk?&lt;/h1&gt;
+&lt;p&gt;One of the most exciting traditions at DjangoCon US is our &lt;strong&gt;Lightning Talks&lt;/strong&gt; (or, as we like to call them, &lt;strong&gt;⚡ Talks&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Lightning Talks are short, five-minute presentations where anyone can share an idea, a lesson learned, a project, a story, or something that inspires them. They are fast-paced, fun, and one of the best ways to hear from members of our community.&lt;/p&gt;
+&lt;p&gt;If you&#39;ve ever thought, &lt;em&gt;&amp;quot;I don&#39;t have enough experience to give a talk,&amp;quot;&lt;/em&gt; Lightning Talks are for you.&lt;/p&gt;
+&lt;h2 id=&#34;what-can-i-talk-about%3F&#34; tabindex=&#34;-1&#34;&gt;What Can I Talk About?&lt;/h2&gt;
+&lt;p&gt;Almost anything related to Django, Python, open source, or our community.&lt;/p&gt;
+&lt;p&gt;Some ideas include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A useful Django package you&#39;ve discovered&lt;/li&gt;
+&lt;li&gt;A bug that taught you an important lesson&lt;/li&gt;
+&lt;li&gt;Your first open source contribution&lt;/li&gt;
+&lt;li&gt;A productivity tip&lt;/li&gt;
+&lt;li&gt;A project you&#39;re building&lt;/li&gt;
+&lt;li&gt;Something fun you&#39;ve learned while programming&lt;/li&gt;
+&lt;li&gt;A community initiative you&#39;d like others to know about&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Not every Lightning Talk has to be deeply technical. Some of the most memorable talks are personal stories, demonstrations, or lessons learned from failure.&lt;/p&gt;
+&lt;h2 id=&#34;need-some-inspiration%3F&#34; tabindex=&#34;-1&#34;&gt;Need Some Inspiration?&lt;/h2&gt;
+&lt;p&gt;If you&#39;re looking for advice on giving your first Lightning Talk, we highly recommend Trey Hunner&#39;s &lt;strong&gt;&amp;quot;Give a Lightning Talk&amp;quot;&lt;/strong&gt; from PyCon US 2024.&lt;/p&gt;
+&lt;p&gt;In just a few minutes, Trey shares practical tips on choosing a topic, preparing your talk, and delivering it with confidence.&lt;/p&gt;
+&lt;p&gt;📺 &lt;a href=&#34;https://www.youtube.com/watch?v=p_Vx3gDHeUI&amp;amp;t=250s&#34;&gt;https://www.youtube.com/watch?v=p_Vx3gDHeUI&amp;amp;t=250s&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tips-for-a-great-lightning-talk&#34; tabindex=&#34;-1&#34;&gt;Tips for a Great Lightning Talk&lt;/h2&gt;
+&lt;p&gt;A few simple suggestions can go a long way:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Focus on &lt;strong&gt;one main idea&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Practice your talk a few times to stay within the five-minute limit.&lt;/li&gt;
+&lt;li&gt;Keep your slides simple—or skip them entirely if they aren&#39;t needed.&lt;/li&gt;
+&lt;li&gt;Don&#39;t worry about being an expert. Sharing your experience is valuable.&lt;/li&gt;
+&lt;li&gt;Have fun! Your enthusiasm is often the most memorable part of your presentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Remember, a Lightning Talk isn&#39;t about covering everything—it&#39;s about sharing one idea well.&lt;/p&gt;
+&lt;h2 id=&#34;how-do-lightning-talks-work%3F&#34; tabindex=&#34;-1&#34;&gt;How Do Lightning Talks Work?&lt;/h2&gt;
+&lt;p&gt;Lightning Talks are open to all DjangoCon US attendees and take place during the conference.&lt;/p&gt;
+&lt;p&gt;Sign-up information and schedules will be announced during the conference, so keep an eye on announcements if you&#39;d like to participate.&lt;/p&gt;
+&lt;h2 id=&#34;give-it-a-try!&#34; tabindex=&#34;-1&#34;&gt;Give It a Try!&lt;/h2&gt;
+&lt;p&gt;Many experienced conference speakers gave their very first talk as a Lightning Talk.&lt;/p&gt;
+&lt;p&gt;Whether you&#39;re sharing a Django tip, a Python trick, a lesson from your latest project, or a story from your open source journey, we&#39;d love to hear from you.&lt;/p&gt;
+&lt;p&gt;Your five minutes might inspire someone else&#39;s next big idea.&lt;/p&gt;
+&lt;p&gt;We can&#39;t wait to see what you&#39;ll share at DjangoCon US 2026! ⚡&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>Announcing Our Keynotes: Karen Tracey</title>
       <link href="https://2026.djangocon.us/news/keynote-karen-tracey/" />
