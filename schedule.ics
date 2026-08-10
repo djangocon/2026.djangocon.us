@@ -345,19 +345,7 @@ BEGIN:VEVENT
 DTSTART;TZID=America/Chicago:20260825T144000
 DTEND;TZID=America/Chicago:20260825T150500
 DTSTAMP:20260825T144000Z
-UID:14-40-t0-what-s-new-in-postgres-18-19@https://2026.djangocon.us
-SUMMARY:What's New in Postgres 18 & 19
-LOCATION:Sauganash Ballroom
-DESCRIPTION:Presenter: Elizabeth Christensen\n\nThis session will cover in detail new features of the software and how they affect your database/Django work. I’ll give some advice on what to take advantage of right away and what to maybe let the other guys try first.
- 
-URL:https://2026.djangocon.us/talks/what-s-new-in-postgres-18-19/
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260825T151000
-DTEND;TZID=America/Chicago:20260825T153500
-DTSTAMP:20260825T151000Z
-UID:15-10-t0-polyglot-persistence-with-django-when-one-database-isn-t-enough@https://2026.djangocon.us
+UID:14-40-t0-polyglot-persistence-with-django-when-one-database-isn-t-enough@https://2026.djangocon.us
 SUMMARY:Polyglot Persistence with Django: When One Database Isn't Enough
 LOCATION:Sauganash Ballroom
 DESCRIPTION:Presenter: Abigail Afi Gbadago\n\nPolyglot persistence is the use of multiple databases in a single application, with each chosen for what it does best. Django ships with multi-database support: define your connections, write a router, and in theory, you're done. In practice, the gap between &quot;Django supports this&quot; and &quot;I have this working&quot; is where most developers get stuck. This talk closes that gap by using a Django MongoDB backend alongside PostgreSQL, with honest coverage of where the ORM abstraction leaks, what migrations look like against a document store, and lessons learned from building with MongoDB's Queryable Encryption in a real Django context. Attendees leave with working patterns, a clear decision framework, and an answer to whether polyglot persistence is the best choice for their project.
@@ -366,10 +354,10 @@ URL:https://2026.djangocon.us/talks/polyglot-persistence-with-django-when-one-da
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260825T161000
-DTEND;TZID=America/Chicago:20260825T165500
-DTSTAMP:20260825T161000Z
-UID:16-10-t0-50-shades-of-green-one-contribution-to-the-django-world@https://2026.djangocon.us
+DTSTART;TZID=America/Chicago:20260825T154000
+DTEND;TZID=America/Chicago:20260825T162500
+DTSTAMP:20260825T154000Z
+UID:15-40-t0-50-shades-of-green-one-contribution-to-the-django-world@https://2026.djangocon.us
 SUMMARY:50 shades of green - One contribution to the Django world
 LOCATION:Sauganash Ballroom
 DESCRIPTION:Presenter: Sarah Abderemane\n\nDjango's website has a dark theme. Many developers around the world use it every day. Some never even noticed it appear. Others switched immediately and never looked back.
@@ -381,33 +369,22 @@ URL:https://2026.djangocon.us/talks/50-shades-of-green-one-contribution-to-the-d
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260825T170000
-DTEND;TZID=America/Chicago:20260825T172500
-DTSTAMP:20260825T170000Z
-UID:17-00-t0-but-did-you-know-the-browser-already-does-that@https://2026.djangocon.us
-SUMMARY:But did you know the browser already does that?
+DTSTART;TZID=America/Chicago:20260825T163000
+DTEND;TZID=America/Chicago:20260825T165500
+DTSTAMP:20260825T163000Z
+UID:16-30-t0-what-s-new-in-postgres-18-19@https://2026.djangocon.us
+SUMMARY:What's New in Postgres 18 & 19
 LOCATION:Sauganash Ballroom
-DESCRIPTION:Presenter: James Stuckey Weber\n\nNew features in HTML and CSS mean a better dev experience for providing better user experiences. But are they too new to use? In this talk, you'll get a glimpse at some of the newer features of the web platform. Once you're excited to use them in your project, we'll take a look at browser support, and how to use Baseline to evaluate whether it's ready to use in your project.
- We will cover:
+DESCRIPTION:Presenter: Elizabeth Christensen\n\nThis session will cover in detail new features of the software and how they affect your database/Django work. I’ll give some advice on what to take advantage of right away and what to maybe let the other guys try first.
  
- Popovers: native tooltips
- Anchor positioning: placing tooltips and dropdowns
- Invokers: interactivity without needing JavaScript
- Container queries: styles based on context, not the screen
- View transitions: Animating between pages
- Custom selects: Native select options that match your UI
- 
- And more!
- But how do you know if a feature has enough support? You will also learn how easy it is to evaluate support with Baseline, which is integrated into IDEs, linters, and throughout the web.
- 
-URL:https://2026.djangocon.us/talks/but-did-you-know-the-browser-already-does-that/
+URL:https://2026.djangocon.us/talks/what-s-new-in-postgres-18-19/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260825T173000
-DTEND;TZID=America/Chicago:20260825T175500
-DTSTAMP:20260825T173000Z
-UID:17-30-t0-keeping-pace-with-django-evolving-through-15-years-of-updates@https://2026.djangocon.us
+DTSTART;TZID=America/Chicago:20260825T170000
+DTEND;TZID=America/Chicago:20260825T172500
+DTSTAMP:20260825T170000Z
+UID:17-00-t0-keeping-pace-with-django-evolving-through-15-years-of-updates@https://2026.djangocon.us
 SUMMARY:Keeping Pace with Django: Evolving Through 15 years of Updates
 LOCATION:Sauganash Ballroom
 DESCRIPTION:Presenter: Eduardo Felipe Castegnaro\n\nWorking on the same codebase for 15 years is not something that you plan on doing. It's something that happens organically. As the years go on and the business requirements become ever more complex, you'll need to keep up with the stack to be able to deliver the product your users expect.
@@ -502,15 +479,21 @@ BEGIN:VEVENT
 DTSTART;TZID=America/Chicago:20260826T135000
 DTEND;TZID=America/Chicago:20260826T143500
 DTSTAMP:20260826T135000Z
-UID:13-50-t0-breaking-the-request-chain-rethinking-service-communication-in-django-systems@https://2026.djangocon.us
-SUMMARY:Breaking the Request Chain: Rethinking Service Communication in Django Systems
+UID:13-50-t0-beyond-rest-implementing-the-model-context-protocol-mcp-in-django@https://2026.djangocon.us
+SUMMARY:Beyond REST: Implementing the Model Context Protocol (MCP) in Django
 LOCATION:Sauganash Ballroom
-DESCRIPTION:Presenter: Mohammad Ahtasham ul Hassan\nPresenter: Muhammad Arif\n\nMany distributed systems begin with a simple pattern: Service A calls Service B, which calls Service C
- (A -&gt; B -&gt; C and so on), all through synchronous HTTP requests. In Django applications, where request/response workflows are the default, this approach often feels natural and easy to implement and is the go to for almost everyone.
- But as systems grow, however, these synchronous chains can quietly become a bottleneck. Each request that waits on another service keeps an application worker occupied.
- In typical Django deployments running behind Gunicorn, concurrency is limited by the number of available workers, so requests that spend time waiting on downstream services can quickly tie up capacity.
- Thinking about autoscaling?? It doesn’t help either if every instance is still waiting on the same external dependencies. What started as simple service interactions can evolve into tightly coupled request chains where latency compounds across services and failures propagate in un...
-URL:https://2026.djangocon.us/talks/breaking-the-request-chain-rethinking-service-communication-in-django-systems/
+DESCRIPTION:Presenter: Kumar Shivendu\n\nDjango has long been the &quot;batteries-included&quot; framework for building user-facing web apps. But in upcoming times, the primary &quot;user&quot; of your backend might be an AI agent taking actions on behalf of your users.
+ This session provides a technical blueprint for implementing an MCP server within a Django project.
+ Key areas we will cover:
+ 
+ MCP Protocol Primitives: Mapping the Host-Client-Server interaction model to the Django application lifecycle.
+ SSE Transport via ASGI: Implementing stateful Server-Sent Events for persistent, bidirectional transport over HTTP.
+ Schema Mapping: Transforming service-layer functions into executable JSON-RPC tools and ORM models into discoverable resources.
+ The &quot;Context Tax&quot;: Quantifying the bottlenecks of latency, state serialization, and token window orchestration in agentic workflows.
+ Auth &amp; Input Validation: Extending Django’s RBAC and validation layers to sanitize and authorize non-deterministic LLM inputs.
+ 
+ W...
+URL:https://2026.djangocon.us/talks/beyond-rest-implementing-the-model-context-protocol-mcp-in-django/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
@@ -528,24 +511,10 @@ URL:https://2026.djangocon.us/talks/modern-django-deployments-in-2026/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260826T151000
-DTEND;TZID=America/Chicago:20260826T153500
-DTSTAMP:20260826T151000Z
-UID:15-10-t0-the-django-uuid-story@https://2026.djangocon.us
-SUMMARY:The Django UUID Story
-LOCATION:Sauganash Ballroom
-DESCRIPTION:Presenter: Paolo Melchiorre\n\nMy first larger contribution to Django started during the sprints at DjangoCon Europe 2017 in Florence, where I worked on exposing database-side RandomUUID generation for UUIDv4 in contrib.postgres, so for me this topic has a very personal history inside the project.
- Since then the way Django handles UUID generation has evolved, and recent changes extended these functions beyond PostgreSQL while also adding support for UUIDv7, which brings time ordering and new possibilities for modern database schemas.
- In this talk I show how these UUID functions work in Django today, how UUIDv4 and UUIDv7 differ in practice, and how Django can generate UUID values at the Python side or at the database side depending on the backend and the use case.
- This talk is especially useful for developers who already know Django models and want to better understand how UUID generation fits into real applications, migrations and schema design, especially now that support is broader and more flexible than be...
-URL:https://2026.djangocon.us/talks/the-django-uuid-story/
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260826T161000
-DTEND;TZID=America/Chicago:20260826T165500
-DTSTAMP:20260826T161000Z
-UID:16-10-t0-wishlist-granted-htmx-without-betraying-your-django-views@https://2026.djangocon.us
+DTSTART;TZID=America/Chicago:20260826T154000
+DTEND;TZID=America/Chicago:20260826T162500
+DTSTAMP:20260826T154000Z
+UID:15-40-t0-wishlist-granted-htmx-without-betraying-your-django-views@https://2026.djangocon.us
 SUMMARY:Wishlist granted: HTMX without betraying your Django views
 LOCATION:Sauganash Ballroom
 DESCRIPTION:Presenter: Natalia\n\nA feature built the traditional Django way. Making it dynamic is next. What do you do? The answer is simpler than you think!
@@ -556,24 +525,40 @@ URL:https://2026.djangocon.us/talks/wishlist-granted-htmx-without-betraying-your
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260826T170000
-DTEND;TZID=America/Chicago:20260826T174500
-DTSTAMP:20260826T170000Z
-UID:17-00-t0-beyond-rest-implementing-the-model-context-protocol-mcp-in-django@https://2026.djangocon.us
-SUMMARY:Beyond REST: Implementing the Model Context Protocol (MCP) in Django
+DTSTART;TZID=America/Chicago:20260826T163000
+DTEND;TZID=America/Chicago:20260826T165500
+DTSTAMP:20260826T163000Z
+UID:16-30-t0-the-django-uuid-story@https://2026.djangocon.us
+SUMMARY:The Django UUID Story
 LOCATION:Sauganash Ballroom
-DESCRIPTION:Presenter: Kumar Shivendu\n\nDjango has long been the &quot;batteries-included&quot; framework for building user-facing web apps. But in upcoming times, the primary &quot;user&quot; of your backend might be an AI agent taking actions on behalf of your users.
- This session provides a technical blueprint for implementing an MCP server within a Django project.
- Key areas we will cover:
+DESCRIPTION:Presenter: Paolo Melchiorre\n\nMy first larger contribution to Django started during the sprints at DjangoCon Europe 2017 in Florence, where I worked on exposing database-side RandomUUID generation for UUIDv4 in contrib.postgres, so for me this topic has a very personal history inside the project.
+ Since then the way Django handles UUID generation has evolved, and recent changes extended these functions beyond PostgreSQL while also adding support for UUIDv7, which brings time ordering and new possibilities for modern database schemas.
+ In this talk I show how these UUID functions work in Django today, how UUIDv4 and UUIDv7 differ in practice, and how Django can generate UUID values at the Python side or at the database side depending on the backend and the use case.
+ This talk is especially useful for developers who already know Django models and want to better understand how UUID generation fits into real applications, migrations and schema design, especially now that support is broader and more flexible than be...
+URL:https://2026.djangocon.us/talks/the-django-uuid-story/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260826T170000
+DTEND;TZID=America/Chicago:20260826T172500
+DTSTAMP:20260826T170000Z
+UID:17-00-t0-but-did-you-know-the-browser-already-does-that@https://2026.djangocon.us
+SUMMARY:But did you know the browser already does that?
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: James Stuckey Weber\n\nNew features in HTML and CSS mean a better dev experience for providing better user experiences. But are they too new to use? In this talk, you'll get a glimpse at some of the newer features of the web platform. Once you're excited to use them in your project, we'll take a look at browser support, and how to use Baseline to evaluate whether it's ready to use in your project.
+ We will cover:
  
- MCP Protocol Primitives: Mapping the Host-Client-Server interaction model to the Django application lifecycle.
- SSE Transport via ASGI: Implementing stateful Server-Sent Events for persistent, bidirectional transport over HTTP.
- Schema Mapping: Transforming service-layer functions into executable JSON-RPC tools and ORM models into discoverable resources.
- The &quot;Context Tax&quot;: Quantifying the bottlenecks of latency, state serialization, and token window orchestration in agentic workflows.
- Auth &amp; Input Validation: Extending Django’s RBAC and validation layers to sanitize and authorize non-deterministic LLM inputs.
+ Popovers: native tooltips
+ Anchor positioning: placing tooltips and dropdowns
+ Invokers: interactivity without needing JavaScript
+ Container queries: styles based on context, not the screen
+ View transitions: Animating between pages
+ Custom selects: Native select options that match your UI
  
- W...
-URL:https://2026.djangocon.us/talks/beyond-rest-implementing-the-model-context-protocol-mcp-in-django/
+ And more!
+ But how do you know if a feature has enough support? You will also learn how easy it is to evaluate support with Baseline, which is integrated into IDEs, linters, and throughout the web.
+ 
+URL:https://2026.djangocon.us/talks/but-did-you-know-the-browser-already-does-that/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
