@@ -528,7 +528,7 @@
   
     
       <url>
-        <loc>https://2026.djangocon.us/talks/beyond-rest-implementing-the-model-context-protocol-mcp-in-django/</loc>
+        <loc>https://2026.djangocon.us/talks/wishlist-granted-htmx-without-betraying-your-django-views/</loc>
         <lastmod>2026-08-12</lastmod>
       </url>
     
@@ -536,13 +536,6 @@
     
       <url>
         <loc>https://2026.djangocon.us/talks/modern-django-deployments-in-2026/</loc>
-        <lastmod>2026-08-12</lastmod>
-      </url>
-    
-  
-    
-      <url>
-        <loc>https://2026.djangocon.us/talks/wishlist-granted-htmx-without-betraying-your-django-views/</loc>
         <lastmod>2026-08-12</lastmod>
       </url>
     

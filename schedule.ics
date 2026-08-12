@@ -479,21 +479,14 @@ BEGIN:VEVENT
 DTSTART;TZID=America/Chicago:20260826T135000
 DTEND;TZID=America/Chicago:20260826T143500
 DTSTAMP:20260826T135000Z
-UID:13-50-t0-beyond-rest-implementing-the-model-context-protocol-mcp-in-django@https://2026.djangocon.us
-SUMMARY:Beyond REST: Implementing the Model Context Protocol (MCP) in Django
+UID:13-50-t0-wishlist-granted-htmx-without-betraying-your-django-views@https://2026.djangocon.us
+SUMMARY:Wishlist granted: HTMX without betraying your Django views
 LOCATION:Sauganash Ballroom
-DESCRIPTION:Presenter: Kumar Shivendu\n\nDjango has long been the &quot;batteries-included&quot; framework for building user-facing web apps. But in upcoming times, the primary &quot;user&quot; of your backend might be an AI agent taking actions on behalf of your users.
- This session provides a technical blueprint for implementing an MCP server within a Django project.
- Key areas we will cover:
+DESCRIPTION:Presenter: Natalia\n\nA feature built the traditional Django way. Making it dynamic is next. What do you do? The answer is simpler than you think!
+ Starting from a plain server-rendered implementation, my goal was to avoid full-page reloads without throwing away what I had already built, and without reaching for a new tool or a new architecture. Template partials and HTMX turned out to be exactly the right fit. The changes were small and targeted, the code stayed readable, and I never had to leave my Django safe place.
+ This talk is about a real project, real decisions, and what progressive enhancement in Django can look like in practice using modern tools, one small change at a time.
  
- MCP Protocol Primitives: Mapping the Host-Client-Server interaction model to the Django application lifecycle.
- SSE Transport via ASGI: Implementing stateful Server-Sent Events for persistent, bidirectional transport over HTTP.
- Schema Mapping: Transforming service-layer functions into executable JSON-RPC tools and ORM models into discoverable resources.
- The &quot;Context Tax&quot;: Quantifying the bottlenecks of latency, state serialization, and token window orchestration in agentic workflows.
- Auth &amp; Input Validation: Extending Django’s RBAC and validation layers to sanitize and authorize non-deterministic LLM inputs.
- 
- W...
-URL:https://2026.djangocon.us/talks/beyond-rest-implementing-the-model-context-protocol-mcp-in-django/
+URL:https://2026.djangocon.us/talks/wishlist-granted-htmx-without-betraying-your-django-views/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
@@ -512,23 +505,9 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=America/Chicago:20260826T154000
-DTEND;TZID=America/Chicago:20260826T162500
+DTEND;TZID=America/Chicago:20260826T160500
 DTSTAMP:20260826T154000Z
-UID:15-40-t0-wishlist-granted-htmx-without-betraying-your-django-views@https://2026.djangocon.us
-SUMMARY:Wishlist granted: HTMX without betraying your Django views
-LOCATION:Sauganash Ballroom
-DESCRIPTION:Presenter: Natalia\n\nA feature built the traditional Django way. Making it dynamic is next. What do you do? The answer is simpler than you think!
- Starting from a plain server-rendered implementation, my goal was to avoid full-page reloads without throwing away what I had already built, and without reaching for a new tool or a new architecture. Template partials and HTMX turned out to be exactly the right fit. The changes were small and targeted, the code stayed readable, and I never had to leave my Django safe place.
- This talk is about a real project, real decisions, and what progressive enhancement in Django can look like in practice using modern tools, one small change at a time.
- 
-URL:https://2026.djangocon.us/talks/wishlist-granted-htmx-without-betraying-your-django-views/
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260826T163000
-DTEND;TZID=America/Chicago:20260826T165500
-DTSTAMP:20260826T163000Z
-UID:16-30-t0-the-django-uuid-story@https://2026.djangocon.us
+UID:15-40-t0-the-django-uuid-story@https://2026.djangocon.us
 SUMMARY:The Django UUID Story
 LOCATION:Sauganash Ballroom
 DESCRIPTION:Presenter: Paolo Melchiorre\n\nMy first larger contribution to Django started during the sprints at DjangoCon Europe 2017 in Florence, where I worked on exposing database-side RandomUUID generation for UUIDv4 in contrib.postgres, so for me this topic has a very personal history inside the project.
@@ -539,10 +518,10 @@ URL:https://2026.djangocon.us/talks/the-django-uuid-story/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260826T170000
-DTEND;TZID=America/Chicago:20260826T172500
-DTSTAMP:20260826T170000Z
-UID:17-00-t0-but-did-you-know-the-browser-already-does-that@https://2026.djangocon.us
+DTSTART;TZID=America/Chicago:20260826T161000
+DTEND;TZID=America/Chicago:20260826T163500
+DTSTAMP:20260826T161000Z
+UID:16-10-t0-but-did-you-know-the-browser-already-does-that@https://2026.djangocon.us
 SUMMARY:But did you know the browser already does that?
 LOCATION:Sauganash Ballroom
 DESCRIPTION:Presenter: James Stuckey Weber\n\nNew features in HTML and CSS mean a better dev experience for providing better user experiences. But are they too new to use? In this talk, you'll get a glimpse at some of the newer features of the web platform. Once you're excited to use them in your project, we'll take a look at browser support, and how to use Baseline to evaluate whether it's ready to use in your project.
@@ -562,10 +541,10 @@ URL:https://2026.djangocon.us/talks/but-did-you-know-the-browser-already-does-th
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260826T173000
-DTEND;TZID=America/Chicago:20260826T175000
-DTSTAMP:20260826T173000Z
-UID:17-30-t0-closing-remarks@https://2026.djangocon.us
+DTSTART;TZID=America/Chicago:20260826T164000
+DTEND;TZID=America/Chicago:20260826T170000
+DTSTAMP:20260826T164000Z
+UID:16-40-t0-closing-remarks@https://2026.djangocon.us
 SUMMARY:Closing Remarks
 LOCATION:Sauganash Ballroom
 DESCRIPTION:Presenter: Keanya Phelps\n\n
