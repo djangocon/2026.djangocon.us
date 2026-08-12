@@ -1,0 +1,59 @@
+---
+title: Venue Map
+description: |
+  Floor maps for the voco Chicago Downtown, DjangoCon US 2026's conference venue.
+
+permalink: /venue/venue-map/
+---
+
+{% layout "_layouts/page.html" %}
+
+{% block hero_content %}
+  <p class="lead">
+    Find your way around the voco Chicago Downtown with these floor maps of the conference spaces.
+  </p>
+{% endblock %}
+
+{% block wrapper %}
+  <div class="block-container bg-background">
+    <div class="wrapper">
+      <div class="mx-auto prose lg:prose-lg">
+        <section>
+          <h2 class="mb-4 site-h2">14th Floor</h2>
+          <figure class="lg:max-w-xl lg:mx-auto">
+            <img
+              class="w-full media"
+              src="/assets/img/venue/voco-floor-14.svg"
+              alt="Floor map of the 14th floor of the voco Chicago Downtown"
+              loading="lazy"
+            />
+            <figcaption class="mt-4">
+              The 14th floor is where the talks will happen, as well as registration and sprints. Check the on-site signage for specific room assignments as you make your way around.
+            </figcaption>
+          </figure>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-container">
+    <div class="wrapper">
+      <div class="mx-auto prose lg:prose-lg">
+        <section>
+          <h2 class="mb-4 site-h2">15th Floor</h2>
+          <figure class="lg:max-w-xl lg:mx-auto">
+            <img
+              class="w-full media"
+              src="/assets/img/venue/voco-floor-15.svg"
+              alt="Floor map of the 15th floor of the voco Chicago Downtown"
+              loading="lazy"
+            />
+            <figcaption class="mt-4">
+              The 15th floor is where open spaces will be held. Check the on-site signage for specific room assignments as you make your way around.
+            </figcaption>
+          </figure>
+        </section>
+      </div>
+    </div>
+  </div>
+{% endblock %}
