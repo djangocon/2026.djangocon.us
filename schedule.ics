@@ -562,10 +562,10 @@ URL:https://2026.djangocon.us/talks/but-did-you-know-the-browser-already-does-th
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260826T174500
-DTEND;TZID=America/Chicago:20260826T180500
-DTSTAMP:20260826T174500Z
-UID:17-45-t0-closing-remarks@https://2026.djangocon.us
+DTSTART;TZID=America/Chicago:20260826T173000
+DTEND;TZID=America/Chicago:20260826T175000
+DTSTAMP:20260826T173000Z
+UID:17-30-t0-closing-remarks@https://2026.djangocon.us
 SUMMARY:Closing Remarks
 LOCATION:Sauganash Ballroom
 DESCRIPTION:Presenter: Keanya Phelps\n\n
