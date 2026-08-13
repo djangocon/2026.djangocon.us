@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="33.300cm" height="32.900cm" viewBox="1.450 0.750 34.750 33.650"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<polygon fill="#C5BEB4" stroke="none" stroke-width="0.100" points="34.700,0.800 34.700,10.600 27.900,10.600 27.900,8.000 24.500,8.000 24.500,0.800 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="34.700,0.800 34.700,10.600 27.900,10.600 27.900,8.000 24.500,8.000 24.500,0.800 "/>
+<line x1="29.600" y1="5.700" x2="29.600" y2="5.700" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="23.212" y1="11.600" x2="22.012" y2="11.600" stroke="#FFFFFF" stroke-width="0.100" />
+<rect x="13.700" y="18.800" width="6.200" height="2.000" fill="#EEEEEE" stroke="none" stroke-width="0"/>
+<rect x="13.700" y="18.800" width="6.200" height="2.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="13.700" y="20.800" width="6.200" height="1.500" fill="#DDDDDD" stroke="none" stroke-width="0"/>
+<rect x="13.700" y="20.800" width="6.200" height="1.500" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="7.700" y="24.600" width="6.400" height="1.500" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="7.700" y="24.600" width="6.400" height="1.500" fill="none" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#EEEEEE" stroke="none" stroke-width="0.100" points="8.000,1.000 8.000,8.500 11.000,8.500 11.000,15.500 7.500,15.500 7.500,19.500 1.500,19.500 1.500,1.000 "/>
+<polygon fill="none" stroke="#808080" stroke-width="0.100"  points="8.000,1.000 8.000,8.500 11.000,8.500 11.000,15.500 7.500,15.500 7.500,19.500 1.500,19.500 1.500,1.000 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="8.000,1.000 1.500,1.000 1.500,19.500 "/>
+<rect x="13.700" y="2.300" width="5.500" height="1.495" fill="#DDDDDD" stroke="none" stroke-width="0"/>
+<rect x="13.700" y="2.300" width="5.500" height="1.495" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="13.700" y="4.800" width="5.500" height="1.495" fill="#DDDDDD" stroke="none" stroke-width="0"/>
+<rect x="13.700" y="4.800" width="5.500" height="1.495" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="13.700" y="0.800" width="5.500" height="1.495" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="13.700" y="0.800" width="5.500" height="1.495" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="7.700" y="27.200" width="6.400" height="3.200" fill="#808080" stroke="none" stroke-width="0"/>
+<rect x="7.700" y="27.200" width="6.400" height="3.200" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="14.100" y="28.600" width="9.168" height="1.800" fill="#808080" stroke="none" stroke-width="0"/>
+<rect x="14.100" y="28.600" width="9.168" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="7.700" y="31.800" width="15.600" height="1.800" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="7.700" y="31.800" width="15.600" height="1.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="1.500,25.800 5.700,25.800 5.700,33.600 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="34.700,24.600 25.100,24.600 25.100,33.600 "/>
+<line x1="24.500" y1="1.200" x2="24.500" y2="2.200" stroke="#FFFFFF" stroke-width="0.100" />
+<polygon fill="#EEEEEE" stroke="none" stroke-width="0.100" points="31.500,10.600 31.500,12.800 30.700,12.800 30.700,14.000 29.500,14.000 29.500,18.800 30.700,18.800 30.700,21.600 24.700,21.600 24.700,18.400 22.900,18.400 22.900,13.200 24.500,13.200 24.500,8.000 27.900,8.000 27.900,10.600 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="31.500,10.600 31.500,12.800 30.700,12.800 30.700,14.000 29.500,14.000 29.500,18.800 30.700,18.800 30.700,21.600 24.700,21.600 24.700,18.400 22.900,18.400 22.900,13.200 24.500,13.200 24.500,8.000 27.900,8.000 27.900,10.600 "/>
+<line x1="22.900" y1="14.400" x2="22.900" y2="16.000" stroke="#FFFFFF" stroke-width="0.100" />
+<polygon fill="#808080" stroke="none" stroke-width="0.100" points="34.700,10.600 34.700,23.200 25.100,23.200 25.100,21.600 30.700,21.600 30.700,18.800 29.500,18.800 29.500,14.000 30.700,14.000 30.700,12.800 31.500,12.800 31.500,10.600 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="34.700,10.600 34.700,23.200 25.100,23.200 25.100,21.600 30.700,21.600 30.700,18.800 29.500,18.800 29.500,14.000 30.700,14.000 30.700,12.800 31.500,12.800 31.500,10.600 "/>
+<line x1="25.100" y1="21.800" x2="25.100" y2="22.800" stroke="#FFFFFF" stroke-width="0.100" />
+<text x="16.450" y="3.244"  fill="#000000" text-anchor="middle" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+Elevators</text>
+<text x="16.450" y="5.744"  fill="#000000" text-anchor="middle" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+Elevators</text>
+<text x="16.800" y="21.746"  fill="#000000" text-anchor="middle" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+Elevators</text>
+<polygon fill="#DDDDDD" stroke="none" stroke-width="0.100" points="14.100,24.600 20.300,24.600 20.300,28.600 14.100,28.600 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="14.100,24.600 20.300,24.600 20.300,28.600 14.100,28.600 "/>
+<line x1="18.500" y1="24.600" x2="19.700" y2="24.600" stroke="#FFFFFF" stroke-width="0.100" />
+<text x="17.200" y="26.412"  fill="#000000" text-anchor="middle" font-size="0.85" font-family="sans" font-style="normal" font-weight="400">
+Stairs down</text>
+<text x="17.200" y="27.258"  fill="#000000" text-anchor="middle" font-size="0.85" font-family="sans" font-style="normal" font-weight="400">
+to 14th floor</text>
+<text x="16.800" y="19.643"  fill="#000000" text-anchor="middle" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+Stairs up to </text>
+<text x="16.800" y="20.349"  fill="#000000" text-anchor="middle" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+16th floor</text>
+<text x="10.900" y="25.546"  fill="#000000" text-anchor="middle" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+Hotel concierge desk</text>
+<text x="6.250" y="10.825"  fill="#000000" text-anchor="middle" font-size="0.78" font-family="sans" font-style="normal" font-weight="400">
+Bar and</text>
+<text x="6.250" y="11.601"  fill="#000000" text-anchor="middle" font-size="0.78" font-family="sans" font-style="normal" font-weight="400">
+Restaurant</text>
+<text x="6.500" y="23.500"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+R</text>
+<text x="6.500" y="24.206"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+e</text>
+<text x="6.500" y="24.911"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+s</text>
+<text x="6.500" y="25.617"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+t</text>
+<text x="6.500" y="26.322"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+r</text>
+<text x="6.500" y="27.028"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+o</text>
+<text x="6.500" y="27.733"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+o</text>
+<text x="6.500" y="28.439"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+m</text>
+<text x="6.500" y="29.144"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+s</text>
+<text x="23.500" y="24.000"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+R</text>
+<text x="23.500" y="24.706"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+e</text>
+<text x="23.500" y="25.411"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+s</text>
+<text x="23.500" y="26.117"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+t</text>
+<text x="23.500" y="26.822"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+r</text>
+<text x="23.500" y="27.528"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+o</text>
+<text x="23.500" y="28.233"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+o</text>
+<text x="23.500" y="28.939"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+m</text>
+<text x="23.500" y="29.644"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+s</text>
+<path stroke="#000000" fill="none" stroke-width="0.100"  d="M 6.200,29.300 C 6.200,30.300 6.200,31.300 7.476,31.300 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="7.288,31.450 7.588,31.300 7.288,31.150 "/>
+<path stroke="#000000" fill="none" stroke-width="0.100"  d="M 24.200,29.300 C 24.700,31.300 24.200,31.300 23.424,31.300 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="23.612,31.150 23.312,31.300 23.612,31.450 "/>
+<text x="29.600" y="4.862"  fill="#000000" text-anchor="middle" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+Wolf Point Ballroom</text>
+<text x="29.600" y="6.688"  fill="#2D5C2D" text-anchor="middle" font-size="0.99" font-family="sans" font-style="normal" font-weight="400">
+Open Spaces Room</text>
+<text x="29.900" y="16.062"  fill="#000000" text-anchor="start" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+LaSalle</text>
+<rect x="1.500" y="21.000" width="4.200" height="4.800" fill="#EEEEEE" stroke="none" stroke-width="0"/>
+<rect x="1.500" y="21.000" width="4.200" height="4.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<line x1="5.700" y1="21.400" x2="5.700" y2="25.200" stroke="#FFFFFF" stroke-width="0.100" />
+<text x="3.600" y="23.243"  fill="#000000" text-anchor="middle" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+Riverbend</text>
+<text x="3.600" y="23.949"  fill="#000000" text-anchor="middle" font-size="0.71" font-family="sans" font-style="normal" font-weight="400">
+market</text>
+</svg>

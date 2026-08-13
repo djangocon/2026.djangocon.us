@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="23.400cm" height="33.400cm" viewBox="0.850 0.950 24.250 34.350"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="2.100" y="1.200" width="3.898" height="3.000" fill="#EEEEEE" stroke="none" stroke-width="0"/>
+<rect x="2.100" y="1.200" width="3.898" height="3.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="2.100" y="4.200" width="3.200" height="3.300" fill="#999999" stroke="none" stroke-width="0"/>
+<rect x="2.100" y="4.200" width="3.200" height="3.300" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="2.100" y="7.500" width="3.200" height="5.100" fill="#999999" stroke="none" stroke-width="0"/>
+<rect x="2.100" y="7.500" width="3.200" height="5.100" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="2.100" y="12.600" width="3.200" height="5.000" fill="#999999" stroke="none" stroke-width="0"/>
+<rect x="2.100" y="12.600" width="3.200" height="5.000" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="2.100" y="17.600" width="3.200" height="2.800" fill="#DDDDDD" stroke="none" stroke-width="0"/>
+<rect x="2.100" y="17.600" width="3.200" height="2.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="2.044,20.099 0.900,20.100 0.900,26.100 3.400,26.100 3.400,31.700 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="5.300,31.700 5.300,30.500 17.700,30.500 17.700,31.700 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="21.600,20.400 24.200,20.400 24.200,26.100 19.700,26.100 19.700,31.700 "/>
+<rect x="16.300" y="31.700" width="5.000" height="2.600" fill="#EEEEEE" stroke="none" stroke-width="0"/>
+<rect x="16.300" y="31.700" width="5.000" height="2.600" fill="none" stroke="#2D5C2D" stroke-width="0.100" />
+<rect x="1.900" y="31.600" width="5.000" height="2.600" fill="#EEEEEE" stroke="none" stroke-width="0"/>
+<rect x="1.900" y="31.600" width="5.000" height="2.600" fill="none" stroke="#2D5C2D" stroke-width="0.100" />
+<rect x="17.800" y="1.000" width="3.800" height="3.200" fill="#EEEEEE" stroke="none" stroke-width="0"/>
+<rect x="17.800" y="1.000" width="3.800" height="3.200" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="18.600" y="5.000" width="3.000" height="7.600" fill="#EEEEEE" stroke="none" stroke-width="0"/>
+<rect x="18.600" y="5.000" width="3.000" height="7.600" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="18.600" y="13.400" width="3.000" height="4.200" fill="#999999" stroke="none" stroke-width="0"/>
+<rect x="18.600" y="13.400" width="3.000" height="4.200" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="18.600" y="17.600" width="3.000" height="2.800" fill="#EEEEEE" stroke="none" stroke-width="0"/>
+<rect x="18.600" y="17.600" width="3.000" height="2.800" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="6.800" y="23.200" width="4.600" height="2.000" fill="#DDDDDD" stroke="none" stroke-width="0"/>
+<rect x="6.800" y="23.200" width="4.600" height="2.000" fill="none" stroke="#2D5C2D" stroke-width="0.100" />
+<rect x="12.000" y="23.200" width="5.400" height="2.800" fill="#DDDDDD" stroke="none" stroke-width="0"/>
+<rect x="12.000" y="23.200" width="5.400" height="2.800" fill="none" stroke="#2D5C2D" stroke-width="0.100" />
+<rect x="6.400" y="26.000" width="11.000" height="2.400" fill="#808080" stroke="none" stroke-width="0"/>
+<rect x="6.400" y="26.000" width="11.000" height="2.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="6.000" y="5.000" width="11.800" height="11.400" fill="#DDDDDD" stroke="none" stroke-width="0"/>
+<rect x="6.000" y="5.000" width="11.800" height="11.400" fill="none" stroke="#000000" stroke-width="0.100" />
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="14.200,5.000 14.200,5.500 9.800,5.500 9.800,5.000 "/>
+<line x1="9.850" y1="5.000" x2="14.150" y2="5.000" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="5.400" y1="4.200" x2="5.900" y2="4.200" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="5.300" y1="4.500" x2="5.300" y2="5.000" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="5.300" y1="6.700" x2="5.300" y2="7.200" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="5.300" y1="7.800" x2="5.300" y2="8.300" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="5.300" y1="11.900" x2="5.300" y2="12.400" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="5.300" y1="13.000" x2="5.300" y2="13.500" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="5.300" y1="16.700" x2="5.300" y2="17.200" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="5.300" y1="19.700" x2="5.300" y2="20.200" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="8.300" y1="16.400" x2="7.300" y2="16.400" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="16.200" y1="16.400" x2="15.200" y2="16.400" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="18.600" y1="19.600" x2="18.600" y2="20.100" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="18.600" y1="17.900" x2="18.600" y2="18.400" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="18.600" y1="16.500" x2="18.600" y2="17.000" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="18.600" y1="13.900" x2="18.600" y2="14.400" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="18.600" y1="11.600" x2="18.600" y2="12.100" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="18.600" y1="5.300" x2="18.600" y2="5.800" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="18.000" y1="4.200" x2="18.500" y2="4.200" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="8.000" y1="5.000" x2="7.500" y2="5.000" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="16.200" y1="5.000" x2="15.700" y2="5.000" stroke="#FFFFFF" stroke-width="0.100" />
+<line x1="12.000" y1="5.500" x2="12.000" y2="16.000" stroke="#000000" stroke-width="0.050" stroke-dasharray="0.10,0.10"/>
+<rect x="9.700" y="16.000" width="4.400" height="1.800" fill="#CCCCCC" stroke="none" stroke-width="0"/>
+<rect x="9.700" y="16.000" width="4.400" height="1.800" fill="none" stroke="#2D5C2D" stroke-width="0.100" />
+<line x1="5.300" y1="10.050" x2="2.100" y2="10.050" stroke="#000000" stroke-width="0.050" stroke-dasharray="0.10,0.10"/>
+<line x1="5.300" y1="15.100" x2="2.100" y2="15.100" stroke="#000000" stroke-width="0.050" stroke-dasharray="0.10,0.10"/>
+<text x="4.049" y="2.028"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+Shakespeare</text>
+<text x="4.049" y="2.592"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+Hotel</text>
+<text x="4.049" y="3.275"  fill="#2D5C2D" text-anchor="middle" font-size="0.78" font-family="sans" font-style="normal" font-weight="400">
+Speaker&apos;s</text>
+<text x="4.049" y="4.051"  fill="#2D5C2D" text-anchor="middle" font-size="0.78" font-family="sans" font-style="normal" font-weight="400">
+Room</text>
+<text x="3.700" y="5.178"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+American</text>
+<text x="3.700" y="5.742"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+House</text>
+<text x="3.700" y="8.814"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+Steamboat</text>
+<text x="3.700" y="9.378"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+Hotel</text>
+<text x="3.700" y="14.428"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+Merchants</text>
+<text x="3.700" y="14.993"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+Hotel</text>
+<text x="3.700" y="18.874"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+Mansion</text>
+<text x="3.700" y="19.438"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+House</text>
+<text x="19.700" y="1.928"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+Lake</text>
+<text x="19.700" y="2.492"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+House</text>
+<text x="19.700" y="3.175"  fill="#2D5C2D" text-anchor="middle" font-size="0.78" font-family="sans" font-style="normal" font-weight="400">
+Wellness</text>
+<text x="19.700" y="3.951"  fill="#2D5C2D" text-anchor="middle" font-size="0.78" font-family="sans" font-style="normal" font-weight="400">
+Room</text>
+<text x="20.100" y="6.435"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+Western</text>
+<text x="20.100" y="6.999"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+Stage</text>
+<text x="20.100" y="7.564"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+House</text>
+<text x="20.100" y="9.375"  fill="#2D5C2D" text-anchor="middle" font-size="0.78" font-family="sans" font-style="normal" font-weight="400">
+Open</text>
+<text x="20.100" y="10.151"  fill="#2D5C2D" text-anchor="middle" font-size="0.78" font-family="sans" font-style="normal" font-weight="400">
+Meeting</text>
+<text x="20.100" y="10.927"  fill="#2D5C2D" text-anchor="middle" font-size="0.78" font-family="sans" font-style="normal" font-weight="400">
+Room</text>
+<text x="20.100" y="14.828"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+The Bull&apos;s</text>
+<text x="20.100" y="15.393"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+Head</text>
+<text x="20.100" y="18.328"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+Columbian</text>
+<text x="20.100" y="18.893"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+House</text>
+<text x="20.100" y="19.470"  fill="#2D5C2D" text-anchor="middle" font-size="0.64" font-family="sans" font-style="normal" font-weight="400">
+Organizer&apos;s</text>
+<text x="20.100" y="20.105"  fill="#2D5C2D" text-anchor="middle" font-size="0.64" font-family="sans" font-style="normal" font-weight="400">
+Room</text>
+<text x="11.900" y="17.056"  fill="#000000" text-anchor="middle" font-size="0.56" font-family="sans" font-style="normal" font-weight="400">
+Elevators</text>
+<text x="9.100" y="24.200"  fill="#2D5C2D" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Registration</text>
+<text x="14.700" y="24.457"  fill="#000000" text-anchor="middle" font-size="0.64" font-family="sans" font-style="normal" font-weight="400">
+Stairs up to</text>
+<text x="14.700" y="25.093"  fill="#000000" text-anchor="middle" font-size="0.64" font-family="sans" font-style="normal" font-weight="400">
+15th floor</text>
+<text x="18.800" y="32.822"  fill="#2D5C2D" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Men&apos;s</text>
+<text x="18.800" y="33.622"  fill="#2D5C2D" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Bathroom</text>
+<text x="4.400" y="32.727"  fill="#2D5C2D" text-anchor="middle" font-size="0.78" font-family="sans" font-style="normal" font-weight="400">
+Women&apos;s</text>
+<text x="4.400" y="33.503"  fill="#2D5C2D" text-anchor="middle" font-size="0.78" font-family="sans" font-style="normal" font-weight="400">
+Bathroom</text>
+<text x="11.900" y="9.280"  fill="#000000" text-anchor="middle" font-size="0.64" font-family="sans" font-style="normal" font-weight="400">
+Sauganash Grand Ballroom</text>
+<text x="11.900" y="9.915"  fill="#000000" text-anchor="middle" font-size="0.64" font-family="sans" font-style="normal" font-weight="400">
+(East)                     (West)</text>
+<text x="11.900" y="11.330"  fill="#2D5C2D" text-anchor="middle" font-size="0.85" font-family="sans" font-style="normal" font-weight="400">
+Main Ballroom</text>
+<text x="11.900" y="12.177"  fill="#2D5C2D" text-anchor="middle" font-size="0.85" font-family="sans" font-style="normal" font-weight="400">
+for Talks</text>
+<rect x="13.475" y="13.456" width="3.575" height="1.137" fill="none" stroke="#000000" stroke-width="0.050" stroke-dasharray="0.50,0.50"/>
+<text x="15.262" y="14.240"  fill="#2D5C2D" text-anchor="middle" font-size="0.78" font-family="sans" font-style="normal" font-weight="400">
+Sprints</text>
+</svg>

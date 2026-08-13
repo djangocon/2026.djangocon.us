@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -5,25 +6,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="canonical" href="https://2026.djangocon.us/talks/geodjango-at-city-scale-spatial-data-for-urban-systems/" />
+  <link rel="canonical" href="https://2026.djangocon.us/venue/venue-map/" />
   <meta name="author" content="DjangoCon US" />
-  <meta name="description" content="DjangoCon US 2026 is a Python and Django focused web development conference in Chicago, Illinois." />
+  <meta name="description" content="Floor maps for the voco Chicago Downtown, DjangoCon US 2026's conference venue.
+" />
 
-  <meta property="og:title" content="GeoDjango at City Scale: Spatial Data for Urban Systems | DjangoCon US 2026" />
+  <meta property="og:title" content="Venue Map | DjangoCon US 2026" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:description" content="DjangoCon US 2026 is a Python and Django focused web development conference in Chicago, Illinois." />
-  <meta property="og:url" content="https://2026.djangocon.us/talks/geodjango-at-city-scale-spatial-data-for-urban-systems/" />
+  <meta property="og:description" content="Floor maps for the voco Chicago Downtown, DjangoCon US 2026's conference venue.
+" />
+  <meta property="og:url" content="https://2026.djangocon.us/venue/venue-map/" />
   <meta property="og:site_name" content="DjangoCon US" />
 
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
 
   
-  <meta property="og:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2F2026.djangocon.us%2Ftalks%2Fgeodjango-at-city-scale-spatial-data-for-urban-systems%2Fsocial/opengraph/" />
-  <meta property="twitter:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2F2026.djangocon.us%2Ftalks%2Fgeodjango-at-city-scale-spatial-data-for-urban-systems%2Fsocial/opengraph/" />
+    <meta property="og:image" content="https://2026.djangocon.us/assets/img/social/og-share.jpg?20260612" />
+    <meta property="twitter:image" content="https://2026.djangocon.us/assets/img/social/og-share.jpg?20260612" />
+  
 
-
-  <meta property="twitter:title" content="GeoDjango at City Scale: Spatial Data for Urban Systems | DjangoCon US 2026" />
+  <meta property="twitter:title" content="Venue Map | DjangoCon US 2026" />
   <meta name="twitter:site" content="@djangocon" />
 
   <meta property="fb:app_id" content="280981518972848" />
@@ -35,7 +38,7 @@
   <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.webmanifest">
 
-  <title>GeoDjango at City Scale: Spatial Data for Urban Systems | DjangoCon US 2026</title>
+  <title>Venue Map | DjangoCon US 2026</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -120,104 +123,66 @@
   
 
   <main id="SiteMain" class="flex-1 pt-[90px] lg:pt-0 lg:block">
-  <div class="pb-8 lg:pb-10 hero">
-    <div class="wrapper narrow">
-      <a href="/schedule" class="reverse-link">&larr; Back to Schedule</a>
-      <h1 class="my-2 text-3xl font-bold leading-tight lg:text-5xl">GeoDjango at City Scale: Spatial Data for Urban Systems</h1>
+  <div class="hero">
+    <div class="wrapper">
+      <header class="flex flex-wrap items-start gap-8 lg:gap-16">
+        
 
-      <p class="flex flex-wrap items-center gap-4">
-        <span class="inline-flex flex-wrap items-center gap-[1ch] text-xl lg:text-2xl">
-          <time>Monday, August 24 @ 11:10 AM</time>
-          <span class="text-base">to</span>
-          <time>11:35 AM</time>
-        </span>
-
-        <a
-          href="https://time.is/compare/1110AM_24_August_2026_in_Chicago"
-          class="button"
-          aria-label="View on time.is">View on time.is</a>
-      </p>
-
-      
-        <p class="mt-2">
-          <b>Sauganash Ballroom</b>
-
+        <div class="flex-1">
+          <h1 class="mb-4 pageheading">Venue Map</h1>
           
-        </p>
-      
+  <p class="lead">
+    Find your way around the voco Chicago Downtown with these floor maps of the conference spaces.
+  </p>
+
+        </div>
+      </header>
     </div>
   </div>
 
-  <div class="py-8 bg-gray-50 lg:py-10 block-container">
-    <div class="wrapper narrow">
-      
-
-      
-
-
-      <h2 class="mb-6 text-xl font-bold leading-tight lg:text-3xl">About this session</h2>
-      <div class="prose lg:prose-lg">
-        <p>In this talk, I’ll delve into how GeoDjango can be used to build scalable spatial data platforms for smart cities and urban systems. Cities are fundamentally spatial systems—roads, buildings, utilities, mobility flows, and environmental sensors all exist in geographic space—and modeling these systems requires tools that can handle geospatial data at scale. GeoDjango, combined with PostGIS, provides a powerful framework for representing, querying, and visualizing this spatial information in web applications.<br>
-I’ll begin by exploring how urban entities such as buildings, transit routes, sensor locations, and zoning boundaries can be modeled using GeoDjango’s spatial fields and ORM abstractions. Attendees will see how spatial indexes and geospatial queries enable proximity search, containment checks, routing queries, and large-scale spatial analytics directly from Django applications.<br>
-Next, I’ll examine architectural and performance considerations for city-scale spatial systems, including indexing strategies, partitioning spatial datasets, and optimizing geospatial queries for low latency. We’ll discuss how GeoDjango fits into modern data pipelines, integrating with streaming telemetry, GIS data sources, and visualization layers such as interactive maps and dashboards.<br>
-Finally, I’ll discuss how spatial data platforms inform urban planning, infrastructure management, and policy decisions, and how Django-based systems can serve as the backbone for civic analytics and public data platforms. Throughout the talk, attendees will gain practical and conceptual tools for building geospatially-aware web systems and a deeper understanding of how Django can power the spatial intelligence layer of modern cities.</p>
-
+  
+  <div class="block-container bg-background">
+    <div class="wrapper">
+      <div class="mx-auto prose lg:prose-lg">
+        <section>
+          <h2 class="mb-4 site-h2">14th Floor</h2>
+          <figure class="lg:max-w-xl lg:mx-auto">
+            <img
+              class="w-full media"
+              src="/assets/img/venue/voco-floor-14.svg"
+              alt="Floor map of the 14th floor of the voco Chicago Downtown"
+              loading="lazy"
+            />
+            <figcaption class="mt-4">
+              The 14th floor is where the talks will happen, as well as registration and sprints. Check the on-site signage for specific room assignments as you make your way around.
+            </figcaption>
+          </figure>
+        </section>
       </div>
     </div>
   </div>
 
-
-
-
-  
-  <div class="pt-8 pb-16 block-container bg-ocean-blue">
-    <div class="wrapper narrow">
-      <div class="max-w-screen-md pt-6 mt-auto">
-        <h2 class="mb-8 text-xl font-bold leading-tight lg:text-3xl">Presented by</h2>
-        <ul class="space-y-16">
-          
-            
-            <li class="relative p-6 bg-white lg:pt-10 card-effect-1">
-              <section class="flex flex-wrap gap-6">
-                
-                  
-                  <img class="inline-block object-cover media object-left-top rounded aspect-square w-36 h-36 lg:w-48 lg:h-48" alt="Drishti Jain" loading="lazy" decoding="async" src="/presenters/drishti-jain-180.webp" width="600" height="600" srcset="/presenters/drishti-jain-180.webp 180w, /presenters/drishti-jain-300.webp 300w, /presenters/drishti-jain-600.webp 600w" sizes="(max-width: 1024px) 180px, 180px">
-                
-
-                <div class="md:flex-1">
-                  <span class="flex flex-col gap-2 mb-4">
-                    <h3 class="text-xl font-semibold leading-4 lg:text-3xl">Drishti Jain</h3>
-                    
-                  </span>
-
-                  
-                    <ul class="flex flex-wrap gap-4 mt-auto">
-                      
-                      
-                      
-                      
-                      
-                      
-                    </ul>
-                  
-
-                  
-                    <div class="mt-4 prose">
-                      <p>Drishti is a Software Engineer and a technology book author. She is based in the USA and believes in democratizing opportunities and brings knowledge of the latest developments in the fast-moving field of technology to early professionals, students, and keep them up to date and well-equipped for their professional careers.<br>
-She has spoken at tech conferences across the globe and shared knowledge with the community.</p>
-<p>In her spare time, she likes to paint nature, explore new places and anchor live shows.</p>
-
-                    </div>
-                  
-                </div>
-              </section>
-            </li>
-          
-        </ul>
+  <div class="block-container">
+    <div class="wrapper">
+      <div class="mx-auto prose lg:prose-lg">
+        <section>
+          <h2 class="mb-4 site-h2">15th Floor</h2>
+          <figure class="lg:max-w-xl lg:mx-auto">
+            <img
+              class="w-full media"
+              src="/assets/img/venue/voco-floor-15.svg"
+              alt="Floor map of the 15th floor of the voco Chicago Downtown"
+              loading="lazy"
+            />
+            <figcaption class="mt-4">
+              The 15th floor is where open spaces will be held. Check the on-site signage for specific room assignments as you make your way around.
+            </figcaption>
+          </figure>
+        </section>
       </div>
     </div>
   </div>
-  
+
 </main>
 
   <footer id="SiteFooter" class="site-footer">
