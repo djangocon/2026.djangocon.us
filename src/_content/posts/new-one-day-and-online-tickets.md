@@ -4,7 +4,7 @@ hidden: false
 category: Announcements
 layout: post
 published_datetime: 2026-08-14 12:00:00-05:00
-title: "New One Day and Online Tickets"
+title: "New One-Day and Online Tickets"
 ---
 
 Can't make it to Chicago for the whole week? We've added new **One Day** tickets to make it easier to join us for just the part you can get to.
