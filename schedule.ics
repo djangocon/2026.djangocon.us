@@ -329,20 +329,6 @@ URL:https://2026.djangocon.us/talks/lightning-talks-tuesday/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-DTSTART;TZID=America/Chicago:20260825T135000
-DTEND;TZID=America/Chicago:20260825T143500
-DTSTAMP:20260825T135000Z
-UID:13-50-t0-yes-we-allow-substitutions-no-we-don-t-serve-spaghetti@https://2026.djangocon.us
-SUMMARY:Yes, we allow substitutions. No, we don't serve spaghetti.
-LOCATION:Sauganash Ballroom
-DESCRIPTION:Presenter: Jack Linke\n\nWhen users want a custom status field, a slightly different workflow, or a new export format, it might seem like a quick and easy win to whip these custom solutions together. But over time, they add up.
- I know because I've been there.
- While building a multi-tenant Django SaaS for irrigation water utilities, I read dozens of blog articles and StackOverflow posts on how to make software configurable, and at one point or another I tried most of the common approaches: choices with CharField and conditional statements, JSONField-based configs, runtime settings, feature flags, hand-rolled relational models, and lots more. Each one helped (up to a point), and most eventually showed their limits.
- This talk organizes those approaches and others into a few clear layers of configurability and walks you through where each works well and where they tend to fail. We'll look at tools like django-constance, django-waffle, and packages for configurability with multi-tenant patterns. We'll also ta...
-URL:https://2026.djangocon.us/talks/yes-we-allow-substitutions-no-we-don-t-serve-spaghetti/
-STATUS:CONFIRMED
-END:VEVENT
-BEGIN:VEVENT
 DTSTART;TZID=America/Chicago:20260825T144000
 DTEND;TZID=America/Chicago:20260825T150500
 DTSTAMP:20260825T144000Z
