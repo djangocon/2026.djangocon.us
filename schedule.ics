@@ -329,6 +329,20 @@ URL:https://2026.djangocon.us/talks/lightning-talks-tuesday/
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;TZID=America/Chicago:20260825T135000
+DTEND;TZID=America/Chicago:20260825T141500
+DTSTAMP:20260825T135000Z
+UID:13-50-t0-who-goes-there-actively-detecting-intruders-with-cyber-deception-tools@https://2026.djangocon.us
+SUMMARY:Who Goes There? Actively Detecting Intruders With Cyber Deception Tools
+LOCATION:Sauganash Ballroom
+DESCRIPTION:Presenter: Dwayne McDaniel\n\nThe best time to detect an attacker is while they are still inside your environment, before stolen data, lateral movement, or privilege escalation turns a foothold into a breach. Unfortunately, many organizations still learn what happened only after the damage is done.
+ Attackers follow patterns, and one of the clearest is credential hunting. After gaining access, they search for hardcoded secrets, API keys, tokens, and other credentials that can help them expand control. That behavior creates an opportunity for defenders.
+ This talk explores honeytokens, lightweight deceptive assets designed to look like valuable credentials but exist only to alert defenders when an attacker interacts with them. Unlike full honeypot environments, honeytokens are easy to deploy, require minimal maintenance, and can be embedded where attackers are most likely to look.
+ Attendees will learn how honeytokens fit into a modern detection strategy, why they work so well against credential-driven attacks, a...
+URL:https://2026.djangocon.us/talks/who-goes-there-actively-detecting-intruders-with-cyber-deception-tools/
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;TZID=America/Chicago:20260825T144000
 DTEND;TZID=America/Chicago:20260825T150500
 DTSTAMP:20260825T144000Z
