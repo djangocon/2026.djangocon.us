@@ -6,13 +6,72 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-08-13T19:48:21Z</updated
+    >2026-08-14T14:07:22Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>Introducing Open Spaces! (And Why You Should Host One)</title>
+      <link href="https://2026.djangocon.us/news/open-spaces/" />
+      <updated>2026-08-14T14:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/open-spaces/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;Some of the best parts of DjangoCon US have never been on the program but in the less structured part of the conference; the &#39;hallway track&#39;, a small group that forms around a table after a talk, or a conversation that wants to keep going after lunch.&lt;/p&gt;
+&lt;p&gt;These topics include technical debugging, brainstorming, career guidance, building interpersonal skills, sharing hobbies and interests, and more.&lt;/p&gt;
+&lt;p&gt;This year we moved to a &lt;a href=&#34;/news/single-track/&#34;&gt;single track&lt;/a&gt;, and that gives us the space to support those conversations directly. With that in mind, we&#39;re introducing &lt;strong&gt;Open Spaces&lt;/strong&gt; to DjangoCon!&lt;/p&gt;
+&lt;h2 id=&#34;what-is-an-open-space%3F&#34; tabindex=&#34;-1&#34;&gt;What Is an Open Space?&lt;/h2&gt;
+&lt;p&gt;An Open Space is a patricipant-driven discussion where the topic and agenda is set by whoever shows up, as opposed to being planned in advance. It is intended to be more interactive and participatory than a regular presentation. The topics can range as widely as you&#39;d like!&lt;/p&gt;
+&lt;h2 id=&#34;when-and-where&#34; tabindex=&#34;-1&#34;&gt;When and Where&lt;/h2&gt;
+&lt;p&gt;Open Spaces will run on &lt;strong&gt;Monday, August 24&lt;/strong&gt; and &lt;strong&gt;Tuesday, August 25&lt;/strong&gt; in the &lt;strong&gt;Wolf Point Ballroom&lt;/strong&gt; (15th floor), during these hours:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;11:00am&lt;/li&gt;
+&lt;li&gt;2:00pm&lt;/li&gt;
+&lt;li&gt;3:00pm&lt;/li&gt;
+&lt;li&gt;4:00pm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All times are Central. Check the &lt;a href=&#34;/schedule/&#34;&gt;schedule&lt;/a&gt; to see how they line up with the talks.&lt;/p&gt;
+&lt;h2 id=&#34;how-will-it-work%3F-%F0%9F%91%80&#34; tabindex=&#34;-1&#34;&gt;How Will It Work? 👀&lt;/h2&gt;
+&lt;p&gt;We&#39;ll have a board, markers, &lt;strong&gt;14 tables&lt;/strong&gt; and sticky notes in the room. To pitch an idea:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Write your topic and a brief description on a sticky note&lt;/li&gt;
+&lt;li&gt;Put it on the board, next to the table you&#39;ll be at&lt;/li&gt;
+&lt;li&gt;Show up at that table at that time&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That&#39;s the whole process. Several Open Spaces can and will run at the same time at different tables, so you aren&#39;t competing with anyone for a slot.&lt;/p&gt;
+&lt;h2 id=&#34;why-should-you-host-an-open-space%3F-%F0%9F%A4%94&#34; tabindex=&#34;-1&#34;&gt;Why should you host an Open Space? 🤔&lt;/h2&gt;
+&lt;p&gt;The main stage is one shared experience for everyone, and Open Spaces are where you go deep with others on a specific thing you came to talk about! Its a chance to get more interactive and in depth.&lt;/p&gt;
+&lt;h2 id=&#34;some-ideas-to-get-you-started-%F0%9F%92%A1&#34; tabindex=&#34;-1&#34;&gt;Some Ideas to Get You Started 💡&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Career conversations: sharing career journeys, exploring what&#39;s next, and how to get there&lt;/li&gt;
+&lt;li&gt;Practice job interview questions with each other&lt;/li&gt;
+&lt;li&gt;Trade AI adoption strategies that are actually working&lt;/li&gt;
+&lt;li&gt;Discuss/vent (perhaps even kvetch a little?) about AI and the pace of technological change, and how it&#39;s changing our everyday work&lt;/li&gt;
+&lt;li&gt;Get feedback or a code review on a project idea&lt;/li&gt;
+&lt;li&gt;Run a workshop or talk that didn&#39;t make it to the main stage, and gather feedback on it&lt;/li&gt;
+&lt;li&gt;Do a code kata or other coding challenge together&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Or something else entirely. If you&#39;d want to talk about it with other people, it belongs on the board!&lt;/p&gt;
+&lt;h2 id=&#34;tips-for-hosting-%F0%9F%91%8D&#34; tabindex=&#34;-1&#34;&gt;Tips for Hosting 👍&lt;/h2&gt;
+&lt;p&gt;Hosting an Open Space is closer to starting a conversation than giving a talk:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Consider framing your topic as a question&lt;/strong&gt; Spend a couple of minutes setting it up, then let people talk&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Make room for quieter voices&lt;/strong&gt;, and gently steer things along if one person has been going for a while&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;It&#39;s ok to wander&lt;/strong&gt; If the group topic has drifted somewhere more interesting than your original topic, its ok to follow that thread&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;come-and-go-freely-%F0%9F%9A%B6&#34; tabindex=&#34;-1&#34;&gt;Come and Go Freely 🚶&lt;/h2&gt;
+&lt;p&gt;If this format is new to you, it&#39;s important to understand you are always free to leave. Some people call this the Law of Two Feet! 🦶 If a space turns out not to be what you needed, or there is a talk starting that you&#39;d like to check out, feel free slip out. Just do it quietly, out of respect for the people still talking.&lt;/p&gt;
+&lt;p&gt;That goes both ways. If you&#39;re hosting and a few people wander off, it isn&#39;t a verdict on your session. It&#39;s the format working and is part of the benefit of a looser format.&lt;/p&gt;
+&lt;h2 id=&#34;be-respectful-and-inclusive-%F0%9F%92%AF&#34; tabindex=&#34;-1&#34;&gt;Be Respectful and Inclusive 💯&lt;/h2&gt;
+&lt;p&gt;Our &lt;a href=&#34;/conduct/&#34;&gt;Code of Conduct&lt;/a&gt; applies in Open Spaces exactly as it does everywhere else at DjangoCon US. These are unstructured, attendee-run conversations, which makes it all the more important that everyone in the room is treated well.&lt;/p&gt;
+&lt;h2 id=&#34;bring-us-your-topic!&#34; tabindex=&#34;-1&#34;&gt;Bring Us Your Topic!&lt;/h2&gt;
+&lt;p&gt;If there&#39;s a conversation you&#39;ve been wanting to have with other people — a problem you&#39;re stuck on, an opinion you want tested, or a group you wish existed — write it on a sticky note and see who shows up!&lt;/p&gt;
+&lt;p&gt;We&#39;ll see you in Chicago! 📌&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>Get Active at DjangoCon US 2026</title>
       <link href="https://2026.djangocon.us/news/get-active-at-djangocon-us/" />
