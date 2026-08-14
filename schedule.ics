@@ -330,7 +330,7 @@ STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=America/Chicago:20260825T135000
-DTEND;TZID=America/Chicago:20260825T141500
+DTEND;TZID=America/Chicago:20260825T143500
 DTSTAMP:20260825T135000Z
 UID:13-50-t0-who-goes-there-actively-detecting-intruders-with-cyber-deception-tools@https://2026.djangocon.us
 SUMMARY:Who Goes There? Actively Detecting Intruders With Cyber Deception Tools
