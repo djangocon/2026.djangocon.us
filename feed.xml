@@ -6,13 +6,44 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-08-14T15:15:17Z</updated
+    >2026-08-14T16:57:19Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>New One-Day and Online Tickets</title>
+      <link href="https://2026.djangocon.us/news/new-one-day-and-online-tickets/" />
+      <updated>2026-08-14T17:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/new-one-day-and-online-tickets/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;Can&#39;t make it to Chicago for the whole week? We&#39;ve added new &lt;strong&gt;One-Day&lt;/strong&gt; tickets to make it easier to join us for just the part you can get to.&lt;/p&gt;
+&lt;h2 id=&#34;what&#39;s-new&#34; tabindex=&#34;-1&#34;&gt;What&#39;s New&lt;/h2&gt;
+&lt;p&gt;One-Day tickets are available in both &lt;strong&gt;Individual&lt;/strong&gt; and &lt;strong&gt;Corporate&lt;/strong&gt; rates, the same way our regular tickets work:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;One-Day Individual (In-person)&lt;/strong&gt;: $199&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;One-Day Corporate (In-person)&lt;/strong&gt;: $349&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pick the day that fits your schedule, and you&#39;re set.&lt;/p&gt;
+&lt;p&gt;And &lt;strong&gt;every One-Day ticket includes online access for the full week.&lt;/strong&gt; So you&#39;re not just buying a day pass to come see us in Chicago, you&#39;re also getting to watch along with us online the rest of the week.&lt;/p&gt;
+&lt;p&gt;We know schedules are busy. People have work. School is starting back up for a lot of folks. This gives you an option that fits around all of that. Plus you can stream and watch at your leisure.&lt;/p&gt;
+&lt;h2 id=&#34;online-tickets&#34; tabindex=&#34;-1&#34;&gt;Online Tickets&lt;/h2&gt;
+&lt;p&gt;We also have &lt;strong&gt;Online&lt;/strong&gt; tickets. If travel isn&#39;t in the cards this year, you can still catch the talks and be part of the conference from wherever you are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Online Individual&lt;/strong&gt;: $99&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Online Corporate&lt;/strong&gt;: $199&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;get-your-ticket&#34; tabindex=&#34;-1&#34;&gt;Get Your Ticket&lt;/h2&gt;
+&lt;p&gt;All ticket types, including One-Day, Corporate, Individual, and Online, are on our Tito page:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ti.to/defna/djangocon-us-2026&#34;&gt;ti.to/defna/djangocon-us-2026&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;DjangoCon US 2026 runs August 24th through 28th at the coco Chicago Downtown. Whether it&#39;s for a day, the whole week, or from your couch, we&#39;ll see you soon!&lt;/p&gt;
+&lt;h2 id=&#34;thanks%2C-pycon-au&#34; tabindex=&#34;-1&#34;&gt;Thanks, PyCon AU&lt;/h2&gt;
+&lt;p&gt;Thank you to our friends at &lt;a href=&#34;https://2026.pycon.org.au&#34;&gt;PyCon AU&lt;/a&gt; for the inspiration. They&#39;re in Brisbane August 26 to 30.&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>Introducing Open Spaces! (And Why You Should Host One)</title>
       <link href="https://2026.djangocon.us/news/open-spaces/" />
