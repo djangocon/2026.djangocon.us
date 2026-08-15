@@ -5,18 +5,18 @@ name: Paolo Melchiorre
 permalink: /presenters/paolo-melchiorre/
 photo: paolo-melchiorre.webp
 social:
-    bluesky: null
-    github: null
-    instagram: null
+    bluesky: https://bsky.app/profile/paulox.net
+    github: https://github.com/pauloxnet
+    instagram: https://www.instagram.com/paulox_net
     mastodon: https://fosstodon.org/@paulox
-    twitter: null
+    twitter: https://x.com/pauloxnet
     website: https://www.paulox.net
 ---
 
-I'm Paolo Melchiorre (aka paulox), a Python backend developer, Django contributor, and Python Software Foundation Fellow.
+I’m **Paolo Melchiorre** (aka `paulox`), an **independent consultant** working with Python and Django, and a contributor to Django and the wider Python ecosystem.
 
-As a member of the Django Software Foundation, I serve also as a board member. Additionally, I’m a coach and organizer for Django Girls, and a navigator for the Djangonaut Space mentorship program.
+I’m a **Fellow** of the Python Software Foundation and a **board member** of the Django Software Foundation. I’m also a **co-founder** of Python Pescara and Django on the Med.
 
-In my community involvement, I organize PyCon Italia, have founded the local Python Pescara community, and am a member of the Python Italia association.
+My technical **expertise** includes Django internals, especially the ORM, Python and its standard library, code modernization and testing, and database features, with long-standing experience in PostgreSQL.
 
-As a professional, I’m also a conference speaker, technical blogger at www.paulox.net, a GNU/Linux user, and a Free Software advocate. My academic background includes a degree in Computer Engineering from the University of Bologna.
+I’m a **conference speaker** and **technical blogger** at [**www.paulox.net**](https://www.paulox.net), where I write about Python, Django, PostgreSQL, and Free Software, and more recently about the impact of AI-assisted development on Open Source.
