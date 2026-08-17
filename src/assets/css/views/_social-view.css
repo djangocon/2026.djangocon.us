@@ -1,29 +1,30 @@
 .session-social-template {
-  @apply relative bg-ocean-blue;
+  @apply relative;
   width: 1200px;
   height: 675px;
 
-  --avatar-size: 380px;
+  --avatar-size: 350px;
 }
 
 .session-social-template-photo {
   object-fit: cover;
   aspect-ratio: 1 / 1;
   border-radius: 40px;
-  top: 80px;
-  left: 72px;
+  top: 270px;
+  left: 755px;
   width: var(--avatar-size);
-  @apply absolute z-0;
+  @apply absolute z-20;
 }
 
 .session-social-template-content {
   @apply relative z-10;
-  top: 0;
-  left: 500px;
-  width: 700px;
-  /* top: 35px; */
-  padding: 3rem;
-  height: 100%;
+  @apply font-sans;
+  top: 360px;
+  left: 15px;
+  width: 680px;
+  color: white;
+  padding: 0 1.5rem;
+  height: 300px;
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -43,10 +44,10 @@
 
 .session-social-template-talks {
   @apply font-medium leading-tight;
-  font-size: 60px;
+  font-size: 48px;
 
   &.talk-long {
-    font-size: 48px;
+    font-size: 36px;
   }
 }
 
