@@ -3,6 +3,8 @@
   "timezone": "America/Chicago",
   "conf_year": 2026,
   "phase": "active",
+
+  "social_card_version": "20260817",
   "conduct_email": "conduct@djangocon.us",
   "contact_us_email": "hello@djangocon.us",
   "opportunity_grants_email": "grants@djangocon.us",

@@ -1,6 +1,8 @@
 {% layout "_layouts/session.html" %}
 
 {% block social_images %}
-  <meta property="og:image" content="https://v1.screenshot.11ty.dev/{{ site.domain | url_encode }}{{ page.url | url_encode }}social/opengraph/" />
-  <meta property="twitter:image" content="https://v1.screenshot.11ty.dev/{{ site.domain | url_encode }}{{ page.url | url_encode }}social/opengraph/" />
+  {% comment %} Bump site.social_card_version to force the screenshot service to re-render cards after a template change. {% endcomment %}
+  {% capture social_card_url %}{{ site.domain }}{{ page.url }}social/?v={{ site.social_card_version }}{% endcapture %}
+  <meta property="og:image" content="https://v1.screenshot.11ty.dev/{{ social_card_url | url_encode }}/opengraph/" />
+  <meta property="twitter:image" content="https://v1.screenshot.11ty.dev/{{ social_card_url | url_encode }}/opengraph/" />
 {% endblock %}
