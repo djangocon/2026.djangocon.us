@@ -11,11 +11,11 @@ cover:
 title: "Sign up for Travel Safety Checks & The Latest on Chicago"
 ---
 
-We’re excited to see you in Chicago\! We know that travel in the United States may not feel as safe and easy as it has in past years. To help provide some peace of mind, we’ve built a [Travel Safety Check system](https://dcus-automation-prod.fly.dev/travel-safety/). You can enter your contact and arrival info as well as an emergency contact. DEFNA board members will reach out to you via Whatsapp or Signal soon after your scheduled arrival to make sure you made it safely. If we’re unable to reach you, we’ll notify your emergency contact.
+We’re excited to see you in Chicago\! We know that travel in the United States may not feel as safe and easy as it has in past years. To help provide some peace of mind, we’ve built a [Travel Safety Check system](https://automation.defna.org/travel-safety/). You can enter your contact and arrival info as well as an emergency contact. DEFNA board members will reach out to you via WhatsApp or Signal soon after your scheduled arrival to make sure you made it safely. If we’re unable to reach you, we’ll notify your emergency contact.
 
 Whether you are traveling within the country or flying in from abroad, we know travel can be stressful. If you’re traveling alone, it can feel especially overwhelming, and we want you to know you don’t have to navigate it entirely on your own.
 
-If that sounds like something that would give you some peace of mind, [please register today](https://dcus-automation-prod.fly.dev/travel-safety/). Only DEFNA board members have access to the system, and we’ll delete the data 30 days after the conference.
+If that sounds like something that would give you some peace of mind, [please register today](https://automation.defna.org/travel-safety/). Only DEFNA board members have access to the system, and we’ll delete the data 30 days after the conference.
 
 ## What’s going on in Chicago?
 
