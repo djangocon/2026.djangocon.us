@@ -208,6 +208,15 @@
   start_datetime: 2026-08-26 13:00:00-05:00
   title: Lunch
   track: t0
+- end_datetime: 2026-08-26 13:45:00-05:00
+  permalink: null
+  room: Wolf Point Ballroom
+  start_datetime: 2026-08-26 13:00:00-05:00
+  title: DSF Membership Open Space
+  description: >-
+    Join the Django Software Foundation board and members for a quick overview
+    and Q&A about foundation.
+  track: t1
 - end_datetime: 2026-08-26 15:35:00-05:00
   permalink: null
   room: Sauganash & Wolf Point Ballrooms

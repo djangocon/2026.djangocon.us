@@ -12,6 +12,9 @@
 
     <div class="space-y-1">
       <h4 class="font-semibold leading-tight lg:text-lg">{{ space.title }}</h4>
+      {% if space.description %}
+        <p class="text-sm">{{ space.description }}</p>
+      {% endif %}
       <p class="text-sm">
         <a href="/news/open-spaces/" class="no-underline cover group-hover:underline">What is an Open Space?</a>
       </p>
