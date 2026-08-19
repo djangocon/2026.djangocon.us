@@ -6,13 +6,42 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-08-19T16:16:46Z</updated
+    >2026-08-19T19:05:58Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>Sign up for Travel Safety Checks & Chicago Travel Safety Updates</title>
+      <link href="https://2026.djangocon.us/news/travel-to-chicago/" />
+      <updated>2026-08-19T17:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/travel-to-chicago/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;We’re excited to see you in Chicago!&lt;/p&gt;
+&lt;p&gt;Whether you are traveling within the country or flying in from abroad, we know travel can be stressful, and we know that travel in the United States may not feel as safe and easy as it has in past years. To help provide some peace of mind, we’ve built a &lt;a href=&#34;https://automation.defna.org/travel-safety/&#34;&gt;Travel Safety Check system&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can enter your contact and arrival info as well as an emergency contact. DEFNA board members will reach out to you via WhatsApp or Signal soon after your scheduled arrival to make sure you made it safely. If we’re unable to reach you, we’ll notify your emergency contact. Only DEFNA board members have access to the system, and we’ll &lt;strong&gt;delete the data 30 days after the conference&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If you’re traveling alone, it can feel especially overwhelming, and we want you to know you don’t have to navigate it on your own!&lt;/p&gt;
+&lt;h1 id=&#34;what-happened-last-year%3F&#34; tabindex=&#34;-1&#34;&gt;What happened last year?&lt;/h1&gt;
+&lt;p&gt;Last year, there was a lot of posturing and public comment about the US federal government sending National Guard troops and Immigration and Customs Enforcement (ICE) agents to Chicago. Despite increased ICE activity, At 2025 DjangoCon &lt;strong&gt;no incidents or concerns were reported&lt;/strong&gt;, and there was no National Guard presence in Chicago at that time.&lt;/p&gt;
+&lt;p&gt;In October 2025, National Guard troops were sent to Chicago but were never actually deployed due to lawsuits brought by the City of Chicago and the State of Illinois.&lt;/p&gt;
+&lt;h2 id=&#34;what%E2%80%99s-the-latest-with-trump-administration-activity-in-chicago%3F&#34; tabindex=&#34;-1&#34;&gt;What’s the latest with Trump administration activity in Chicago?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Since then, &lt;a href=&#34;https://capitolnewsillinois.com/news/supreme-court-rebuffs-trumps-planned-national-guard-deployment-to-chicago/&#34;&gt;&lt;strong&gt;National Guard troop movements into Chicago have been completely blocked&lt;/strong&gt;&lt;/a&gt;. There are no National Guard troops deployed to Chicago.&lt;/li&gt;
+&lt;li&gt;Unfortunately, &lt;a href=&#34;https://chicago.suntimes.com/immigration/2026/07/09/ice-arrests-increase-chicago-tactics-less-publicized-midway-blitz-back-yards-gage-brighton-park&#34;&gt;less publicized ICE activity has been ongoing&lt;/a&gt;, but &lt;strong&gt;we do not expect them to be active in the downtown area where the conference is located&lt;/strong&gt;. This activity has been away from downtown Chicago and more targeted in specific neighborhoods and collar suburbs. These agents tend to wear masks over their faces, baseball caps, and minimal uniforms that say “police.” If you see people fitting this description, avoid them. They are likely looking for someone particular rather than wanting to investigate the general population in the area.&lt;/li&gt;
+&lt;li&gt;You &lt;em&gt;may&lt;/em&gt; see Immigration and Customs Enforcement (ICE) agents at the airport. ICE agents were temporarily stationed at many airports in March to assist the TSA, but that ended in April. However, across the country there have still been occasional minor reports about agent activity at airports.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;here&#39;s-what-else-to-know&#34; tabindex=&#34;-1&#34;&gt;Here&#39;s what else to know&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The Chicago Police Department is completely separate from both these groups and has an official policy of not cooperating with ICE or the National Guard. Chicago Police officers will have patches on their uniforms that say “Chicago Police” and tend to wear a blue shirt with dark pants. They want all our attendees to have a great time in their city and are people you can approach for help should you need it.&lt;/li&gt;
+&lt;li&gt;In the United States, you are allowed to allowed to record the police and military in public. You also have the right to remain silent, refuse to sign any forms, and ask to speak to an attorney. If you or someone you’re with has an encounter with agents, take a video recording and please report the incident to the &lt;a href=&#34;https://2026.djangocon.us/conduct/&#34;&gt;Code of Conduct team&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;For more information,including how to handle interactions with ICE and local organizations you can support, the &lt;a href=&#34;https://www.icirr.org/resources&#34;&gt;Illinois Coalition for Immigrant and Refugee Rights&lt;/a&gt; is a great place to start!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We do not expect any of these developments to directly impact you while you’re in Chicago for DjangoCon US, but we do want to be prepared. Please attend opening remarks each day during the conference as we will provide any updates to these situations at that time. We may also send emails to attendees if there are important developments to be aware of.&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>Announcing Our Keynotes: Dawn Wages</title>
       <link href="https://2026.djangocon.us/news/keynote-dawn-wages/" />
