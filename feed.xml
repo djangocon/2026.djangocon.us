@@ -6,7 +6,7 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-08-19T19:58:29Z</updated
+    >2026-08-20T01:42:01Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
@@ -39,6 +39,41 @@
 &lt;li&gt;For more information,including how to handle interactions with ICE and local organizations you can support, the &lt;a href=&#34;https://www.icirr.org/resources&#34;&gt;Illinois Coalition for Immigrant and Refugee Rights&lt;/a&gt; is a great place to start!&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We do not expect any of these developments to directly impact you while you’re in Chicago for DjangoCon US, but we do want to be prepared. Please attend opening remarks each day during the conference as we will provide any updates to these situations at that time. We may also send emails to attendees if there are important developments to be aware of.&lt;/p&gt;
+</content
+      >
+    </entry>
+    <entry>
+      <title>Start DjangoCon US at the Welcome Reception</title>
+      <link href="https://2026.djangocon.us/news/welcome-reception/" />
+      <updated>2026-08-19T16:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/welcome-reception/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;DjangoCon US 2026 is almost here! Start your conference week with us at the &lt;a href=&#34;/talks/welcome-reception/&#34;&gt;Welcome Reception&lt;/a&gt; on Sunday, August 23, from 7:00 PM to 9:00 PM in the 15th Floor Lobby.&lt;/p&gt;
+&lt;p&gt;Whether this is your first DjangoCon US or one of many, the Welcome Reception is a relaxed chance to meet fellow attendees before the talks begin. Stop by for conversation and beverages, make some new friends, and say hello to old ones.&lt;/p&gt;
+&lt;h2 id=&#34;welcome-reception-details&#34; tabindex=&#34;-1&#34;&gt;Welcome Reception details&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;When:&lt;/strong&gt; Sunday, August 23, 2026, from 7:00 PM to 9:00 PM Central Time (&lt;a href=&#34;https://time.is/compare/0700PM_23_August_2026_in_Chicago&#34;&gt;view in your time zone&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Where:&lt;/strong&gt; 15th Floor Lobby&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We’re grateful to the sponsors who made this gathering possible:&lt;/p&gt;
+&lt;ul class=&#34;flex flex-wrap items-center justify-center gap-8 p-0 mx-auto my-8 list-none lg:gap-12&#34;&gt;
+  &lt;li class=&#34;m-0&#34;&gt;
+    &lt;a href=&#34;https://www.revsys.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer sponsored&#34; class=&#34;inline-block&#34;&gt;
+      &lt;img src=&#34;/sponsors/revsys.png&#34; alt=&#34;REVSYS logo&#34; class=&#34;w-auto h-20 max-w-[240px] max-h-[120px] object-contain&#34;&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&#34;m-0&#34;&gt;
+    &lt;a href=&#34;https://tworock.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer sponsored&#34; class=&#34;inline-block&#34;&gt;
+      &lt;img src=&#34;/sponsors/Two-Rock-Software-Logo.svg&#34; alt=&#34;Two Rock Software logo&#34; class=&#34;w-auto h-20 max-w-[240px] max-h-[120px] object-contain&#34;&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&#34;m-0&#34;&gt;
+    &lt;a href=&#34;https://www.caktusgroup.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer sponsored&#34; class=&#34;inline-block&#34;&gt;
+      &lt;img src=&#34;/sponsors/caktus.png&#34; alt=&#34;Caktus Consulting Group LLC logo&#34; class=&#34;w-auto h-20 max-w-[240px] max-h-[120px] object-contain&#34;&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Come as you are, stay for as long as you like, and help us kick off DjangoCon US 2026. We can’t wait to welcome you to Chicago!&lt;/p&gt;
 </content
       >
     </entry>
