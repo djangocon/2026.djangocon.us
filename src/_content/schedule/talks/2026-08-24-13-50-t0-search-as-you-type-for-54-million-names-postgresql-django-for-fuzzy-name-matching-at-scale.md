@@ -4,6 +4,7 @@ end_datetime: 2026-08-24 14:35:00-05:00
 permalink: /talks/search-as-you-type-for-54-million-names-postgresql-django-for-fuzzy-name-matching-at-scale/
 presenter_slugs:
 - tobias-mcnulty
+- gerald-carlton
 room: Sauganash Ballroom
 start_datetime: 2026-08-24 13:50:00-05:00
 tags:
