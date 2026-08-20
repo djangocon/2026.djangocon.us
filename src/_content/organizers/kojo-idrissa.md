@@ -5,7 +5,7 @@ photo: kojo-idrissa.jpg
 role: Orientation Chair
 social:
     mastodon: https://fosstodon.org/@kojoidrissa
-    twitter: KojoIdrissa
+    bluesky: kojoidrissa.bsky.social
     website: https://kojoidrissa.com/
     github: kojoidrissa
 ---
