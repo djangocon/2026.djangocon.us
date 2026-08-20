@@ -6,13 +6,86 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-08-20T18:15:51Z</updated
+    >2026-08-20T22:00:14Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
     <name>DjangoCon US Team</name>
     <email>hello@djangocon.us</email>
   </author>
+    <entry>
+      <title>Almost Time: What to Know Before You Head to Chicago</title>
+      <link href="https://2026.djangocon.us/news/see-you-in-chicago/" />
+      <updated>2026-08-20T17:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/see-you-in-chicago/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;DjangoCon US 2026 starts Monday, August 24 at the &lt;a href=&#34;/venue/&#34;&gt;voco Chicago Downtown&lt;/a&gt;. Some of you are already packing; some of you are still finishing that one thing at work before you can think about packing. Either way, here is everything worth knowing before you get on a plane, a train, or the Blue Line.&lt;/p&gt;
+&lt;section class=&#34;p-4 bg-yellow rounded&#34;&gt;
+  &lt;h3 class=&#34;mb-4 text-lg font-bold font-heading lg:text-2xl&#34;&gt;📬 Watch your inbox on Friday&lt;/h3&gt;
+  &lt;div class=&#34;prose prose-lg&#34;&gt;
+    &lt;p&gt;Ticket holders will get a welcome email on Friday, August 21 with the things we only share with attendees: your invitation to the conference Slack, the volunteer shift signup, and the link to register for Monday&#39;s lightning talks. Keep that email handy, since it is where those links live. Check your spam folder if you do not see it by Saturday.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;h2 id=&#34;before-you-leave-home&#34; tabindex=&#34;-1&#34;&gt;Before you leave home&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Sign up for a Travel Safety Check.&lt;/strong&gt; You can share your arrival details and an emergency contact, and a DEFNA board member will reach out on WhatsApp or Signal after you land to make sure you made it. Only DEFNA board members can see the data, and we delete it 30 days after the conference. Start here: &lt;a href=&#34;https://automation.defna.org/travel-safety/&#34;&gt;Travel Safety Check&lt;/a&gt;. That post also has our latest read on &lt;a href=&#34;/news/travel-to-chicago/&#34;&gt;travel to Chicago&lt;/a&gt;, including what we know about federal activity in the city and who to talk to if you need help.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Do a quick packing pass.&lt;/strong&gt; Our &lt;a href=&#34;/news/first-time-things-to-bring/&#34;&gt;first-timer packing list&lt;/a&gt; covers the essentials, and the short version is: a refillable water bottle, a layer for chilly ballrooms, and comfortable shoes. August in Chicago is usually lovely, but the breeze off the lake has opinions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Traveling from outside the US?&lt;/strong&gt; &lt;a href=&#34;/news/guide-to-america/&#34;&gt;A First-Timer&#39;s Guide to Navigating America&lt;/a&gt; and our &lt;a href=&#34;/news/international-travel/&#34;&gt;international travel post&lt;/a&gt; cover tipping, transit, plug adapters, and the paperwork side of things.&lt;/p&gt;
+&lt;h2 id=&#34;finding-your-way-once-you-arrive&#34; tabindex=&#34;-1&#34;&gt;Finding your way once you arrive&lt;/h2&gt;
+&lt;p&gt;We have &lt;a href=&#34;/venue/venue-map/&#34;&gt;floor maps of the venue&lt;/a&gt; online, so you can get oriented before you are standing in a hallway with a suitcase. The short version:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;14th floor:&lt;/strong&gt; conference registration, our breakfast, and all the talks&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;15th floor:&lt;/strong&gt; Open Spaces in the Wolf Point Ballroom, plus the lobby where the Welcome Reception happens&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Conference registration opens at &lt;strong&gt;7:30 AM on Monday&lt;/strong&gt;, just outside the Sauganash Ballroom, and our continental breakfast starts at the same time on the 14th floor. Tuesday and Wednesday both start at 8:00 AM. Note that hotel check-in is somewhere else entirely, either the 1st floor or the 15th floor, so do not go looking for us with your suitcase.&lt;/p&gt;
+&lt;p&gt;The 15th floor also has the hotel&#39;s own paid breakfast, which is a separate thing from the breakfast included with your conference ticket. If you want the buffet, that is where to find it. Otherwise head to the 14th floor with everyone else.&lt;/p&gt;
+&lt;p&gt;There will be signage and volunteers around, so if you are turned around, just ask.&lt;/p&gt;
+&lt;h2 id=&#34;sunday%3A-the-welcome-reception&#34; tabindex=&#34;-1&#34;&gt;Sunday: the Welcome Reception&lt;/h2&gt;
+&lt;p&gt;Start the week with us at the &lt;a href=&#34;/news/welcome-reception/&#34;&gt;Welcome Reception&lt;/a&gt; on &lt;strong&gt;Sunday, August 23, from 7:00 PM to 9:00 PM&lt;/strong&gt; in the &lt;strong&gt;15th Floor Lobby&lt;/strong&gt;. Conversation, beverages, and a low-key way to meet people before the talks begin. Come as you are and stay as long as you like.&lt;/p&gt;
+&lt;section class=&#34;p-4 bg-ocean-blue-200 rounded&#34;&gt;
+  &lt;h3 class=&#34;mb-4 text-lg font-bold font-heading lg:text-2xl&#34;&gt;🎟️ Sprints-only ticket? You&#39;re invited too&lt;/h3&gt;
+  &lt;div class=&#34;prose prose-lg&#34;&gt;
+    &lt;p&gt;If you are coming just for the sprints later in the week, the Welcome Reception is still yours. Come say hello on Sunday.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;p&gt;Thank you to REVSYS, Two Rock Software, and Caktus Consulting Group for making the reception possible.&lt;/p&gt;
+&lt;h2 id=&#34;monday%3A-board-game-night&#34; tabindex=&#34;-1&#34;&gt;Monday: Board Game Night&lt;/h2&gt;
+&lt;p&gt;Board Game Night runs &lt;strong&gt;Monday from 7:00 PM to 10:00 PM in the Sauganash Ballroom&lt;/strong&gt;. Bring a game, learn a game, or just pull up a chair and watch someone get a surprise win at something. It is one of the easiest evenings to fall into conversation with people you have not met yet.&lt;/p&gt;
+&lt;h2 id=&#34;lightning-talks&#34; tabindex=&#34;-1&#34;&gt;Lightning talks&lt;/h2&gt;
+&lt;p&gt;⚡ Talks are five minutes, wide open on topic, and one of the best parts of the week. They happen all three conference days, and plenty of experienced speakers gave their very first talk at a lightning talk session.&lt;/p&gt;
+&lt;p&gt;Registration for &lt;strong&gt;Monday&#39;s&lt;/strong&gt; lightning talks opens through the link in Friday&#39;s welcome email. Signups for Tuesday and Wednesday will be announced at the conference. If you want a nudge on picking a topic, &lt;a href=&#34;/news/lightning-talks/&#34;&gt;our lightning talk post&lt;/a&gt; has ideas and tips.&lt;/p&gt;
+&lt;h2 id=&#34;open-spaces&#34; tabindex=&#34;-1&#34;&gt;Open Spaces&lt;/h2&gt;
+&lt;p&gt;New this year: &lt;a href=&#34;/news/open-spaces/&#34;&gt;Open Spaces&lt;/a&gt;, running Monday and Tuesday in the &lt;strong&gt;Wolf Point Ballroom&lt;/strong&gt; at 11:00 AM, 2:00 PM, 3:00 PM, and 4:00 PM.&lt;/p&gt;
+&lt;p&gt;The format is simple. Write your topic on a sticky note, put it on the board next to a table, then show up at that table at that time. There are 14 tables, so nobody is competing for a slot. Career conversations, code reviews, the AI workflows that are actually earning their keep, the AI gripes you have been saving up, a talk that did not make the main stage, or a hobby you want to share all belong on the board.&lt;/p&gt;
+&lt;p&gt;You are also free to leave any Open Space at any time. That is the format working, not a verdict on anyone&#39;s session.&lt;/p&gt;
+&lt;h2 id=&#34;thursday-and-friday%3A-contribution-sprints&#34; tabindex=&#34;-1&#34;&gt;Thursday and Friday: contribution sprints&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;/sprints/&#34;&gt;contribution sprints&lt;/a&gt; run &lt;strong&gt;Thursday, August 27 and Friday, August 28, from 9:00 AM to 5:00 PM&lt;/strong&gt; in the Sauganash Ballroom (West), and virtually on the conference Slack.&lt;/p&gt;
+&lt;section class=&#34;p-4 bg-yellow rounded&#34;&gt;
+  &lt;h3 class=&#34;mb-4 text-lg font-bold font-heading lg:text-2xl&#34;&gt;🛠️ Sprints are free, but they need their own ticket&lt;/h3&gt;
+  &lt;div class=&#34;prose prose-lg&#34;&gt;
+    &lt;p&gt;Sprint attendance is free and open to everyone, including people not attending the main conference. You do need to grab a separate sprints ticket so we know how many chairs to plan for and so you can confirm that you agree to abide by our &lt;a href=&#34;/conduct/&#34;&gt;Code of Conduct&lt;/a&gt;. If you have not done that yet, &lt;a href=&#34;https://ti.to/defna/djangocon-us-2026&#34;&gt;reserve your spot&lt;/a&gt;.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;p&gt;Thursday morning is a good place to start even if you have never contributed to anything:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;9:00 AM, &lt;a href=&#34;/sprints/project-introductions/&#34;&gt;Project Introductions&lt;/a&gt;:&lt;/strong&gt; project leads give 30-second pitches so you can find something that interests you&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;9:25 AM, &lt;a href=&#34;/sprints/learn-to-contribute-to-django/&#34;&gt;Learn to Contribute to Django&lt;/a&gt;&lt;/strong&gt; with Sarah Boyce and Jacob Walls, or &lt;strong&gt;&lt;a href=&#34;/sprints/learn-to-review-django-prs/&#34;&gt;Learn to Review Django PRs&lt;/a&gt;&lt;/strong&gt; with Lilian&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;1:00 PM, &lt;a href=&#34;/sprints/django-new-features-review/&#34;&gt;Django New Features Review&lt;/a&gt;&lt;/strong&gt; with Frank Wiles, working through Django&#39;s New Features queue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to get your environment ready before you fly, &lt;a href=&#34;/news/sprints-prep/&#34;&gt;How to Prepare for Sprints as a Contributor&lt;/a&gt; is the guide to read on the plane. Leading a project? &lt;a href=&#34;/news/preparing-for-sprints-as-project-leader/&#34;&gt;Preparing for sprints as a project leader&lt;/a&gt; will help you get the most out of the two days.&lt;/p&gt;
+&lt;h2 id=&#34;a-few-other-things-worth-knowing&#34; tabindex=&#34;-1&#34;&gt;A few other things worth knowing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Volunteering:&lt;/strong&gt; shifts are short, first-time volunteers are supported, and it is one of the fastest ways to feel like you belong. The signup link is in Friday&#39;s email, and &lt;a href=&#34;/news/why-you-should-volunteer/&#34;&gt;here is why we think you should&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Quiet spaces:&lt;/strong&gt; there is a Quiet Room in Shakespeare House and a private Wellness Room in Lake House, open 8:00 AM to 5:30 PM all three conference days.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Childcare:&lt;/strong&gt; we reimburse childcare up to $150 per day with a receipt, and there is a private lactation space at the venue. Details in our &lt;a href=&#34;/news/childcare-during-djangocon/&#34;&gt;childcare post&lt;/a&gt;, or email &lt;a href=&#34;mailto:hello@defna.org&#34;&gt;hello@defna.org&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Getting outside:&lt;/strong&gt; we have a &lt;a href=&#34;https://www.strava.com/clubs/dcus-2026&#34;&gt;Strava group&lt;/a&gt; and an &lt;code&gt;#outings&lt;/code&gt; channel on Slack for group runs, rides, and walks. &lt;a href=&#34;/news/get-active-at-djangocon-us/&#34;&gt;Get Active at DjangoCon US&lt;/a&gt; has route ideas and hotel gym details.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Code of Conduct:&lt;/strong&gt; it applies everywhere, including Open Spaces, Slack, and evening events. Please read &lt;a href=&#34;/conduct/&#34;&gt;the Code of Conduct&lt;/a&gt; and know how to reach the team if you need them.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The talks themselves:&lt;/strong&gt; one single track, three keynotes from &lt;a href=&#34;/news/keynote-dawn-wages/&#34;&gt;Dawn Wages&lt;/a&gt;, &lt;a href=&#34;/news/keynote-karen-tracey/&#34;&gt;Karen Tracey&lt;/a&gt;, and &lt;a href=&#34;/news/keynote-sarah-boyce/&#34;&gt;Sarah Boyce&lt;/a&gt;, and a Deep Dive day on Wednesday. The full &lt;a href=&#34;/schedule/&#34;&gt;schedule is online&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;see-you-very-soon&#34; tabindex=&#34;-1&#34;&gt;See you very soon&lt;/h2&gt;
+&lt;p&gt;Travel safe, drink some water, and we will see you in Chicago!&lt;/p&gt;
+</content
+      >
+    </entry>
     <entry>
       <title>Sign up for Travel Safety Checks &amp; Chicago Travel Safety Updates</title>
       <link href="https://2026.djangocon.us/news/travel-to-chicago/" />
