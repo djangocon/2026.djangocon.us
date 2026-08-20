@@ -21,7 +21,7 @@ eleventyExcludeFromCollections: true
   {%- for post in collections.posts reversed %}
     {% capture post_url %}{{ site.domain }}{{ post.url }}{%- endcapture -%}
     <entry>
-      <title>{{ post.data.title }}</title>
+      <title>{{ post.data.title | escape }}</title>
       <link href="{{ site.domain }}{{ post.url }}" />
       <updated>{{ post.data.published_datetime | dateToRfc3339 }}</updated>
       <id>{{ post_url }}</id>
