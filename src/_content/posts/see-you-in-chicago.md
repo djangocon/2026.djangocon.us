@@ -11,7 +11,7 @@ cover:
 title: "Almost Time: What to Know Before You Head to Chicago"
 ---
 
-DjangoCon US 2026 starts Monday, August 24 at the [voco Chicago Downtown](/venue/). Some of you are already packing, some of you are still finishing that one thing at work before you can think about packing. Either way, here is everything worth knowing before you get on a plane, a train, or the Blue Line.
+DjangoCon US 2026 starts Monday, August 24 at the [voco Chicago Downtown](/venue/). Some of you are already packing; some of you are still finishing that one thing at work before you can think about packing. Either way, here is everything worth knowing before you get on a plane, a train, or the Blue Line.
 
 <!-- excerpt -->
 
