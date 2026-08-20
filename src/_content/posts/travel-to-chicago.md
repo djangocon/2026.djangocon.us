@@ -25,7 +25,7 @@ Last year, there was a lot of posturing and public comment about the US federal 
 
 In October 2025, National Guard troops were sent to Chicago but were never actually deployed due to lawsuits brought by the City of Chicago and the State of Illinois.
 
-## What’s the latest with Trump administration activity in Chicago?
+## What’s the latest with federal activity in Chicago?
 
 * Since then, [**National Guard troop movements into Chicago have been completely blocked**](https://capitolnewsillinois.com/news/supreme-court-rebuffs-trumps-planned-national-guard-deployment-to-chicago/). There are no National Guard troops deployed to Chicago.
 * Unfortunately, [less publicized ICE activity has been ongoing](https://chicago.suntimes.com/immigration/2026/07/09/ice-arrests-increase-chicago-tactics-less-publicized-midway-blitz-back-yards-gage-brighton-park), but **we do not expect them to be active in the downtown area where the conference is located**. This activity has been away from downtown Chicago and more targeted in specific neighborhoods and collar suburbs. These agents tend to wear masks over their faces, baseball caps, and minimal uniforms that say “police.” If you see people fitting this description, avoid them. They are likely looking for someone particular rather than wanting to investigate the general population in the area. 
