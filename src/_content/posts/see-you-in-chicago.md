@@ -18,13 +18,14 @@ DjangoCon US 2026 starts Monday, August 24 at the [voco Chicago Downtown](/venue
 <section class="p-4 bg-yellow rounded">
   <h3 class="mb-4 text-lg font-bold font-heading lg:text-2xl">📬 Watch your inbox on Friday</h3>
   <div class="prose prose-lg">
-    <p>Ticket holders will get a welcome email on Friday, August 21 with the things we only share with attendees: your invitation to the conference Slack, the volunteer shift signup, and the link to register for Monday's lightning talks. Keep that email handy, since it is where those links live. Check your spam folder if you do not see it by Saturday.</p>
+    <p>In-person ticket holders will get a welcome email on Friday, August 21 with the things we only share with attendees: your invitation to the conference Slack, the volunteer shift signup, and the link to register for Monday's lightning talks. Keep that email handy, since it is where those links live. Check your spam folder if you do not see it by Saturday.</p>
+    <p><b>Online ticket holders will get a welcome email on Sunday, August 23</b> with Slack invite and volunteer sign up link (yes, we need online volunteers, too!) There will be a separate email with a unique link to get into the live streaming portal.</p>
   </div>
 </section>
 
 ## Before you leave home
 
-**Sign up for a Travel Safety Check.** You can share your arrival details and an emergency contact, and a DEFNA board member will reach out on WhatsApp or Signal after you land to make sure you made it. Only DEFNA board members can see the data, and we delete it 30 days after the conference. Start here: [Travel Safety Check](https://automation.defna.org/travel-safety/). That post also has our latest read on [travel to Chicago](/news/travel-to-chicago/), including what we know about federal activity in the city and who to talk to if you need help.
+**Sign up for a Travel Safety Check.** You can share your arrival details and an emergency contact, and a DEFNA board member will reach out on WhatsApp or Signal after you land to make sure you made it. Only DEFNA board members can see the data, and we delete it 30 days after the conference. Start here: [Travel Safety Check](https://automation.defna.org/travel-safety/). There's also a post with our latest read on [travel to Chicago](/news/travel-to-chicago/), including what we know about federal activity in the city and who to talk to if you need help.
 
 **Do a quick packing pass.** Our [first-timer packing list](/news/first-time-things-to-bring/) covers the essentials, and the short version is: a refillable water bottle, a layer for chilly ballrooms, and comfortable shoes. August in Chicago is usually lovely, but the breeze off the lake has opinions.
 
@@ -99,6 +100,7 @@ If you want to get your environment ready before you fly, [How to Prepare for Sp
 - **Quiet spaces:** there is a Quiet Room in Shakespeare House and a private Wellness Room in Lake House, open 8:00 AM to 5:30 PM all three conference days.
 - **Childcare:** we reimburse childcare up to $150 per day with a receipt, and there is a private lactation space at the venue. Details in our [childcare post](/news/childcare-during-djangocon/), or email hello@defna.org.
 - **Getting outside:** we have a [Strava group](https://www.strava.com/clubs/dcus-2026) and an `#outings` channel on Slack for group runs, rides, and walks. [Get Active at DjangoCon US](/news/get-active-at-djangocon-us/) has route ideas and hotel gym details.
+- **Public health:** masks are recommended (KN95 or N95 preferred), and we will have N95 masks available on request and designated mask-required seating areas in the talk rooms. Tests are not required this year. The full [public health policy](/public-health/) has the details.
 - **Code of Conduct:** it applies everywhere, including Open Spaces, Slack, and evening events. Please read [the Code of Conduct](/conduct/) and know how to reach the team if you need them.
 - **The talks themselves:** one single track, three keynotes from [Dawn Wages](/news/keynote-dawn-wages/), [Karen Tracey](/news/keynote-karen-tracey/), and [Sarah Boyce](/news/keynote-sarah-boyce/), and a Deep Dive day on Wednesday. The full [schedule is online](/schedule/).
 
