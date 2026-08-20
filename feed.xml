@@ -6,7 +6,7 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-08-20T22:00:14Z</updated
+    >2026-08-20T22:43:43Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
@@ -23,11 +23,12 @@
 &lt;section class=&#34;p-4 bg-yellow rounded&#34;&gt;
   &lt;h3 class=&#34;mb-4 text-lg font-bold font-heading lg:text-2xl&#34;&gt;📬 Watch your inbox on Friday&lt;/h3&gt;
   &lt;div class=&#34;prose prose-lg&#34;&gt;
-    &lt;p&gt;Ticket holders will get a welcome email on Friday, August 21 with the things we only share with attendees: your invitation to the conference Slack, the volunteer shift signup, and the link to register for Monday&#39;s lightning talks. Keep that email handy, since it is where those links live. Check your spam folder if you do not see it by Saturday.&lt;/p&gt;
+    &lt;p&gt;In-person ticket holders will get a welcome email on Friday, August 21 with the things we only share with attendees: your invitation to the conference Slack, the volunteer shift signup, and the link to register for Monday&#39;s lightning talks. Keep that email handy, since it is where those links live. Check your spam folder if you do not see it by Saturday.&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;Online ticket holders will get a welcome email on Sunday, August 23&lt;/b&gt; with Slack invite and volunteer sign up link (yes, we need online volunteers, too!) There will be a separate email with a unique link to get into the live streaming portal.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 &lt;h2 id=&#34;before-you-leave-home&#34; tabindex=&#34;-1&#34;&gt;Before you leave home&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Sign up for a Travel Safety Check.&lt;/strong&gt; You can share your arrival details and an emergency contact, and a DEFNA board member will reach out on WhatsApp or Signal after you land to make sure you made it. Only DEFNA board members can see the data, and we delete it 30 days after the conference. Start here: &lt;a href=&#34;https://automation.defna.org/travel-safety/&#34;&gt;Travel Safety Check&lt;/a&gt;. That post also has our latest read on &lt;a href=&#34;/news/travel-to-chicago/&#34;&gt;travel to Chicago&lt;/a&gt;, including what we know about federal activity in the city and who to talk to if you need help.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sign up for a Travel Safety Check.&lt;/strong&gt; You can share your arrival details and an emergency contact, and a DEFNA board member will reach out on WhatsApp or Signal after you land to make sure you made it. Only DEFNA board members can see the data, and we delete it 30 days after the conference. Start here: &lt;a href=&#34;https://automation.defna.org/travel-safety/&#34;&gt;Travel Safety Check&lt;/a&gt;. There&#39;s also a post with our latest read on &lt;a href=&#34;/news/travel-to-chicago/&#34;&gt;travel to Chicago&lt;/a&gt;, including what we know about federal activity in the city and who to talk to if you need help.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Do a quick packing pass.&lt;/strong&gt; Our &lt;a href=&#34;/news/first-time-things-to-bring/&#34;&gt;first-timer packing list&lt;/a&gt; covers the essentials, and the short version is: a refillable water bottle, a layer for chilly ballrooms, and comfortable shoes. August in Chicago is usually lovely, but the breeze off the lake has opinions.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Traveling from outside the US?&lt;/strong&gt; &lt;a href=&#34;/news/guide-to-america/&#34;&gt;A First-Timer&#39;s Guide to Navigating America&lt;/a&gt; and our &lt;a href=&#34;/news/international-travel/&#34;&gt;international travel post&lt;/a&gt; cover tipping, transit, plug adapters, and the paperwork side of things.&lt;/p&gt;
 &lt;h2 id=&#34;finding-your-way-once-you-arrive&#34; tabindex=&#34;-1&#34;&gt;Finding your way once you arrive&lt;/h2&gt;
@@ -78,6 +79,7 @@
 &lt;li&gt;&lt;strong&gt;Quiet spaces:&lt;/strong&gt; there is a Quiet Room in Shakespeare House and a private Wellness Room in Lake House, open 8:00 AM to 5:30 PM all three conference days.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Childcare:&lt;/strong&gt; we reimburse childcare up to $150 per day with a receipt, and there is a private lactation space at the venue. Details in our &lt;a href=&#34;/news/childcare-during-djangocon/&#34;&gt;childcare post&lt;/a&gt;, or email &lt;a href=&#34;mailto:hello@defna.org&#34;&gt;hello@defna.org&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Getting outside:&lt;/strong&gt; we have a &lt;a href=&#34;https://www.strava.com/clubs/dcus-2026&#34;&gt;Strava group&lt;/a&gt; and an &lt;code&gt;#outings&lt;/code&gt; channel on Slack for group runs, rides, and walks. &lt;a href=&#34;/news/get-active-at-djangocon-us/&#34;&gt;Get Active at DjangoCon US&lt;/a&gt; has route ideas and hotel gym details.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Public health:&lt;/strong&gt; masks are recommended (KN95 or N95 preferred), and we will have N95 masks available on request and designated mask-required seating areas in the talk rooms. Tests are not required this year. The full &lt;a href=&#34;/public-health/&#34;&gt;public health policy&lt;/a&gt; has the details.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Code of Conduct:&lt;/strong&gt; it applies everywhere, including Open Spaces, Slack, and evening events. Please read &lt;a href=&#34;/conduct/&#34;&gt;the Code of Conduct&lt;/a&gt; and know how to reach the team if you need them.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;The talks themselves:&lt;/strong&gt; one single track, three keynotes from &lt;a href=&#34;/news/keynote-dawn-wages/&#34;&gt;Dawn Wages&lt;/a&gt;, &lt;a href=&#34;/news/keynote-karen-tracey/&#34;&gt;Karen Tracey&lt;/a&gt;, and &lt;a href=&#34;/news/keynote-sarah-boyce/&#34;&gt;Sarah Boyce&lt;/a&gt;, and a Deep Dive day on Wednesday. The full &lt;a href=&#34;/schedule/&#34;&gt;schedule is online&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
