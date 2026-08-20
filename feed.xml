@@ -6,7 +6,7 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-08-20T17:57:17Z</updated
+    >2026-08-20T18:15:51Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
@@ -14,7 +14,7 @@
     <email>hello@djangocon.us</email>
   </author>
     <entry>
-      <title>Sign up for Travel Safety Checks & Chicago Travel Safety Updates</title>
+      <title>Sign up for Travel Safety Checks &amp; Chicago Travel Safety Updates</title>
       <link href="https://2026.djangocon.us/news/travel-to-chicago/" />
       <updated>2026-08-19T17:00:00Z</updated>
       <id>https://2026.djangocon.us/news/travel-to-chicago/</id>
@@ -500,7 +500,7 @@
       >
     </entry>
     <entry>
-      <title>A First-Timer's Guide to Navigating America</title>
+      <title>A First-Timer&#39;s Guide to Navigating America</title>
       <link href="https://2026.djangocon.us/news/guide-to-america/" />
       <updated>2026-07-11T16:00:00Z</updated>
       <id>https://2026.djangocon.us/news/guide-to-america/</id>
