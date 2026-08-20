@@ -161,7 +161,7 @@ DTSTAMP:20260824T135000Z
 UID:13-50-t0-search-as-you-type-for-54-million-names-postgresql-django-for-fuzzy-name-matching-at-scale@https://2026.djangocon.us
 SUMMARY:Search-as-you-type for 54 Million Names: PostgreSQL + Django for Fuzzy Name Matching at Scale
 LOCATION:Sauganash Ballroom
-DESCRIPTION:Presenter: Tobias McNulty\n\nSearching for human names in large datasets is harder than it looks. A user searches for &quot;Smith, John,&quot; but the database contains &quot;Smyth, Jon&quot; or &quot;Smithe, Johnny.&quot; Standard LIKE queries are too strict, full-text search doesn't handle name nuances well, and unindexed fuzzy matching won't scale.
+DESCRIPTION:Presenter: Tobias McNulty\nPresenter: Gerald Carlton\n\nSearching for human names in large datasets is harder than it looks. A user searches for &quot;Smith, John,&quot; but the database contains &quot;Smyth, Jon&quot; or &quot;Smithe, Johnny.&quot; Standard LIKE queries are too strict, full-text search doesn't handle name nuances well, and unindexed fuzzy matching won't scale.
  This talk covers how we solved these problems for RecordsDB, a Django app that searches over 50 million North Carolina court records for legal aid organizations and public defenders.
  Talk Structure
  The session is structured as a technical walkthrough using a Jupyter notebook and a sample Django app. I’ll demonstrate the pitfalls of name searching and how to implement performant solutions. The notebook and source code will be available at the start of the talk so you can follow along.
