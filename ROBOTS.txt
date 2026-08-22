@@ -1,4 +1,4 @@
-Sitemap: /sitemap.xml
+Sitemap: https://2026.djangocon.us/sitemap.xml
 
 User-agent: *
 Disallow:
