@@ -1,8 +1,50 @@
 ---
 templateClass: homepage
+description: "DjangoCon US 2026 is a Python and Django web development conference in Chicago, Illinois, August 24-28. Join the community for talks, tutorials, and sprints."
 ---
 
 {% layout "_layouts/default.html" %}
+
+{% block structured_data %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "DjangoCon US 2026",
+  "description": "DjangoCon US 2026 is a Python and Django web development conference in Chicago, Illinois, August 24-28.",
+  "startDate": "2026-08-24",
+  "endDate": "2026-08-28",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "url": "{{ site.domain }}/",
+  "image": "{{ site.domain }}/assets/img/social/og-share.jpg",
+  "location": {
+    "@type": "Place",
+    "name": "voco Chicago Downtown - Riverwalk by IHG",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "350 W Wolf Point Plaza",
+      "addressLocality": "Chicago",
+      "addressRegion": "IL",
+      "postalCode": "60654",
+      "addressCountry": "US"
+    }
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "DjangoCon US",
+    "url": "https://djangocon.us"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "{{ site.ticket_link }}",
+    "price": "99",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+{% endblock %}
 
 {% block header %}
 <div class="index-hero">
