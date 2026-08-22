@@ -19,7 +19,7 @@
 .session-social-template-content {
   @apply relative z-10;
   @apply font-sans;
-  top: 360px;
+  top: 350px;
   left: 15px;
   width: 680px;
   color: white;
