@@ -30,7 +30,6 @@ sitemap: false
 {% endblock %}
 
 {% block content %}
-
 <div class="bg-background block-container">
   <div class="wrapper">
     <h2 class="mb-8 site-h2 text-center">Getting Started</h2>
@@ -39,45 +38,40 @@ sitemap: false
       <li class="relative flex flex-col gap-3 p-6 bg-white lg:pt-10 card-effect-2">
         <span class="text-4xl font-bold text-ocean-blue" aria-hidden="true">1</span>
         <h3 class="site-h3"><a href="{{ site.slack_link }}" class="link">Join us on Slack</a></h3>
-        <p>This is where the conversation happens during and between talks.</p>
+        <p class="text-lg">This is where the conversation happens during and between talks.</p>
       </li>
       <li class="relative flex flex-col gap-3 p-6 bg-white lg:pt-10 card-effect-3">
         <span class="text-4xl font-bold text-ocean-blue" aria-hidden="true">2</span>
         <h3 class="site-h3"><a href="https://dcus26.venueless.events/schedule" class="link">Check the Schedule</a></h3>
-        <p>All times are shown in Central Time.</p>
+        <p class="text-lg">All times are shown in Central Time.</p>
       </li>
       <li class="relative flex flex-col gap-3 p-6 bg-white lg:pt-10 card-effect-2">
         <span class="text-4xl font-bold text-ocean-blue" aria-hidden="true">3</span>
         <h3 class="site-h3">Tune into the livestream</h3>
-        <p>Opens Monday at 8:15am Central Time.</p>
+        <p class="text-lg">Opens Monday at 8:15am Central Time.</p>
       </li>
     </ol>
   </div>
 </div>
-<!-- 
+
 <div class="block-container">
   <div class="wrapper">
-    <h2 class="mb-4 site-h2 text-center">Watch the Talks</h2>
+    <h2 class="mb-4 site-h2 text-center">Watch the Livestream</h2>
 
-    <p class="mb-8 mx-auto text-center lg:w-3/4">This year, all talks run on a single stage, so you won't have to choose between overlapping sessions. Click through to the stage from the <a href="/schedule/" class="link">Schedule</a> to access the live stream, and chat with speakers and other attendees in Slack while you watch.</p>
-
-    {% comment %} Replace href with the venueless stage / live stream URL {% endcomment %}
-    <div class="max-w-xl mx-auto">
-      <section class="relative flex flex-col items-center gap-4 p-6 text-center bg-white lg:pt-10 card-effect-2">
-        <h3 class="site-h3">Main Stage</h3>
-        <p>Watch the talks live and ask your questions in Slack.</p>
-        <a class="button" href="#stage">Watch the Stage</a>
-      </section>
+    <p class="mb-8 mx-auto text-center lg:w-3/4 text-lg">This year, all talks run on a single stage, so you won't have to choose between overlapping sessions. Click through to the stage from the <a href="https://dcus26.venueless.events/schedule" class="link">Schedule</a> to access the live stream, and chat with speakers and other attendees in Slack while you watch.</p>
+    
+    <div class="text-center mx-auto">
+      <a class="button button-lg bg-primary" href="https://dcus26.venueless.events/rooms/4f0b8f37-183b-4371-b37f-f7df50599e3e">Watch the Stage</a>
     </div>
 
-    <p class="mt-8 text-center">
-      Can't catch a talk live? No worries — recordings will be posted to our
-      <a href="{{ site.youtube_link | default: '#videos' }}" class="link">Videos page</a> after the conference.
+    <p class="mt-16 text-gray-600 text-center">
+      Can't catch a talk live? No worries — recordings will be made available to you after the conference.
     </p>
   </div>
 </div>
 
-<div class="bg-background block-container">
+
+<!-- <div class="bg-background block-container">
   <div class="wrapper">
     <div class="mx-auto text-center lg:w-3/4">
       <span class="mb-4 bubble">New this year</span>
@@ -88,9 +82,10 @@ sitemap: false
       <p class="mt-4"><em>(add details on how to propose/join a session, and where/when Open Spaces happen)</em></p>
     </div>
   </div>
-</div> -->
+</div>  -->
 
-<!-- <div class="block-container">
+
+<div class="block-container">
   <div class="wrapper">
     <div class="grid-1-2">
       <section>
@@ -99,20 +94,20 @@ sitemap: false
         <p><a href="{{ site.slack_link }}" class="link">Join us on Slack</a> and say hello! A few channels to get you started:</p>
 
         <ul class="mt-4 space-y-2 list-disc list-inside">
-          <li><strong>#general</strong> — announcements and conference-wide chat</li>
-          <li><strong>#introduce-yourself</strong> — tell us who you are and what you're working on</li>
-          <li><em>(add track-specific or topic channels here)</em></li>
+          <li><strong>#hallway-general-chat</strong> — announcements and conference-wide chat</li>
+          <li><strong>#online-conference</strong> — chat with other online attendees</li>
+          <li><strong>#sprints</strong> — team up with other folks to work on Django!</li>
         </ul>
       </section>
 
       <section>
         <h2 class="mb-8 site-h3">Need Help?</h2>
 
-        <p>Having technical issues with video, audio, or login? Visit our <a href="#help" class="link">Help Page</a> for support, or reach out in Slack and someone will jump in.</p>
+        <p>Having technical issues with video, audio, or login? Email us at <a href="mailto:hello@djangocon.us" class="link">hello@djangocon.us</a> for support, or reach out in Slack and someone will jump in to assist.</p>
       </section>
     </div>
   </div>
-</div> -->
+</div> 
 
 <div class="bg-background block-container">
   <div class="wrapper">
@@ -123,7 +118,7 @@ sitemap: false
         </svg>
 
         <h3 class="site-h3">Our Commitment to You</h3>
-        <p>DjangoCon US is dedicated to providing a fun, harassment-free conference experience for everyone, regardless of gender, gender identity, sexual orientation, disability, physical appearance, body size, race, or religion. Please read our <strong><a href="/conduct/" class="link">Code of Conduct</a></strong> for more information.</p>
+        <p>DjangoCon US is dedicated to providing a fun, harassment-free conference experience for everyone, regardless of gender, gender identity, sexual orientation, disability, physical appearance, body size, race, or religion. Please read our <strong><a href="/online/conduct/" class="link">Code of Conduct</a></strong> for more information.</p>
       </section>
 
       <section class="relative flex flex-col gap-4 p-6 bg-white lg:pt-10 card-effect-3">

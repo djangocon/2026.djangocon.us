@@ -1,0 +1,25 @@
+---
+title: Code of Conduct
+description: |
+  DjangoCon US is dedicated to providing a fun harassment-free conference experience for everyone, regardless of gender, gender identity, sexual orientation, disability, physical appearance, body size, race, or religion.
+
+sitemap: false
+---
+
+{% layout "_layouts/default.html" %}
+
+{% comment %} Navigation is intentionally hidden on this page (embedded in venueless) {% endcomment %}
+{% block header %}{% endblock %}
+
+{% block content %}
+<div class="hero">
+  <div class="wrapper">
+    <h1 class="mb-4 pageheading">Code of Conduct</h1>
+    <p class="prose">
+      DjangoCon US is dedicated to providing a fun harassment-free conference experience for everyone, regardless of gender, gender identity, sexual orientation, disability, physical appearance, body size, race, or religion.
+    </p>
+  </div>
+</div>
+
+{% include "coc-content.html" %}
+{% endblock %}
