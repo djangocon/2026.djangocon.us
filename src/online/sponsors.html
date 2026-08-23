@@ -1,0 +1,105 @@
+---
+title: Sponsors of DjangoCon US 2026
+description: |
+  Thank you to the sponsors of DjangoCon US 2026. Their generosity makes the conference possible.
+
+sitemap: false
+---
+
+{% layout "_layouts/default.html" %}
+
+{% comment %} Navigation is intentionally hidden on this page (embedded in venueless) {% endcomment %}
+{% block header %}{% endblock %}
+
+{% block content %}
+<div class="block-container">
+  <div class="wrapper">
+    <h1 class="pageheading">Thank you to our sponsors</h1>
+
+    <p class="mb-8">
+      DjangoCon US is only possible through the generosity of the organizations and businesses on this page. Their donations make it possible for us to provide opportunity grants to speakers and attendees, record all talks, host sprints, and feed everyone for five days. Thank you for your support!
+    </p>
+  </div>
+
+  {% for level in collections.sponsorsByLevel %}
+    <div class="py-6">
+      <div class="flex flex-col justify-center wrapper">
+        <h2 class="flex items-center bg-sep">
+          <span class="px-8 py-2 mx-auto text-xl text-dark-blue bg-background rounded-2xl font-heading">{{ level[0] }}</span>
+        </h2>
+
+        <ul class="divide-y divide-gray-100">
+          {% for sponsor in level[1] %}
+            <li class="py-12 space-y-4">
+              <div class="flex flex-col gap-6 lg:flex-row lg:gap-16">
+                <div class="items-start justify-center lg:flex lg:w-1/4">
+                  {% if sponsor.data.logo %}
+                    {% assign orientation_class = "h-auto w-auto max-w-56 max-h-16 lg:max-w-60 lg:max-h-28" %}
+                    {% if sponsor.data.logo.orientation == "portrait" %}
+                      {% assign orientation_class = "h-auto w-auto max-h-32 lg:max-h-80 lg:max-w-40" %}
+                    {% endif %}
+                    {% if sponsor.data.url.target %}
+                      <a href="{{ sponsor.data.url.target }}" target="_blank" rel="noopener noreferrer sponsored" class="block w-full h-full">
+                        <span class="sr-only">{{ sponsor.data.name }}</span>
+                        <img
+                          src="/sponsors/{{ sponsor.data.logo.filename }}"
+                          alt="{{ sponsor.data.name }}"
+                          class="{{ orientation_class }}"
+                          aria-hidden="true">
+                      </a>
+                    {% else %}
+                      <img
+                        src="/sponsors/{{ sponsor.data.logo.filename }}"
+                        alt="{{ sponsor.data.name }} logo"
+                        class="{{ orientation_class }}">
+                    {% endif %}
+                  {% endif %}
+                </div>
+
+                <div class="space-y-4 lg:flex-1">
+                  <h3 class="text-2xl lg:text-4xl font-heading">
+                    {% if sponsor.data.url %}
+                      <a href="{{ sponsor.data.url.target }}" class="no-underline">{{ sponsor.data.name }}</a>
+                    {% endif %}
+                  </h3>
+                  {% if sponsor.data.url %}
+                    <a href="{{ sponsor.data.url.target }}" class="inline-block link" aria-hidden="true">{{ sponsor.data.url.label }}</a>
+                  {% endif %}
+                  {% if sponsor.content %}
+                    <div class="space-y-6 prose">
+                      {{ sponsor.content | markdown }}
+                    </div>
+                  {% endif %}
+                  {% if sponsor.data.hiring_url %}
+                    <a href="{{ sponsor.data.hiring_url }}" class="mt-4 button" target="_blank" rel="noopener noreferrer sponsored">
+                      <span class="text-xl">🌟</span> {{ sponsor.data.name }} is hiring!</a>
+                  {% endif %}
+                </div>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endfor %}
+
+  <div class="wrapper">
+    <div class="p-8 text-center bg-background rounded-2xl lg:p-12">
+      <h2 class="mb-4 site-h2">Sponsor DjangoCon US 2027?</h2>
+
+      <p class="max-w-2xl mx-auto mb-4">
+        Sponsoring DjangoCon US puts your organization in front of a global community of Django developers, open-source contributors, and hiring managers. Your support funds opportunity grants, talk recordings, and sprints, and helps keep tickets affordable so we can welcome as many people as possible.
+      </p>
+
+      <p class="max-w-2xl mx-auto mb-8">
+        We'd love to have you on board for next year. Get in touch and we'll share our prospectus and the sponsorship tiers available.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="{{ site.sponsorship_prospectus }}" class="button bg-primary" target="_blank" rel="noopener noreferrer">View the Prospectus</a>
+        <a href="mailto:{{ site.sponsors_email }}" class="button bg-white">Get in touch</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
