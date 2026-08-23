@@ -18,13 +18,13 @@
   track: t0
 - end_datetime: 2026-08-24 17:30:00-05:00
   permalink: null
-  room: Shakespeare House
+  room: American House
   start_datetime: 2026-08-24 08:00:00-05:00
   title: Quiet Room
   track: t0
 - end_datetime: 2026-08-24 17:30:00-05:00
   permalink: null
-  room: American House
+  room: Shakespeare House
   start_datetime: 2026-08-24 08:00:00-05:00
   title: Speaker Green Room
   track: t0
@@ -102,13 +102,13 @@
   track: t0
 - end_datetime: 2026-08-25 17:30:00-05:00
   permalink: null
-  room: Shakespeare House
+  room: American House
   start_datetime: 2026-08-25 08:00:00-05:00
   title: Quiet Room
   track: t0
 - end_datetime: 2026-08-25 17:30:00-05:00
   permalink: null
-  room: American House
+  room: Shakespeare House
   start_datetime: 2026-08-25 08:00:00-05:00
   title: Speaker Green Room
   track: t0
@@ -180,13 +180,13 @@
   track: t0
 - end_datetime: 2026-08-26 17:30:00-05:00
   permalink: null
-  room: Shakespeare House
+  room: American House
   start_datetime: 2026-08-26 08:00:00-05:00
   title: Quiet Room
   track: t0
 - end_datetime: 2026-08-26 17:30:00-05:00
   permalink: null
-  room: American House
+  room: Shakespeare House
   start_datetime: 2026-08-26 08:00:00-05:00
   title: Speaker Green Room
   track: t0
