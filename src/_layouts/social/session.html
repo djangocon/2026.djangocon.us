@@ -4,11 +4,6 @@ layout: social/default-social.html
 
 {% assign presenter_count = talk.data.presenter_slugs | size %}
 {% assign template_bg = "/assets/img/social/single-speaker-template.jpg" %}
-{% if presenter_count > 2 %}
-  {% assign template_bg = "/assets/img/theme/social-cards/social-card-3.png" %}
-{% elsif presenter_count > 1 %}
-  {% assign template_bg = "/assets/img/theme/social-cards/social-card-2.png" %}
-{% endif %}
 
 {% assign title_length = talk.data.title | size %}
 {% if title_length > 50 %}

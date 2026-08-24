@@ -53,19 +53,23 @@
 
 /* Two presenters */
 .session-social-presenter-count-2 {
-  --avatar-size: 230px;
+  --avatar-size: 200px;
 
   .session-social-template-content {
-    padding: 3rem 4rem;
+    top: 380px;
   }
-
+  .session-social-template-name {
+    font-size: 2.5rem;
+  }
+  .session-social-template-talks.talk-long {
+    font-size: 1.75rem;
+  }
   .session-social-template-photo {
-    top: 263px;
-    left: 267px;
+    top: 440px;
+    left: 900px;
   }
-
   .session-social-template-photo:nth-of-type(2) {
-    top: 33px;
-    left: 37px;
+    top: 280px;
+    left: 720px;
   }
 }
