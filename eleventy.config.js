@@ -91,6 +91,13 @@ module.exports = (config) => {
     return markdown.render(content);
   });
 
+  // Collapse any run of two or more blank lines down to a single blank line,
+  // and trim leading/trailing whitespace. Used for the copy-and-paste YouTube
+  // descriptions, where optional links can otherwise leave large gaps.
+  config.addFilter("collapseBlankLines", function(content = "") {
+    return content.replace(/\n\s*\n\s*\n+/g, "\n\n").trim();
+  });
+
   config.addFilter("formatDateTime", function(date, formatStr) {
     // Handle date-only strings (e.g., "2026-08-24") by adding noon time
     // to avoid timezone day-boundary issues

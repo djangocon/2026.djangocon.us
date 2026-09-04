@@ -48,9 +48,7 @@ permalink: /speaking/youtube/
                 </div>
 
                 <div class="relative">
-<textarea rows="10" id="copy-{{ session.title|slugify }}" class="w-full pr-32">
-{% include "youtube-copy-and-paste.html", session:session %}
-</textarea>
+<textarea rows="10" id="copy-{{ session.title|slugify }}" class="w-full pr-32">{% capture youtube_description %}{% include "youtube-copy-and-paste.html", session:session %}{% endcapture %}{{ youtube_description | collapseBlankLines }}</textarea>
                   <button class="btn bg-ocean-blue-200 border-solid border-2 border-grey-800 rounded-lg px-2 py-1 absolute top-2 right-2" data-clipboard-action="copy" data-clipboard-target="#copy-{{ session.title|slugify }}">
                     Copy to clipboard
                   </button>
