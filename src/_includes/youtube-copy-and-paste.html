@@ -1,21 +1,23 @@
-{% if session.templateContent %}{{ session.templateContent }}
+{% capture presenter_names %}{% for presenter_slug in session.presenter_slugs %}{% assign presenter = collections.presenters | find:presenter_slug %}{% if forloop.first %}{% elsif forloop.last %}{% if session.presenter_slugs.size > 2 %}, and {% else %} and {% endif %}{% else %}, {% endif %}{{ presenter.data.name }}{% endfor %}{% endcapture %}{% if session.templateContent %}{{ session.templateContent }}
 {% endif %}
-This talk was presented at: {{ site.domain }}{{ session.permalink }}
+This talk was presented by {{ presenter_names }} at DjangoCon US 2026 in Chicago, Illinois, USA
+{{ site.domain }}{{ session.permalink }}
 
-LINKS:{% if session.presenter_slugs %}{% for presenter_slug in session.presenter_slugs %}{% assign presenter = collections.presenters | find:presenter_slug %}{% assign presenter = presenter.data %}
+LINKS:{% for presenter_slug in session.presenter_slugs %}{% assign presenter = collections.presenters | find:presenter_slug %}{% assign presenter = presenter.data %}{% if presenter.social.github or presenter.social.mastodon or presenter.social.twitter or presenter.social.website %}
 Follow {{ presenter.name }} 👇
 {% if presenter.social.github %}On GitHub: https://github.com/{{ presenter.social.github }}
 {% endif %}{% if presenter.social.mastodon %}On Mastodon: {{ presenter.social.mastodon }}
 {% endif %}{% if presenter.social.twitter %}On X: https://x.com/{{ presenter.social.twitter }}
 {% endif %}{% if presenter.social.website %}Website: {{ presenter.social.website }}
 {% endif %}
-{% endfor %}{% endif %}
-
+{% endif %}{% endfor %}
 Follow DjangoCon US 👇
 {{ site.social.mastodon }}
+{{ site.social.bluesky }}
 {{ site.social.x }}
+{{ site.social.linkedin }}
 
 Follow DEFNA 👇
 https://www.defna.org/
 
-Video production by the presenter and DjangoCon US 2024 volunteers.
+Video production by the presenter and DjangoCon US 2026 volunteers.
