@@ -1,7 +1,7 @@
 ---
 author: DjangoCon US Code of Conduct Team
 category: General
-published_datetime: 2025-9-28 06:00:00
+published_datetime: 2025-09-28 06:00:00
 layout: post
 title: "Code of Conduct Transparency Report for DjangoCon US 2026"
 ---
