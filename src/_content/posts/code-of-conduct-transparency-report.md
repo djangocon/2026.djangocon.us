@@ -29,4 +29,4 @@ The incidents reveal a need for continued efforts to promote a respectful and in
 Thank you all for making DjangoCon US 2026 a memorable event! We recognize that transparency and accountability are essential to maintaining community trust. By upholding our values and supporting one another, we continue to build a stronger and more inclusive Django community.
 
 ## Edit history
-- Revision 1 (2026-09-26): Fixed an off-by-one-year error in the post date
+- Revision 1 (2026-09-29): Fixed an off-by-one-year error in the post date
