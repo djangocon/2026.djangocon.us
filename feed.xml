@@ -6,7 +6,7 @@
   <link href="https://2026.djangocon.us" rel="alternate"/>
 
   <updated
-    >2026-09-04T14:52:05Z</updated
+    >2026-09-29T12:18:11Z</updated
   >
   <id>https://2026.djangocon.us</id>
   <author>
@@ -1447,6 +1447,34 @@ We hope to see you in Chicago!&lt;/p&gt;
 &lt;p&gt;We apologize for the inconvenience for anyone who has already made travel plans.&lt;/p&gt;
 &lt;p&gt;We look forward to seeing you in Chicago!&lt;/p&gt;
 &lt;p&gt;&lt;small&gt;Image credit: Bartek Pawlik&lt;/small&gt;&lt;/p&gt;
+</content
+      >
+    </entry>
+    <entry>
+      <title>Code of Conduct Transparency Report for DjangoCon US 2026</title>
+      <link href="https://2026.djangocon.us/news/code-of-conduct-transparency-report/" />
+      <updated>2025-09-28T06:00:00Z</updated>
+      <id>https://2026.djangocon.us/news/code-of-conduct-transparency-report/</id>
+      <content xml:lang="en" type="html"
+        >&lt;p&gt;The organizers of DjangoCon US 2026 are publishing this year’s Code of Conduct transparency report. This report summarizes the reports we received and the actions taken by the Code of Conduct Committee. If we receive any submissions after this report is published, we will edit this post and include the time we address the submission.&lt;/p&gt;
+&lt;h2 id=&#34;reports&#34; tabindex=&#34;-1&#34;&gt;Reports&lt;/h2&gt;
+&lt;h3 id=&#34;formal-complaints&#34; tabindex=&#34;-1&#34;&gt;Formal Complaints&lt;/h3&gt;
+&lt;p&gt;We addressed one official complaint:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Professional Boundaries&lt;/strong&gt;: We received a report concerning an interaction between a member of the conference team and an attendee that crossed appropriate professional boundaries. The Code of Conduct Committee spoke with the team member about maintaining those boundaries and the power dynamics involved when interacting with attendees. The team member apologized, and we extended that apology to the attendee.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;informal-reports&#34; tabindex=&#34;-1&#34;&gt;Informal Reports&lt;/h3&gt;
+&lt;p&gt;We also had an informal report:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Removal from the Conference&lt;/strong&gt;: Before the conference, organizers became aware of circumstances involving an attendee that required us to remove them from the event. The individual did not attend the conference, and no further action was required.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;takeaways&#34; tabindex=&#34;-1&#34;&gt;Takeaways&lt;/h2&gt;
+&lt;p&gt;The incidents reveal a need for continued efforts to promote a respectful and inclusive environment at the event. This includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Reinforcing the Code of Conduct&lt;/strong&gt;: Ensuring that all participants are aware of and adhere to the event&#39;s guidelines on appropriate behavior.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;wrap-up&#34; tabindex=&#34;-1&#34;&gt;Wrap-up&lt;/h2&gt;
+&lt;p&gt;Thank you all for making DjangoCon US 2026 a memorable event! We recognize that transparency and accountability are essential to maintaining community trust. By upholding our values and supporting one another, we continue to build a stronger and more inclusive Django community.&lt;/p&gt;
 </content
       >
     </entry>
