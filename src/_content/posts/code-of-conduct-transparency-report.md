@@ -1,7 +1,7 @@
 ---
 author: DjangoCon US Code of Conduct Team
 category: General
-published_datetime: 2025-09-28 06:00:00
+published_datetime: 2026-09-28 06:00:00
 layout: post
 title: "Code of Conduct Transparency Report for DjangoCon US 2026"
 ---
@@ -27,3 +27,6 @@ The incidents reveal a need for continued efforts to promote a respectful and in
 
 ## Wrap-up
 Thank you all for making DjangoCon US 2026 a memorable event! We recognize that transparency and accountability are essential to maintaining community trust. By upholding our values and supporting one another, we continue to build a stronger and more inclusive Django community.
+
+## Edit history
+- Revision 1 (2026-09-29): Fixed an off-by-one-year error in the post date
