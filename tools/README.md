@@ -80,45 +80,203 @@ title and description (talk abstract plus presenter links), mirroring
 Pass `--location` if the conference wasn't in Chicago, and `--cache
 playlist.json` to avoid refetching the playlist on every run.
 
-### Push titles and descriptions to YouTube
+### YouTube API setup
 
-The script can update the videos directly through the YouTube Data API,
-signed in as someone who manages the DjangoCon US channel.
+How the DjangoCon US YouTube sync was set up, step by step, so it can be redone
+(new machine, expired client, a new organizer taking over).
 
-1. Sign in once: `uv run tools/youtube_sync.py --login`. It prints a link (and
-   tries to open it). Pick the DjangoCon US channel's account (or brand
-   account) and approve. The script then prints the channel you're signed in
-   as. The token is saved to `~/.config/djangocon-youtube-sync/token.json`,
-   outside the repo, and refreshes itself; `--logout` deletes it.
-2. Try one video first:
-   `uv run tools/youtube_sync.py PLAYLIST_ID --update-youtube --only TALK_FILE_NAME`
-3. Then all confident matches: `uv run tools/youtube_sync.py PLAYLIST_ID --update-youtube`
+#### What you end up with
 
-Before anything changes, you get a table of what will change and a
-confirmation prompt (`--yes` skips the prompt). The current title and
-description of every video about to change are saved to
-`.youtube-sync/backups/`. To undo a run:
-`uv run tools/youtube_sync.py --restore .youtube-sync/backups/youtube-<timestamp>.json`.
-Pass `--no-update-titles` to only update descriptions. Signing in also
-lets the script read private and unlisted playlists.
+| Thing | Value |
+|---|---|
+| Google account | one that owns or manages the DjangoCon US channel |
+| Google Cloud project | **DjangoCon US YouTube** (`djangocon-us-youtube`), no organization |
+| API enabled | YouTube Data API v3 |
+| OAuth consent screen | "DjangoCon US YouTube Sync", External, **Testing** |
+| Test users | everyone who will run the script |
+| OAuth client | Desktop app named `youtube_sync.py` |
+| Client secret file | `~/.config/djangocon-youtube-sync/client_secret.json` (mode 600) |
+| Saved sign-in token | `~/.config/djangocon-youtube-sync/token.json` (mode 600, written by `--login`) |
+| Signed-in channel | DjangoCon US (`UC0yY6a79pPY9J0ShIHRf6yw`) |
 
-**One-time OAuth client setup.** The sign-in needs an OAuth client of type
-"Desktop app" in a Google Cloud project with the YouTube Data API v3
-enabled:
+Neither file lives in the repo, so neither can be committed by accident.
 
-1. In [Google Cloud Console](https://console.cloud.google.com/), pick or create a project
-   and enable the **YouTube Data API v3**.
-2. Configure the OAuth consent screen (External; add whoever will sign in as a
-   test user).
-3. Create credentials → OAuth client ID → **Desktop app**, and download the JSON to
-   `~/.config/djangocon-youtube-sync/client_secret.json` (or pass `--client-secrets`).
+#### Before you start
 
-If you already use the Google Workspace CLI (`gws`), the script falls back to
-its client at `~/.config/gws/client_secret.json`. That only works if the YouTube
-Data API is enabled on that client's project.
+Open <https://console.cloud.google.com/> and check that the avatar in the top
+right is the Google account that owns or manages the DjangoCon US channel.
+If it's a work (or any other) account, click the avatar and switch. Every
+step below happens in that account.
 
-Each video update costs 50 units of the API's default 10,000/day quota, so
-roughly 200 videos a day.
+#### Step 1: Create the project
+
+1. Open <https://console.cloud.google.com/projectcreate>
+2. Fill in:
+   - **Project name:** `DjangoCon US YouTube` (project ID `djangocon-us-youtube`)
+   - **Location:** leave as **No organization**
+3. Click **Create**.
+4. When the notification bell says it's done, click **Select Project** in
+   that notification. The project picker at the top should now say
+   **DjangoCon US YouTube**.
+
+#### Step 2: Enable the YouTube Data API
+
+1. Open <https://console.cloud.google.com/apis/library/youtube.googleapis.com>
+2. Check that the project picker still says **DjangoCon US YouTube**.
+3. Click **Enable**.
+4. You land on the "YouTube Data API v3" overview page, which shows a
+   **Disable API** button. That means it worked.
+
+**Skip the "Create credentials" prompt** on that page. The consent screen has
+to exist first (step 3), and the credentials are created in step 5.
+
+#### Step 3: Set up the consent screen
+
+1. Open <https://console.cloud.google.com/auth/overview>
+2. Click **Get started** and go through the four sections:
+   - **App information**
+     - **App name:** `DjangoCon US YouTube Sync`
+     - **User support email:** your account
+     - **Next**
+   - **Audience:** **External**, then **Next**
+   - **Contact information:** your email, then **Next**
+   - **Finish:** check the box to agree to the Google API Services User Data
+     Policy, then **Continue**
+3. Click **Create**.
+
+You end up on the "OAuth Overview" page. Don't click its **Create OAuth
+client** button; step 5 covers that.
+
+#### Step 4: Add yourself as a test user
+
+1. Open <https://console.cloud.google.com/auth/audience> (or **Audience** in
+   the left sidebar).
+2. Leave **Publishing status** on **Testing**. Don't click "Publish app".
+3. Under **Test users**, click **+ Add users**.
+4. Add your account and click **Save**.
+5. Confirm it's listed under Test users.
+
+Add anyone else who will run the script here too. Only listed test users can
+sign in while the app is in Testing.
+
+#### Step 5: Create the Desktop client and download it
+
+1. Open <https://console.cloud.google.com/auth/clients> (or **Clients** in the
+   left sidebar).
+2. Click **+ Create client**.
+3. Fill in:
+   - **Application type:** `Desktop app`
+   - **Name:** `youtube_sync.py`
+4. Click **Create**.
+5. In the dialog that shows the Client ID and secret, click **Download JSON**.
+   It saves `client_secret_<id>.apps.googleusercontent.com.json` to
+   `~/Downloads`.
+   - If you closed the dialog, click the client's name in the list, then the
+     download icon next to the client secret.
+6. Click **OK**.
+
+#### Step 6: Put the client secret in place
+
+```sh
+mkdir -p ~/.config/djangocon-youtube-sync
+mv ~/Downloads/client_secret_*.json ~/.config/djangocon-youtube-sync/client_secret.json
+chmod 700 ~/.config/djangocon-youtube-sync
+chmod 600 ~/.config/djangocon-youtube-sync/client_secret.json
+```
+
+Optional check that it's the right kind of client, without printing the
+secret. You want `type: installed` and `project: djangocon-us-youtube`:
+
+```sh
+python3 -c "import json; d=json.load(open('$HOME/.config/djangocon-youtube-sync/client_secret.json')); k=list(d)[0]; print('type:', k, '| project:', d[k]['project_id'])"
+```
+
+#### Step 7: Sign in
+
+From the repo root:
+
+```sh
+uv run tools/youtube_sync.py --login
+```
+
+It prints a sign-in link and tries to open it. The script waits until you
+finish in the browser.
+
+1. On **Choose an account**, pick the account that owns or manages the channel.
+2. If it asks you to choose a channel, pick **DjangoCon US**.
+3. On "Google hasn't verified this app", click **Continue**. That's expected
+   for an app in Testing mode.
+4. Approve the "Manage your YouTube account" permission.
+5. The tab says "Signed in. You can close this tab and go back to the
+   terminal."
+
+The terminal should then print:
+
+```
+Signed in as YouTube channel: DjangoCon US (UC0yY6a79pPY9J0ShIHRf6yw)
+```
+
+If it shows a different channel, or says the account has no channel, run
+`uv run tools/youtube_sync.py --logout` and then `--login` again.
+
+**If you click the wrong account:** close that tab and stop the waiting
+script with Ctrl-C. A link only works while the script that printed it is
+running. Run `--login` again for a fresh link. The link always shows the
+account picker, so the browser can't reuse the wrong account silently. A
+non-test-user account gets "access blocked" and nothing is saved.
+
+#### Using it
+
+```sh
+# Dry run: match the playlist to talk files, write .youtube-sync/report.csv
+# and suggested titles/descriptions in .youtube-sync/descriptions/
+uv run tools/youtube_sync.py PLFQg7E3if2as
+
+# Record video_url + youtube_id in matched talk front matter
+uv run tools/youtube_sync.py PLFQg7E3if2as --write
+
+# Push suggested titles/descriptions to YouTube: one video first, then all
+uv run tools/youtube_sync.py PLFQg7E3if2as --update-youtube --only 2026-08-24-08-15-t0-orientation
+uv run tools/youtube_sync.py PLFQg7E3if2as --update-youtube
+
+# Undo a YouTube update from its backup
+uv run tools/youtube_sync.py --restore .youtube-sync/backups/youtube-<timestamp>.json
+```
+
+- `--update-youtube` shows what will change and asks before doing anything
+  (`--yes` skips the prompt). It saves the current titles and descriptions to
+  `.youtube-sync/backups/` first.
+- `--no-update-titles` updates descriptions only.
+- Once signed in, the script reads playlists through the API, so private and
+  unlisted playlists work. The **DjangoCon US 2026 playlist
+  (`PLFQg7E3if2as`) is private**, and yt-dlp reports it as "does not exist".
+- Quota: each video update costs 50 of the default 10,000 units/day, so about
+  200 updates a day.
+
+#### Things to know
+
+- **The sign-in expires after about 7 days.** Google limits refresh tokens for
+  apps in Testing mode. When the script asks you to sign in again, repeat
+  step 7. Avoiding this means publishing the app, which needs Google's
+  verification for the YouTube scope. That's not worth it for a tool used a
+  few times a year.
+- **Scope:** `https://www.googleapis.com/auth/youtube.force-ssl`, which can
+  read and edit videos on the channel.
+- **Revoking access:** <https://myaccount.google.com/permissions>, remove
+  "DjangoCon US YouTube Sync". Then delete
+  `~/.config/djangocon-youtube-sync/token.json` (or run `--logout`).
+- **New machine:** copy `client_secret.json` over (steps 6 and 7) instead of
+  repeating steps 1–5. Or download it again from
+  <https://console.cloud.google.com/auth/clients> in the
+  `djangocon-us-youtube` project.
+- **Another organizer:** add them as a test user (step 4) and give them the
+  client secret file. They need to be an owner or manager of the DjangoCon US
+  channel.
+- **gws (Google Workspace CLI):** checked and it doesn't support YouTube (no
+  `youtube` service, and the `youtube:v3` syntax is rejected). The script can
+  fall back to gws's OAuth client at `~/.config/gws/client_secret.json` if no
+  client secret is configured. That client usually belongs to a personal or
+  work project, so the dedicated DjangoCon US project above is preferred.
 
 ## Generate a CSV for Sendy to use with the "confirm your talk time" email
 
