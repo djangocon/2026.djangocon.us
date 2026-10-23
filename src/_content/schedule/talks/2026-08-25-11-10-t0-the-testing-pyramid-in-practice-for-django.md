@@ -11,6 +11,8 @@ tags:
 - Testing
 title: The Testing Pyramid in Practice for Django
 track: t0
+video_url: https://youtu.be/QTGBUGeStxM
+youtube_id: "QTGBUGeStxM"
 ---
 
 Many Django developers write tests reactively — covering whatever feels important in the moment and end up with suites that are slow, hard to maintain, and unevenly distributed. This talk addresses that by introducing the testing pyramid as a deliberate, structured approach, anchored in Django's latest testing capabilities.
