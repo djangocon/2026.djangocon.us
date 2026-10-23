@@ -2,8 +2,9 @@
 company: Django Software Foundation
 hidden: false
 name: Natalia Bidart
-permalink: /presenters/natalia/
-photo: natalia.webp
+permalink: /presenters/natalia-bidart/
+photo: natalia-bidart.webp
+redirect_from: /presenters/natalia/
 social:
     bluesky: null
     github: null
