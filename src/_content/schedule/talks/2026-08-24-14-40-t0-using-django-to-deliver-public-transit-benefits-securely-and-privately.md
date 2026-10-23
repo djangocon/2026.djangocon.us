@@ -11,8 +11,6 @@ tags:
 - Security
 title: Using Django to deliver public transit benefits securely and privately
 track: t0
-video_url: https://youtu.be/Tb3VbqVGqb4
-youtube_id: "Tb3VbqVGqb4"
 ---
 
 [Cal-ITP Benefits](https://benefits.calitp.org) is an [open-source Django application](https://github.com/cal-itp/benefits) funded by the state of California as part of the [California Integrated Travel Project](https://www.calitp.org). It provides a way for riders to confirm their eligibility for public transit benefits and then register their credit or debit card so they automatically receive reduced fares when they tap to pay. This product aims to make open-loop payments accessible to all transit riders, while providing a convenient digital enrollment path for reduced fares that limits the need for in-person trips to a transit center.

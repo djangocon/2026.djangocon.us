@@ -11,8 +11,6 @@ tags:
 - community
 title: 50 shades of green - One contribution to the Django world
 track: t0
-video_url: https://youtu.be/du0oPNv9KTw
-youtube_id: "du0oPNv9KTw"
 ---
 
 Django's website has a dark theme. Many developers around the world use it every day. Some never even noticed it appear. Others switched immediately and never looked back.

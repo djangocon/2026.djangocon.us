@@ -11,8 +11,6 @@ tags:
 - Security
 title: Who Goes There? Actively Detecting Intruders With Cyber Deception Tools
 track: t0
-video_url: https://youtu.be/5AVtym3jUUw
-youtube_id: "5AVtym3jUUw"
 ---
 
 The best time to detect an attacker is while they are still inside your environment, before stolen data, lateral movement, or privilege escalation turns a foothold into a breach. Unfortunately, many organizations still learn what happened only after the damage is done.

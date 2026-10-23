@@ -10,8 +10,6 @@ tags:
 - community
 title: 'Good Conduct: How Django Modernized Its Code of Conduct'
 track: t0
-video_url: https://youtu.be/kGhghG93CLw
-youtube_id: "kGhghG93CLw"
 ---
 
 A Code of Conduct is only as strong as the community's trust in it. When it's time to revise one, _the how_ matters as much as _the what_. Django's Working Group undertook a significant revision in 2026 — adopting CC3's expanded encouraged and restricted behaviors, adding explicit guidance on consent and impact versus intent, formalizing a graduated enforcement ladder, and even addressing the responsible use of AI-generated content. This was not just a find-and-replace; it required community input, DSF Board approval, careful sourcing from the PSF, OpenJS Foundation, Mozilla, and others, and an updated, transparency-first documentation process.

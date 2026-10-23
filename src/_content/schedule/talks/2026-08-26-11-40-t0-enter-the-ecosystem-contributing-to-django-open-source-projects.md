@@ -12,8 +12,6 @@ tags:
 - community
 title: 'Enter the Ecosystem: Contributing to Django Open Source Projects'
 track: t0
-video_url: https://youtu.be/ciJndAym7BA
-youtube_id: "ciJndAym7BA"
 ---
 
 Taking that first step into open source can feel overwhelming, but it doesn't have to be. This talk is a friendly, practical guide for developers who are curious about contributing to projects in the Django ecosystem but haven't made that first contribution yet.

@@ -10,8 +10,6 @@ tags:
 - GeoDjango
 title: 'GeoDjango at City Scale: Spatial Data for Urban Systems'
 track: t0
-video_url: https://youtu.be/Q-Ydi5Q-B3E
-youtube_id: "Q-Ydi5Q-B3E"
 ---
 
 In this talk, I’ll delve into how GeoDjango can be used to build scalable spatial data platforms for smart cities and urban systems. Cities are fundamentally spatial systems—roads, buildings, utilities, mobility flows, and environmental sensors all exist in geographic space—and modeling these systems requires tools that can handle geospatial data at scale. GeoDjango, combined with PostGIS, provides a powerful framework for representing, querying, and visualizing this spatial information in web applications.

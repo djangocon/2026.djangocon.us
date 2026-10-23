@@ -13,8 +13,6 @@ tags:
 - flexible time
 title: 'Batteries vs. Speed: The Django/FastAPI Debate'
 track: t0
-video_url: https://youtu.be/c0J9W2go-Jc
-youtube_id: "c0J9W2go-Jc"
 ---
 
 Few debates in the Python world generate more discussion than Django vs. FastAPI. After decades of building production systems with both, we've arrived at a simple conclusion: they don't actually do the same thing, and that changes everything about how you should evaluate them.

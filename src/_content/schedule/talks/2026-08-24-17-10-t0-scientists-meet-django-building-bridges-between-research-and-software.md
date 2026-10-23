@@ -12,8 +12,6 @@ tags:
 - community
 title: 'Scientists Meet Django: Building Bridges Between Research and Software'
 track: t0
-video_url: https://youtu.be/NMuBBxlxmqU
-youtube_id: "NMuBBxlxmqU"
 ---
 
 Scientists and developers are solving the same problems—but rarely together.

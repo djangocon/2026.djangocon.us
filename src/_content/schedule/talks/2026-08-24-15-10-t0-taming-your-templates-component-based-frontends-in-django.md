@@ -12,8 +12,6 @@ tags:
 - flexible time
 title: 'Taming Your Templates: Component-Based Frontends in Django'
 track: t0
-video_url: https://youtu.be/JtM87Y6pWiQ
-youtube_id: "JtM87Y6pWiQ"
 ---
 
 Most Django teams treat their templates as second-class citizens.

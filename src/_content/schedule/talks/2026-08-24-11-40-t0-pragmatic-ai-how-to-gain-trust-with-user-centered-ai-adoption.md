@@ -12,8 +12,6 @@ tags:
 - Architecture
 title: 'Pragmatic AI: How to gain trust with user-centered AI adoption'
 track: t0
-video_url: https://youtu.be/rREUXuc8Qs4
-youtube_id: "rREUXuc8Qs4"
 ---
 
 With some CEOs of large AI companies claiming AI cures for cancer are just around the corner, you might feel like you’re a fool for not integrating AI right away in your software. This talk will show you why resisting that pressure can be a good thing and how taking a steady and thoughtful approach to AI adoption in your open source project can help you stand out.

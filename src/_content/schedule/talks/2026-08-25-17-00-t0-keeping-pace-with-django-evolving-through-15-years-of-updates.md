@@ -11,8 +11,6 @@ tags:
 - Maintenance
 title: 'Keeping Pace with Django: Evolving Through 15 years of Updates'
 track: t0
-video_url: https://youtu.be/XYfm575VjHw
-youtube_id: "XYfm575VjHw"
 ---
 
 Working on the same codebase for 15 years is not something that you plan on doing. It's something that happens organically. As the years go on and the business requirements become ever more complex, you'll need to keep up with the stack to be able to deliver the product your users expect.

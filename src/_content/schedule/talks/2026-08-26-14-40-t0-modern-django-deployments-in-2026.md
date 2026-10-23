@@ -10,8 +10,6 @@ tags:
 - deployment
 title: Modern Django Deployments in 2026
 track: t0
-video_url: https://youtu.be/eX01zHXUYKg
-youtube_id: "eX01zHXUYKg"
 ---
 
 Deploying a Django website is deeply confusing for newcomers, but it doesn't have to be! In this talk, I'll provide a conceptual and practical overview of the process to demystify it all and provide some hard-won lessons along the way.
