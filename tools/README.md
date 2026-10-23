@@ -113,15 +113,20 @@ zip (or folder) of files named after the YouTube video ID, like
 2. Try one video: `uv run tools/captions_to_youtube.py captions.zip --only VIDEO_ID`
 3. Then the rest: `uv run tools/captions_to_youtube.py captions.zip`
 
-- `.txt` files are plain transcripts. They're uploaded with `sync=true`, so
-  YouTube times them to the audio. `.srt`, `.vtt`, `.sbv`, and `.scc` keep
-  their own timing.
+- `.txt` files are plain transcripts. YouTube's auto-sync (`sync=true`)
+  rejects them now (`unknownFormat`), so the script times them itself: it
+  downloads the video's automatic (ASR) captions, lines the transcript's words
+  up with them, and uploads the result as SRT. The SRT is saved to
+  `.youtube-sync/srt/` for review. Videos without automatic captions yet, or
+  where under half the words match, are skipped. `.srt`, `.vtt`, `.sbv`, and
+  `.scc` keep their own timing.
 - Videos that already have one of our tracks in the same language (`en` and
   `en-US` count as the same) are skipped, so re-running only uploads what's
   missing. A track that failed to process gets replaced; `--replace`
   replaces working ones too.
-- **Quota:** checking a video costs 50 units and uploading costs 400, out of
-  10,000 a day. That's about 20 uploads a day. If the quota runs out
+- **Quota:** checking a video costs 50 units, downloading its automatic
+  captions 200, and uploading 400, out of 10,000 a day. That's about 650 per
+  transcript, or about 15 a day. If the quota runs out
   mid-run, the script stops; run the same command the next day (quota resets
   at midnight Pacific).
 - Each run logs what it created to `.youtube-sync/captions-<timestamp>.json`;

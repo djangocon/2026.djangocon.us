@@ -18,8 +18,12 @@ Captions -> YouTube: upload caption files to their videos.
 Takes a .zip (or a folder) of caption files named after their YouTube video
 ID, e.g. `z_cHhxzRozI.txt`. macOS `__MACOSX/` and dot files are ignored.
 
-- `.txt` files are plain transcripts without timestamps. They're uploaded with
-  sync=true so YouTube lines them up with the audio itself.
+- `.txt` files are plain transcripts without timestamps. YouTube's own
+  auto-sync (sync=true) no longer accepts them, so we time them ourselves:
+  download the video's auto-generated (ASR) captions, line the transcript's
+  words up with the ASR words, and upload the result as SRT. The generated SRT
+  is saved to OUTPUT_DIR/srt/ for review. Videos without an ASR track, or whose
+  transcript matches less than half of it, are skipped.
 - `.srt`, `.vtt`, `.sbv`, and `.scc` files already have timing and are uploaded
   as-is.
 
@@ -28,9 +32,9 @@ has one of ours (not the auto-generated track) in the same language (en and
 en-US count as the same), it's skipped, unless --replace is given or that track failed to process. So
 re-running after a partial run only uploads what's missing.
 
-YouTube API quota: listing a video's tracks costs 50 units, uploading costs
-400, replacing 450, out of a default 10,000 per day. That's roughly 20 uploads
-a day. If the quota runs out mid-run, the script stops; run it again tomorrow
+YouTube API quota: listing a video's tracks costs 50 units, downloading the
+ASR track 200, uploading 400, replacing 450, out of a default 10,000 per day.
+That's about 650 units per transcript, or roughly 15 a day. If the quota runs out mid-run, the script stops; run it again tomorrow
 and it picks up where it left off.
 
 Every upload is logged to OUTPUT_DIR/captions-TIMESTAMP.json, and
@@ -42,8 +46,10 @@ tools/README.md for the one-time OAuth setup.
 
 import json
 import re
+import textwrap
 import zipfile
 from dataclasses import dataclass
+from difflib import SequenceMatcher
 from datetime import datetime
 from pathlib import Path, PurePosixPath
 from typing import Annotated
@@ -61,7 +67,8 @@ VIDEO_ID = re.compile(r"^[\w-]{11}$")
 TIMED_FORMATS = {".srt", ".vtt", ".sbv", ".scc"}
 CAPTION_FORMATS = TIMED_FORMATS | {".txt"}
 
-QUOTA_LIST, QUOTA_INSERT, QUOTA_UPDATE = 50, 400, 450
+QUOTA_LIST, QUOTA_DOWNLOAD, QUOTA_INSERT, QUOTA_UPDATE = 50, 200, 400, 450
+MIN_MATCH = 0.5  # skip transcripts that match less than this share of the ASR words
 
 # OAuth: the client secret comes from Google Cloud Console (Desktop app client).
 # The token is cached outside the repo so it can never be committed.
@@ -92,6 +99,7 @@ class Plan:
     action: str  # "upload", "replace", or "skip"
     reason: str = ""
     track_id: str | None = None
+    asr_id: str | None = None
 
 
 def read_captions(source: Path) -> list[Caption]:
@@ -177,6 +185,103 @@ def primary_language(tag: str) -> str:
     return tag.split("-")[0].lower()
 
 
+# Timing plain transcripts against YouTube's automatic captions.
+
+SRT_TIME = re.compile(r"(\d+):(\d+):(\d+)[,.](\d+)")
+
+def parse_srt(text):
+    """[(start_seconds, text)] from an SRT file."""
+    cues = []
+    for block in re.split(r"\n\s*\n", text.strip()):
+        lines = block.strip().splitlines()
+        stamp = next((l for l in lines if "-->" in l), None)
+        if not stamp:
+            continue
+        h, m, s, ms = map(int, SRT_TIME.search(stamp).groups())
+        body = " ".join(l for l in lines[lines.index(stamp) + 1:]).strip()
+        cues.append((h * 3600 + m * 60 + s + ms / 1000, body))
+    return cues
+
+def norm(word):
+    return re.sub(r"[^a-z0-9]", "", word.lower())
+
+def asr_word_times(cues):
+    """Spread each cue's words evenly between its start and the next cue's start."""
+    words = []
+    for i, (start, body) in enumerate(cues):
+        tokens = [t for t in body.split() if not (t.startswith("[") or t.endswith("]"))]
+        nxt = cues[i + 1][0] if i + 1 < len(cues) else start + 3
+        span = max(nxt - start, 0.3)
+        for j, t in enumerate(tokens):
+            if norm(t):
+                words.append((norm(t), start + span * j / max(len(tokens), 1)))
+    return words
+
+def time_transcript(transcript: str, cues):
+    """Return [(word, seconds)] for every word in the transcript, aligned to ASR timings."""
+    paras = [p.split() for p in transcript.splitlines() if p.strip()]
+    ours = [(w, pi) for pi, p in enumerate(paras) for w in p]
+    asr = asr_word_times(cues)
+    a = [norm(w) for w, _ in ours]
+    b = [w for w, _ in asr]
+    times = [None] * len(ours)
+    for blk in SequenceMatcher(None, a, b, autojunk=False).get_matching_blocks():
+        for k in range(blk.size):
+            times[blk.a + k] = asr[blk.b + k][1]
+    # Fill gaps by interpolating between known neighbours.
+    known = [i for i, t in enumerate(times) if t is not None]
+    if not known:
+        raise ValueError("transcript doesn't match the automatic captions at all")
+    for i in range(len(times)):
+        if times[i] is None:
+            prev = max((k for k in known if k < i), default=None)
+            nxt = min((k for k in known if k > i), default=None)
+            if prev is None:
+                times[i] = max(times[nxt] - 0.3 * (nxt - i), 0.0)  # lead-in before the first match
+            elif nxt is None:
+                times[i] = times[prev] + 0.3 * (i - prev)
+            else:
+                times[i] = times[prev] + (times[nxt] - times[prev]) * (i - prev) / (nxt - prev)
+    matched = len(known) / len(ours)
+    return [(w, t, p) for (w, p), t in zip(ours, times)], matched
+
+def build_captions(timed, width=42, max_lines=2, max_seconds=6.0):
+    """Group timed words into captions that never cross a speaker turn or sentence end."""
+    captions, current = [], []
+    def flush():
+        if current:
+            captions.append(current[:])
+            current.clear()
+    for i, (word, t, para) in enumerate(timed):
+        if current and (para != current[-1][2] or t - current[0][1] > max_seconds
+                        or len(textwrap.wrap(" ".join(w for w, _, _ in current + [(word, t, para)]), width)) > max_lines):
+            flush()
+        current.append((word, t, para))
+        if re.search(r"[.!?]$", word) and len(" ".join(w for w, _, _ in current)) > width * 0.6:
+            flush()
+    flush()
+    return captions
+
+def to_srt(captions):
+    def stamp(sec):
+        ms = int(round(sec * 1000)); h, ms = divmod(ms, 3600000); m, ms = divmod(ms, 60000); s, ms = divmod(ms, 1000)
+        return f"{h:02}:{m:02}:{s:02},{ms:03}"
+    # Start times strictly increase, at least MIN_GAP apart, so no caption is empty.
+    MIN_GAP = 0.4
+    starts = []
+    for cap in captions:
+        starts.append(max(cap[0][1], starts[-1] + MIN_GAP) if starts else cap[0][1])
+    out = []
+    for i, cap in enumerate(captions):
+        start = starts[i]
+        end = max(cap[-1][1] + 2.0, start + MIN_GAP)
+        if i + 1 < len(captions):
+            end = min(end, starts[i + 1])  # never overlap the next caption
+        text = "\n".join(textwrap.wrap(" ".join(w for w, _, _ in cap), 42))
+        out.append(f"{i + 1}\n{stamp(start)} --> {stamp(end)}\n{text}\n")
+    return "\n".join(out)
+
+
 def plan_uploads(youtube, captions: list[Caption], language: str, replace: bool) -> list[Plan]:
     from googleapiclient.errors import HttpError
 
@@ -198,27 +303,49 @@ def plan_uploads(youtube, captions: list[Caption], language: str, replace: bool)
                 if t["snippet"].get("trackKind", "").lower() != "asr"
                 and primary_language(t["snippet"].get("language", "")) == primary_language(language)
             ]
-            if not ours:
-                plans.append(Plan(caption, "upload"))
+            asr = next((t["id"] for t in tracks if t["snippet"].get("trackKind", "").lower() == "asr"), None)
+            if not caption.timed and not asr:
+                plans.append(Plan(caption, "skip", "no automatic captions to time the transcript against yet"))
+            elif not ours:
+                plans.append(Plan(caption, "upload", asr_id=asr))
             elif ours[0]["snippet"].get("status") == "failed":
-                plans.append(Plan(caption, "replace", "existing track failed to process", ours[0]["id"]))
+                plans.append(Plan(caption, "replace", "existing track failed to process", ours[0]["id"], asr))
             elif replace:
-                plans.append(Plan(caption, "replace", "--replace", ours[0]["id"]))
+                plans.append(Plan(caption, "replace", "--replace", ours[0]["id"], asr))
             else:
                 plans.append(Plan(caption, "skip", f"already has a '{language}' track"))
     return plans
 
 
-def upload(youtube, plan: Plan, language: str, name: str, draft: bool) -> dict:
+class LowMatch(Exception):
+    pass
+
+
+def timed_srt(youtube, plan: Plan, srt_dir: Path) -> bytes:
+    """Turn a plain transcript into SRT using the video's ASR track for timing."""
+    asr = youtube.captions().download(id=plan.asr_id, tfmt="srt").execute()
+    cues = parse_srt(asr.decode("utf-8") if isinstance(asr, bytes) else asr)
+    transcript = plan.caption.data.decode("utf-8-sig")
+    timed, matched = time_transcript(transcript, cues)
+    if matched < MIN_MATCH:
+        raise LowMatch(f"only {matched:.0%} of the transcript matches the automatic captions")
+    srt = to_srt(build_captions(timed))
+    srt_dir.mkdir(parents=True, exist_ok=True)
+    (srt_dir / f"{plan.caption.video_id}.srt").write_text(srt)
+    console.print(f"[dim]{plan.caption.video_id}: {matched:.0%} of words matched, {srt.count(' --> ')} captions")
+    return srt.encode()
+
+
+def upload(youtube, plan: Plan, language: str, name: str, draft: bool, srt_dir: Path) -> dict:
     from googleapiclient.http import MediaInMemoryUpload
 
-    media = MediaInMemoryUpload(plan.caption.data, mimetype="application/octet-stream", resumable=False)
-    sync = not plan.caption.timed
+    data = plan.caption.data if plan.caption.timed else timed_srt(youtube, plan, srt_dir)
+    media = MediaInMemoryUpload(data, mimetype="application/octet-stream", resumable=False)
     if plan.action == "replace":
         body = {"id": plan.track_id, "snippet": {"isDraft": draft}}
-        return youtube.captions().update(part="snippet", body=body, media_body=media, sync=sync).execute()
+        return youtube.captions().update(part="snippet", body=body, media_body=media).execute()
     body = {"snippet": {"videoId": plan.caption.video_id, "language": language, "name": name, "isDraft": draft}}
-    return youtube.captions().insert(part="snippet", body=body, media_body=media, sync=sync).execute()
+    return youtube.captions().insert(part="snippet", body=body, media_body=media).execute()
 
 
 @app.command()
@@ -285,14 +412,15 @@ def main(
         table.add_column(column)
     styles = {"upload": "green", "replace": "yellow", "skip": "dim"}
     for plan in plans:
-        kind = "timed" if plan.caption.timed else "transcript, auto-sync"
+        kind = "timed" if plan.caption.timed else "transcript, timed from ASR"
         action = plan.action + (f" ({plan.reason})" if plan.reason else "")
         table.add_row(plan.caption.video_id, talks.get(plan.caption.video_id, "?"),
                       f"{PurePosixPath(plan.caption.filename).name} [{kind}]", action, style=styles[plan.action])
     console.print(table)
 
     todo = [p for p in plans if p.action != "skip"]
-    cost = sum(QUOTA_UPDATE if p.action == "replace" else QUOTA_INSERT for p in todo)
+    cost = sum((QUOTA_UPDATE if p.action == "replace" else QUOTA_INSERT) + (0 if p.caption.timed else QUOTA_DOWNLOAD)
+               for p in todo)
     console.print(
         f"{len(todo)} to upload, {len(plans) - len(todo)} skipped. "
         f"Quota: about {cost} units for the uploads (checking used {len(captions) * QUOTA_LIST}); the daily limit is 10,000."
@@ -310,7 +438,10 @@ def main(
     log = []
     for plan in todo:
         try:
-            result = upload(youtube, plan, language, name, draft)
+            result = upload(youtube, plan, language, name, draft, output_dir / "srt")
+        except LowMatch as error:
+            console.print(f"[yellow]Skipped {plan.caption.video_id}: {error}")
+            continue
         except HttpError as error:
             if is_quota_error(error):
                 console.print(f"[red]Quota used up after {len(log)} uploads. Run the same command again tomorrow; finished videos are skipped.")
@@ -325,7 +456,7 @@ def main(
 
     if log:
         console.print(f"Done: {len(log)} of {len(todo)}. Log: {log_path} (undo with --undo {log_path})")
-        console.print("YouTube syncs transcripts in the background; tracks can take a few minutes to show up.")
+        console.print("YouTube processes captions in the background; tracks can take a few minutes to show up.")
 
 
 if __name__ == "__main__":
