@@ -54,31 +54,53 @@ their presenter bio.
 2. `python tools/process.py generate-placeholders`
 3. Add and commit the changes made to `src/_content`
 
-## Sync talks with the YouTube playlist
+## Sync talks with YouTube
 
-`tools/youtube_sync.py` matches each video in a playlist to its talk file and
-records the video on the talk. It needs [uv](https://docs.astral.sh/uv/), which
-installs the script's dependencies for you.
+Two scripts, one per direction. Both need [uv](https://docs.astral.sh/uv/),
+which installs each script's dependencies for you. Both take `--dry-mode`
+(or `--dry-run`) to show what would change without changing anything.
+
+| Script | Direction | What it changes |
+|---|---|---|
+| `tools/youtube_to_frontmatter.py` | YouTube → front matter | adds `video_url` and `youtube_id` to talk files |
+| `tools/frontmatter_to_youtube.py` | front matter → YouTube | sets video titles and descriptions from our template |
+
+### YouTube → front matter
 
 1. `cd /path/to/year.djangocon.us`
-2. Dry run: `uv run tools/youtube_sync.py PLAYLIST_ID`
+2. Preview: `uv run tools/youtube_to_frontmatter.py PLAYLIST_ID --dry-mode`
 3. Check the table. Green rows are confident matches; yellow rows are
    low-confidence and are never written. Videos with no talk and talks with no
-   video are listed underneath.
-4. Write the matches: `uv run tools/youtube_sync.py PLAYLIST_ID --write`.
+   video are listed underneath, and everything is in `.youtube-sync/report.csv`.
+4. Write the matches: `uv run tools/youtube_to_frontmatter.py PLAYLIST_ID`.
    This adds `video_url` and `youtube_id` to each matched talk's front matter
    and leaves the rest of the file untouched. Re-running is safe.
 5. Add and commit the changes in `src/_content/schedule/`
 
 Matching uses the talk permalink in the video description first, then title
-and presenter name similarity, so it works on fresh uploads too.
+and presenter name similarity, so it works on fresh uploads too. Pass `--cache
+playlist.json` to avoid refetching the playlist on every run. Private playlists
+need you to be signed in (`--login`, below).
 
-Each run also writes `.youtube-sync/report.csv` and
-`.youtube-sync/descriptions/<talk>.txt`. Each `.txt` file holds a suggested YouTube
-title and description (talk abstract plus presenter links), mirroring
-`src/_includes/youtube-copy-and-paste.html`, to paste into YouTube Studio.
-Pass `--location` if the conference wasn't in Chicago, and `--cache
-playlist.json` to avoid refetching the playlist on every run.
+### Front matter → YouTube
+
+The YouTube title and description for each talk come from our template page,
+[/speaking/youtube/](https://2026.djangocon.us/speaking/youtube/)
+(`src/youtube-talks.html` and `src/_includes/youtube-copy-and-paste.html`):
+presenter details and social links, then the DjangoCon US and DEFNA links. The
+script reads that page, so change the template there. By default it reads the
+live site; `--template dist/speaking/youtube/index.html` uses a local build.
+
+1. Preview: `uv run tools/frontmatter_to_youtube.py --dry-mode`. This lists the
+   videos that would change and writes each title and description to
+   `.youtube-sync/descriptions/<talk>.txt`.
+2. Try one video: `uv run tools/frontmatter_to_youtube.py --only TALK_FILE_NAME`
+3. Then the rest: `uv run tools/frontmatter_to_youtube.py`
+
+It always asks before updating (`--yes` skips the prompt) and backs up the
+current titles and descriptions to `.youtube-sync/backups/` first. To undo a run:
+`uv run tools/frontmatter_to_youtube.py --restore .youtube-sync/backups/youtube-<timestamp>.json`.
+Pass `--no-update-titles` to only update descriptions.
 
 ### YouTube API setup
 
@@ -94,7 +116,7 @@ How the DjangoCon US YouTube sync was set up, step by step, so it can be redone
 | API enabled | YouTube Data API v3 |
 | OAuth consent screen | "DjangoCon US YouTube Sync", External, **Testing** |
 | Test users | everyone who will run the script |
-| OAuth client | Desktop app named `youtube_sync.py` |
+| OAuth client | Desktop app named `youtube_sync.py` (any name works) |
 | Client secret file | `~/.config/djangocon-youtube-sync/client_secret.json` (mode 600) |
 | Saved sign-in token | `~/.config/djangocon-youtube-sync/token.json` (mode 600, written by `--login`) |
 | Signed-in channel | DjangoCon US (`UC0yY6a79pPY9J0ShIHRf6yw`) |
@@ -196,8 +218,10 @@ python3 -c "import json; d=json.load(open('$HOME/.config/djangocon-youtube-sync/
 From the repo root:
 
 ```sh
-uv run tools/youtube_sync.py --login
+uv run tools/frontmatter_to_youtube.py --login
 ```
+
+Both scripts share the same sign-in, so `--login` on either one is enough.
 
 It prints a sign-in link and tries to open it. The script waits until you
 finish in the browser.
@@ -217,7 +241,7 @@ Signed in as YouTube channel: DjangoCon US (UC0yY6a79pPY9J0ShIHRf6yw)
 ```
 
 If it shows a different channel, or says the account has no channel, run
-`uv run tools/youtube_sync.py --logout` and then `--login` again.
+`uv run tools/frontmatter_to_youtube.py --logout` and then `--login` again.
 
 **If you click the wrong account:** close that tab and stop the waiting
 script with Ctrl-C. A link only works while the script that printed it is
@@ -228,27 +252,21 @@ non-test-user account gets "access blocked" and nothing is saved.
 #### Using it
 
 ```sh
-# Dry run: match the playlist to talk files, write .youtube-sync/report.csv
-# and suggested titles/descriptions in .youtube-sync/descriptions/
-uv run tools/youtube_sync.py PLFQg7E3if2as
+# YouTube -> front matter: preview, then record video_url + youtube_id
+uv run tools/youtube_to_frontmatter.py PLFQg7E3if2as --dry-mode
+uv run tools/youtube_to_frontmatter.py PLFQg7E3if2as
 
-# Record video_url + youtube_id in matched talk front matter
-uv run tools/youtube_sync.py PLFQg7E3if2as --write
-
-# Push suggested titles/descriptions to YouTube: one video first, then all
-uv run tools/youtube_sync.py PLFQg7E3if2as --update-youtube --only 2026-08-24-08-15-t0-orientation
-uv run tools/youtube_sync.py PLFQg7E3if2as --update-youtube
+# Front matter -> YouTube: preview, one video, then all
+uv run tools/frontmatter_to_youtube.py --dry-mode
+uv run tools/frontmatter_to_youtube.py --only 2026-08-24-08-15-t0-orientation
+uv run tools/frontmatter_to_youtube.py
 
 # Undo a YouTube update from its backup
-uv run tools/youtube_sync.py --restore .youtube-sync/backups/youtube-<timestamp>.json
+uv run tools/frontmatter_to_youtube.py --restore .youtube-sync/backups/youtube-<timestamp>.json
 ```
 
-- `--update-youtube` shows what will change and asks before doing anything
-  (`--yes` skips the prompt). It saves the current titles and descriptions to
-  `.youtube-sync/backups/` first.
-- `--no-update-titles` updates descriptions only.
-- Once signed in, the script reads playlists through the API, so private and
-  unlisted playlists work. The **DjangoCon US 2026 playlist
+- Once signed in, `youtube_to_frontmatter.py` reads playlists through the API,
+  so private and unlisted playlists work. The **DjangoCon US 2026 playlist
   (`PLFQg7E3if2as`) is private**, and yt-dlp reports it as "does not exist".
 - Quota: each video update costs 50 of the default 10,000 units/day, so about
   200 updates a day.

@@ -137,5 +137,5 @@ dist
 __pycache__/
 
 node_modules
-# tools/youtube_sync.py output
+# tools/youtube_to_frontmatter.py and frontmatter_to_youtube.py output
 .youtube-sync/
