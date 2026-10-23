@@ -496,7 +496,7 @@ DTSTAMP:20260826T135000Z
 UID:13-50-t0-wishlist-granted-htmx-without-betraying-your-django-views@https://2026.djangocon.us
 SUMMARY:Wishlist granted: HTMX without betraying your Django views
 LOCATION:Sauganash Ballroom
-DESCRIPTION:Presenter: Natalia\n\nA feature built the traditional Django way. Making it dynamic is next. What do you do? The answer is simpler than you think!
+DESCRIPTION:Presenter: Natalia Bidart\n\nA feature built the traditional Django way. Making it dynamic is next. What do you do? The answer is simpler than you think!
  Starting from a plain server-rendered implementation, my goal was to avoid full-page reloads without throwing away what I had already built, and without reaching for a new tool or a new architecture. Template partials and HTMX turned out to be exactly the right fit. The changes were small and targeted, the code stayed readable, and I never had to leave my Django safe place.
  This talk is about a real project, real decisions, and what progressive enhancement in Django can look like in practice using modern tools, one small change at a time.
  
