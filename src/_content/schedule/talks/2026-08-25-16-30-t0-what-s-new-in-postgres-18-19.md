@@ -10,6 +10,8 @@ tags:
 - postgres
 title: What's New in Postgres 18 & 19
 track: t0
+video_url: https://youtu.be/hRrMxcBs_TA
+youtube_id: "hRrMxcBs_TA"
 ---
 
 This session will cover in detail new features of the software and how they affect your database/Django work. I’ll give some advice on what to take advantage of right away and what to maybe let the other guys try first.

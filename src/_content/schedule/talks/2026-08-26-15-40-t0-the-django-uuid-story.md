@@ -10,6 +10,8 @@ tags:
 - Databases
 title: The Django UUID Story
 track: t0
+video_url: https://youtu.be/_8Pjw5Bp-y0
+youtube_id: "_8Pjw5Bp-y0"
 ---
 
 My first larger contribution to **Django** started during the sprints at *DjangoCon Europe 2017* in *Florence*, where I worked on exposing database-side **RandomUUID** generation for UUIDv4 in `contrib.postgres`, so for me this topic has a very personal history inside the project.

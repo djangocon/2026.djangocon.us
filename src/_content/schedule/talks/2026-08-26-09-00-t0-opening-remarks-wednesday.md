@@ -9,4 +9,6 @@ room: Sauganash Ballroom
 start_datetime: 2026-08-26 09:00:00-05:00
 title: Opening Remarks (Wednesday)
 track: t0
+video_url: https://youtu.be/NMvHlVi_9yc
+youtube_id: "NMvHlVi_9yc"
 ---

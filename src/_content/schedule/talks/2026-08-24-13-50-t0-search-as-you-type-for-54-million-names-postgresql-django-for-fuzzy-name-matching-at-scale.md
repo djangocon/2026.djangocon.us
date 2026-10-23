@@ -13,6 +13,8 @@ tags:
 title: 'Search-as-you-type for 54 Million Names: PostgreSQL + Django for Fuzzy Name
   Matching at Scale'
 track: t0
+video_url: https://youtu.be/slCRx-qMPnY
+youtube_id: "slCRx-qMPnY"
 youtube_title: "Search-as-you-type for 54 Million Names: PostgreSQL + Django... with Tobias McNulty, Gerald Carlton"
 ---
 

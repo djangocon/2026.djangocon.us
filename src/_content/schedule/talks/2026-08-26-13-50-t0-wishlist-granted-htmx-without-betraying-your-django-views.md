@@ -13,6 +13,8 @@ tags:
 - Deep dive
 title: 'Wishlist granted: HTMX without betraying your Django views'
 track: t0
+video_url: https://youtu.be/GmiPik_a4sY
+youtube_id: "GmiPik_a4sY"
 ---
 
 A feature built the traditional Django way. Making it dynamic is next. What do you do? The answer is simpler than you think!
