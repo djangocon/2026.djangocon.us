@@ -1,7 +1,7 @@
 ---
 company: Django Software Foundation
 hidden: false
-name: Natalia
+name: Natalia Bidart
 permalink: /presenters/natalia/
 photo: natalia.webp
 social:
