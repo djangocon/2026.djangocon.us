@@ -240,6 +240,8 @@ def youtube_client(client_secrets: Path, token_path: Path):
             port=0,
             authorization_prompt_message="Open this link to sign in (it should open automatically):\n\n{url}\n",
             success_message="Signed in. You can close this tab and go back to the terminal.",
+            # Always show the account picker so the right channel account gets chosen.
+            prompt="select_account consent",
         )
         token_path.parent.mkdir(parents=True, exist_ok=True)
         token_path.write_text(credentials.to_json())
@@ -517,7 +519,10 @@ def main(
         token.unlink(missing_ok=True)
         console.print(f"Removed {token}")
         return
-    youtube = youtube_client(client_secrets, token) if (update_youtube or restore or login) else None
+    # Read through the API whenever we're signed in (it can see private
+    # playlists); only force a sign-in when we need to write to YouTube.
+    signed_in = token.exists()
+    youtube = youtube_client(client_secrets, token) if (update_youtube or restore or login or signed_in) else None
     if login:
         show_channels(youtube)
         return
