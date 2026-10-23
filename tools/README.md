@@ -80,6 +80,46 @@ title and description (talk abstract plus presenter links), mirroring
 Pass `--location` if the conference wasn't in Chicago, and `--cache
 playlist.json` to avoid refetching the playlist on every run.
 
+### Push titles and descriptions to YouTube
+
+The script can update the videos directly through the YouTube Data API,
+signed in as someone who manages the DjangoCon US channel.
+
+1. Sign in once: `uv run tools/youtube_sync.py --login`. It prints a link (and
+   tries to open it). Pick the DjangoCon US channel's account (or brand
+   account) and approve. The script then prints the channel you're signed in
+   as. The token is saved to `~/.config/djangocon-youtube-sync/token.json`,
+   outside the repo, and refreshes itself; `--logout` deletes it.
+2. Try one video first:
+   `uv run tools/youtube_sync.py PLAYLIST_ID --update-youtube --only TALK_FILE_NAME`
+3. Then all confident matches: `uv run tools/youtube_sync.py PLAYLIST_ID --update-youtube`
+
+Before anything changes, you get a table of what will change and a
+confirmation prompt (`--yes` skips the prompt). The current title and
+description of every video about to change are saved to
+`.youtube-sync/backups/`. To undo a run:
+`uv run tools/youtube_sync.py --restore .youtube-sync/backups/youtube-<timestamp>.json`.
+Pass `--no-update-titles` to only update descriptions. Signing in also
+lets the script read private and unlisted playlists.
+
+**One-time OAuth client setup.** The sign-in needs an OAuth client of type
+"Desktop app" in a Google Cloud project with the YouTube Data API v3
+enabled:
+
+1. In [Google Cloud Console](https://console.cloud.google.com/), pick or create a project
+   and enable the **YouTube Data API v3**.
+2. Configure the OAuth consent screen (External; add whoever will sign in as a
+   test user).
+3. Create credentials → OAuth client ID → **Desktop app**, and download the JSON to
+   `~/.config/djangocon-youtube-sync/client_secret.json` (or pass `--client-secrets`).
+
+If you already use the Google Workspace CLI (`gws`), the script falls back to
+its client at `~/.config/gws/client_secret.json`. That only works if the YouTube
+Data API is enabled on that client's project.
+
+Each video update costs 50 units of the API's default 10,000/day quota, so
+roughly 200 videos a day.
+
 ## Generate a CSV for Sendy to use with the "confirm your talk time" email
 
 1. Open a Python shell, ideally in the directory where you saved the speaker/session files
