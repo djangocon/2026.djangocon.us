@@ -1,12 +1,13 @@
 ---
 company: Django Software Foundation
 hidden: false
-name: Natalia
-permalink: /presenters/natalia/
-photo: natalia.webp
+name: Natalia Bidart
+permalink: /presenters/natalia-bidart/
+photo: natalia-bidart.webp
+redirect_from: /presenters/natalia/
 social:
     bluesky: null
-    github: null
+    github: nessita
     instagram: null
     mastodon: https://fosstodon.org/@nessita
     twitter: null
@@ -17,4 +18,4 @@ Natalia is a Django Fellow since 2023, with more than 20 years of experience wor
 
 She is passionate about open source and equity, and has spoken at international and local conferences on topics ranging from software development best practices to diversity and inclusion. She is deeply committed to making the Django community a place where everyone can contribute meaningfully.
 
-You can find her on GitHub as [@nessita]([url](https://github.com/nessita/)) and on Mastodon at [@nessita@fosstodon.org]([url](https://fosstodon.org/@nessita)).
+You can find her on GitHub as [@nessita](https://github.com/nessita/) and on Mastodon at [@nessita@fosstodon.org](https://fosstodon.org/@nessita).

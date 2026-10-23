@@ -28,13 +28,18 @@ permalink: /speaking/youtube/
                 <div class="flex items-center justify-between gap-2 mx-2">
                   <h4 class="flex-grow mr-2">
                     <span>{{ day[0] | formatDateTime: "LLL d " }}{{ slot.start | formatDateTime: "h:mm aaa" }} CDT -</span>
+                    {% comment %} Set youtube_title in a talk's front matter when the full title won't fit YouTube's 100 characters. {% endcomment %}
                     <span id="copy-{{ session.title|slugify }}-title">
-                      {{ session.title }} with
-                      {% for presenter_slug in session.presenter_slugs %}
-                        {% assign presenter = collections.presenters | find:presenter_slug %}
-                        {% if not forloop.first %} and {% endif %}
-                        {{ presenter.data.name }}
-                      {% endfor %}
+                      {% if session.youtube_title %}
+                        {{ session.youtube_title }}
+                      {% else %}
+                        {{ session.title }} with
+                        {% for presenter_slug in session.presenter_slugs %}
+                          {% assign presenter = collections.presenters | find:presenter_slug %}
+                          {% if not forloop.first %} and {% endif %}
+                          {{ presenter.data.name }}
+                        {% endfor %}
+                      {% endif %}
                     </span>
                   </h4>
                   {% if session.video_url %}

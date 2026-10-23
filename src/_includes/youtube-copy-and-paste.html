@@ -1,4 +1,11 @@
-{% capture presenter_names %}{% for presenter_slug in session.presenter_slugs %}{% assign presenter = collections.presenters | find:presenter_slug %}{% if forloop.first %}{% elsif forloop.last %}{% if session.presenter_slugs.size > 2 %}, and {% else %} and {% endif %}{% else %}, {% endif %}{{ presenter.data.name }}{% endfor %}{% endcapture %}{% if session.templateContent %}{{ session.templateContent }}
+{% capture presenter_names %}{% for presenter_slug in session.presenter_slugs %}{% assign presenter = collections.presenters | find:presenter_slug %}{% if forloop.first %}{% elsif forloop.last %}{% if session.presenter_slugs.size > 2 %}, and {% else %} and {% endif %}{% else %}, {% endif %}{{ presenter.data.name }}{% endfor %}{% endcapture %}{% comment %}
+  Schedule sessions only carry front matter, so look up the talk's page for
+  its rendered abstract and turn it back into plain text, keeping a blank line
+  between paragraphs.
+{% endcomment %}{% assign talk_page = collections.all | where: "url", session.permalink | first %}{% capture abstract %}{{ talk_page.templateContent | replace: "</p>", "</p>
+
+" | strip_html | strip }}{% endcapture %}{% if abstract != "" %}{{ abstract }}
+
 {% endif %}
 This talk was presented by {{ presenter_names }} at DjangoCon US 2026 in Chicago, Illinois, USA
 {{ site.domain }}{{ session.permalink }}
@@ -20,4 +27,6 @@ Follow DjangoCon US 👇
 Follow DEFNA 👇
 https://www.defna.org/
 
-Video production by the presenter and DjangoCon US 2026 volunteers.
+Video production by Confreaks
+Follow Confreaks 👇
+https://confreaks.com

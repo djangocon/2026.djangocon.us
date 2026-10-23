@@ -3,7 +3,7 @@ category: talks
 end_datetime: 2026-08-26 14:35:00-05:00
 permalink: /talks/wishlist-granted-htmx-without-betraying-your-django-views/
 presenter_slugs:
-- natalia
+- natalia-bidart
 room: Sauganash Ballroom
 start_datetime: 2026-08-26 13:50:00-05:00
 tags:

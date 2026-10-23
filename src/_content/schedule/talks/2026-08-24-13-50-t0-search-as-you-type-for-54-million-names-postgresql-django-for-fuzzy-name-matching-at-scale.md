@@ -15,6 +15,7 @@ title: 'Search-as-you-type for 54 Million Names: PostgreSQL + Django for Fuzzy N
 track: t0
 video_url: https://youtu.be/slCRx-qMPnY
 youtube_id: "slCRx-qMPnY"
+youtube_title: "Search-as-you-type for 54 Million Names: PostgreSQL + Django... with Tobias McNulty, Gerald Carlton"
 ---
 
 Searching for human names in large datasets is harder than it looks. A user searches for "Smith, John," but the database contains "Smyth, Jon" or "Smithe, Johnny." Standard `LIKE` queries are too strict, full-text search doesn't handle name nuances well, and unindexed fuzzy matching won't scale.
