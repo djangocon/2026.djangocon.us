@@ -13,6 +13,8 @@ tags:
 - Deep dive
 title: 'Keynote: Django 6: The Most Exciting Release Ever'
 track: t0
+video_url: https://youtu.be/QRzltpCaXw8
+youtube_id: "QRzltpCaXw8"
 ---
 
 Django 6.0 has multiple very exciting new features, including:

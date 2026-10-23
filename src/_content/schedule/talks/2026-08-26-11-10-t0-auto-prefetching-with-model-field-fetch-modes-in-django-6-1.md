@@ -12,6 +12,8 @@ tags:
 - Deep dive
 title: Auto-prefetching with model field fetch modes in Django 6.1
 track: t0
+video_url: https://youtu.be/VkCCFMfS2ew
+youtube_id: "VkCCFMfS2ew"
 ---
 
 New in Django 6.1, model field fetch modes provide a way to avoid the deluge of queries from accessing un-fetched objects during a loop (also known as the "N+1 queries" problem). You may be familiar with how Django's prefetch_related() and select_related() methods can prevent these queries, but unlike those tools, the "fetch peers" mode does not require maintaining a list of fields to fetch. This can significantly improve project maintenance, especially when QuerySets are constructed at some distance from where they are used.

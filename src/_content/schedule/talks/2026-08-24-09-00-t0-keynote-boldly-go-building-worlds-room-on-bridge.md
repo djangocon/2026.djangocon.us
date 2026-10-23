@@ -9,6 +9,8 @@ room: Sauganash Ballroom
 start_datetime: 2026-08-24 09:00:00-05:00
 title: "Boldly Go, Building Worlds: Is there Room for me on the Bridge?"
 track: t0
+video_url: https://youtu.be/M7x4UZZftUA
+youtube_id: "M7x4UZZftUA"
 ---
 Star Trek made a promise to me that I grew up believing: the future would have room for everyone, and that the team we need to face that uncertain future together will look different from each other. Octavia Butler added color and friction to that promise, sharing a future that was written with specificity and honesty; and Black woman led. Speculative fiction, scifi and Afrofuturism are what first let me imagine myself in rooms I hadn't been invited into yet — and it shaped the aesthetic and the optimism and agency I still bring to my work today.
 

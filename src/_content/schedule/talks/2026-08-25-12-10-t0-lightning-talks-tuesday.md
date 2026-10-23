@@ -9,4 +9,6 @@ room: Sauganash Ballroom
 start_datetime: 2026-08-25 12:10:00-05:00
 title: Lightning Talks (Tuesday)
 track: t0
+video_url: https://youtu.be/VpEzSbAC5DA
+youtube_id: "VpEzSbAC5DA"
 ---

@@ -12,6 +12,8 @@ tags:
 - Using AI in development
 title: 'Agents All the Way Down: How AI Coding Agents Changed How I Write Django'
 track: t0
+video_url: https://youtu.be/f-whFuTi4xA
+youtube_id: "f-whFuTi4xA"
 ---
 
 I'm the lead developer at a company with about 10 Django applications. The biggest is a 19-year-old legacy application that's been ported from ColdFusion to WordPress to a custom PHP system to Django. It's full of boolean fields that should be foreign keys, invariants that live in developers' heads instead of model constraints, and business logic that predates Django's existence. I've been using coding agents on this codebase and others for the past year, mostly Claude Code.

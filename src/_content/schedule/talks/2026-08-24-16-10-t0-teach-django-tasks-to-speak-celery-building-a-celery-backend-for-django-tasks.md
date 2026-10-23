@@ -13,6 +13,8 @@ tags:
 - Tasks
 title: 'Teach Django Tasks to speak Celery: Building a Celery backend for Django Tasks'
 track: t0
+video_url: https://youtu.be/QjVDUC0kwLY
+youtube_id: "QjVDUC0kwLY"
 ---
 
 Django 6.0 introduced Django Tasks, a built-in framework for defining and queuing background jobs to run code outside the HTTP request–response cycle. Django ships by default with backends for development and testing, but production systems often rely on distributed task queues like Celery. How do we bridge that gap?
