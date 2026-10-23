@@ -6,10 +6,10 @@ permalink: /presenters/paolo-melchiorre/
 photo: paolo-melchiorre.webp
 social:
     bluesky: https://bsky.app/profile/paulox.net
-    github: https://github.com/pauloxnet
+    github: pauloxnet
     instagram: https://www.instagram.com/paulox_net
     mastodon: https://fosstodon.org/@paulox
-    twitter: https://x.com/pauloxnet
+    twitter: pauloxnet
     website: https://www.paulox.net
 ---
 

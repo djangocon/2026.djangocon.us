@@ -8,7 +8,7 @@ social:
     bluesky: null
     github: null
     instagram: null
-    mastodon: fosstodon.org/@wsvincent
+    mastodon: https://fosstodon.org/@wsvincent
     twitter: null
     website: https://wsvincent.com/
 ---
