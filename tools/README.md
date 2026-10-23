@@ -56,14 +56,15 @@ their presenter bio.
 
 ## Sync talks with YouTube
 
-Two scripts, one per direction. Both need [uv](https://docs.astral.sh/uv/),
-which installs each script's dependencies for you. Both take `--dry-mode`
+Two scripts, one per direction, plus one for captions. Both need [uv](https://docs.astral.sh/uv/),
+which installs each script's dependencies for you. All three take `--dry-mode`
 (or `--dry-run`) to show what would change without changing anything.
 
 | Script | Direction | What it changes |
 |---|---|---|
 | `tools/youtube_to_frontmatter.py` | YouTube → front matter | adds `video_url` and `youtube_id` to talk files |
 | `tools/frontmatter_to_youtube.py` | front matter → YouTube | sets video titles and descriptions from our template |
+| `tools/captions_to_youtube.py` | caption files → YouTube | uploads caption tracks |
 
 ### YouTube → front matter
 
@@ -101,6 +102,32 @@ It always asks before updating (`--yes` skips the prompt) and backs up the
 current titles and descriptions to `.youtube-sync/backups/` first. To undo a run:
 `uv run tools/frontmatter_to_youtube.py --restore .youtube-sync/backups/youtube-<timestamp>.json`.
 Pass `--no-update-titles` to only update descriptions.
+
+### Captions → YouTube
+
+`tools/captions_to_youtube.py` uploads caption files to their videos. Give it a
+zip (or folder) of files named after the YouTube video ID, like
+`z_cHhxzRozI.txt`; macOS `__MACOSX/` entries are ignored.
+
+1. Preview: `uv run tools/captions_to_youtube.py captions.zip --dry-mode`
+2. Try one video: `uv run tools/captions_to_youtube.py captions.zip --only VIDEO_ID`
+3. Then the rest: `uv run tools/captions_to_youtube.py captions.zip`
+
+- `.txt` files are plain transcripts. They're uploaded with `sync=true`, so
+  YouTube times them to the audio. `.srt`, `.vtt`, `.sbv`, and `.scc` keep
+  their own timing.
+- Videos that already have one of our tracks in the same language (`en` and
+  `en-US` count as the same) are skipped, so re-running only uploads what's
+  missing. A track that failed to process gets replaced; `--replace`
+  replaces working ones too.
+- **Quota:** checking a video costs 50 units and uploading costs 400, out of
+  10,000 a day. That's about 20 uploads a day. If the quota runs out
+  mid-run, the script stops; run the same command the next day (quota resets
+  at midnight Pacific).
+- Each run logs what it created to `.youtube-sync/captions-<timestamp>.json`;
+  `--undo` with that file deletes those tracks. `--draft` uploads unpublished
+  drafts, and `--language` and `--name` set the track language (default `en`)
+  and name (default "English").
 
 ### YouTube API setup
 
@@ -221,7 +248,7 @@ From the repo root:
 uv run tools/frontmatter_to_youtube.py --login
 ```
 
-Both scripts share the same sign-in, so `--login` on either one is enough.
+All three scripts share the same sign-in, so `--login` on any of them is enough.
 
 It prints a sign-in link and tries to open it. The script waits until you
 finish in the browser.
