@@ -54,6 +54,32 @@ their presenter bio.
 2. `python tools/process.py generate-placeholders`
 3. Add and commit the changes made to `src/_content`
 
+## Sync talks with the YouTube playlist
+
+`tools/youtube_sync.py` matches each video in a playlist to its talk file and
+records the video on the talk. It needs [uv](https://docs.astral.sh/uv/), which
+installs the script's dependencies for you.
+
+1. `cd /path/to/year.djangocon.us`
+2. Dry run: `uv run tools/youtube_sync.py PLAYLIST_ID`
+3. Check the table. Green rows are confident matches; yellow rows are
+   low-confidence and are never written. Videos with no talk and talks with no
+   video are listed underneath.
+4. Write the matches: `uv run tools/youtube_sync.py PLAYLIST_ID --write`.
+   This adds `video_url` and `youtube_id` to each matched talk's front matter
+   and leaves the rest of the file untouched. Re-running is safe.
+5. Add and commit the changes in `src/_content/schedule/`
+
+Matching uses the talk permalink in the video description first, then title
+and presenter name similarity, so it works on fresh uploads too.
+
+Each run also writes `.youtube-sync/report.csv` and
+`.youtube-sync/descriptions/<talk>.txt`. Each `.txt` file holds a suggested YouTube
+title and description (talk abstract plus presenter links), mirroring
+`src/_includes/youtube-copy-and-paste.html`, to paste into YouTube Studio.
+Pass `--location` if the conference wasn't in Chicago, and `--cache
+playlist.json` to avoid refetching the playlist on every run.
+
 ## Generate a CSV for Sendy to use with the "confirm your talk time" email
 
 1. Open a Python shell, ideally in the directory where you saved the speaker/session files
