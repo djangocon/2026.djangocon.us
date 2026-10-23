@@ -9,6 +9,8 @@ room: Sauganash Ballroom
 start_datetime: 2026-08-25 09:05:00-05:00
 title: "Keynote: Emails from my Grandad"
 track: t0
+video_url: https://youtu.be/4JxWgnB0BEA
+youtube_id: "4JxWgnB0BEA"
 ---
 Code review can be a painful and anxiety-inducing experience. As developers, our work is regularly scrutinized by our colleagues. Comments about bugs, edge cases, or “code smells” are a normal part of the process, but when you’re the author, it can sometimes feel like you’re under attack.
 

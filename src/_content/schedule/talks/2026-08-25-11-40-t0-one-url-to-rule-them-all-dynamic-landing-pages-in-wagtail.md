@@ -10,6 +10,8 @@ tags:
 - Wagtail
 title: 'One URL to Rule Them All: Dynamic Landing Pages in Wagtail'
 track: t0
+video_url: https://youtu.be/KlZJ0-h8RP8
+youtube_id: "KlZJ0-h8RP8"
 ---
 
 Every marketing campaign has the same problem: one message, a dozen audiences, and suddenly your CMS is drowning in nearly identical pages. For Truth Initiative, the nation’s largest nonprofit dedicated to ending nicotine addiction, editors were maintaining a growing library of duplicate landing pages with no clean way to test what was actually working.

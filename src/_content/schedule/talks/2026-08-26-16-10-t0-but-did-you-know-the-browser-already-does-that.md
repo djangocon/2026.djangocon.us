@@ -13,6 +13,8 @@ tags:
 - Deep dive
 title: But did you know the browser already does that?
 track: t0
+video_url: https://youtu.be/qxogejENz84
+youtube_id: "qxogejENz84"
 ---
 
 New features in HTML and CSS mean a better dev experience for providing better user experiences. But are they too new to use? In this talk, you'll get a glimpse at some of the newer features of the web platform. Once you're excited to use them in your project, we'll take a look at browser support, and how to use Baseline to evaluate whether it's ready to use in your project.
